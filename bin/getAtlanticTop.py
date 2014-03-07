@@ -66,6 +66,10 @@ def insertSourceTarget(year,source, target, value, struct):
 
             myData['distance'] = distanceMatrix[source][target]
 
+            myData['valueSource'] = float(float(myData['distance']) / float(myData['sourcePopulation'])+0.0)
+            myData['valueTarget'] = float(float(myData['distance']) / float(myData['targetPopulation'])+0.0)
+
+
             if sameLanguage(source,target):
                 myData['sameLanguage'] = "1"
             else:
@@ -342,9 +346,9 @@ outCount = {}
 
 fileOut = open(MOVEMENTS_OUT,"wb")
 
-fields = ['value','distance','sameCurrency','sameLanguage','sourceGeo','targetGeo','sourceHDI','targetHDI','sourcePopulation','targetPopulation']
+fields = ['value','valueSource','valueTarget','distance','sameCurrency','sameLanguage','sourceGeo','targetGeo','sourceHDI','targetHDI','sourcePopulation','targetPopulation']
 
-fileOut.write("\t".join(["year","source","target"]+fields)+"\n")
+fileOut.write("\t".join(["year","source","target","sourceTarget"]+fields)+"\n")
 
 
 for year in countryMovements:
@@ -352,7 +356,7 @@ for year in countryMovements:
         for target in countryMovements[year][source]:
             myData = countryMovements[year][source][target]
             auxData = [str(myData[field]) for field in fields]
-            fileOut.write("\t".join([str(year),source,target]+auxData)+"\n")
+            fileOut.write("\t".join([str(year),source,target,source+"-"+target]+auxData)+"\n")
 
             if year=='2013':
                 addGlobalCount(source, target, myData['value'],globalCount,inCount,outCount)
@@ -393,9 +397,9 @@ fileOut.close()
 
 fileOut = open(MOVEMENTS_OUT_TOP,"wb")
 
-fields = ['value','distance','sameCurrency','sameLanguage','sourceGeo','targetGeo','sourceHDI','targetHDI','sourcePopulation','targetPopulation']
+fields = ['value','valueSource','valueTarget','distance','sameCurrency','sameLanguage','sourceGeo','targetGeo','sourceHDI','targetHDI','sourcePopulation','targetPopulation']
 
-fileOut.write("\t".join(["year","source","target"]+fields)+"\n")
+fileOut.write("\t".join(["year","source","target","sourceTarget"]+fields)+"\n")
 
 
 for year in countryMovements:
@@ -404,6 +408,6 @@ for year in countryMovements:
             if source in sortedCount[:TOP_N_MOVEMENTS] and target in sortedCount[:TOP_N_MOVEMENTS]:
                 myData = countryMovements[year][source][target]
                 auxData = [str(myData[field]) for field in fields]
-                fileOut.write("\t".join([str(year),source,target]+auxData)+"\n")
+                fileOut.write("\t".join([str(year),source,target,source+"-"+target]+auxData)+"\n")
 
 fileOut.close()
