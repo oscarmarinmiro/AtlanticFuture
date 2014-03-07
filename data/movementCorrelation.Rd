@@ -38,3 +38,10 @@ ggplot(plotData,aes(x=sourceHDI, y=targetHDI, colour=distance,size=value)) + geo
 #ggplot(plotData,aes(x=HDI, y=inPercent)) + geom_point() + stat_smooth(method=lm,level=0.75) + geom_text(aes(label=name),size=2) + scale_size_area(max_size=15)
 
 dev.off()
+
+#rownames(clustData) = paste(as.character(clustData$Company),as.character(clustData$Year), sep = "-")
+#clustData = myData
+#finalData = clustData[17:31]
+#pdf(file="scatter.pdf", width=10, height=10)
+rownames(plotData) = paste(as.character(plotData$sourceTarget),as.character(plotData$distance), sep = "-")
+plot(hclust(dist(plotData),method="complete"),cex=0.5, main="Clustering year 2013")
