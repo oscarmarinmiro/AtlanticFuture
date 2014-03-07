@@ -3,7 +3,9 @@ import pprint
 import json
 
 
-TOP_N = 20
+TOP_N = 63
+
+TOP_N_MOVEMENTS = 20
 
 COUNTRY_CODE_FILE = "../assets/country_codes_and_facts.csv"
 
@@ -370,8 +372,8 @@ fields = ['M49','name','lat','lon','pop2005','currencyName','currencyNumeric','H
 fileOut.write("\t".join(['ISO2']+fields+['totalMig','inMig','outMig','inPercent','languages'])+"\n")
 
 for country in sortedCount:
-    writeData = [country]+[str(atlanticISO2[country][field]) for field in fields]+[str(globalCount[country]),str(inCount[country]),str(outCount[country]),"%.2f" % ((inCount[country]/float(globalCount[country])+0.0)*100.0),("/").join(langDict[country])]
-    fileOut.write("\t".join(writeData)+"\n")
+    writeData = [country]+[atlanticISO2[country][field] if field=='name' else str(atlanticISO2[country][field])  for field in fields]+[str(globalCount[country]),str(inCount[country]),str(outCount[country]),"%.2f" % ((inCount[country]/float(globalCount[country])+0.0)*100.0),("/").join(langDict[country])]
+    fileOut.write("\t".join(writeData).encode("utf8")+"\n")
 
 fileOut.close()
 
@@ -399,7 +401,7 @@ fileOut.write("\t".join(["year","source","target"]+fields)+"\n")
 for year in countryMovements:
     for source in countryMovements[year]:
         for target in countryMovements[year][source]:
-            if source in sortedCount and target in sortedCount:
+            if source in sortedCount[:TOP_N_MOVEMENTS] and target in sortedCount[:TOP_N_MOVEMENTS]:
                 myData = countryMovements[year][source][target]
                 auxData = [str(myData[field]) for field in fields]
                 fileOut.write("\t".join([str(year),source,target]+auxData)+"\n")
