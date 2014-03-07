@@ -1,0 +1,187 @@
+.chord
+{
+        background-color:#FFF;
+        margin: 10px 0 50px 0px;
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 30px;
+}
+
+.chord .label
+{
+        fill: #777;
+}
+
+.chord .contenedorTodo
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:50px;
+    width:1000px;
+}
+
+.chord .contenedorCI
+{
+    margin-bottom:50px;
+
+}
+
+.chord .zonaFecha
+{
+    height: 40px;
+    background-color: #FFF;
+    padding-top:5px;
+    padding-left:30px;
+    padding-right: 30px;
+}
+
+.chord .zonaFecha .play
+{
+    float:left;
+    cursor:pointer;
+}
+
+.chord .zonaFecha .slider
+{
+    float:left;
+    min-width: 76%;
+    margin-top:15px;
+    margin-left:20px;
+    margin-right:20px;
+    background-color: #eee;
+}
+
+.chord .zonaFecha .fechaText
+{
+    margin-top:5px;
+    font-size:20px;
+}
+
+
+.chord .zonaChart
+{
+    float:left;
+    background-color: #FFF;
+
+}
+.chord .chordInfoContent
+{
+    font-size:12px;
+    margin-top:10px;
+    min-height: 80px;
+}
+
+.chord .chordInfoHeader
+{
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:16px;
+}
+
+.chord .zonaInfo
+{
+    float:left;
+    font-size:14px;
+    /*padding-top:30px;*/
+    padding-left:8px;
+    background-color: #FFF;
+    width:150px;
+}
+
+.chord .footer
+{
+    margin-bottom:50px;
+    min-height: 50px;
+    background-color: #FFF;
+    clear:both;
+}
+
+.chord .zonaFecha .ui-slider-horizontal {
+    height: .15em;
+    cursor: pointer;
+}
+
+.chord .zonaFecha .ui-widget-content {
+    border: 0px solid #AAA;
+    background-color: #CCC;
+}
+
+.chord .zonaFecha .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br
+{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.chord .zonaFecha .ui-slider .ui-slider-handle
+{
+  cursor:pointer;
+  width: 0.5em;
+  height: 0.5em;
+  margin-left:0px;
+  margin-top:2.5px;
+}
+.ui-widget :focus { outline: none; }
+
+.chord .chordLegendText
+{
+    font-size:12px;
+    opacity: 0.5;
+}
+
+.chord .chords{
+    fill-opacity: .8;
+    stroke: #000;
+    stroke-width: .5px;
+    stroke-opacity: 0.2;
+    cursor:pointer;
+}
+.chord .groups{
+    stroke-width: .5px;
+    stroke-opacity: 1.0;
+    cursor:pointer;
+}
+
+.chord .opcionesContent{
+    font-size:12px;
+    margin-top:10px;
+}
+
+.chord .opcionesHeader{
+    font-size:16px;
+    margin-top:10px;
+}
+
+.chord .newsHeader{
+    font-size:16px;
+}
+.chord .newsContent{
+    font-size:12px;
+    min-height: 120px;
+    padding: 5px 5px 5px 5px;
+}
+
+.chord .activeEvent
+{
+    background-color: #FFFFA5;
+    font-weight: bold;
+}
+
+.chord .smallLegend
+{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15px;
+    /*fill: #777;*/
+}
+
+.chord .bigLegend
+{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    /*fill: #777;*/
+}
+
+.chord a
+{
+    color: #777;
+}
