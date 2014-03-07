@@ -367,10 +367,10 @@ fileOut = open(COUNTRIES_OUT,"wb")
 
 fields = ['M49','name','lat','lon','pop2005','currencyName','currencyNumeric','HDI','isIndependent']
 
-fileOut.write("\t".join(['ISO2']+fields+['totalMig','inMig','outMig','languages'])+"\n")
+fileOut.write("\t".join(['ISO2']+fields+['totalMig','inMig','outMig','inPercent','languages'])+"\n")
 
 for country in sortedCount:
-    writeData = [country]+[str(atlanticISO2[country][field]) for field in fields]+[str(globalCount[country]),str(inCount[country]),str(outCount[country]),("/").join(langDict[country])]
+    writeData = [country]+[str(atlanticISO2[country][field]) for field in fields]+[str(globalCount[country]),str(inCount[country]),str(outCount[country]),"%.2f" % ((inCount[country]/float(globalCount[country])+0.0)*100.0),("/").join(langDict[country])]
     fileOut.write("\t".join(writeData)+"\n")
 
 fileOut.close()
