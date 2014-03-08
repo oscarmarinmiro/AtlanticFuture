@@ -1,6 +1,6 @@
 var outliers = outliers || {'version':0.1, 'controller':{}, 'viz': {} ,'extras': {} };
 
-outliers.controller.chordDiagramsController = function(options)
+outliers.controller.arcDiagramController = function(options)
 {
 
      //Referencia a esta instancia
@@ -87,10 +87,10 @@ outliers.controller.chordDiagramsController = function(options)
 
         self.colorScale = d3.scale.category20();
 
-        self.chordDiagram = outliers.viz.chordDiagram({
+        /*self.chordDiagram = outliers.viz.chordDiagram({
             'parentId':"chordDiagramContent",
             //'width':self.width,
-            'width': 2*$("body").innerWidth()/3,
+            'width': $("body").innerWidth()/3,
             'height':self.height,
             'chartWidth':self.chartWidth,
             'chartHeight':self.chartHeight,
@@ -102,7 +102,7 @@ outliers.controller.chordDiagramsController = function(options)
             'chordPadding': 0.1,
             'colorScale': self.colorScale,
             'myLog':myLog
-        });
+        });*/
 
 
 
@@ -116,8 +116,8 @@ outliers.controller.chordDiagramsController = function(options)
             self.year = year;
             console.log("CALLBAKC");
             console.log(self.year);
-            self.chordDiagram.render(self.data.datalabel,self.data.data[self.year]);
-            //self.arcDiagram.prerender(self.year);
+            //self.chordDiagram.render(self.data.datalabel,self.data.data[self.year]);
+            self.arcDiagram.prerender(self.year);
         };
 
         self.slider = outliers.extras.yearSlider(
@@ -137,12 +137,12 @@ outliers.controller.chordDiagramsController = function(options)
 
 
 
-        $.getJSON(self.DATA_FILE,function(data){
+        /*$.getJSON(self.DATA_FILE,function(data){
             self.data = data;
             self.countries = self.data.datalabel.countries;
-            self.chordDiagram.render(data.datalabel,data.data[2013]);
-        });
-        /*d3.json(self.ARC_DATA_FILE, function (data) {
+            //self.chordDiagram.render(data.datalabel,data.data[2013]);
+        });*/
+        d3.json(self.ARC_DATA_FILE, function (data) {
             self.arcData = data;
             self.arcDiagram = new outliers.viz.arcDiagram({
                 parentId: 'arcDiagramContent',
@@ -154,7 +154,7 @@ outliers.controller.chordDiagramsController = function(options)
                 nodeSizeVar: 'pop2005',
                 colors: d3.scale.linear().range(['#B5E3E3','#004556'])
             });
-        });*/
+        });
 
     });
 
