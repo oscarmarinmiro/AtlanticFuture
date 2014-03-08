@@ -19,6 +19,7 @@ movements = dict()
 with open(MOVEMENTS_FILE, 'rt') as f:
     movements_reader = csv.DictReader(f, delimiter='\t')
     for row in movements_reader:
+        print row['year']
         if not row['year'] in movements:
             movements[row['year']] = dict()
         k = '{}-{}'.format(row['source'], row['target'])
@@ -26,12 +27,14 @@ with open(MOVEMENTS_FILE, 'rt') as f:
             movements[row['year']][k] = {'source': row['source'],
                                          'target': row['target'],
                                          'value': row['value'],
-                                         'type': 'OUT'}
+                                         'type': 'OUT',
+                                         'year': row['year']}
         k = '{}-{}'.format(row['target'], row['source'])
         if not k in movements[row['year']]:
             movements[row['year']][k] = {'source': row['target'],
                                          'target': row['source'],
                                          'value': row['value'],
+                                         'year': row['year'],
                                          'type': 'IN'}
 result = dict()
 nodes = list()
@@ -45,10 +48,15 @@ for country_key, country_data in countries.items():
     nodesAux[country_key] = node_id
     node_id += 1
 result['nodes'] = nodes
-links = list()
-for movement in movements[movements.keys()[0]].values():
-    links.append({'source': nodesAux[movement['source']], 'target': nodesAux[movement['target']],
-                  'value': movement['value'], 'type': movement['type']})
+#links = list()
+links = dict()
+for year in movements.keys():
+#for movement in movements[movements.keys()[0]].values():
+    for movement in movements[year].values():
+        if not year in links:
+            links[year] = list()
+        links[year].append({'source': nodesAux[movement['source']], 'target': nodesAux[movement['target']],
+                      'value': movement['value'], 'type': movement['type']})
 result['links'] = links
 with open(RESULT_FILE, 'wt') as f:
     json.dump(result, f, sort_keys=True, indent=4)

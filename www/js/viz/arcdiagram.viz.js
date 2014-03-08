@@ -17,10 +17,9 @@ outliers.viz.arcDiagram = function (options) {
         self.nodeNameVar = self.nodeNameVar || null;
         self.nodeColorVar = self.nodeColorVar || null;
         self.linkWidthVar = self.linkWidthVar || null;
-        self.prerender();
-    };
-    self.prerender = function () {
-        console.log("prerender");
+        self.year = self.year || 1990;
+        self.firstRender = true;
+
         self.yFixedNodes = (self.height - self.margin.top - self.margin.bottom) / 2;
         //Create SVG.
         self.svg = d3.select(self.parentSelect)
@@ -33,13 +32,36 @@ outliers.viz.arcDiagram = function (options) {
                                 .attr('id', 'plotArea-' + self.parentId)
                                 .attr('transform', 'translate(' + self.margin.top + ', ' +
                                       self.margin.left + ')');
-        self.data.links.forEach(function (d, i) {
+
+
+        self.prerender(1990);
+    };
+    self.prerender = function (year) {
+        console.log("prerender");
+        
+        self.year = year;
+        //self.yFixedNodes = (self.height - self.margin.top - self.margin.bottom) / 2;
+        //Create SVG.
+        //self.svg = d3.select(self.parentSelect)
+        //             .append('svg')
+        //             .attr('id', 'arcDiagram-' + self.parentId)
+        //             .attr('width', self.width)
+        //             .attr('height', self.height);
+        //Create plot area.
+        //self.plotArea = self.svg.append('g')
+        //                        .attr('id', 'plotArea-' + self.parentId)
+        //                        .attr('transform', 'translate(' + self.margin.top + ', ' +
+        //                              self.margin.left + ')');
+        self.data.links[self.year].forEach(function (d, i) {
             d.source = isNaN(d.source) ? d.source : self.data.nodes[d.source];
             d.target = isNaN(d.target) ? d.target : self.data.nodes[d.target];
         });
         self.prepareNodes();
         self.drawLinks();
-        self.drawNodes();
+        if(self.firstRender){
+            self.drawNodes();
+        }
+        self.firstRender = false;
     };
     self.prepareNodes = function () {
         self.xScale = d3.scale.linear()
@@ -154,10 +176,40 @@ outliers.viz.arcDiagram = function (options) {
         self.linkStrokeWidthScale = d3.scale.linear()
                                             .domain([0, maxStrokeWidth])
                                             .range([0, 10]);
-        self.plotArea
+        self.links = self.plotArea
           .selectAll('.link')
-          .data(self.data.links)
-          .enter()
+          .data(self.data.links[self.year],function(d,i){
+                var id_str = d.source.iso2+"&&##&&"+d.target.iso2;
+                console.log(id_str);
+                return id_str;
+          });
+
+        self.links.transition().duration(self.transTime)
+          .attr('transform', function (d, i) {
+              var xshift = d.source.x + (d.target.x - d.source.x) / 2;
+              var yshift = self.yFixedNodes;
+              return 'translate(' + xshift + ', ' + yshift + ')';
+          })
+          .attr('d', function (d, i) {
+              var xdist = Math.abs(d.source.x - d.target.x);
+              var points = d3.range(0, Math.ceil(xdist / 3));
+              if (d.type === 'IN'){
+                  arc.top.radius(xdist / 2);
+                  radians.top.domain([0, points.length - 1]);
+                  return arc.top(points);
+              } else if (d.type === 'OUT') {
+                  arc.bottom.radius(xdist / 2);
+                  radians.bottom.domain([0, points.length - 1]);
+                  return arc.bottom(points);
+              }
+          })
+          .style('stroke-width', function (d, i) {
+              return (self.linkWidthVar == null ? self.linkStrokeWidthScale(Math.floor((Math.random()*10)+1)) : self.linkStrokeWidthScale(d[self.linkWidthVar])) + 'px';
+          });
+          
+        self.links.exit().remove();
+
+        self.links.enter()
           .append('path')
           .attr('class', function (d, i) {
               return 'link ' + d.type + ' ' + self.nodeId(d.source) + ' ' + self.nodeId(d.target);

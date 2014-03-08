@@ -111,10 +111,11 @@ outliers.controller.chordDiagramsController = function(options)
 
         self.callBack = function(year)
         {
-            console.log("CALLBAKC");
-            console.log(year);
-            self.chordDiagram.render(self.data.datalabel,self.data.data[year]);
             self.year = year;
+            console.log("CALLBAKC");
+            console.log(self.year);
+            self.chordDiagram.render(self.data.datalabel,self.data.data[self.year]);
+            self.arcDiagram.prerender(self.year);
         };
 
         self.slider = outliers.extras.yearSlider(
@@ -140,7 +141,8 @@ outliers.controller.chordDiagramsController = function(options)
             self.chordDiagram.render(data.datalabel,data.data[2013]);
         });
         d3.json('/data/arc_movements.json', function (data) {
-            self.arcdiagram = new outliers.viz.arcDiagram({
+            self.arcData = data;
+            self.arcDiagram = new outliers.viz.arcDiagram({
                 parentId: 'arcDiagramContent',
                 data: data,
                 height: 1000,
