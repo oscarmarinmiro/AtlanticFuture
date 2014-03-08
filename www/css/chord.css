@@ -198,8 +198,8 @@
 }
 .tooltip{
     position: absolute;
-    width: 270px;
-    height: 65px;
+    //width: 270px;
+    //height: 65px;
     padding: 8px;
     font-family: Advent Pro, semi-bold;
     font-weight: 400;

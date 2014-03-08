@@ -37,17 +37,17 @@ outliers.controller.chordDiagramsController = function(options)
         var targetCountryAux = self.data.datalabel.countries_data[targetCountryISO.index];
 
         var movementAux = self.data.datalabel.movements_data[self.year][self.countries[sourceCountryISO.index]][self.countries[targetCountryISO.index]];
-        var html = 'From '+sourceCountryAux.longName+" to "+targetCountryAux.longName+": "+self.data.data[self.year][sourceCountryISO.index][targetCountryISO.index]+" migrants <br>From "+targetCountryAux.longName+" to "+sourceCountryAux.longName+": "+self.data.data[self.year][targetCountryISO.index][sourceCountryISO.index]+" migrants<br>Same lang: "+movementAux.sameLanguage+'<br>Distance: '+parseFloat(movementAux.distance).toFixed(2)+'<br>Same currency: '+movementAux.sameCurrency;
+        var html = 'From '+sourceCountryAux.longName+"(HDI: "+sourceCountryAux.HDI+") to "+targetCountryAux.longName+"(HDI: "+targetCountryAux.HDI+"): "+self.data.data[self.year][sourceCountryISO.index][targetCountryISO.index]+" migrants <br>From "+targetCountryAux.longName+"(HDI: "+targetCountryAux.HDI+") to "+sourceCountryAux.longName+"(HDI: "+sourceCountryAux.HDI+"): "+self.data.data[self.year][targetCountryISO.index][sourceCountryISO.index]+" migrants<br>Same lang: "+movementAux.sameLanguage+'<br>Distance: '+parseFloat(movementAux.distance).toFixed(2)+'<br>Same currency: '+movementAux.sameCurrency;
 
         //d3.select("#zonaInfo").html(html);
-        d3.select(".tooltip").style("opacity",1).style("height","65px").html(html);
+        d3.select(".tooltip").style("opacity",1).html(html);
     };
 
     self.rellenaInfoGroup = function(countryISO){
         var countryAux = self.data.datalabel.countries_data[countryISO.index];
         var html = countryAux.longName+'<br>HDI: '+parseFloat(countryAux.HDI).toFixed(2)+'<br>Pop: '+countryAux.Population;
         //d3.select("#zonaInfo").html(html);
-        d3.select(".tooltip").style("opacity",1).style("height","40px").html(html);
+        d3.select(".tooltip").style("opacity",1).html(html);
     };
 
     self.clearInfoGroup = function(){
