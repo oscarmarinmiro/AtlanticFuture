@@ -7,8 +7,8 @@ except ImportError:
     import json
 
 COUNTRIES_FILE = '../data/atlantic_top_countries.tsv'
-#MOVEMENTS_FILE = '../data/atlantic_top_movements.tsv'
-MOVEMENTS_FILE = '../data/atlantic_movements.tsv'
+MOVEMENTS_FILE = '../data/atlantic_top_movements.tsv'
+#MOVEMENTS_FILE = '../data/atlantic_movements.tsv'
 RESULT_FILE = '../data/arc_movements.json'
 
 countries = dict()
