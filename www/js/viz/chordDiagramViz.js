@@ -205,8 +205,8 @@ outliers.viz.chordDiagram = function (options)
             .attr("d", d3.svg.chord().radius(self.innerRadius))
             .style("fill", function(d) {return self.colorScale(d.source.index); })//function(d) {return self.colorScale(chooseNodeRule(d,color_rule)); })
             .style("opacity", 0.1)
-            .on("mouseover", function(d,i){self.rellenaInfoChord(d,i);})
-            .on("mouseout",function(d,i){console.log("QUITO INFO");})//self.quitaInfoChord(d,i)})
+            .on("mouseover", function(d,i){self.rellenaInfoChord(d.source,d.target);})
+            .on("mouseout",function(d,i){self.clearInfoChord();})
             .transition()
             .each("start",function()
             {
@@ -258,7 +258,7 @@ outliers.viz.chordDiagram = function (options)
 
     function fadeIn(opacity) {
         return function (d, i) {
-            //self.quitaInfoGroup(d,i);
+            self.clearInfoGroup();
             self.svg.selectAll(".chords")
                 .filter(function(d) { return d.source.index != i && d.target.index != i; })
                 .style("opacity", opacity);
@@ -267,7 +267,7 @@ outliers.viz.chordDiagram = function (options)
 
     function fadeOut(opacity) {
         return function (d, i) {
-            //self.rellenaInfoGroup(d,i);
+            self.rellenaInfoGroup(d);
             self.svg.selectAll(".chords")
                 .filter(function(d) { return d.source.index != i && d.target.index != i; })
                 .style("opacity", opacity);

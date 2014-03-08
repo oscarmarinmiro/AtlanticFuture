@@ -31,9 +31,25 @@ outliers.controller.chordDiagramsController = function(options)
         }
     }
 
-    self.rellenaInfoChord = function(){
+    self.rellenaInfoChord = function(sourceCountryISO,targetCountryISO){
         console.log("LEYENDA A TOPE");
+        console.log(self.countries[sourceCountryISO.index]);
+        console.log(self.data.data[self.year][sourceCountryISO.index][targetCountryISO.index]);
+        d3.select("#zonaInfo").html(self.countries[sourceCountryISO.index]+" -> "+self.countries[targetCountryISO.index]+": "+self.data.data[self.year][sourceCountryISO.index][targetCountryISO.index]);
+    };
 
+    self.rellenaInfoGroup = function(countryISO){
+        d3.select("#zonaInfo").html(self.data.datalabel.countries_data[countryISO.index].name);
+    };
+
+    self.clearInfoGroup = function(){
+        //console.log("BORRO GROUP");
+        d3.select("#zonaInfo").html('');
+    };
+
+    self.clearInfoChord = function(){
+        //console.log("BORRO Chord");
+        d3.select("#zonaInfo").html('');
     };
 
 
@@ -53,6 +69,7 @@ outliers.controller.chordDiagramsController = function(options)
                 //'</form>',
                 '</div>',
                 '<div id="contenedorCI" class="contenedorCI">',
+                '<div id="zonaInfo"></div>',
                 '<div id="zonaChart" class="zonaChart">',
             '<div id="chartContent" class="chartContent"></div>',
             '</div>',
@@ -72,6 +89,9 @@ outliers.controller.chordDiagramsController = function(options)
             'chartHeight':self.chartHeight,
             'transTime':2000,
             'rellenaInfoChord':self.rellenaInfoChord,
+            'rellenaInfoGroup': self.rellenaInfoGroup,
+            'clearInfoChord': self.clearInfoChord,
+            'clearInfoGroup': self.clearInfoGroup,
             'chordPadding': 0.1,
             'colorScale': self.colorScale,
             'myLog':myLog
@@ -82,12 +102,14 @@ outliers.controller.chordDiagramsController = function(options)
         self.beginDate = moment("1990","YYYY");
         self.endDate = moment("2013","YYYY");
         self.years = [1990,2000,2010,2013];
+        self.year = 1990;
 
         self.callBack = function(year)
         {
             console.log("CALLBAKC");
             console.log(year);
             self.chordDiagram.render(self.data.datalabel,self.data.data[year]);
+            self.year = year;
         };
 
         self.slider = outliers.extras.yearSlider(
@@ -109,8 +131,8 @@ outliers.controller.chordDiagramsController = function(options)
 
         $.getJSON(self.DATA_FILE,function(data){
             self.data = data;
+            self.countries = self.data.datalabel.countries;
             self.chordDiagram.render(data.datalabel,data.data[2013]);
-        
         });
 
     });
