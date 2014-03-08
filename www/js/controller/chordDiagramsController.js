@@ -143,6 +143,7 @@ outliers.controller.chordDiagramsController = function(options)
             self.arcdiagram = new outliers.viz.arcDiagram({
                 parentId: 'arcDiagramContent',
                 data: data,
+                height: 1000,
                 nodeNameVar: 'name',
                 nodeSizeVar: 'pop2005',
                 colors: d3.scale.linear().range(['#B5E3E3','#004556'])
