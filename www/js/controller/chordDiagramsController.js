@@ -17,6 +17,7 @@ outliers.controller.chordDiagramsController = function(options)
     self.parentSelect = "#"+self.idName;
 
     self.DATA_FILE = self.baseJUrl+self.dataFile;
+    self.ARC_DATA_FILE = self.baseJUrl+self.arcDataFile;
 
 
 
@@ -141,7 +142,7 @@ outliers.controller.chordDiagramsController = function(options)
             self.countries = self.data.datalabel.countries;
             self.chordDiagram.render(data.datalabel,data.data[2013]);
         });
-        d3.json('/data/arc_movements.json', function (data) {
+        d3.json(self.ARC_DATA_FILE, function (data) {
             self.arcData = data;
             self.arcDiagram = new outliers.viz.arcDiagram({
                 parentId: 'arcDiagramContent',
