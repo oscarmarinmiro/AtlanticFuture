@@ -180,7 +180,6 @@ outliers.viz.arcDiagram = function (options) {
           .selectAll('.link')
           .data(self.data.links[self.year],function(d,i){
                 var id_str = d.source.iso2+"&&##&&"+d.target.iso2;
-                console.log(id_str);
                 return id_str;
           });
 

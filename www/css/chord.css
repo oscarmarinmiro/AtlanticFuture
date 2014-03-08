@@ -187,6 +187,13 @@
 }
 #zonaInfo
 {
-    float: right;
-    margin-right: 315px;
+    position: absolute;
+    right: 200px;/*315*/
+}
+#chordDiagramContent{
+    float: left;
+}
+#arcDiagramContent{
+    float: left;
+    padding-left: 150px;
 }

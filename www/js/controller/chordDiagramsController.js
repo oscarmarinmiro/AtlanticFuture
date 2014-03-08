@@ -88,7 +88,8 @@ outliers.controller.chordDiagramsController = function(options)
 
         self.chordDiagram = outliers.viz.chordDiagram({
             'parentId':"chordDiagramContent",
-            'width':self.width,
+            //'width':self.width,
+            'width': $("body").innerWidth()/3,
             'height':self.height,
             'chartWidth':self.chartWidth,
             'chartHeight':self.chartHeight,
@@ -146,6 +147,7 @@ outliers.controller.chordDiagramsController = function(options)
                 parentId: 'arcDiagramContent',
                 data: data,
                 height: 1000,
+                width: ($("body").innerWidth()/5)*2,
                 nodeNameVar: 'name',
                 nodeSizeVar: 'pop2005',
                 colors: d3.scale.linear().range(['#B5E3E3','#004556'])
