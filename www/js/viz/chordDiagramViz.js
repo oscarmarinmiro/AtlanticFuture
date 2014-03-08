@@ -49,8 +49,10 @@ outliers.viz.chordDiagram = function (options)
         self.svg = d3.select(self.parentSelect).append("svg")
             .attr("width",self.width)
             .attr("height",self.height)
+            .on("mousemove", self.mousemove)
             .append("g")
             .attr("transform", "translate("+(self.width/2)+","+(self.height/2)+")");
+
 
         // warning message
 
