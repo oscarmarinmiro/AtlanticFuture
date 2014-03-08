@@ -185,3 +185,14 @@
 {
     color: #777;
 }
+#zonaInfo
+{
+    position: absolute;
+    right: 200px;/*315*/
+}
+#chordDiagramContent{
+    float: left;
+}
+#arcDiagramContent{
+    float: left;
+}

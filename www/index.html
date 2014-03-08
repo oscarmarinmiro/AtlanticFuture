@@ -4,16 +4,21 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
 
-    <!--<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
+    <!--<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />-->
     <link type="text/css" href="css/jquery-ui.min.css" rel="stylesheet" />
-    -->
     <link type="text/css" href="css/chord.css" rel="stylesheet" />
+    <link type="text/css" href="css/slider.css" rel="stylesheet" />
+    <link type="text/css" href="css/main.css" rel="stylesheet" />
 
     <script type="text/javascript" src="js/3rdparty/jquery.js"></script>
     <script type="text/javascript" src="js/3rdparty/d3.v3.min.js"></script>
+    <script type="text/javascript" src="js/3rdparty/moment.min.js"></script>
+    <script type="text/javascript" src="js/3rdparty/jquery-ui-1.8.22.custom.min.js"></script>
 
     <script type="text/javascript" src="js/controller/chordDiagramsController.js"></script>
     <script type="text/javascript" src="js/viz/chordDiagramViz.js"></script>
+    <script type="text/javascript" src="js/viz/arcdiagram.viz.js"></script>
+    <script type="text/javascript" src="js/extras/yearSlider.js"></script>
   </head>
   <body>
     <div id="allParent" class="allParent">
@@ -28,11 +33,10 @@
                     'className':"map",
                     'baseJUrl':"data/",
                     'imgPath':"img/",
-                    'footerImg':"datos_onu.png",
-                    'dataFile':"testMatrix.json",
+                    'dataFile':"matrixDataAug.json",
                     'geoDataFile':"geoData.json",
                     'countriesInfoFile':"extraData.json",
-                    'forbiddenAreas':['Africa','Asia','Europa','América latina y Caribe','América del norte','Oceanía'],
+                    'arcDataFile':"arc_movements.json",
                     'debugLevel':2,
                 });
       </script>

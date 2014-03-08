@@ -1,0 +1,58 @@
+.zonaFecha
+{
+    height: 40px;
+    background-color: #FFF;
+    padding-top:5px;
+    padding-left:30px;
+    padding-right: 30px;
+}
+
+.zonaFecha .play
+{
+    float:left;
+    cursor:pointer;
+}
+
+.zonaFecha .slider
+{
+    float:left;
+    min-width: 76%;
+    margin-top:15px;
+    margin-left:20px;
+    margin-right:20px;
+    background-color: #eee;
+}
+
+.zonaFecha .fechaText
+{
+    margin-top:5px;
+    font-size:20px;
+}
+
+.zonaFecha .ui-slider-horizontal {
+    height: .15em;
+    cursor: pointer;
+}
+
+.zonaFecha .ui-widget-content {
+    border: 0px solid #AAA;
+    background-color: #CCC;
+}
+
+.zonaFecha .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br
+{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.zonaFecha .ui-slider .ui-slider-handle
+{
+  cursor:pointer;
+  width: 0.5em;
+  height: 0.5em;
+  margin-left:0px;
+  margin-top:2.5px;
+}
+

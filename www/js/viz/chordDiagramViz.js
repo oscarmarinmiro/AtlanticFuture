@@ -141,11 +141,10 @@ outliers.viz.chordDiagram = function (options)
 //      FIN_OJO
 
         self.chord.matrix(data);
-        console.log(self.chord.groups());
 
         var groupsBind = self.groups.selectAll(".groups").data(self.chord.groups);
         var textBind = self.texts.selectAll(".chordLegendText").data(self.chord.groups,function (d,i){return d.index;});
-        var chordsBind = self.chords.selectAll(".chords").data(self.chord.chords,function(d,i){console.log(d);return getStringRepr(d.source.index, d.target.index);});
+        var chordsBind = self.chords.selectAll(".chords").data(self.chord.chords,function(d,i){return getStringRepr(d.source.index, d.target.index);});
 
 
         // texto....
@@ -178,9 +177,6 @@ outliers.viz.chordDiagram = function (options)
             .duration(self.transTime)
             .attrTween("d", arcTween(self.arc_svg, self.old));
 
-        console.log("SSSSS");
-        console.log(self.innerRadius);
-        console.log(self.outerRadius);
 
         groupsBind.enter().append("path")
             .attr("class","groups")
@@ -199,7 +195,7 @@ outliers.viz.chordDiagram = function (options)
 
         chordsBind.transition()
             .duration(self.transTime)
-            .style("fill", function(d) {return self.colorScale(chooseNodeRule(d,color_rule)); })
+            .style("fill", function(d,i) {return self.colorScale(i);})//chooseNodeRule(d,color_rule)); })
             .style("opacity",1)
             .attrTween("d", chordTween(self.chord_svg, self.old));
 
@@ -207,10 +203,10 @@ outliers.viz.chordDiagram = function (options)
             .append("path")
             .attr("class","chords")
             .attr("d", d3.svg.chord().radius(self.innerRadius))
-            .style("fill", function(d) {console.log("FILL");console.log(d);return self.colorScale(d.source.index); })//function(d) {return self.colorScale(chooseNodeRule(d,color_rule)); })
+            .style("fill", function(d) {return self.colorScale(d.target.index); })//function(d) {return self.colorScale(chooseNodeRule(d,color_rule)); })
             .style("opacity", 0.1)
-            .on("mouseover", function(d,i){self.rellenaInfoChord(d,i);})
-            .on("mouseout",function(d,i){console.log("QUITO INFO");})//self.quitaInfoChord(d,i)})
+            .on("mouseover", function(d,i){self.rellenaInfoChord(d.source,d.target);})
+            .on("mouseout",function(d,i){self.clearInfoChord();})
             .transition()
             .each("start",function()
             {
@@ -262,7 +258,7 @@ outliers.viz.chordDiagram = function (options)
 
     function fadeIn(opacity) {
         return function (d, i) {
-            //self.quitaInfoGroup(d,i);
+            self.clearInfoGroup();
             self.svg.selectAll(".chords")
                 .filter(function(d) { return d.source.index != i && d.target.index != i; })
                 .style("opacity", opacity);
@@ -271,7 +267,7 @@ outliers.viz.chordDiagram = function (options)
 
     function fadeOut(opacity) {
         return function (d, i) {
-            //self.rellenaInfoGroup(d,i);
+            self.rellenaInfoGroup(d);
             self.svg.selectAll(".chords")
                 .filter(function(d) { return d.source.index != i && d.target.index != i; })
                 .style("opacity", opacity);
