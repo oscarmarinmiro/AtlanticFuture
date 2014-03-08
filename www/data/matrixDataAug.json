@@ -2,143 +2,163 @@
     "datalabel": {
         "countries_data": [
             {
+                "name": "FR", 
+                "longName": "France", 
                 "valueCountry": "0.000118523123257", 
                 "geo": "46.565,2.55", 
-                "name": "FR", 
-                "HDI": "0.86", 
+                "HDI": "0.893", 
                 "Population": "60990544"
             }, 
             {
+                "name": "DO", 
+                "longName": "Dominican Republic", 
                 "valueCountry": "0.000763367935355", 
                 "geo": "19.015,-70.729", 
-                "name": "DO", 
-                "HDI": "0.659636363636", 
+                "HDI": "0.702", 
                 "Population": "9469601"
             }, 
             {
+                "name": "DE", 
+                "longName": "Germany", 
                 "valueCountry": "8.90060788181e-06", 
                 "geo": "51.11,9.851", 
-                "name": "DE", 
-                "HDI": "0.882", 
+                "HDI": "0.92", 
                 "Population": "82652369"
             }, 
             {
+                "name": "BR", 
+                "longName": "Brazil", 
                 "valueCountry": "4.51575635253e-05", 
                 "geo": "-10.772,-53.089", 
-                "name": "BR", 
-                "HDI": "0.683", 
+                "HDI": "0.73", 
                 "Population": "186830759"
             }, 
             {
+                "name": "NL", 
+                "longName": "Netherlands", 
                 "valueCountry": "0.00039633137696", 
                 "geo": "52.077,5.389", 
-                "name": "NL", 
-                "HDI": "0.894272727273", 
+                "HDI": "0.921", 
                 "Population": "1632769"
             }, 
             {
+                "name": "PT", 
+                "longName": "Portugal", 
                 "valueCountry": "0.000104763856252", 
                 "geo": "40.309,-8.058", 
-                "name": "PT", 
-                "HDI": "0.783181818182", 
+                "HDI": "0.816", 
                 "Population": "10528226"
             }, 
             {
+                "name": "CU", 
+                "longName": "Cuba", 
                 "valueCountry": "0.000674272649529", 
                 "geo": "21.297,-77.781", 
-                "name": "CU", 
-                "HDI": "0.740818181818", 
+                "HDI": "0.78", 
                 "Population": "11259905"
             }, 
             {
+                "name": "CO", 
+                "longName": "Colombia", 
                 "valueCountry": "0.00191477799043", 
                 "geo": "3.9,-73.076", 
-                "name": "CO", 
-                "HDI": "0.677", 
+                "HDI": "0.719", 
                 "Population": "4494579"
             }, 
             {
+                "name": "VE", 
+                "longName": "Venezuela", 
                 "valueCountry": "0.000292663653623", 
                 "geo": "7.125,-66.166", 
-                "name": "VE", 
-                "HDI": "0.704727272727", 
+                "HDI": "0.748", 
                 "Population": "26725573"
             }, 
             {
+                "name": "CA", 
+                "longName": "Canada", 
                 "valueCountry": "0.000209085004672", 
                 "geo": "59.081,-109.433", 
-                "name": "CA", 
-                "HDI": "0.895090909091", 
+                "HDI": "0.911", 
                 "Population": "32270507"
             }, 
             {
+                "name": "ZA", 
+                "longName": "South Africa", 
                 "valueCountry": "0.000184219932728", 
                 "geo": "-30.558,23.121", 
-                "name": "ZA", 
-                "HDI": "0.612363636364", 
+                "HDI": "0.629", 
                 "Population": "47938663"
             }, 
             {
+                "name": "HT", 
+                "longName": "Haiti", 
                 "valueCountry": "0.00078929742651", 
                 "geo": "19.142,-72.278", 
-                "name": "HT", 
-                "HDI": "0.425375", 
+                "HDI": "0.456", 
                 "Population": "9296291"
             }, 
             {
+                "name": "AR", 
+                "longName": "Argentina", 
                 "valueCountry": "0.000293032207302", 
                 "geo": "-35.377,-65.167", 
-                "name": "AR", 
-                "HDI": "0.771545454545", 
+                "HDI": "0.811", 
                 "Population": "38747148"
             }, 
             {
+                "name": "GB", 
+                "longName": "United Kingdom", 
                 "valueCountry": "1.28747645502e-05", 
                 "geo": "53,-1.6", 
-                "name": "GB", 
-                "HDI": "0.848636363636", 
+                "HDI": "0.875", 
                 "Population": "60244834"
             }, 
             {
+                "name": "ES", 
+                "longName": "Spain", 
                 "valueCountry": "1.99310618558e-05", 
                 "geo": "40.227,-3.649", 
-                "name": "ES", 
-                "HDI": "0.847454545455", 
+                "HDI": "0.885", 
                 "Population": "43397491"
             }, 
             {
+                "name": "MA", 
+                "longName": "Morocco", 
                 "valueCountry": "5.56453916363e-05", 
                 "geo": "32.706,-5.758", 
-                "name": "MA", 
-                "HDI": "0.540090909091", 
+                "HDI": "0.591", 
                 "Population": "30494991"
             }, 
             {
+                "name": "US", 
+                "longName": "United States", 
                 "valueCountry": "2.55652821493e-05", 
                 "geo": "39.622,-98.606", 
-                "name": "US", 
-                "HDI": "0.915818181818", 
+                "HDI": "0.937", 
                 "Population": "299846449"
             }, 
             {
+                "name": "MX", 
+                "longName": "Mexico", 
                 "valueCountry": "8.80352871392e-05", 
                 "geo": "23.951,-102.535", 
-                "name": "MX", 
-                "HDI": "0.734181818182", 
+                "HDI": "0.775", 
                 "Population": "104266392"
             }, 
             {
+                "name": "JM", 
+                "longName": "Jamaica", 
                 "valueCountry": "0.000261708672828", 
                 "geo": "18.151,-77.32", 
-                "name": "JM", 
-                "HDI": "0.697545454545", 
+                "HDI": "0.73", 
                 "Population": "2682469"
             }, 
             {
+                "name": "NG", 
+                "longName": "Nigeria", 
                 "valueCountry": "6.01804907071e-05", 
                 "geo": "9.594,8.105", 
-                "name": "NG", 
-                "HDI": "0.4545", 
+                "HDI": "0.471", 
                 "Population": "141356083"
             }
         ], 

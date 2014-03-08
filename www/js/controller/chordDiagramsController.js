@@ -35,15 +35,19 @@ outliers.controller.chordDiagramsController = function(options)
     self.rellenaInfoChord = function(sourceCountryISO,targetCountryISO){
         console.log(self.data.datalabel.movements_data);
         console.log(self.countries[sourceCountryISO.index]);
+        var sourceCountryAux = self.data.datalabel.countries_data[sourceCountryISO.index];
+        var targetCountryAux = self.data.datalabel.countries_data[targetCountryISO.index];
+        console.log(sourceCountryAux);
+
         var movementAux = self.data.datalabel.movements_data[self.year][self.countries[sourceCountryISO.index]][self.countries[targetCountryISO.index]];
         console.log(movementAux);
-        var html = self.countries[sourceCountryISO.index]+" -> "+self.countries[targetCountryISO.index]+"<br>Value: "+movementAux.value+"<br>Same lang: "+movementAux.sameLanguage+'<br>Distance: '+movementAux.distance+'<br>Same currency: '+movementAux.sameCurrency;
+        var html = 'From '+sourceCountryAux.longName+" to "+targetCountryAux.longName+": "+self.data.data[self.year][sourceCountryISO.index][targetCountryISO.index]+" migrants <br>From "+targetCountryAux.longName+" to "+sourceCountryAux.longName+": "+self.data.data[self.year][targetCountryISO.index][sourceCountryISO.index]+" migrants<br>Same lang: "+movementAux.sameLanguage+'<br>Distance: '+movementAux.distance+'<br>Same currency: '+movementAux.sameCurrency;
         d3.select("#zonaInfo").html(html);
     };
 
     self.rellenaInfoGroup = function(countryISO){
         var countryAux = self.data.datalabel.countries_data[countryISO.index];
-        var html = countryAux.name+'<br>Value: '+countryAux.valueCountry+'<br>HDI: '+countryAux.HDI+'<br>Pop: '+countryAux.Population;
+        var html = countryAux.longName+'<br>Value: '+countryAux.valueCountry+'<br>HDI: '+countryAux.HDI+'<br>Pop: '+countryAux.Population;
         d3.select("#zonaInfo").html(html);
     };
 
