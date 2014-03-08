@@ -3,7 +3,7 @@ import pprint
 import json
 
 
-TOP_N = 63
+TOP_N = 20
 
 TOP_N_MOVEMENTS = 20
 
@@ -19,7 +19,7 @@ MIGRATION_EXTRA = "../assets/extraData.json"
 
 DISTANCES_FILE = "../assets/atlantic_countries_distances.csv"
 
-LANGUAGES_FILE = "../assets/atlantic_countries_lang.txt"
+LANGUAGES_FILE = "../assets/atlantic_countries_lang.tsv"
 
 MOVEMENTS_OUT = "../data/atlantic_movements.tsv"
 
@@ -228,27 +228,39 @@ HDICountries = {}
 
 for row in reader:
     name = row[1].decode("utf8")
-    HDI_Series = row[2:]
 
-    # Calculate avg of every point (when points are != '..' [NA])
+    # Take 2012 data
 
-    numPoints = 0
-    sumPoints = 0
-
-    for point in HDI_Series:
-        if point!="..":
-            sumPoints += float(point)
-            numPoints += 1
-
-
-    if numPoints!= 0:
-        avgHDI = sumPoints/numPoints
+    if row[12]!="..":
+        avgHDI = float(row[12])
     else:
-        avgHDI = 0
+        # Average for 2012
+        avgHDI = 0.64
 
     HDICountries[name] = True
 
-    #print "%s: %f" % (name,avgHDI)
+    # Old commented way: average of all HDI
+    # HDI_Series = row[2:]
+    #
+    # # Calculate avg of every point (when points are != '..' [NA])
+    #
+    # numPoints = 0
+    # sumPoints = 0
+    #
+    # for point in HDI_Series:
+    #     if point!="..":
+    #         sumPoints += float(point)
+    #         numPoints += 1
+    #
+    #
+    # if numPoints!= 0:
+    #     avgHDI = sumPoints/numPoints
+    # else:
+    #     avgHDI = 0
+    #
+    # HDICountries[name] = True
+    #
+    # #print "%s: %f" % (name,avgHDI)
 
     if name in atlanticCountriesData:
         atlanticCountriesData[name]['HDI'] = avgHDI
