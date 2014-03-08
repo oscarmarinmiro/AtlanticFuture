@@ -148,7 +148,8 @@ outliers.controller.chordDiagramsController = function(options)
                 parentId: 'arcDiagramContent',
                 data: data,
                 height: 1000,
-                width: ($("body").innerWidth()/5)*2,
+                width: ($("body").innerWidth()/5)*3,
+                transTime: 2000,
                 nodeNameVar: 'name',
                 nodeSizeVar: 'pop2005',
                 colors: d3.scale.linear().range(['#B5E3E3','#004556'])

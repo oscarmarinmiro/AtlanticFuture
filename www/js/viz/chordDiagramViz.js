@@ -195,7 +195,7 @@ outliers.viz.chordDiagram = function (options)
 
         chordsBind.transition()
             .duration(self.transTime)
-            .style("fill", function(d,i) {return self.colorScale(i);})//chooseNodeRule(d,color_rule)); })
+            .style("fill", function(d,i) {return self.colorScale(d.target.index);})//chooseNodeRule(d,color_rule)); })
             .style("opacity",1)
             .attrTween("d", chordTween(self.chord_svg, self.old));
 
