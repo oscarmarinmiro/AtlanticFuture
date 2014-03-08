@@ -6,6 +6,7 @@ import json
 
 countries = list()
 countries_values = list()
+movements = dict()
 results = dict()
 
 with open(sys.argv[1],'r') as source_file:
@@ -18,6 +19,7 @@ with open(sys.argv[1],'r') as source_file:
         year = line_parts[0]
         source = line_parts[1]
         target = line_parts[2]
+        movement_id = line_parts[3]
         value = line_parts[4]
         valueSource = line_parts[5]
         valueTarget  = line_parts[6]
@@ -33,6 +35,7 @@ with open(sys.argv[1],'r') as source_file:
 
         if not year in results:
             results[year] = dict()
+            movements[year] = dict()
 
         if not source in countries:
             aux_country = source
@@ -49,13 +52,15 @@ with open(sys.argv[1],'r') as source_file:
 
         if not source in results[year]:
             results[year][source] = dict()
+            movements[year][source] = dict()
 
         if not target in results[year][source]:
             print "VALUE : -%s-" % value
             results[year][source][target] = value
+            movements[year][source][target] = {'value':value,'sameCurrency':sameCurrency,'sameLanguage':sameLanguage,'distance':distance,'movement_id':movement_id}
 
 
-salida = {'data':dict(),'datalabel':{'countries':countries,'countries_data':countries_values}}
+salida = {'data':dict(),'datalabel':{'countries':countries,'countries_data':countries_values,'movements_data':movements}}
 
 for year in results.keys():
     matrix = list()

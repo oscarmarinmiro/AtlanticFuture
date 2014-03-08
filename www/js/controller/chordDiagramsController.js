@@ -32,14 +32,18 @@ outliers.controller.chordDiagramsController = function(options)
     }
 
     self.rellenaInfoChord = function(sourceCountryISO,targetCountryISO){
-        console.log("LEYENDA A TOPE");
+        console.log(self.data.datalabel.movements_data);
         console.log(self.countries[sourceCountryISO.index]);
-        console.log(self.data.data[self.year][sourceCountryISO.index][targetCountryISO.index]);
-        d3.select("#zonaInfo").html(self.countries[sourceCountryISO.index]+" -> "+self.countries[targetCountryISO.index]+": "+self.data.data[self.year][sourceCountryISO.index][targetCountryISO.index]);
+        var movementAux = self.data.datalabel.movements_data[self.year][self.countries[sourceCountryISO.index]][self.countries[targetCountryISO.index]];
+        console.log(movementAux);
+        var html = self.countries[sourceCountryISO.index]+" -> "+self.countries[targetCountryISO.index]+"<br>Value: "+movementAux.value+"<br>Same lang: "+movementAux.sameLanguage+'<br>Distance: '+movementAux.distance+'<br>Same currency: '+movementAux.sameCurrency;
+        d3.select("#zonaInfo").html(html);
     };
 
     self.rellenaInfoGroup = function(countryISO){
-        d3.select("#zonaInfo").html(self.data.datalabel.countries_data[countryISO.index].name);
+        var countryAux = self.data.datalabel.countries_data[countryISO.index];
+        var html = countryAux.name+'<br>Value: '+countryAux.valueCountry+'<br>HDI: '+countryAux.HDI+'<br>Pop: '+countryAux.Population;
+        d3.select("#zonaInfo").html(html);
     };
 
     self.clearInfoGroup = function(){

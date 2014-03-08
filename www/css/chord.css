@@ -185,3 +185,8 @@
 {
     color: #777;
 }
+#zonaInfo
+{
+    float: right;
+    margin-right: 315px;
+}
