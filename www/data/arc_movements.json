@@ -1,0 +1,2774 @@
+{
+    "links": [
+        {
+            "source": 56, 
+            "target": 35, 
+            "type": "IN", 
+            "value": "48475"
+        }, 
+        {
+            "source": 38, 
+            "target": 1, 
+            "type": "IN", 
+            "value": "55003"
+        }, 
+        {
+            "source": 17, 
+            "target": 28, 
+            "type": "OUT", 
+            "value": "14050"
+        }, 
+        {
+            "source": 7, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "479"
+        }, 
+        {
+            "source": 38, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "3623"
+        }, 
+        {
+            "source": 38, 
+            "target": 53, 
+            "type": "IN", 
+            "value": "16746"
+        }, 
+        {
+            "source": 8, 
+            "target": 45, 
+            "type": "OUT", 
+            "value": "143472"
+        }, 
+        {
+            "source": 7, 
+            "target": 1, 
+            "type": "IN", 
+            "value": "445"
+        }, 
+        {
+            "source": 44, 
+            "target": 53, 
+            "type": "IN", 
+            "value": "466"
+        }, 
+        {
+            "source": 60, 
+            "target": 44, 
+            "type": "IN", 
+            "value": "5072"
+        }, 
+        {
+            "source": 17, 
+            "target": 10, 
+            "type": "IN", 
+            "value": "3850"
+        }, 
+        {
+            "source": 1, 
+            "target": 28, 
+            "type": "OUT", 
+            "value": "101098"
+        }, 
+        {
+            "source": 45, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "736741"
+        }, 
+        {
+            "source": 44, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "5072"
+        }, 
+        {
+            "source": 41, 
+            "target": 28, 
+            "type": "OUT", 
+            "value": "748"
+        }, 
+        {
+            "source": 6, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "5329"
+        }, 
+        {
+            "source": 34, 
+            "target": 1, 
+            "type": "IN", 
+            "value": "1905"
+        }, 
+        {
+            "source": 10, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "1695"
+        }, 
+        {
+            "source": 53, 
+            "target": 19, 
+            "type": "OUT", 
+            "value": "395"
+        }, 
+        {
+            "source": 44, 
+            "target": 8, 
+            "type": "IN", 
+            "value": "27"
+        }, 
+        {
+            "source": 60, 
+            "target": 41, 
+            "type": "IN", 
+            "value": "88"
+        }, 
+        {
+            "source": 35, 
+            "target": 6, 
+            "type": "IN", 
+            "value": "4895"
+        }, 
+        {
+            "source": 10, 
+            "target": 1, 
+            "type": "IN", 
+            "value": "8096"
+        }, 
+        {
+            "source": 28, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "87946"
+        }, 
+        {
+            "source": 35, 
+            "target": 0, 
+            "type": "IN", 
+            "value": "18280"
+        }, 
+        {
+            "source": 19, 
+            "target": 44, 
+            "type": "OUT", 
+            "value": "13551"
+        }, 
+        {
+            "source": 41, 
+            "target": 19, 
+            "type": "IN", 
+            "value": "20495"
+        }, 
+        {
+            "source": 25, 
+            "target": 0, 
+            "type": "OUT", 
+            "value": "42"
+        }, 
+        {
+            "source": 35, 
+            "target": 53, 
+            "type": "IN", 
+            "value": "1551"
+        }, 
+        {
+            "source": 25, 
+            "target": 6, 
+            "type": "OUT", 
+            "value": "13230"
+        }, 
+        {
+            "source": 1, 
+            "target": 8, 
+            "type": "IN", 
+            "value": "463"
+        }, 
+        {
+            "source": 35, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "1706"
+        }, 
+        {
+            "source": 8, 
+            "target": 41, 
+            "type": "OUT", 
+            "value": "106"
+        }, 
+        {
+            "source": 56, 
+            "target": 0, 
+            "type": "IN", 
+            "value": "400348"
+        }, 
+        {
+            "source": 56, 
+            "target": 6, 
+            "type": "IN", 
+            "value": "819357"
+        }, 
+        {
+            "source": 45, 
+            "target": 25, 
+            "type": "IN", 
+            "value": "47412"
+        }, 
+        {
+            "source": 28, 
+            "target": 45, 
+            "type": "IN", 
+            "value": "62069"
+        }, 
+        {
+            "source": 19, 
+            "target": 8, 
+            "type": "IN", 
+            "value": "8"
+        }, 
+        {
+            "source": 34, 
+            "target": 19, 
+            "type": "IN", 
+            "value": "133"
+        }, 
+        {
+            "source": 51, 
+            "target": 28, 
+            "type": "OUT", 
+            "value": "22070"
+        }, 
+        {
+            "source": 28, 
+            "target": 17, 
+            "type": "IN", 
+            "value": "14050"
+        }, 
+        {
+            "source": 53, 
+            "target": 41, 
+            "type": "OUT", 
+            "value": "592"
+        }, 
+        {
+            "source": 6, 
+            "target": 41, 
+            "type": "OUT", 
+            "value": "14308"
+        }, 
+        {
+            "source": 28, 
+            "target": 25, 
+            "type": "IN", 
+            "value": "711"
+        }, 
+        {
+            "source": 6, 
+            "target": 44, 
+            "type": "OUT", 
+            "value": "15674"
+        }, 
+        {
+            "source": 0, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "400348"
+        }, 
+        {
+            "source": 38, 
+            "target": 10, 
+            "type": "IN", 
+            "value": "7303"
+        }, 
+        {
+            "source": 17, 
+            "target": 44, 
+            "type": "OUT", 
+            "value": "943"
+        }, 
+        {
+            "source": 41, 
+            "target": 10, 
+            "type": "IN", 
+            "value": "842"
+        }, 
+        {
+            "source": 7, 
+            "target": 44, 
+            "type": "OUT", 
+            "value": "75"
+        }, 
+        {
+            "source": 56, 
+            "target": 8, 
+            "type": "IN", 
+            "value": "384560"
+        }, 
+        {
+            "source": 8, 
+            "target": 51, 
+            "type": "OUT", 
+            "value": "656"
+        }, 
+        {
+            "source": 17, 
+            "target": 7, 
+            "type": "IN", 
+            "value": "273"
+        }, 
+        {
+            "source": 8, 
+            "target": 34, 
+            "type": "OUT", 
+            "value": "96"
+        }, 
+        {
+            "source": 8, 
+            "target": 38, 
+            "type": "OUT", 
+            "value": "102133"
+        }, 
+        {
+            "source": 34, 
+            "target": 28, 
+            "type": "OUT", 
+            "value": "12672"
+        }, 
+        {
+            "source": 25, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "70"
+        }, 
+        {
+            "source": 1, 
+            "target": 44, 
+            "type": "OUT", 
+            "value": "6463"
+        }, 
+        {
+            "source": 0, 
+            "target": 45, 
+            "type": "IN", 
+            "value": "581"
+        }, 
+        {
+            "source": 60, 
+            "target": 28, 
+            "type": "IN", 
+            "value": "28775"
+        }, 
+        {
+            "source": 53, 
+            "target": 28, 
+            "type": "OUT", 
+            "value": "134656"
+        }, 
+        {
+            "source": 56, 
+            "target": 34, 
+            "type": "IN", 
+            "value": "329299"
+        }, 
+        {
+            "source": 34, 
+            "target": 10, 
+            "type": "IN", 
+            "value": "1728"
+        }, 
+        {
+            "source": 56, 
+            "target": 38, 
+            "type": "IN", 
+            "value": "857223"
+        }, 
+        {
+            "source": 44, 
+            "target": 17, 
+            "type": "IN", 
+            "value": "943"
+        }, 
+        {
+            "source": 56, 
+            "target": 51, 
+            "type": "IN", 
+            "value": "848178"
+        }, 
+        {
+            "source": 0, 
+            "target": 7, 
+            "type": "OUT", 
+            "value": "2406"
+        }, 
+        {
+            "source": 44, 
+            "target": 25, 
+            "type": "IN", 
+            "value": "93"
+        }, 
+        {
+            "source": 19, 
+            "target": 28, 
+            "type": "OUT", 
+            "value": "36264"
+        }, 
+        {
+            "source": 56, 
+            "target": 28, 
+            "type": "IN", 
+            "value": "87946"
+        }, 
+        {
+            "source": 8, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "117"
+        }, 
+        {
+            "source": 17, 
+            "target": 41, 
+            "type": "OUT", 
+            "value": "10959"
+        }, 
+        {
+            "source": 10, 
+            "target": 8, 
+            "type": "IN", 
+            "value": "24"
+        }, 
+        {
+            "source": 0, 
+            "target": 41, 
+            "type": "IN", 
+            "value": "242"
+        }, 
+        {
+            "source": 35, 
+            "target": 44, 
+            "type": "OUT", 
+            "value": "1981"
+        }, 
+        {
+            "source": 1, 
+            "target": 35, 
+            "type": "OUT", 
+            "value": "4664"
+        }, 
+        {
+            "source": 45, 
+            "target": 6, 
+            "type": "IN", 
+            "value": "217030"
+        }, 
+        {
+            "source": 45, 
+            "target": 0, 
+            "type": "OUT", 
+            "value": "581"
+        }, 
+        {
+            "source": 8, 
+            "target": 10, 
+            "type": "OUT", 
+            "value": "24"
+        }, 
+        {
+            "source": 8, 
+            "target": 0, 
+            "type": "OUT", 
+            "value": "421"
+        }, 
+        {
+            "source": 19, 
+            "target": 25, 
+            "type": "IN", 
+            "value": "43"
+        }, 
+        {
+            "source": 8, 
+            "target": 6, 
+            "type": "OUT", 
+            "value": "701"
+        }, 
+        {
+            "source": 28, 
+            "target": 10, 
+            "type": "IN", 
+            "value": "13587"
+        }, 
+        {
+            "source": 19, 
+            "target": 17, 
+            "type": "IN", 
+            "value": "1823"
+        }, 
+        {
+            "source": 60, 
+            "target": 19, 
+            "type": "IN", 
+            "value": "164"
+        }, 
+        {
+            "source": 38, 
+            "target": 19, 
+            "type": "IN", 
+            "value": "160705"
+        }, 
+        {
+            "source": 60, 
+            "target": 10, 
+            "type": "IN", 
+            "value": "1695"
+        }, 
+        {
+            "source": 1, 
+            "target": 0, 
+            "type": "OUT", 
+            "value": "2524"
+        }, 
+        {
+            "source": 41, 
+            "target": 1, 
+            "type": "IN", 
+            "value": "2364"
+        }, 
+        {
+            "source": 1, 
+            "target": 6, 
+            "type": "OUT", 
+            "value": "89386"
+        }, 
+        {
+            "source": 45, 
+            "target": 35, 
+            "type": "IN", 
+            "value": "2014"
+        }, 
+        {
+            "source": 7, 
+            "target": 28, 
+            "type": "IN", 
+            "value": "1297"
+        }, 
+        {
+            "source": 56, 
+            "target": 17, 
+            "type": "IN", 
+            "value": "110714"
+        }, 
+        {
+            "source": 25, 
+            "target": 17, 
+            "type": "OUT", 
+            "value": "1421"
+        }, 
+        {
+            "source": 56, 
+            "target": 25, 
+            "type": "IN", 
+            "value": "63702"
+        }, 
+        {
+            "source": 44, 
+            "target": 10, 
+            "type": "IN", 
+            "value": "34359"
+        }, 
+        {
+            "source": 28, 
+            "target": 19, 
+            "type": "IN", 
+            "value": "36264"
+        }, 
+        {
+            "source": 34, 
+            "target": 44, 
+            "type": "OUT", 
+            "value": "2702"
+        }, 
+        {
+            "source": 0, 
+            "target": 53, 
+            "type": "IN", 
+            "value": "21"
+        }, 
+        {
+            "source": 6, 
+            "target": 10, 
+            "type": "OUT", 
+            "value": "25679"
+        }, 
+        {
+            "source": 19, 
+            "target": 0, 
+            "type": "IN", 
+            "value": "11"
+        }, 
+        {
+            "source": 0, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "526"
+        }, 
+        {
+            "source": 10, 
+            "target": 44, 
+            "type": "OUT", 
+            "value": "34359"
+        }, 
+        {
+            "source": 45, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "2291"
+        }, 
+        {
+            "source": 1, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "4897"
+        }, 
+        {
+            "source": 0, 
+            "target": 34, 
+            "type": "OUT", 
+            "value": "361"
+        }, 
+        {
+            "source": 0, 
+            "target": 38, 
+            "type": "OUT", 
+            "value": "2772"
+        }, 
+        {
+            "source": 44, 
+            "target": 28, 
+            "type": "OUT", 
+            "value": "43347"
+        }, 
+        {
+            "source": 28, 
+            "target": 6, 
+            "type": "IN", 
+            "value": "81569"
+        }, 
+        {
+            "source": 1, 
+            "target": 53, 
+            "type": "OUT", 
+            "value": "5628"
+        }, 
+        {
+            "source": 45, 
+            "target": 53, 
+            "type": "IN", 
+            "value": "9136"
+        }, 
+        {
+            "source": 0, 
+            "target": 51, 
+            "type": "OUT", 
+            "value": "267"
+        }, 
+        {
+            "source": 41, 
+            "target": 53, 
+            "type": "IN", 
+            "value": "592"
+        }, 
+        {
+            "source": 35, 
+            "target": 8, 
+            "type": "IN", 
+            "value": "220"
+        }, 
+        {
+            "source": 56, 
+            "target": 45, 
+            "type": "IN", 
+            "value": "736741"
+        }, 
+        {
+            "source": 8, 
+            "target": 35, 
+            "type": "OUT", 
+            "value": "220"
+        }, 
+        {
+            "source": 41, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "39944"
+        }, 
+        {
+            "source": 0, 
+            "target": 6, 
+            "type": "OUT", 
+            "value": "1012"
+        }, 
+        {
+            "source": 41, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "88"
+        }, 
+        {
+            "source": 51, 
+            "target": 0, 
+            "type": "IN", 
+            "value": "267"
+        }, 
+        {
+            "source": 51, 
+            "target": 6, 
+            "type": "IN", 
+            "value": "752"
+        }, 
+        {
+            "source": 28, 
+            "target": 1, 
+            "type": "IN", 
+            "value": "101098"
+        }, 
+        {
+            "source": 17, 
+            "target": 35, 
+            "type": "OUT", 
+            "value": "649"
+        }, 
+        {
+            "source": 0, 
+            "target": 35, 
+            "type": "OUT", 
+            "value": "18280"
+        }, 
+        {
+            "source": 28, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "28775"
+        }, 
+        {
+            "source": 34, 
+            "target": 41, 
+            "type": "OUT", 
+            "value": "323"
+        }, 
+        {
+            "source": 51, 
+            "target": 34, 
+            "type": "OUT", 
+            "value": "1296"
+        }, 
+        {
+            "source": 28, 
+            "target": 53, 
+            "type": "IN", 
+            "value": "134656"
+        }, 
+        {
+            "source": 51, 
+            "target": 38, 
+            "type": "OUT", 
+            "value": "1805"
+        }, 
+        {
+            "source": 10, 
+            "target": 17, 
+            "type": "OUT", 
+            "value": "3850"
+        }, 
+        {
+            "source": 17, 
+            "target": 0, 
+            "type": "IN", 
+            "value": "2422"
+        }, 
+        {
+            "source": 17, 
+            "target": 6, 
+            "type": "IN", 
+            "value": "128907"
+        }, 
+        {
+            "source": 34, 
+            "target": 7, 
+            "type": "OUT", 
+            "value": "828"
+        }, 
+        {
+            "source": 44, 
+            "target": 19, 
+            "type": "IN", 
+            "value": "13551"
+        }, 
+        {
+            "source": 10, 
+            "target": 19, 
+            "type": "OUT", 
+            "value": "23721"
+        }, 
+        {
+            "source": 38, 
+            "target": 28, 
+            "type": "OUT", 
+            "value": "2259"
+        }, 
+        {
+            "source": 0, 
+            "target": 44, 
+            "type": "OUT", 
+            "value": "265"
+        }, 
+        {
+            "source": 53, 
+            "target": 0, 
+            "type": "OUT", 
+            "value": "21"
+        }, 
+        {
+            "source": 44, 
+            "target": 1, 
+            "type": "IN", 
+            "value": "6463"
+        }, 
+        {
+            "source": 53, 
+            "target": 6, 
+            "type": "OUT", 
+            "value": "72631"
+        }, 
+        {
+            "source": 41, 
+            "target": 8, 
+            "type": "IN", 
+            "value": "106"
+        }, 
+        {
+            "source": 45, 
+            "target": 8, 
+            "type": "IN", 
+            "value": "143472"
+        }, 
+        {
+            "source": 10, 
+            "target": 35, 
+            "type": "OUT", 
+            "value": "4323"
+        }, 
+        {
+            "source": 60, 
+            "target": 1, 
+            "type": "IN", 
+            "value": "4897"
+        }, 
+        {
+            "source": 6, 
+            "target": 1, 
+            "type": "IN", 
+            "value": "89386"
+        }, 
+        {
+            "source": 56, 
+            "target": 10, 
+            "type": "IN", 
+            "value": "94936"
+        }, 
+        {
+            "source": 6, 
+            "target": 19, 
+            "type": "OUT", 
+            "value": "16069"
+        }, 
+        {
+            "source": 38, 
+            "target": 41, 
+            "type": "OUT", 
+            "value": "2452"
+        }, 
+        {
+            "source": 35, 
+            "target": 28, 
+            "type": "OUT", 
+            "value": "32790"
+        }, 
+        {
+            "source": 25, 
+            "target": 28, 
+            "type": "OUT", 
+            "value": "711"
+        }, 
+        {
+            "source": 51, 
+            "target": 8, 
+            "type": "IN", 
+            "value": "656"
+        }, 
+        {
+            "source": 35, 
+            "target": 25, 
+            "type": "IN", 
+            "value": "89"
+        }, 
+        {
+            "source": 60, 
+            "target": 53, 
+            "type": "IN", 
+            "value": "187"
+        }, 
+        {
+            "source": 10, 
+            "target": 28, 
+            "type": "OUT", 
+            "value": "13587"
+        }, 
+        {
+            "source": 35, 
+            "target": 17, 
+            "type": "IN", 
+            "value": "649"
+        }, 
+        {
+            "source": 45, 
+            "target": 44, 
+            "type": "IN", 
+            "value": "3524"
+        }, 
+        {
+            "source": 56, 
+            "target": 19, 
+            "type": "IN", 
+            "value": "241828"
+        }, 
+        {
+            "source": 38, 
+            "target": 7, 
+            "type": "OUT", 
+            "value": "628"
+        }, 
+        {
+            "source": 28, 
+            "target": 41, 
+            "type": "IN", 
+            "value": "748"
+        }, 
+        {
+            "source": 7, 
+            "target": 35, 
+            "type": "IN", 
+            "value": "2510"
+        }, 
+        {
+            "source": 28, 
+            "target": 44, 
+            "type": "IN", 
+            "value": "43347"
+        }, 
+        {
+            "source": 19, 
+            "target": 53, 
+            "type": "IN", 
+            "value": "395"
+        }, 
+        {
+            "source": 19, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "164"
+        }, 
+        {
+            "source": 35, 
+            "target": 19, 
+            "type": "IN", 
+            "value": "71583"
+        }, 
+        {
+            "source": 41, 
+            "target": 34, 
+            "type": "IN", 
+            "value": "323"
+        }, 
+        {
+            "source": 1, 
+            "target": 45, 
+            "type": "OUT", 
+            "value": "53814"
+        }, 
+        {
+            "source": 38, 
+            "target": 44, 
+            "type": "OUT", 
+            "value": "796"
+        }, 
+        {
+            "source": 41, 
+            "target": 51, 
+            "type": "IN", 
+            "value": "835"
+        }, 
+        {
+            "source": 53, 
+            "target": 35, 
+            "type": "OUT", 
+            "value": "1551"
+        }, 
+        {
+            "source": 34, 
+            "target": 6, 
+            "type": "IN", 
+            "value": "2679"
+        }, 
+        {
+            "source": 19, 
+            "target": 35, 
+            "type": "OUT", 
+            "value": "71583"
+        }, 
+        {
+            "source": 19, 
+            "target": 38, 
+            "type": "OUT", 
+            "value": "160705"
+        }, 
+        {
+            "source": 6, 
+            "target": 53, 
+            "type": "IN", 
+            "value": "72631"
+        }, 
+        {
+            "source": 19, 
+            "target": 34, 
+            "type": "OUT", 
+            "value": "133"
+        }, 
+        {
+            "source": 19, 
+            "target": 51, 
+            "type": "OUT", 
+            "value": "34"
+        }, 
+        {
+            "source": 6, 
+            "target": 7, 
+            "type": "OUT", 
+            "value": "896"
+        }, 
+        {
+            "source": 56, 
+            "target": 1, 
+            "type": "IN", 
+            "value": "137225"
+        }, 
+        {
+            "source": 41, 
+            "target": 17, 
+            "type": "IN", 
+            "value": "10959"
+        }, 
+        {
+            "source": 60, 
+            "target": 8, 
+            "type": "IN", 
+            "value": "117"
+        }, 
+        {
+            "source": 41, 
+            "target": 25, 
+            "type": "IN", 
+            "value": "8985"
+        }, 
+        {
+            "source": 45, 
+            "target": 17, 
+            "type": "IN", 
+            "value": "29646"
+        }, 
+        {
+            "source": 0, 
+            "target": 28, 
+            "type": "OUT", 
+            "value": "15310"
+        }, 
+        {
+            "source": 6, 
+            "target": 8, 
+            "type": "IN", 
+            "value": "701"
+        }, 
+        {
+            "source": 25, 
+            "target": 1, 
+            "type": "OUT", 
+            "value": "2710"
+        }, 
+        {
+            "source": 34, 
+            "target": 35, 
+            "type": "OUT", 
+            "value": "555580"
+        }, 
+        {
+            "source": 51, 
+            "target": 45, 
+            "type": "IN", 
+            "value": "110"
+        }, 
+        {
+            "source": 44, 
+            "target": 41, 
+            "type": "IN", 
+            "value": "278"
+        }, 
+        {
+            "source": 17, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "110714"
+        }, 
+        {
+            "source": 19, 
+            "target": 6, 
+            "type": "IN", 
+            "value": "16069"
+        }, 
+        {
+            "source": 38, 
+            "target": 35, 
+            "type": "IN", 
+            "value": "3470"
+        }, 
+        {
+            "source": 8, 
+            "target": 17, 
+            "type": "OUT", 
+            "value": "395"
+        }, 
+        {
+            "source": 1, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "137225"
+        }, 
+        {
+            "source": 45, 
+            "target": 28, 
+            "type": "OUT", 
+            "value": "62069"
+        }, 
+        {
+            "source": 51, 
+            "target": 17, 
+            "type": "IN", 
+            "value": "47"
+        }, 
+        {
+            "source": 35, 
+            "target": 10, 
+            "type": "IN", 
+            "value": "4323"
+        }, 
+        {
+            "source": 25, 
+            "target": 44, 
+            "type": "OUT", 
+            "value": "93"
+        }, 
+        {
+            "source": 51, 
+            "target": 25, 
+            "type": "IN", 
+            "value": "11"
+        }, 
+        {
+            "source": 28, 
+            "target": 7, 
+            "type": "OUT", 
+            "value": "1297"
+        }, 
+        {
+            "source": 7, 
+            "target": 34, 
+            "type": "IN", 
+            "value": "828"
+        }, 
+        {
+            "source": 17, 
+            "target": 45, 
+            "type": "OUT", 
+            "value": "29646"
+        }, 
+        {
+            "source": 7, 
+            "target": 38, 
+            "type": "IN", 
+            "value": "628"
+        }, 
+        {
+            "source": 53, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "17885"
+        }, 
+        {
+            "source": 19, 
+            "target": 41, 
+            "type": "OUT", 
+            "value": "20495"
+        }, 
+        {
+            "source": 38, 
+            "target": 6, 
+            "type": "IN", 
+            "value": "179998"
+        }, 
+        {
+            "source": 7, 
+            "target": 51, 
+            "type": "IN", 
+            "value": "1203"
+        }, 
+        {
+            "source": 38, 
+            "target": 0, 
+            "type": "IN", 
+            "value": "2772"
+        }, 
+        {
+            "source": 8, 
+            "target": 44, 
+            "type": "OUT", 
+            "value": "27"
+        }, 
+        {
+            "source": 60, 
+            "target": 56, 
+            "type": "IN", 
+            "value": "231679"
+        }, 
+        {
+            "source": 17, 
+            "target": 25, 
+            "type": "IN", 
+            "value": "1421"
+        }, 
+        {
+            "source": 44, 
+            "target": 34, 
+            "type": "IN", 
+            "value": "2702"
+        }, 
+        {
+            "source": 1, 
+            "target": 34, 
+            "type": "OUT", 
+            "value": "1905"
+        }, 
+        {
+            "source": 1, 
+            "target": 38, 
+            "type": "OUT", 
+            "value": "55003"
+        }, 
+        {
+            "source": 60, 
+            "target": 51, 
+            "type": "IN", 
+            "value": "3109"
+        }, 
+        {
+            "source": 44, 
+            "target": 38, 
+            "type": "IN", 
+            "value": "796"
+        }, 
+        {
+            "source": 41, 
+            "target": 45, 
+            "type": "OUT", 
+            "value": "68531"
+        }, 
+        {
+            "source": 60, 
+            "target": 34, 
+            "type": "IN", 
+            "value": "5446"
+        }, 
+        {
+            "source": 7, 
+            "target": 0, 
+            "type": "IN", 
+            "value": "2406"
+        }, 
+        {
+            "source": 44, 
+            "target": 51, 
+            "type": "IN", 
+            "value": "1427"
+        }, 
+        {
+            "source": 1, 
+            "target": 51, 
+            "type": "OUT", 
+            "value": "328"
+        }, 
+        {
+            "source": 60, 
+            "target": 38, 
+            "type": "IN", 
+            "value": "3623"
+        }, 
+        {
+            "source": 0, 
+            "target": 25, 
+            "type": "IN", 
+            "value": "42"
+        }, 
+        {
+            "source": 56, 
+            "target": 53, 
+            "type": "IN", 
+            "value": "17885"
+        }, 
+        {
+            "source": 6, 
+            "target": 38, 
+            "type": "OUT", 
+            "value": "179998"
+        }, 
+        {
+            "source": 45, 
+            "target": 19, 
+            "type": "IN", 
+            "value": "19912"
+        }, 
+        {
+            "source": 51, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "848178"
+        }, 
+        {
+            "source": 0, 
+            "target": 17, 
+            "type": "OUT", 
+            "value": "2422"
+        }, 
+        {
+            "source": 6, 
+            "target": 51, 
+            "type": "OUT", 
+            "value": "752"
+        }, 
+        {
+            "source": 56, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "231679"
+        }, 
+        {
+            "source": 19, 
+            "target": 45, 
+            "type": "OUT", 
+            "value": "19912"
+        }, 
+        {
+            "source": 35, 
+            "target": 1, 
+            "type": "IN", 
+            "value": "4664"
+        }, 
+        {
+            "source": 10, 
+            "target": 6, 
+            "type": "IN", 
+            "value": "25679"
+        }, 
+        {
+            "source": 7, 
+            "target": 6, 
+            "type": "IN", 
+            "value": "896"
+        }, 
+        {
+            "source": 60, 
+            "target": 17, 
+            "type": "IN", 
+            "value": "643"
+        }, 
+        {
+            "source": 60, 
+            "target": 25, 
+            "type": "IN", 
+            "value": "70"
+        }, 
+        {
+            "source": 45, 
+            "target": 10, 
+            "type": "IN", 
+            "value": "1510"
+        }, 
+        {
+            "source": 1, 
+            "target": 7, 
+            "type": "OUT", 
+            "value": "445"
+        }, 
+        {
+            "source": 51, 
+            "target": 35, 
+            "type": "OUT", 
+            "value": "10589"
+        }, 
+        {
+            "source": 1, 
+            "target": 41, 
+            "type": "OUT", 
+            "value": "2364"
+        }, 
+        {
+            "source": 56, 
+            "target": 41, 
+            "type": "IN", 
+            "value": "39944"
+        }, 
+        {
+            "source": 44, 
+            "target": 7, 
+            "type": "IN", 
+            "value": "75"
+        }, 
+        {
+            "source": 51, 
+            "target": 10, 
+            "type": "IN", 
+            "value": "88"
+        }, 
+        {
+            "source": 34, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "329299"
+        }, 
+        {
+            "source": 19, 
+            "target": 7, 
+            "type": "IN", 
+            "value": "2"
+        }, 
+        {
+            "source": 6, 
+            "target": 34, 
+            "type": "OUT", 
+            "value": "2679"
+        }, 
+        {
+            "source": 41, 
+            "target": 0, 
+            "type": "OUT", 
+            "value": "242"
+        }, 
+        {
+            "source": 56, 
+            "target": 7, 
+            "type": "IN", 
+            "value": "259404"
+        }, 
+        {
+            "source": 17, 
+            "target": 51, 
+            "type": "OUT", 
+            "value": "47"
+        }, 
+        {
+            "source": 41, 
+            "target": 6, 
+            "type": "IN", 
+            "value": "14308"
+        }, 
+        {
+            "source": 17, 
+            "target": 34, 
+            "type": "OUT", 
+            "value": "425"
+        }, 
+        {
+            "source": 53, 
+            "target": 44, 
+            "type": "OUT", 
+            "value": "466"
+        }, 
+        {
+            "source": 25, 
+            "target": 19, 
+            "type": "OUT", 
+            "value": "43"
+        }, 
+        {
+            "source": 17, 
+            "target": 38, 
+            "type": "OUT", 
+            "value": "129238"
+        }, 
+        {
+            "source": 51, 
+            "target": 19, 
+            "type": "IN", 
+            "value": "34"
+        }, 
+        {
+            "source": 34, 
+            "target": 45, 
+            "type": "OUT", 
+            "value": "4531"
+        }, 
+        {
+            "source": 7, 
+            "target": 17, 
+            "type": "OUT", 
+            "value": "273"
+        }, 
+        {
+            "source": 44, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "106530"
+        }, 
+        {
+            "source": 10, 
+            "target": 51, 
+            "type": "OUT", 
+            "value": "88"
+        }, 
+        {
+            "source": 6, 
+            "target": 25, 
+            "type": "IN", 
+            "value": "13230"
+        }, 
+        {
+            "source": 53, 
+            "target": 45, 
+            "type": "OUT", 
+            "value": "9136"
+        }, 
+        {
+            "source": 6, 
+            "target": 17, 
+            "type": "OUT", 
+            "value": "128907"
+        }, 
+        {
+            "source": 44, 
+            "target": 45, 
+            "type": "OUT", 
+            "value": "3524"
+        }, 
+        {
+            "source": 10, 
+            "target": 38, 
+            "type": "OUT", 
+            "value": "7303"
+        }, 
+        {
+            "source": 10, 
+            "target": 34, 
+            "type": "OUT", 
+            "value": "1728"
+        }, 
+        {
+            "source": 60, 
+            "target": 45, 
+            "type": "IN", 
+            "value": "2291"
+        }, 
+        {
+            "source": 6, 
+            "target": 45, 
+            "type": "OUT", 
+            "value": "217030"
+        }, 
+        {
+            "source": 53, 
+            "target": 17, 
+            "type": "OUT", 
+            "value": "115755"
+        }, 
+        {
+            "source": 35, 
+            "target": 7, 
+            "type": "OUT", 
+            "value": "2510"
+        }, 
+        {
+            "source": 56, 
+            "target": 44, 
+            "type": "IN", 
+            "value": "106530"
+        }, 
+        {
+            "source": 0, 
+            "target": 8, 
+            "type": "IN", 
+            "value": "421"
+        }, 
+        {
+            "source": 10, 
+            "target": 41, 
+            "type": "OUT", 
+            "value": "842"
+        }, 
+        {
+            "source": 38, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "857223"
+        }, 
+        {
+            "source": 51, 
+            "target": 1, 
+            "type": "IN", 
+            "value": "328"
+        }, 
+        {
+            "source": 35, 
+            "target": 41, 
+            "type": "OUT", 
+            "value": "164"
+        }, 
+        {
+            "source": 25, 
+            "target": 35, 
+            "type": "OUT", 
+            "value": "89"
+        }, 
+        {
+            "source": 10, 
+            "target": 7, 
+            "type": "IN", 
+            "value": "254"
+        }, 
+        {
+            "source": 45, 
+            "target": 1, 
+            "type": "IN", 
+            "value": "53814"
+        }, 
+        {
+            "source": 51, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "3109"
+        }, 
+        {
+            "source": 6, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "819357"
+        }, 
+        {
+            "source": 51, 
+            "target": 53, 
+            "type": "IN", 
+            "value": "20"
+        }, 
+        {
+            "source": 17, 
+            "target": 8, 
+            "type": "IN", 
+            "value": "395"
+        }, 
+        {
+            "source": 38, 
+            "target": 45, 
+            "type": "OUT", 
+            "value": "63591"
+        }, 
+        {
+            "source": 34, 
+            "target": 17, 
+            "type": "IN", 
+            "value": "425"
+        }, 
+        {
+            "source": 6, 
+            "target": 28, 
+            "type": "OUT", 
+            "value": "81569"
+        }, 
+        {
+            "source": 19, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "241828"
+        }, 
+        {
+            "source": 34, 
+            "target": 25, 
+            "type": "IN", 
+            "value": "42"
+        }, 
+        {
+            "source": 17, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "643"
+        }, 
+        {
+            "source": 38, 
+            "target": 25, 
+            "type": "IN", 
+            "value": "3121"
+        }, 
+        {
+            "source": 17, 
+            "target": 53, 
+            "type": "IN", 
+            "value": "115755"
+        }, 
+        {
+            "source": 8, 
+            "target": 1, 
+            "type": "OUT", 
+            "value": "463"
+        }, 
+        {
+            "source": 38, 
+            "target": 17, 
+            "type": "IN", 
+            "value": "129238"
+        }, 
+        {
+            "source": 7, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "259404"
+        }, 
+        {
+            "source": 60, 
+            "target": 0, 
+            "type": "IN", 
+            "value": "526"
+        }, 
+        {
+            "source": 1, 
+            "target": 10, 
+            "type": "OUT", 
+            "value": "8096"
+        }, 
+        {
+            "source": 60, 
+            "target": 6, 
+            "type": "IN", 
+            "value": "5329"
+        }, 
+        {
+            "source": 10, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "94936"
+        }, 
+        {
+            "source": 34, 
+            "target": 51, 
+            "type": "IN", 
+            "value": "1296"
+        }, 
+        {
+            "source": 53, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "187"
+        }, 
+        {
+            "source": 28, 
+            "target": 35, 
+            "type": "IN", 
+            "value": "32790"
+        }, 
+        {
+            "source": 34, 
+            "target": 38, 
+            "type": "OUT", 
+            "value": "7842"
+        }, 
+        {
+            "source": 41, 
+            "target": 35, 
+            "type": "IN", 
+            "value": "164"
+        }, 
+        {
+            "source": 35, 
+            "target": 38, 
+            "type": "OUT", 
+            "value": "3470"
+        }, 
+        {
+            "source": 53, 
+            "target": 51, 
+            "type": "OUT", 
+            "value": "20"
+        }, 
+        {
+            "source": 35, 
+            "target": 34, 
+            "type": "IN", 
+            "value": "555580"
+        }, 
+        {
+            "source": 41, 
+            "target": 38, 
+            "type": "IN", 
+            "value": "2452"
+        }, 
+        {
+            "source": 53, 
+            "target": 34, 
+            "type": "OUT", 
+            "value": "73"
+        }, 
+        {
+            "source": 35, 
+            "target": 51, 
+            "type": "IN", 
+            "value": "10589"
+        }, 
+        {
+            "source": 19, 
+            "target": 10, 
+            "type": "IN", 
+            "value": "23721"
+        }, 
+        {
+            "source": 8, 
+            "target": 19, 
+            "type": "OUT", 
+            "value": "8"
+        }, 
+        {
+            "source": 10, 
+            "target": 45, 
+            "type": "OUT", 
+            "value": "1510"
+        }, 
+        {
+            "source": 53, 
+            "target": 38, 
+            "type": "OUT", 
+            "value": "16746"
+        }, 
+        {
+            "source": 0, 
+            "target": 1, 
+            "type": "IN", 
+            "value": "2524"
+        }, 
+        {
+            "source": 25, 
+            "target": 45, 
+            "type": "OUT", 
+            "value": "47412"
+        }, 
+        {
+            "source": 28, 
+            "target": 0, 
+            "type": "IN", 
+            "value": "15310"
+        }, 
+        {
+            "source": 34, 
+            "target": 60, 
+            "type": "OUT", 
+            "value": "5446"
+        }, 
+        {
+            "source": 34, 
+            "target": 53, 
+            "type": "IN", 
+            "value": "73"
+        }, 
+        {
+            "source": 51, 
+            "target": 41, 
+            "type": "OUT", 
+            "value": "835"
+        }, 
+        {
+            "source": 10, 
+            "target": 0, 
+            "type": "IN", 
+            "value": "277"
+        }, 
+        {
+            "source": 0, 
+            "target": 19, 
+            "type": "OUT", 
+            "value": "11"
+        }, 
+        {
+            "source": 28, 
+            "target": 51, 
+            "type": "IN", 
+            "value": "22070"
+        }, 
+        {
+            "source": 51, 
+            "target": 44, 
+            "type": "OUT", 
+            "value": "1427"
+        }, 
+        {
+            "source": 7, 
+            "target": 19, 
+            "type": "OUT", 
+            "value": "2"
+        }, 
+        {
+            "source": 28, 
+            "target": 34, 
+            "type": "IN", 
+            "value": "12672"
+        }, 
+        {
+            "source": 17, 
+            "target": 19, 
+            "type": "OUT", 
+            "value": "1823"
+        }, 
+        {
+            "source": 28, 
+            "target": 38, 
+            "type": "IN", 
+            "value": "2259"
+        }, 
+        {
+            "source": 38, 
+            "target": 51, 
+            "type": "IN", 
+            "value": "1805"
+        }, 
+        {
+            "source": 17, 
+            "target": 1, 
+            "type": "IN", 
+            "value": "13168"
+        }, 
+        {
+            "source": 34, 
+            "target": 0, 
+            "type": "IN", 
+            "value": "361"
+        }, 
+        {
+            "source": 41, 
+            "target": 44, 
+            "type": "OUT", 
+            "value": "278"
+        }, 
+        {
+            "source": 25, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "63702"
+        }, 
+        {
+            "source": 7, 
+            "target": 10, 
+            "type": "OUT", 
+            "value": "254"
+        }, 
+        {
+            "source": 38, 
+            "target": 34, 
+            "type": "IN", 
+            "value": "7842"
+        }, 
+        {
+            "source": 35, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "48475"
+        }, 
+        {
+            "source": 45, 
+            "target": 41, 
+            "type": "IN", 
+            "value": "68531"
+        }, 
+        {
+            "source": 44, 
+            "target": 35, 
+            "type": "IN", 
+            "value": "1981"
+        }, 
+        {
+            "source": 25, 
+            "target": 41, 
+            "type": "OUT", 
+            "value": "8985"
+        }, 
+        {
+            "source": 34, 
+            "target": 8, 
+            "type": "IN", 
+            "value": "96"
+        }, 
+        {
+            "source": 60, 
+            "target": 35, 
+            "type": "IN", 
+            "value": "1706"
+        }, 
+        {
+            "source": 38, 
+            "target": 8, 
+            "type": "IN", 
+            "value": "102133"
+        }, 
+        {
+            "source": 53, 
+            "target": 1, 
+            "type": "IN", 
+            "value": "5628"
+        }, 
+        {
+            "source": 44, 
+            "target": 0, 
+            "type": "IN", 
+            "value": "265"
+        }, 
+        {
+            "source": 1, 
+            "target": 17, 
+            "type": "OUT", 
+            "value": "13168"
+        }, 
+        {
+            "source": 1, 
+            "target": 25, 
+            "type": "IN", 
+            "value": "2710"
+        }, 
+        {
+            "source": 44, 
+            "target": 6, 
+            "type": "IN", 
+            "value": "15674"
+        }, 
+        {
+            "source": 0, 
+            "target": 10, 
+            "type": "OUT", 
+            "value": "277"
+        }, 
+        {
+            "source": 6, 
+            "target": 0, 
+            "type": "IN", 
+            "value": "1012"
+        }, 
+        {
+            "source": 60, 
+            "target": 7, 
+            "type": "IN", 
+            "value": "479"
+        }, 
+        {
+            "source": 35, 
+            "target": 45, 
+            "type": "OUT", 
+            "value": "2014"
+        }, 
+        {
+            "source": 1, 
+            "target": 19, 
+            "type": "OUT", 
+            "value": "58432"
+        }, 
+        {
+            "source": 19, 
+            "target": 1, 
+            "type": "IN", 
+            "value": "58432"
+        }, 
+        {
+            "source": 6, 
+            "target": 35, 
+            "type": "OUT", 
+            "value": "4895"
+        }, 
+        {
+            "source": 45, 
+            "target": 51, 
+            "type": "OUT", 
+            "value": "110"
+        }, 
+        {
+            "source": 25, 
+            "target": 51, 
+            "type": "OUT", 
+            "value": "11"
+        }, 
+        {
+            "source": 8, 
+            "target": 56, 
+            "type": "OUT", 
+            "value": "384560"
+        }, 
+        {
+            "source": 25, 
+            "target": 38, 
+            "type": "OUT", 
+            "value": "3121"
+        }, 
+        {
+            "source": 45, 
+            "target": 38, 
+            "type": "IN", 
+            "value": "63591"
+        }, 
+        {
+            "source": 51, 
+            "target": 7, 
+            "type": "OUT", 
+            "value": "1203"
+        }, 
+        {
+            "source": 45, 
+            "target": 34, 
+            "type": "IN", 
+            "value": "4531"
+        }, 
+        {
+            "source": 25, 
+            "target": 34, 
+            "type": "OUT", 
+            "value": "42"
+        }
+    ], 
+    "nodes": [
+        {
+            "currencyName": "Dominican Peso", 
+            "currencyNumeric": "214", 
+            "hdi": "0.659636363636", 
+            "id": 0, 
+            "iso2": "DO", 
+            "languages": "es", 
+            "name": "Dominican Republic", 
+            "pop2005": "9469601"
+        }, 
+        {
+            "currencyName": "Euro", 
+            "currencyNumeric": "978", 
+            "hdi": "0.86", 
+            "id": 1, 
+            "iso2": "FR", 
+            "languages": "fr", 
+            "name": "France", 
+            "pop2005": "60990544"
+        }, 
+        {
+            "currencyName": "East Caribbean Dollar", 
+            "currencyNumeric": "951", 
+            "hdi": "0.738333333333", 
+            "id": 2, 
+            "iso2": "DM", 
+            "languages": "en", 
+            "name": "Dominica", 
+            "pop2005": "67827"
+        }, 
+        {
+            "currencyName": "Danish Krone", 
+            "currencyNumeric": "208", 
+            "hdi": "0.877909090909", 
+            "id": 3, 
+            "iso2": "DK", 
+            "languages": "da", 
+            "name": "Denmark", 
+            "pop2005": "5416945"
+        }, 
+        {
+            "currencyName": "Barbados Dollar", 
+            "currencyNumeric": "52", 
+            "hdi": "0.796454545455", 
+            "id": 4, 
+            "iso2": "BB", 
+            "languages": "en", 
+            "name": "Barbados", 
+            "pop2005": "291933"
+        }, 
+        {
+            "currencyName": "Euro", 
+            "currencyNumeric": "978", 
+            "hdi": "0.873181818182", 
+            "id": 5, 
+            "iso2": "BE", 
+            "languages": "nl/fr", 
+            "name": "Belgium", 
+            "pop2005": "10398049"
+        }, 
+        {
+            "currencyName": "Euro", 
+            "currencyNumeric": "978", 
+            "hdi": "0.882", 
+            "id": 6, 
+            "iso2": "DE", 
+            "languages": "de", 
+            "name": "Germany", 
+            "pop2005": "82652369"
+        }, 
+        {
+            "currencyName": "US Dollar", 
+            "currencyNumeric": "840", 
+            "hdi": "0.425375", 
+            "id": 7, 
+            "iso2": "HT", 
+            "languages": "fr", 
+            "name": "Haiti", 
+            "pop2005": "9296291"
+        }, 
+        {
+            "currencyName": "Jamaican Dollar", 
+            "currencyNumeric": "388", 
+            "hdi": "0.697545454545", 
+            "id": 8, 
+            "iso2": "JM", 
+            "languages": "en", 
+            "name": "Jamaica", 
+            "pop2005": "2682469"
+        }, 
+        {
+            "currencyName": "Lempira", 
+            "currencyNumeric": "340", 
+            "hdi": "0.585636363636", 
+            "id": 9, 
+            "iso2": "HN", 
+            "languages": "es", 
+            "name": "Honduras", 
+            "pop2005": "683411"
+        }, 
+        {
+            "currencyName": "Brazilian Real", 
+            "currencyNumeric": "986", 
+            "hdi": "0.683", 
+            "id": 10, 
+            "iso2": "BR", 
+            "languages": "pt", 
+            "name": "Brazil", 
+            "pop2005": "186830759"
+        }, 
+        {
+            "currencyName": "Costa Rican Colon", 
+            "currencyNumeric": "188", 
+            "hdi": "0.728", 
+            "id": 11, 
+            "iso2": "CR", 
+            "languages": "es", 
+            "name": "Costa Rica", 
+            "pop2005": "4327228"
+        }, 
+        {
+            "currencyName": "Peso Uruguayo", 
+            "currencyNumeric": "858", 
+            "hdi": "0.754090909091", 
+            "id": 12, 
+            "iso2": "UY", 
+            "languages": "es", 
+            "name": "Uruguay", 
+            "pop2005": "3325727"
+        }, 
+        {
+            "currencyName": "CFA Franc BCEAO", 
+            "currencyNumeric": "952", 
+            "hdi": "0.395727272727", 
+            "id": 13, 
+            "iso2": "BJ", 
+            "languages": "fr", 
+            "name": "Benin", 
+            "pop2005": "8490301"
+        }, 
+        {
+            "currencyName": "East Caribbean Dollar", 
+            "currencyNumeric": "951", 
+            "hdi": "0.72375", 
+            "id": 14, 
+            "iso2": "LC", 
+            "languages": "en", 
+            "name": "Saint Lucia", 
+            "pop2005": "16124"
+        }, 
+        {
+            "currencyName": "Belize Dollar", 
+            "currencyNumeric": "84", 
+            "hdi": "0.684818181818", 
+            "id": 15, 
+            "iso2": "BZ", 
+            "languages": "en", 
+            "name": "Belize", 
+            "pop2005": "275546"
+        }, 
+        {
+            "currencyName": "Cordoba Oro", 
+            "currencyNumeric": "558", 
+            "hdi": "0.560636363636", 
+            "id": 16, 
+            "iso2": "NI", 
+            "languages": "es", 
+            "name": "Nicaragua", 
+            "pop2005": "5462539"
+        }, 
+        {
+            "currencyName": "Euro", 
+            "currencyNumeric": "978", 
+            "hdi": "0.894272727273", 
+            "id": 17, 
+            "iso2": "NL", 
+            "languages": "nl", 
+            "name": "Netherlands", 
+            "pop2005": "1632769"
+        }, 
+        {
+            "currencyName": "CFA Franc BEAC", 
+            "currencyNumeric": "950", 
+            "hdi": "0.536333333333", 
+            "id": 18, 
+            "iso2": "GQ", 
+            "languages": "fr/es/pt", 
+            "name": "Equatorial Guinea", 
+            "pop2005": "484098"
+        }, 
+        {
+            "currencyName": "Euro", 
+            "currencyNumeric": "978", 
+            "hdi": "0.783181818182", 
+            "id": 19, 
+            "iso2": "PT", 
+            "languages": "pt", 
+            "name": "Portugal", 
+            "pop2005": "10528226"
+        }, 
+        {
+            "currencyName": "Norwegian Krone", 
+            "currencyNumeric": "578", 
+            "hdi": "0.926272727273", 
+            "id": 20, 
+            "iso2": "NO", 
+            "languages": "nb/nn", 
+            "name": "Norway", 
+            "pop2005": "4638836"
+        }, 
+        {
+            "currencyName": "Bahamian Dollar", 
+            "currencyNumeric": "44", 
+            "hdi": "0.792333333333", 
+            "id": 21, 
+            "iso2": "BS", 
+            "languages": "en", 
+            "name": "Bahamas", 
+            "pop2005": "323295"
+        }, 
+        {
+            "currencyName": "Rand", 
+            "currencyNumeric": "710", 
+            "hdi": "0.5905", 
+            "id": 22, 
+            "iso2": "NA", 
+            "languages": "en", 
+            "name": "Namibia", 
+            "pop2005": "2019677"
+        }, 
+        {
+            "currencyName": "Trinidad and Tobago Dollar", 
+            "currencyNumeric": "780", 
+            "hdi": "0.736636363636", 
+            "id": 23, 
+            "iso2": "TT", 
+            "languages": "en", 
+            "name": "Trinidad and Tobago", 
+            "pop2005": "1323722"
+        }, 
+        {
+            "currencyName": "Guyana Dollar", 
+            "currencyNumeric": "328", 
+            "hdi": "0.597727272727", 
+            "id": 24, 
+            "iso2": "GY", 
+            "languages": "en", 
+            "name": "Guyana", 
+            "pop2005": "739472"
+        }, 
+        {
+            "currencyName": "Naira", 
+            "currencyNumeric": "566", 
+            "hdi": "0.4545", 
+            "id": 25, 
+            "iso2": "NG", 
+            "languages": "en", 
+            "name": "Nigeria", 
+            "pop2005": "141356083"
+        }, 
+        {
+            "currencyName": "US Dollar", 
+            "currencyNumeric": "840", 
+            "hdi": "0.739727272727", 
+            "id": 26, 
+            "iso2": "PA", 
+            "languages": "es", 
+            "name": "Panama", 
+            "pop2005": "3231502"
+        }, 
+        {
+            "currencyName": "Liberian Dollar", 
+            "currencyNumeric": "430", 
+            "hdi": "0.3392", 
+            "id": 27, 
+            "iso2": "LR", 
+            "languages": "en", 
+            "name": "Liberia", 
+            "pop2005": "3441796"
+        }, 
+        {
+            "currencyName": "Euro", 
+            "currencyNumeric": "978", 
+            "hdi": "0.847454545455", 
+            "id": 28, 
+            "iso2": "ES", 
+            "languages": "es", 
+            "name": "Spain", 
+            "pop2005": "43397491"
+        }, 
+        {
+            "currencyName": "CFA Franc BCEAO", 
+            "currencyNumeric": "952", 
+            "hdi": "0.431363636364", 
+            "id": 29, 
+            "iso2": "TG", 
+            "languages": "fr", 
+            "name": "Togo", 
+            "pop2005": "6238572"
+        }, 
+        {
+            "currencyName": "Iceland Krona", 
+            "currencyNumeric": "352", 
+            "hdi": "0.88", 
+            "id": 30, 
+            "iso2": "IS", 
+            "languages": "is", 
+            "name": "Iceland", 
+            "pop2005": "295732"
+        }, 
+        {
+            "currencyName": "CFA Franc BCEAO", 
+            "currencyNumeric": "952", 
+            "hdi": "0.35725", 
+            "id": 31, 
+            "iso2": "GW", 
+            "languages": "pt", 
+            "name": "Guinea-Bissau", 
+            "pop2005": "1596929"
+        }, 
+        {
+            "currencyName": "CFA Franc BCEAO", 
+            "currencyNumeric": "952", 
+            "hdi": "0.404454545455", 
+            "id": 32, 
+            "iso2": "CI", 
+            "languages": "fr", 
+            "name": "Ivory Coast", 
+            "pop2005": "18584701"
+        }, 
+        {
+            "currencyName": "Quetzal", 
+            "currencyNumeric": "320", 
+            "hdi": "0.544363636364", 
+            "id": 33, 
+            "iso2": "GT", 
+            "languages": "es", 
+            "name": "Guatemala", 
+            "pop2005": "12709564"
+        }, 
+        {
+            "currencyName": "Colombian Peso", 
+            "currencyNumeric": "170", 
+            "hdi": "0.677", 
+            "id": 34, 
+            "iso2": "CO", 
+            "languages": "es", 
+            "name": "Colombia", 
+            "pop2005": "4494579"
+        }, 
+        {
+            "currencyName": "Bolivar", 
+            "currencyNumeric": "937", 
+            "hdi": "0.704727272727", 
+            "id": 35, 
+            "iso2": "VE", 
+            "languages": "es", 
+            "name": "Venezuela", 
+            "pop2005": "26725573"
+        }, 
+        {
+            "currencyName": "CFA Franc BEAC", 
+            "currencyNumeric": "950", 
+            "hdi": "0.457363636364", 
+            "id": 36, 
+            "iso2": "CM", 
+            "languages": "fr/en", 
+            "name": "Cameroon", 
+            "pop2005": "17795149"
+        }, 
+        {
+            "currencyName": "Chilean Peso", 
+            "currencyNumeric": "152", 
+            "hdi": "0.776636363636", 
+            "id": 37, 
+            "iso2": "CL", 
+            "languages": "es", 
+            "name": "Chile", 
+            "pop2005": "16295102"
+        }, 
+        {
+            "currencyName": "Canadian Dollar", 
+            "currencyNumeric": "124", 
+            "hdi": "0.895090909091", 
+            "id": 38, 
+            "iso2": "CA", 
+            "languages": "en/fr", 
+            "name": "Canada", 
+            "pop2005": "32270507"
+        }, 
+        {
+            "currencyName": "Ouguiya", 
+            "currencyNumeric": "478", 
+            "hdi": "0.433636363636", 
+            "id": 39, 
+            "iso2": "MR", 
+            "languages": "ar", 
+            "name": "Mauritania", 
+            "pop2005": "2963105"
+        }, 
+        {
+            "currencyName": "CFA Franc BEAC", 
+            "currencyNumeric": "950", 
+            "hdi": "0.511181818182", 
+            "id": 40, 
+            "iso2": "CG", 
+            "languages": "fr", 
+            "name": "Republic of the Congo", 
+            "pop2005": "3609851"
+        }, 
+        {
+            "currencyName": "Rand", 
+            "currencyNumeric": "710", 
+            "hdi": "0.612363636364", 
+            "id": 41, 
+            "iso2": "ZA", 
+            "languages": "af/en", 
+            "name": "South Africa", 
+            "pop2005": "47938663"
+        }, 
+        {
+            "currencyName": "Kwanza", 
+            "currencyNumeric": "973", 
+            "hdi": "0.460333333333", 
+            "id": 42, 
+            "iso2": "AO", 
+            "languages": "pt", 
+            "name": "Angola", 
+            "pop2005": "16095214"
+        }, 
+        {
+            "currencyName": "Congolese Franc", 
+            "currencyNumeric": "976", 
+            "hdi": "0.280545454545", 
+            "id": 43, 
+            "iso2": "CD", 
+            "languages": "fr", 
+            "name": "Democratic Republic of the Congo", 
+            "pop2005": "58740547"
+        }, 
+        {
+            "currencyName": "Argentine Peso", 
+            "currencyNumeric": "32", 
+            "hdi": "0.771545454545", 
+            "id": 44, 
+            "iso2": "AR", 
+            "languages": "es", 
+            "name": "Argentina", 
+            "pop2005": "38747148"
+        }, 
+        {
+            "currencyName": "Pound Sterling", 
+            "currencyNumeric": "826", 
+            "hdi": "0.848636363636", 
+            "id": 45, 
+            "iso2": "GB", 
+            "languages": "en", 
+            "name": "United Kingdom", 
+            "pop2005": "60244834"
+        }, 
+        {
+            "currencyName": "CFA Franc BEAC", 
+            "currencyNumeric": "950", 
+            "hdi": "0.646272727273", 
+            "id": 46, 
+            "iso2": "GA", 
+            "languages": "fr", 
+            "name": "Gabon", 
+            "pop2005": "1290693"
+        }, 
+        {
+            "currencyName": "Guinea Franc", 
+            "currencyNumeric": "324", 
+            "hdi": "0.344625", 
+            "id": 47, 
+            "iso2": "GN", 
+            "languages": "fr", 
+            "name": "Guinea", 
+            "pop2005": "9002656"
+        }, 
+        {
+            "currencyName": "Dalasi", 
+            "currencyNumeric": "270", 
+            "hdi": "0.388363636364", 
+            "id": 48, 
+            "iso2": "GM", 
+            "languages": "en", 
+            "name": "Gambia", 
+            "pop2005": "1617029"
+        }, 
+        {
+            "currencyName": "Euro", 
+            "currencyNumeric": "978", 
+            "hdi": "0.885", 
+            "id": 49, 
+            "iso2": "IE", 
+            "languages": "en", 
+            "name": "Ireland", 
+            "pop2005": "4143294"
+        }, 
+        {
+            "currencyName": "Cape Verde Escudo", 
+            "currencyNumeric": "132", 
+            "hdi": "0.57075", 
+            "id": 50, 
+            "iso2": "CV", 
+            "languages": "pt", 
+            "name": "Cape Verde", 
+            "pop2005": "506807"
+        }, 
+        {
+            "currencyName": "Cuban Peso", 
+            "currencyNumeric": "192", 
+            "hdi": "0.740818181818", 
+            "id": 51, 
+            "iso2": "CU", 
+            "languages": "es", 
+            "name": "Cuba", 
+            "pop2005": "11259905"
+        }, 
+        {
+            "currencyName": "Ghana Cedi", 
+            "currencyNumeric": "936", 
+            "hdi": "0.497636363636", 
+            "id": 52, 
+            "iso2": "GH", 
+            "languages": "en", 
+            "name": "Ghana", 
+            "pop2005": "2253501"
+        }, 
+        {
+            "currencyName": "Moroccan Dirham", 
+            "currencyNumeric": "504", 
+            "hdi": "0.540090909091", 
+            "id": 53, 
+            "iso2": "MA", 
+            "languages": "ar", 
+            "name": "Morocco", 
+            "pop2005": "30494991"
+        }, 
+        {
+            "currencyName": "Surinam Dollar", 
+            "currencyNumeric": "968", 
+            "hdi": "0.675375", 
+            "id": 54, 
+            "iso2": "SR", 
+            "languages": "nl", 
+            "name": "Suriname", 
+            "pop2005": "452468"
+        }, 
+        {
+            "currencyName": "East Caribbean Dollar", 
+            "currencyNumeric": "951", 
+            "hdi": "0.74525", 
+            "id": 55, 
+            "iso2": "KN", 
+            "languages": "en", 
+            "name": "Saint Kitts and Nevis", 
+            "pop2005": "49138"
+        }, 
+        {
+            "currencyName": "US Dollar", 
+            "currencyNumeric": "840", 
+            "hdi": "0.915818181818", 
+            "id": 56, 
+            "iso2": "US", 
+            "languages": "en", 
+            "name": "United States", 
+            "pop2005": "299846449"
+        }, 
+        {
+            "currencyName": "Dobra", 
+            "currencyNumeric": "678", 
+            "hdi": "0.50975", 
+            "id": 57, 
+            "iso2": "ST", 
+            "languages": "pt", 
+            "name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe", 
+            "pop2005": "152622"
+        }, 
+        {
+            "currencyName": "CFA Franc BCEAO", 
+            "currencyNumeric": "952", 
+            "hdi": "0.433545454545", 
+            "id": 58, 
+            "iso2": "SN", 
+            "languages": "fr", 
+            "name": "Senegal", 
+            "pop2005": "1177034"
+        }, 
+        {
+            "currencyName": "Leone", 
+            "currencyNumeric": "694", 
+            "hdi": "0.313272727273", 
+            "id": 59, 
+            "iso2": "SL", 
+            "languages": "en", 
+            "name": "Sierra Leone", 
+            "pop2005": "5586403"
+        }, 
+        {
+            "currencyName": "Mexican Peso", 
+            "currencyNumeric": "484", 
+            "hdi": "0.734181818182", 
+            "id": 60, 
+            "iso2": "MX", 
+            "languages": "es", 
+            "name": "Mexico", 
+            "pop2005": "104266392"
+        }, 
+        {
+            "currencyName": "Swedish Krona", 
+            "currencyNumeric": "752", 
+            "hdi": "0.890909090909", 
+            "id": 61, 
+            "iso2": "SE", 
+            "languages": "sv", 
+            "name": "Sweden", 
+            "pop2005": "9038049"
+        }
+    ]
+}

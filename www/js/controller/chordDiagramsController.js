@@ -75,7 +75,8 @@ outliers.controller.chordDiagramsController = function(options)
                 '<div id="contenedorCI" class="contenedorCI">',
                 '<div id="zonaInfo"></div>',
                 '<div id="zonaChart" class="zonaChart">',
-            '<div id="chartContent" class="chartContent"></div>',
+                '<div id="chordDiagramContent" class="chartContent"></div>',
+                '<div id="arcDiagramContent" class="chartContent"></div>',
             '</div>',
             '</div>',
         ].join('\n');
@@ -86,7 +87,7 @@ outliers.controller.chordDiagramsController = function(options)
         self.colorScale = d3.scale.category20();
 
         self.chordDiagram = outliers.viz.chordDiagram({
-            'parentId':"chartContent",
+            'parentId':"chordDiagramContent",
             'width':self.width,
             'height':self.height,
             'chartWidth':self.chartWidth,
@@ -137,6 +138,15 @@ outliers.controller.chordDiagramsController = function(options)
             self.data = data;
             self.countries = self.data.datalabel.countries;
             self.chordDiagram.render(data.datalabel,data.data[2013]);
+        });
+        d3.json('/data/arc_movements.json', function (data) {
+            self.arcdiagram = new outliers.viz.arcDiagram({
+                parentId: 'arcDiagramContent',
+                data: data,
+                nodeNameVar: 'name',
+                nodeSizeVar: 'pop2005',
+                colors: d3.scale.linear().range(['#B5E3E3','#004556'])
+            });
         });
 
     });
