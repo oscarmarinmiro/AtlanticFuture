@@ -3,6 +3,7 @@ import pprint
 import json
 
 
+
 TOP_N = 20
 
 TOP_N_MOVEMENTS = 20
@@ -236,6 +237,7 @@ for row in reader:
     else:
         # Average for 2012
         avgHDI = 0.64
+
 
     HDICountries[name] = True
 
