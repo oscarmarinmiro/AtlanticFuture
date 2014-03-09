@@ -9,7 +9,11 @@ except ImportError:
 COUNTRIES_FILE = '../data/atlantic_top_countries.tsv'
 MOVEMENTS_FILE = '../data/atlantic_top_movements.tsv'
 #MOVEMENTS_FILE = '../data/atlantic_movements.tsv'
+REMITTANCE_FILE = '../data/remittanceData.json'
 RESULT_FILE = '../data/arc_movements.json'
+
+
+remittance_data = json.load(open(REMITTANCE_FILE,'r'))
 
 countries = dict()
 with open(COUNTRIES_FILE, 'rt') as f:
@@ -29,19 +33,19 @@ with open(MOVEMENTS_FILE, 'rt') as f:
             movements[row['year']] = dict()
         k = '{}-{}'.format(row['source'], row['target'])
         if not k in movements[row['year']]:
+            print row['source']
+            print row['target']
+            print remittance_data["2012"].keys()
+            remittance_factor = remittance_data["2012"][row['source']][row['target']]
             movements[row['year']][k] = {'source': row['source'],
                                          'target': row['target'],
                                          'value': row['value'],
+                                         'remittance': remittance_factor,
                                          'type': 'OUT',
                                          'year': row['year']}
 
         else:
             movements[row['year']]['value'] += row['value']
-
-        if row['target'] == 'US' and row['source']=='MX':
-            print "OK"
-            print row['value']
-            print movements[row['year']][k]
 
         #k = '{}-{}'.format(row['target'], row['source'])
         #if not k in movements[row['year']]:
@@ -75,7 +79,8 @@ for year in movements.keys():
         if not year in links:
             links[year] = list()
         links[year].append({'source': nodesAux[movement['source']], 'target': nodesAux[movement['target']],
-                      'value': movement['value'], 'type': movement['type']})
+                      'value': movement['value'], 'type': movement['type'],
+                      'remittance': movement['remittance']})
 result['links'] = links
 
 

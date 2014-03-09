@@ -37,6 +37,8 @@ year=2012
 results = {2012:dict()}
 for rownum in range(4,worksheet.nrows):
     source_country = worksheet.cell_value(rownum, 0)
+    if source_country == 'Venezuela, RB':
+        source_country = 'Venezuela'
     if source_country in countries_atlantic_list:
         if not countries_atlantic_dict[source_country] in results[year]:
             results[year][countries_atlantic_dict[source_country]] = dict()
