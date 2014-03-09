@@ -131,7 +131,7 @@ outliers.viz.arcDiagram = function (options) {
           .attr('cx', function (d, i) { return d.x; })
           .attr('cy', function (d, i) { return d.y; })
           .attr('r', function (d, i) { return d.r; })
-          .style('fill', function (d, i) { return d.color; })
+          .style('fill', function (d, i) { self.drawInfo(d3.select(this),false);return d.color; })
           .on('mouseover', function (d, i) {
               self.plotArea.selectAll('.node').style('opacity', 0.3);
               self.plotArea.selectAll('.link').style('opacity', 0.01);
@@ -143,20 +143,21 @@ outliers.viz.arcDiagram = function (options) {
                   self.plotArea.selectAll('.node.' + self.nodeId(d.__data__.source)).style('opacity', 1.0);
                   var targetNode = d3.select('.node.' + self.nodeId(d.__data__.target)),
                       sourceNode = d3.select('.node.' + self.nodeId(d.__data__.source));
-                  if (targetNode.attr('id') != currentNode.attr('id')) {
+                  /*if (targetNode.attr('id') != currentNode.attr('id')) {
                       self.drawInfo(targetNode, false);
                   }
                   if (sourceNode.attr('id') != currentNode.attr('id')) {
                       self.drawInfo(sourceNode, false);
-                  }
+                  }*/
               });
-              self.drawInfo(currentNode, true);
+              //self.drawInfo(currentNode, true);
           })
           .on('mouseout', function (d, i) {
-              d3.selectAll('.tooltiparc').remove();
+              //d3.selectAll('.tooltiparc').remove();
               d3.selectAll('.node').style('opacity', 1.0);
               d3.selectAll('.link').style('opacity', 0.5);
           });
+
     };
     self.drawLinks = function () {
         var radians = {
