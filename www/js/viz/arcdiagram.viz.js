@@ -16,7 +16,7 @@ outliers.viz.arcDiagram = function (options) {
         self.nodeIdVar = self.nodeIdVar || null;
         self.nodeNameVar = self.nodeNameVar || null;
         self.nodeColorVar = self.nodeColorVar || null;
-        self.linkWidthVar = self.linkWidthVar || null;
+        self.linkWidthVar = self.linkWidthVar || 'value';
         self.year = self.year || 1990;
         self.firstRender = true;
 
@@ -167,14 +167,14 @@ outliers.viz.arcDiagram = function (options) {
             bottom: d3.svg.line.radial().interpolate('basis').tension(0).angle(function (x) { return radians.bottom(x); }),
             top: d3.svg.line.radial().interpolate('basis').tension(0).angle(function (x) { return radians.top(x); })
         };
-        var maxStrokeWidth = 10;
+        /*var maxStrokeWidth = 10;
         if (self.linkWidthVar != null) {
             maxStrokeWidth = d3.max(self.data.links, function (d) {
                 return +d[self.linkWidthVar];
             });
-        }
-        self.linkStrokeWidthScale = d3.scale.linear()
-                                            .domain([0, maxStrokeWidth])
+        }*/
+        self.linkStrokeWidthScale = d3.scale.sqrt()
+                                            .domain([0, 12000000])
                                             .range([0, 10]);
         self.links = self.plotArea
           .selectAll('.link')
@@ -203,7 +203,10 @@ outliers.viz.arcDiagram = function (options) {
               }
           })
           .style('stroke-width', function (d, i) {
-              return (self.linkWidthVar == null ? self.linkStrokeWidthScale(Math.floor((Math.random()*10)+1)) : self.linkStrokeWidthScale(d[self.linkWidthVar])) + 'px';
+              console.log(d['value']);
+              console.log(self.linkStrokeWidthScale(d['value']));
+              return self.linkStrokeWidthScale(d[self.linkWidthVar])+'px';
+              //return (self.linkWidthVar == null ? self.linkStrokeWidthScale(Math.floor((Math.random()*10)+1)) : self.linkStrokeWidthScale(d[self.linkWidthVar])) + 'px';
           });
           
         self.links.exit().remove();
