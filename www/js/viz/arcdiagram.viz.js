@@ -10,6 +10,7 @@ outliers.viz.arcDiagram = function (options) {
     self.init = function () {
         self.width = self.width || $(self.parentSelect).innerWidth();
         self.height = self.height || $(self.parentSelect).innerHeight();
+        self.transTime = self.transTime || 750;
         self.margin = self.margin || {top: 20, left:20, bottom:20, right:20};
         self.colors = self.colors || d3.scale.category20();
         self.nodeSizeVar = self.nodeSizeVar || null;
@@ -64,7 +65,7 @@ outliers.viz.arcDiagram = function (options) {
                          .text('migration (total)'.toUpperCase())
                          .attr('transform', function (d, i) {
                              var bbox = this.getBBox();
-                             return 'translate(' + (self.margin.left / 3) + ', ' + (self.yFixedNodes + bbox.width + (self.height / 20)) + ') rotate(270)';
+                             return 'translate(' + (self.margin.left / 4) + ', ' + (self.yFixedNodes + bbox.width + (self.height / 12)) + ') rotate(270)';
                          });
         }
         if ( self.duplicateArcs ) {
@@ -74,7 +75,7 @@ outliers.viz.arcDiagram = function (options) {
                 self.plotArea.append('text')
                              .attr('class', 'arctitle')
                              .text(self.linkWidthVar2.toUpperCase())
-                             .attr('transform', 'translate(' + (self.margin.left / 3) + ', ' + (self.yFixedNodes - (self.height / 20)) + ') rotate(270)');
+                             .attr('transform', 'translate(' + (self.margin.left / 4) + ', ' + (self.yFixedNodes - (self.height / 12)) + ') rotate(270)');
             }
         }
     };
@@ -423,7 +424,8 @@ outliers.viz.arcDiagram = function (options) {
                           d3.selectAll('.link').style('opacity', 0.5);
                       });
         }
-        $('.link').tooltip({placement: 'top', container: self.parentSelect, html: true});
+        $('.link.ALT').tooltip({placement: 'top', container: self.parentSelect, html: true});
+        $('.link.DEF').tooltip({placement: 'bottom', container: self.parentSelect, html: true});
         $('.link').tooltip('fixTitle');
     };
     self.render = function () {

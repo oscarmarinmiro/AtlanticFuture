@@ -29,7 +29,7 @@ outliers.controller.arcDiagramController = function (options) {
                 data: data,
                 height: ($(self.parentSelect).innerWidth() * 0.7) * 1.01,
                 width: ($(self.parentSelect).innerWidth() * 0.7),
-                transTime: 2000,
+                transTime: 500,
                 nodeNameVar: 'name',
                 nodeSizeVar: 'pop2005',
                 duplicateArcs: true,
