@@ -32,7 +32,7 @@ outliers.controller.arcDiagramController = function (options) {
                 nodeNameVar: 'name',
                 nodeSizeVar: 'pop2005',
                 duplicateArcs: true,
-                colors: d3.scale.linear().range(['#B5E3E3','#004556']),
+                colors: d3.scale.linear().range(['#645D64', '#687690']),
                 arcsPos: 'BOTH' // [UP, DOWN, BOTH]
             });
             self.arcDiagram.prerender(self.year);

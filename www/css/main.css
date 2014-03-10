@@ -15,24 +15,24 @@ b {
 
 .tooltiparctop {
     font-size: 10pt;
-    font-weight: 100;
+    font-weight: 400;
 
-    fill: #000000;
-    stroke: #ffffff;
-    stroke-width: 0.25px;
+    fill: #687690;
+    stroke: #72ADE9;
+    stroke-width: 0.1px;
 }
 .tooltiparcbottom {
     font-size: 8pt;
-    font-weight: 100;
+    font-weight: 400;
 
-    fill: #000000;
-    stroke: #ffffff;
-    stroke-width: 0.25px;
+    fill: #687690;
+    stroke: #72ADE9;
+    stroke-width: 0.1px;
 }
 
 .node {
-    stroke: #ffffff;
-    stroke-width: 1px;
+    stroke: #72ADE9;
+    stroke-width: 0.25px;
 }
 
 .link {
@@ -53,16 +53,16 @@ b {
 }
 
 .ALT {
-    stroke: #00ff00;
+    stroke: #ED886C;
 }
 
 .DEF {
-    stroke: #ff0000;
+    stroke: #72ADE9;
 }
 .arctitle {
     font-size: 20pt;
     font-weight: 700;
-    fill:  #000000;
-    stroke:  #ffffff;
-    stroke-width: 0.25px;
+    fill:  #687690;
+    stroke:  #72ADE9;
+    stroke-width: 0.1px;
 }
