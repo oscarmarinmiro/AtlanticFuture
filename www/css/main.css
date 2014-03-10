@@ -71,3 +71,12 @@ h1 {
     stroke:  #72ADE9;
     stroke-width: 0.1px;
 }
+.tooltip-inner {
+    background-color: #687690;
+}
+.tooltip.top .tooltip-arrow {
+    border-top-color: #687690;
+}
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #687690;
+}
