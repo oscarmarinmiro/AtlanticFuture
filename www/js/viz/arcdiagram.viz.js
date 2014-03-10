@@ -112,7 +112,7 @@ outliers.viz.arcDiagram = function (options) {
         var text = self.nodeNameVar == null ? node.attr('id') : node[0][0].__data__[self.nodeNameVar];
         var tooltip = self.plotArea
                           .append('text')
-                          .attr('class', 'tooltiparc ' + (selected ? 'tooltiparctop' : 'tooltiparcbottom'))
+                          .attr('class', 'tooltiparc ' + (selected ? 'tooltiparctop' : 'tooltiparcbottom') + ' ' + node.attr('id') )
                           .text(text)
                           //.attr('x', x)
                           //.attr('y', y)
@@ -172,12 +172,15 @@ outliers.viz.arcDiagram = function (options) {
           .on('mouseover', function (d, i) {
               self.plotArea.selectAll('.node').style('opacity', 0.3);
               self.plotArea.selectAll('.link').style('opacity', 0.1);
+              self.plotArea.selectAll('.tooltiparc').style('opacity', 0.3);
               var connectedLinks = self.plotArea.selectAll('.link.DEF.' + self.nodeId(d));
               connectedLinks.style('opacity', 0.7);
               var currentNode = d3.select(this);
               connectedLinks[0].forEach(function (d, i) {
                   self.plotArea.selectAll('.node.' + self.nodeId(d.__data__.target)).style('opacity', 1.0);
                   self.plotArea.selectAll('.node.' + self.nodeId(d.__data__.source)).style('opacity', 1.0);
+                  self.plotArea.selectAll('.tooltiparc.' + self.nodeId(d.__data__.target)).style('opacity', 1.0);
+                  self.plotArea.selectAll('.tooltiparc.' + self.nodeId(d.__data__.source)).style('opacity', 1.0);
                   var targetNode = d3.select('.node.' + self.nodeId(d.__data__.target)),
                       sourceNode = d3.select('.node.' + self.nodeId(d.__data__.source));
               });
@@ -188,6 +191,8 @@ outliers.viz.arcDiagram = function (options) {
                   connectedLinks[0].forEach(function (d, i) {
                       self.plotArea.selectAll('.node.' + self.nodeId(d.__data__.target)).style('opacity', 1.0);
                       self.plotArea.selectAll('.node.' + self.nodeId(d.__data__.source)).style('opacity', 1.0);
+                      self.plotArea.selectAll('.tooltiparc.' + self.nodeId(d.__data__.target)).style('opacity', 1.0);
+                      self.plotArea.selectAll('.tooltiparc.' + self.nodeId(d.__data__.source)).style('opacity', 1.0);
                       var targetNode = d3.select('.node.' + self.nodeId(d.__data__.target)),
                           sourceNode = d3.select('.node.' + self.nodeId(d.__data__.source));
                   });
@@ -195,6 +200,7 @@ outliers.viz.arcDiagram = function (options) {
           })
           .on('mouseout', function (d, i) {
               d3.selectAll('.node').style('opacity', 1.0);
+              d3.selectAll('.tooltiparc').style('opacity', 1.0);
               d3.selectAll('.link.DEF').style('opacity', 0.5);
               if ( self.duplicateArcs ) {
                   d3.selectAll('.link.ALT').style('opacity', 0.5);
@@ -307,12 +313,16 @@ outliers.viz.arcDiagram = function (options) {
           .on('mouseover', function (d, i) {
               self.plotArea.selectAll('.node').style('opacity', 0.3);
               self.plotArea.selectAll('.link').style('opacity', 0.1);
+              self.plotArea.selectAll('.tooltiparc').style('opacity', 0.3);
               self.plotArea.selectAll('.link.DEF.' + self.nodeId(d.source) + '.' + self.nodeId(d.target)).style('opacity', 1.0);
               self.plotArea.selectAll('.node.' + self.nodeId(d.target)).style('opacity', 1.0);
               self.plotArea.selectAll('.node.' + self.nodeId(d.source)).style('opacity', 1.0);
+              self.plotArea.selectAll('.tooltiparc.' + self.nodeId(d.target)).style('opacity', 1.0);
+              self.plotArea.selectAll('.tooltiparc.' + self.nodeId(d.source)).style('opacity', 1.0);
           })
           .on('mouseout', function (d, i) {
               d3.selectAll('.node').style('opacity', 1.0);
+              d3.selectAll('.tooltiparc').style('opacity', 1.0);
               d3.selectAll('.link').style('opacity', 0.5);
           });
         if ( self.duplicateArcs ) {
@@ -415,12 +425,16 @@ outliers.viz.arcDiagram = function (options) {
                       .on('mouseover', function (d, i) {
                           self.plotArea.selectAll('.node').style('opacity', 0.3);
                           self.plotArea.selectAll('.link').style('opacity', 0.1);
+                          self.plotArea.selectAll('.tooltiparc').style('opacity', 0.3);
                           self.plotArea.selectAll('.link.ALT.' + self.nodeId(d.source) + '.' + self.nodeId(d.target)).style('opacity', 1.0);
                           self.plotArea.selectAll('.node.' + self.nodeId(d.target)).style('opacity', 1.0);
                           self.plotArea.selectAll('.node.' + self.nodeId(d.source)).style('opacity', 1.0);
+                          self.plotArea.selectAll('.tooltiparc.' + self.nodeId(d.target)).style('opacity', 1.0);
+                          self.plotArea.selectAll('.tooltiparc.' + self.nodeId(d.source)).style('opacity', 1.0);
                       })
                       .on('mouseout', function (d, i) {
                           d3.selectAll('.node').style('opacity', 1.0);
+                          d3.selectAll('.tooltiparc').style('opacity', 1.0);
                           d3.selectAll('.link').style('opacity', 0.5);
                       });
         }
