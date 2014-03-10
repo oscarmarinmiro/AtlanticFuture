@@ -64,7 +64,7 @@ outliers.viz.arcDiagram = function (options) {
                          .text('migration (total)'.toUpperCase())
                          .attr('transform', function (d, i) {
                              var bbox = this.getBBox();
-                             return 'translate(' + self.margin.left + ', ' + (self.yFixedNodes + bbox.width + (self.height / 20)) + ') rotate(270)';
+                             return 'translate(' + (self.margin.left / 3) + ', ' + (self.yFixedNodes + bbox.width + (self.height / 20)) + ') rotate(270)';
                          });
         }
         if ( self.duplicateArcs ) {
@@ -74,14 +74,15 @@ outliers.viz.arcDiagram = function (options) {
                 self.plotArea.append('text')
                              .attr('class', 'arctitle')
                              .text(self.linkWidthVar2.toUpperCase())
-                             .attr('transform', 'translate(' + self.margin.left + ', ' + (self.yFixedNodes - (self.height / 20)) + ') rotate(270)');
+                             .attr('transform', 'translate(' + (self.margin.left / 3) + ', ' + (self.yFixedNodes - (self.height / 20)) + ') rotate(270)');
             }
         }
     };
     self.prepareNodes = function () {
         self.xScale = d3.scale.linear()
                               .domain([0, self.data.nodes.length - 1])
-                              .range([0, self.width - self.margin.right - self.margin.left]);
+                              .range([((self.width - self.margin.right - self.margin.left) / self.data.nodes.length) * 0.5,
+                                      self.width - self.margin.right - self.margin.left - (((self.width - self.margin.right - self.margin.left) / self.data.nodes.length) * 0.5)]);
         var maxNodeSize = 10;
         if (self.nodeSizeVar != null) {
             maxNodeSize = d3.max(self.data.nodes, function (d) {
@@ -112,13 +113,14 @@ outliers.viz.arcDiagram = function (options) {
                           .append('text')
                           .attr('class', 'tooltiparc ' + (selected ? 'tooltiparctop' : 'tooltiparcbottom'))
                           .text(text)
-                          .attr('x', x)
-                          .attr('y', y)
-                          .attr('dy', (selected ? -10 - (r * 2) : 10 + (r * 2)))
+                          //.attr('x', x)
+                          //.attr('y', y)
+                          //.attr('dy', (selected ? -10 - (r * 2) : 10 + (r * 2)))
                           .attr('id', 'tooltip-' + node.attr('id'));
         var bbox = tooltip.node().getBBox(),
             offset = bbox.width / 2;
-        if ((x - offset) < 0) {
+        tooltip.attr('transform', 'translate(' + (x - r - 2)+ ', ' + (y + (bbox.width / 2)) +') rotate(270)')
+        /*if ((x - offset) < 0) {
             tooltip.attr('text-anchor', 'start');
             tooltip.attr('dx', -r);
         }
@@ -129,7 +131,7 @@ outliers.viz.arcDiagram = function (options) {
         else {
             tooltip.attr('text-anchor', 'middle');
             tooltip.attr('dx', 0);
-        }
+        }*/
     };
     self.drawNodes = function () {
         self.plotArea
