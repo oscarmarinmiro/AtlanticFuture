@@ -171,7 +171,7 @@ outliers.viz.arcDiagram = function (options) {
           .attr('data-original-title', function (d, i) { return '<h4>' + d[self.nodeNameVar] + '</h4>Pop. (year 2005): ' + self.formatValue(d[self.nodeSizeVar]); })
           .on('mouseover', function (d, i) {
               self.plotArea.selectAll('.node').style('opacity', 0.3);
-              self.plotArea.selectAll('.link').style('opacity', 0.01);
+              self.plotArea.selectAll('.link').style('opacity', 0.1);
               var connectedLinks = self.plotArea.selectAll('.link.DEF.' + self.nodeId(d));
               connectedLinks.style('opacity', 0.7);
               var currentNode = d3.select(this);
@@ -306,7 +306,7 @@ outliers.viz.arcDiagram = function (options) {
           })
           .on('mouseover', function (d, i) {
               self.plotArea.selectAll('.node').style('opacity', 0.3);
-              self.plotArea.selectAll('.link').style('opacity', 0.01);
+              self.plotArea.selectAll('.link').style('opacity', 0.1);
               self.plotArea.selectAll('.link.DEF.' + self.nodeId(d.source) + '.' + self.nodeId(d.target)).style('opacity', 1.0);
               self.plotArea.selectAll('.node.' + self.nodeId(d.target)).style('opacity', 1.0);
               self.plotArea.selectAll('.node.' + self.nodeId(d.source)).style('opacity', 1.0);
@@ -414,7 +414,7 @@ outliers.viz.arcDiagram = function (options) {
                       })
                       .on('mouseover', function (d, i) {
                           self.plotArea.selectAll('.node').style('opacity', 0.3);
-                          self.plotArea.selectAll('.link').style('opacity', 0.01);
+                          self.plotArea.selectAll('.link').style('opacity', 0.1);
                           self.plotArea.selectAll('.link.ALT.' + self.nodeId(d.source) + '.' + self.nodeId(d.target)).style('opacity', 1.0);
                           self.plotArea.selectAll('.node.' + self.nodeId(d.target)).style('opacity', 1.0);
                           self.plotArea.selectAll('.node.' + self.nodeId(d.source)).style('opacity', 1.0);
