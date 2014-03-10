@@ -62,7 +62,10 @@ outliers.viz.arcDiagram = function (options) {
             self.plotArea.append('text')
                          .attr('class', 'arctitle')
                          .text(self.linkWidthVar.toUpperCase())
-                         .attr('transform', 'translate(' + self.margin.left + ', ' + (self.yFixedNodes - (self.height / 10)) + ') rotate(270)');
+                         .attr('transform', function (d, i) {
+                             var bbox = this.getBBox();
+                             return 'translate(' + self.margin.left + ', ' + (self.yFixedNodes + bbox.width + (self.height / 10)) + ') rotate(270)';
+                         });
         }
         if ( self.duplicateArcs ) {
             if ( self.arcPos === 'UP' ) {
@@ -71,10 +74,7 @@ outliers.viz.arcDiagram = function (options) {
                 self.plotArea.append('text')
                              .attr('class', 'arctitle')
                              .text(self.linkWidthVar2.toUpperCase())
-                             .attr('transform', function (d, i) {
-                                 var bbox = this.getBBox();
-                                 return 'translate(' + self.margin.left + ', ' + (self.yFixedNodes + bbox.width + (self.height / 10)) + ') rotate(270)';
-                             });
+                             .attr('transform', 'translate(' + self.margin.left + ', ' + (self.yFixedNodes - (self.height / 10)) + ') rotate(270)');
             }
         }
     };
