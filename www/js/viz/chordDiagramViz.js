@@ -91,7 +91,7 @@ outliers.viz.chordDiagram = function (options)
 
 
     }
-
+    
     //self.render = function(data,data_label,color_rule,datum_label,legendDict)
     self.render = function(data_label,data)
     {

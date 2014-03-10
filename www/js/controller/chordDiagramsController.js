@@ -32,12 +32,27 @@ outliers.controller.chordDiagramsController = function(options)
         }
     }
 
+    
+    self.formatValue = function(value){
+        if(value=='-'){ return 0;}
+        value_parts = value.toString().split("").reverse();
+        var value_list = [];
+        for(var i=0;i<value_parts.length;i++){
+            if(i%3==0){
+                value_list.push('.')
+            }
+            value_list.push(value_parts[i]);
+        }
+        value_str = value_list.reverse().slice(0,value_list.length-1).join("");
+        return value_str;
+    };
+
     self.rellenaInfoChord = function(sourceCountryISO,targetCountryISO){
         var sourceCountryAux = self.data.datalabel.countries_data[sourceCountryISO.index];
         var targetCountryAux = self.data.datalabel.countries_data[targetCountryISO.index];
 
         var movementAux = self.data.datalabel.movements_data[self.year][self.countries[sourceCountryISO.index]][self.countries[targetCountryISO.index]];
-        var html = 'From '+sourceCountryAux.longName+"(HDI: "+sourceCountryAux.HDI+") to "+targetCountryAux.longName+"(HDI: "+targetCountryAux.HDI+"): "+self.data.data[self.year][sourceCountryISO.index][targetCountryISO.index]+" migrants <br>From "+targetCountryAux.longName+"(HDI: "+targetCountryAux.HDI+") to "+sourceCountryAux.longName+"(HDI: "+sourceCountryAux.HDI+"): "+self.data.data[self.year][targetCountryISO.index][sourceCountryISO.index]+" migrants<br>Same lang: "+movementAux.sameLanguage+'<br>Distance: '+parseFloat(movementAux.distance).toFixed(2)+'<br>Same currency: '+movementAux.sameCurrency;
+        var html = 'From '+sourceCountryAux.longName+"(HDI: "+sourceCountryAux.HDI+") to "+targetCountryAux.longName+"(HDI: "+targetCountryAux.HDI+"): "+self.formatValue(self.data.data[self.year][sourceCountryISO.index][targetCountryISO.index])+" migrants <br>From "+targetCountryAux.longName+"(HDI: "+targetCountryAux.HDI+") to "+sourceCountryAux.longName+"(HDI: "+sourceCountryAux.HDI+"): "+self.formatValue(self.data.data[self.year][targetCountryISO.index][sourceCountryISO.index])+" migrants<br>Same lang: "+movementAux.sameLanguage+'<br>Distance: '+parseFloat(movementAux.distance).toFixed(2)+'<br>Same currency: '+movementAux.sameCurrency;
 
         //d3.select("#zonaInfo").html(html);
         d3.select(".tooltip").style("opacity",1).html(html);
