@@ -17,10 +17,18 @@ outliers.viz.arcDiagram = function (options) {
         self.nodeNameVar = self.nodeNameVar || null;
         self.nodeColorVar = self.nodeColorVar || null;
         self.linkWidthVar = self.linkWidthVar || 'value';
-        self.year = self.year || 1990;
+        self.linkWidthVar2 = self.linkWidthVar2 || 'remittance';
+        self.duplicateArcs = self.duplicateArcs || false;
+        self.arcsPos = ( self.duplicateArcs ? 'BOTH' : self.arcsPos || 'UP' );
+        self.year = self.year || 2013;
         self.firstRender = true;
-
-        self.yFixedNodes = (self.height - self.margin.top - self.margin.bottom) / 2;
+        if ( self.arcsPos === 'UP' ) {
+            self.yFixedNodes = self.margin.top;
+        } else if ( self.arcsPos === 'DOWN' ) {
+            self.yFixedNodes = (self.height - self.margin.top - self.margin.bottom);
+        } else {
+            self.yFixedNodes = (self.height - self.margin.top - self.margin.bottom) / 2;
+        }
         //Create SVG.
         self.svg = d3.select(self.parentSelect)
                      .append('svg')
@@ -32,33 +40,20 @@ outliers.viz.arcDiagram = function (options) {
                                 .attr('id', 'plotArea-' + self.parentId)
                                 .attr('transform', 'translate(' + self.margin.top + ', ' +
                                       self.margin.left + ')');
-
-
-        self.prerender(1990);
     };
     self.prerender = function (year) {
-        console.log("prerender");
-        
+        console.log('prerender!!!!!');
         self.year = year;
-        //self.yFixedNodes = (self.height - self.margin.top - self.margin.bottom) / 2;
-        //Create SVG.
-        //self.svg = d3.select(self.parentSelect)
-        //             .append('svg')
-        //             .attr('id', 'arcDiagram-' + self.parentId)
-        //             .attr('width', self.width)
-        //             .attr('height', self.height);
-        //Create plot area.
-        //self.plotArea = self.svg.append('g')
-        //                        .attr('id', 'plotArea-' + self.parentId)
-        //                        .attr('transform', 'translate(' + self.margin.top + ', ' +
-        //                              self.margin.left + ')');
         self.data.links[self.year].forEach(function (d, i) {
             d.source = isNaN(d.source) ? d.source : self.data.nodes[d.source];
             d.target = isNaN(d.target) ? d.target : self.data.nodes[d.target];
         });
+        console.log('prepare nodes');
         self.prepareNodes();
+        console.log('draw links');
         self.drawLinks();
         if(self.firstRender){
+            console.log('draw nodes');
             self.drawNodes();
         }
         self.firstRender = false;
@@ -131,11 +126,14 @@ outliers.viz.arcDiagram = function (options) {
           .attr('cx', function (d, i) { return d.x; })
           .attr('cy', function (d, i) { return d.y; })
           .attr('r', function (d, i) { return d.r; })
-          .style('fill', function (d, i) { self.drawInfo(d3.select(this),false);return d.color; })
+          .style('fill', function (d, i) {
+              self.drawInfo( d3.select(this), false);
+              return d.color;
+          })
           .on('mouseover', function (d, i) {
               self.plotArea.selectAll('.node').style('opacity', 0.3);
               self.plotArea.selectAll('.link').style('opacity', 0.01);
-              var connectedLinks = self.plotArea.selectAll('.link.' + self.nodeId(d));
+              var connectedLinks = self.plotArea.selectAll('.link.DEF.' + self.nodeId(d));
               connectedLinks.style('opacity', 0.7);
               var currentNode = d3.select(this);
               connectedLinks[0].forEach(function (d, i) {
@@ -143,19 +141,25 @@ outliers.viz.arcDiagram = function (options) {
                   self.plotArea.selectAll('.node.' + self.nodeId(d.__data__.source)).style('opacity', 1.0);
                   var targetNode = d3.select('.node.' + self.nodeId(d.__data__.target)),
                       sourceNode = d3.select('.node.' + self.nodeId(d.__data__.source));
-                  /*if (targetNode.attr('id') != currentNode.attr('id')) {
-                      self.drawInfo(targetNode, false);
-                  }
-                  if (sourceNode.attr('id') != currentNode.attr('id')) {
-                      self.drawInfo(sourceNode, false);
-                  }*/
               });
-              //self.drawInfo(currentNode, true);
+              if ( self.duplicateArcs ) {
+                  var connectedLinks = self.plotArea.selectAll('.link.ALT.' + self.nodeId(d));
+                  connectedLinks.style('opacity', 0.7);
+                  var currentNode = d3.select(this);
+                  connectedLinks[0].forEach(function (d, i) {
+                      self.plotArea.selectAll('.node.' + self.nodeId(d.__data__.target)).style('opacity', 1.0);
+                      self.plotArea.selectAll('.node.' + self.nodeId(d.__data__.source)).style('opacity', 1.0);
+                      var targetNode = d3.select('.node.' + self.nodeId(d.__data__.target)),
+                          sourceNode = d3.select('.node.' + self.nodeId(d.__data__.source));
+                  });
+              }
           })
           .on('mouseout', function (d, i) {
-              //d3.selectAll('.tooltiparc').remove();
               d3.selectAll('.node').style('opacity', 1.0);
-              d3.selectAll('.link').style('opacity', 0.5);
+              d3.selectAll('.link.DEF').style('opacity', 0.5);
+              if ( self.duplicateArcs ) {
+                  d3.selectAll('.link.ALT').style('opacity', 0.5);
+              }
           });
 
     };
@@ -168,21 +172,15 @@ outliers.viz.arcDiagram = function (options) {
             bottom: d3.svg.line.radial().interpolate('basis').tension(0).angle(function (x) { return radians.bottom(x); }),
             top: d3.svg.line.radial().interpolate('basis').tension(0).angle(function (x) { return radians.top(x); })
         };
-        /*var maxStrokeWidth = 10;
-        if (self.linkWidthVar != null) {
-            maxStrokeWidth = d3.max(self.data.links, function (d) {
-                return +d[self.linkWidthVar];
-            });
-        }*/
         self.linkStrokeWidthScale = d3.scale.sqrt()
                                             .domain([0, 12000000])
                                             .range([0, 10]);
         self.links = self.plotArea
-          .selectAll('.link')
-          .data(self.data.links[self.year],function(d,i){
-                var id_str = d.source.iso2+"&&##&&"+d.target.iso2;
-                return id_str;
-          });
+                         .selectAll('.link.DEF')
+                         .data(self.data.links[self.year],function(d,i){
+                             var id_str = d.source.iso2 + '&&##&&' + d.target.iso2;
+                             return id_str;
+                         });
 
         self.links.transition().duration(self.transTime)
           .attr('transform', function (d, i) {
@@ -193,21 +191,28 @@ outliers.viz.arcDiagram = function (options) {
           .attr('d', function (d, i) {
               var xdist = Math.abs(d.source.x - d.target.x);
               var points = d3.range(0, Math.ceil(xdist / 3));
-              if (d.type === 'IN'){
+              if ( self.arcPos === 'UP' ) {
                   arc.top.radius(xdist / 2);
                   radians.top.domain([0, points.length - 1]);
                   return arc.top(points);
-              } else if (d.type === 'OUT') {
+              } else if ( self.arcPos === 'DOWN' ) {
                   arc.bottom.radius(xdist / 2);
                   radians.bottom.domain([0, points.length - 1]);
                   return arc.bottom(points);
+              } else {
+                  if (d.type === 'IN'){
+                      arc.top.radius(xdist / 2);
+                      radians.top.domain([0, points.length - 1]);
+                      return arc.top(points);
+                  } else if (d.type === 'OUT') {
+                      arc.bottom.radius(xdist / 2);
+                      radians.bottom.domain([0, points.length - 1]);
+                      return arc.bottom(points);
+                  }
               }
           })
           .style('stroke-width', function (d, i) {
-              console.log(d['value']);
-              console.log(self.linkStrokeWidthScale(d['value']));
               return self.linkStrokeWidthScale(d[self.linkWidthVar])+'px';
-              //return (self.linkWidthVar == null ? self.linkStrokeWidthScale(Math.floor((Math.random()*10)+1)) : self.linkStrokeWidthScale(d[self.linkWidthVar])) + 'px';
           });
           
         self.links.exit().remove();
@@ -215,7 +220,7 @@ outliers.viz.arcDiagram = function (options) {
         self.links.enter()
           .append('path')
           .attr('class', function (d, i) {
-              return 'link ' + d.type + ' ' + self.nodeId(d.source) + ' ' + self.nodeId(d.target);
+              return 'link DEF ' + d.type + ' ' + self.nodeId(d.source) + ' ' + self.nodeId(d.target);
           })
           .attr('transform', function (d, i) {
               var xshift = d.source.x + (d.target.x - d.source.x) / 2;
@@ -225,19 +230,113 @@ outliers.viz.arcDiagram = function (options) {
           .attr('d', function (d, i) {
               var xdist = Math.abs(d.source.x - d.target.x);
               var points = d3.range(0, Math.ceil(xdist / 3));
-              if (d.type === 'IN'){
+              if ( self.arcPos === 'UP' ) {
                   arc.top.radius(xdist / 2);
                   radians.top.domain([0, points.length - 1]);
                   return arc.top(points);
-              } else if (d.type === 'OUT') {
+              } else if ( self.arcPos === 'DOWN' ) {
                   arc.bottom.radius(xdist / 2);
                   radians.bottom.domain([0, points.length - 1]);
                   return arc.bottom(points);
+              } else {
+                  if (d.type === 'IN'){
+                      arc.top.radius(xdist / 2);
+                      radians.top.domain([0, points.length - 1]);
+                      return arc.top(points);
+                  } else if (d.type === 'OUT') {
+                      arc.bottom.radius(xdist / 2);
+                      radians.bottom.domain([0, points.length - 1]);
+                      return arc.bottom(points);
+                  }
               }
           })
           .style('stroke-width', function (d, i) {
               return (self.linkWidthVar == null ? self.linkStrokeWidthScale(Math.floor((Math.random()*10)+1)) : self.linkStrokeWidthScale(d[self.linkWidthVar])) + 'px';
           });
+        if ( self.duplicateArcs ) {
+            self.linkStrokeWidthScale2 = d3.scale.sqrt()
+                                                 .domain([0, 1500])
+                                                 .range([0, 10]);
+            var data = self.data.links[self.year];
+            data = data.filter( function (d) {
+                return d[self.linkWidthVar2] > 0.0;
+            });
+            self.links2 = self.plotArea
+                              .selectAll('.link.ALT')
+                              .data(data, function (d,i) {
+                                  var id_str = d.source.iso2 + '&&##&&' + d.target.iso2 + '-alt';
+                                  return id_str;
+                              });
+            self.links2.transition().duration(self.transTime)
+                        .attr('transform', function (d, i) {
+                            var xshift = d.source.x + (d.target.x - d.source.x) / 2;
+                            var yshift = self.yFixedNodes;
+                            return 'translate(' + xshift + ', ' + yshift + ')';
+                        })
+                        .attr('d', function (d, i) {
+                            var xdist = Math.abs(d.source.x - d.target.x);
+                            var points = d3.range(0, Math.ceil(xdist / 3));
+                            if ( self.arcPos === 'UP' ) {
+                                arc.bottom.radius(xdist / 2);
+                                radians.bottom.domain([0, points.length - 1]);
+                                return arc.bottom(points);
+                            } else if ( self.arcPos === 'DOWN' ) {
+                                arc.top.radius(xdist / 2);
+                                radians.top.domain([0, points.length - 1]);
+                                return arc.top(points);
+                            } else {
+                                if (d.type === 'IN'){
+                                    arc.bottom.radius(xdist / 2);
+                                    radians.bottom.domain([0, points.length - 1]);
+                                    return arc.bottom(points);
+                                } else if (d.type === 'OUT') {
+                                    arc.top.radius(xdist / 2);
+                                    radians.top.domain([0, points.length - 1]);
+                                    return arc.top(points);
+                                }
+                            }
+                        })
+                        .style('stroke-width', function (d, i) {
+                            return self.linkStrokeWidthScale2(d[self.linkWidthVar2])+'px';
+                        });  
+            self.links2.exit().remove();
+            self.links2.enter()
+                      .append('path')
+                      .attr('class', function (d, i) {
+                          return 'link ALT ' + self.nodeId(d.source) + ' ' + self.nodeId(d.target);
+                      })
+                      .attr('transform', function (d, i) {
+                          var xshift = d.source.x + (d.target.x - d.source.x) / 2;
+                          var yshift = self.yFixedNodes;
+                          return 'translate(' + xshift + ', ' + yshift + ')';
+                      })
+                      .attr('d', function (d, i) {
+                          var xdist = Math.abs(d.source.x - d.target.x);
+                          var points = d3.range(0, Math.ceil(xdist / 3));
+                          if ( self.arcPos === 'UP' ) {
+                              arc.bottom.radius(xdist / 2);
+                              radians.bottom.domain([0, points.length - 1]);
+                              return arc.bottom(points);
+                          } else if ( self.arcPos === 'DOWN' ) {
+                              arc.top.radius(xdist / 2);
+                              radians.top.domain([0, points.length - 1]);
+                              return arc.top(points);
+                          } else {
+                              if (d.type === 'IN'){
+                                  arc.bottom.radius(xdist / 2);
+                                  radians.bottom.domain([0, points.length - 1]);
+                                  return arc.bottom(points);
+                              } else if (d.type === 'OUT') {
+                                  arc.top.radius(xdist / 2);
+                                  radians.top.domain([0, points.length - 1]);
+                                  return arc.top(points);
+                              }
+                          }
+                      })
+                      .style('stroke-width', function (d, i) {
+                          return (self.linkWidthVar2 == null ? self.linkStrokeWidthScale2(Math.floor((Math.random()*10)+1)) : self.linkStrokeWidthScale2(d[self.linkWidthVar2])) + 'px';
+                      });
+        }
     };
     self.render = function () {
     };

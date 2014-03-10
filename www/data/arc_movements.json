@@ -16,7 +16,7 @@
                 "value": "2524"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 4, 
                 "target": 5, 
                 "type": "OUT", 
@@ -58,7 +58,7 @@
                 "value": "133"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 18, 
                 "type": "OUT", 
@@ -86,21 +86,21 @@
                 "value": "13230"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "13767"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "1421"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 18, 
                 "type": "OUT", 
@@ -128,14 +128,14 @@
                 "value": "14050"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 18, 
                 "type": "OUT", 
                 "value": "479"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 4, 
                 "type": "OUT", 
@@ -163,7 +163,7 @@
                 "value": "3906"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 5, 
                 "target": 18, 
                 "type": "OUT", 
@@ -177,7 +177,7 @@
                 "value": "15310"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 13, 
                 "target": 18, 
                 "type": "OUT", 
@@ -226,7 +226,7 @@
                 "value": "1140"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 18, 
                 "type": "OUT", 
@@ -254,14 +254,14 @@
                 "value": "34359"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 18, 
                 "type": "OUT", 
                 "value": "2291"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 18, 
                 "type": "OUT", 
@@ -289,7 +289,7 @@
                 "value": "156"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 5, 
                 "type": "OUT", 
@@ -310,7 +310,7 @@
                 "value": "43347"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 7, 
                 "target": 5, 
                 "type": "OUT", 
@@ -352,7 +352,7 @@
                 "value": "736741"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 18, 
                 "target": 5, 
                 "type": "OUT", 
@@ -380,7 +380,7 @@
                 "value": "306"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 18, 
                 "type": "OUT", 
@@ -415,14 +415,14 @@
                 "value": "581"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "267"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 16, 
                 "type": "OUT", 
@@ -436,7 +436,7 @@
                 "value": "137225"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 4, 
                 "target": 13, 
                 "type": "OUT", 
@@ -457,7 +457,7 @@
                 "value": "15050"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 13, 
                 "target": 16, 
                 "type": "OUT", 
@@ -485,7 +485,7 @@
                 "value": "711"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 16, 
                 "target": 18, 
                 "type": "OUT", 
@@ -499,14 +499,14 @@
                 "value": "144480"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "7842"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 4, 
                 "type": "OUT", 
@@ -520,7 +520,7 @@
                 "value": "39944"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 4, 
                 "type": "OUT", 
@@ -534,7 +534,7 @@
                 "value": "463"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 5, 
                 "target": 16, 
                 "type": "OUT", 
@@ -590,7 +590,7 @@
                 "value": "29646"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 5, 
                 "type": "OUT", 
@@ -716,14 +716,14 @@
                 "value": "40260"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "353"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 18, 
                 "type": "OUT", 
@@ -758,14 +758,14 @@
                 "value": "1296"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "11077"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 18, 
                 "type": "OUT", 
@@ -800,7 +800,7 @@
                 "value": "28350"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 13, 
                 "target": 5, 
                 "type": "OUT", 
@@ -814,14 +814,14 @@
                 "value": "99835"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "3850"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 16, 
                 "type": "OUT", 
@@ -849,7 +849,7 @@
                 "value": "33123"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 5, 
                 "type": "OUT", 
@@ -863,21 +863,21 @@
                 "value": "1905"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "55003"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 18, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "889"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 13, 
                 "type": "OUT", 
@@ -926,7 +926,7 @@
                 "value": "68531"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 7, 
                 "target": 16, 
                 "type": "OUT", 
@@ -940,7 +940,7 @@
                 "value": "274924"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 4, 
                 "type": "OUT", 
@@ -975,28 +975,28 @@
                 "value": "1510"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "328"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 7, 
                 "target": 18, 
                 "type": "OUT", 
                 "value": "88"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "16746"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 4, 
                 "type": "OUT", 
@@ -1010,21 +1010,21 @@
                 "value": "3524"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 7, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "6464"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "17495"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 5, 
                 "type": "OUT", 
@@ -1059,35 +1059,35 @@
                 "value": "4323"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "10703"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "248347"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "752"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "58432"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 4, 
                 "type": "OUT", 
@@ -1143,7 +1143,7 @@
                 "value": "142457"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 4, 
                 "type": "OUT", 
@@ -1171,7 +1171,7 @@
                 "value": "19912"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 18, 
                 "type": "OUT", 
@@ -1185,7 +1185,7 @@
                 "value": "102335"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 4, 
                 "type": "OUT", 
@@ -1199,7 +1199,7 @@
                 "value": "292"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 13, 
                 "type": "OUT", 
@@ -1213,7 +1213,7 @@
                 "value": "835"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 16, 
                 "type": "OUT", 
@@ -1255,7 +1255,7 @@
                 "value": "5569"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 13, 
                 "type": "OUT", 
@@ -1290,7 +1290,7 @@
                 "value": "1427"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 13, 
                 "type": "OUT", 
@@ -1304,7 +1304,7 @@
                 "value": "950"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 4, 
                 "type": "OUT", 
@@ -1318,7 +1318,7 @@
                 "value": "5631"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 18, 
                 "target": 16, 
                 "type": "OUT", 
@@ -1332,7 +1332,7 @@
                 "value": "6305"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 16, 
                 "target": 4, 
                 "type": "OUT", 
@@ -1346,7 +1346,7 @@
                 "value": "96"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 5, 
                 "type": "OUT", 
@@ -1388,7 +1388,7 @@
                 "value": "1551"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 18, 
                 "type": "OUT", 
@@ -1409,7 +1409,7 @@
                 "value": "34420"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 4, 
                 "type": "OUT", 
@@ -1500,7 +1500,7 @@
                 "value": "223205"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 13, 
                 "type": "OUT", 
@@ -1514,7 +1514,7 @@
                 "value": "9483"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 18, 
                 "type": "OUT", 
@@ -1528,7 +1528,7 @@
                 "value": "8985"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 5, 
                 "type": "OUT", 
@@ -1605,14 +1605,14 @@
                 "value": "2679"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "1186"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 16, 
                 "type": "OUT", 
@@ -1682,7 +1682,7 @@
                 "value": "47412"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 16, 
                 "target": 13, 
                 "type": "OUT", 
@@ -1696,7 +1696,7 @@
                 "value": "4059"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 18, 
                 "type": "OUT", 
@@ -1717,7 +1717,7 @@
                 "value": "10959"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 16, 
                 "type": "OUT", 
@@ -1745,7 +1745,7 @@
                 "value": "795"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 5, 
                 "target": 13, 
                 "type": "OUT", 
@@ -1759,7 +1759,7 @@
                 "value": "4499"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 16, 
                 "type": "OUT", 
@@ -1773,14 +1773,14 @@
                 "value": "277"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 16, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "129238"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 13, 
                 "target": 4, 
                 "type": "OUT", 
@@ -1794,14 +1794,14 @@
                 "value": "2642"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "43"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 18, 
                 "type": "OUT", 
@@ -1822,7 +1822,7 @@
                 "value": "1981"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 16, 
                 "type": "OUT", 
@@ -1843,14 +1843,14 @@
                 "value": "103961"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "273"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 4, 
                 "target": 18, 
                 "type": "OUT", 
@@ -1864,14 +1864,14 @@
                 "value": "5084"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "14959"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 13, 
                 "type": "OUT", 
@@ -1892,21 +1892,21 @@
                 "value": "220"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 18, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "62"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "88"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 4, 
                 "type": "OUT", 
@@ -1948,7 +1948,7 @@
                 "value": "2014"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 16, 
                 "type": "OUT", 
@@ -1969,7 +1969,7 @@
                 "value": "2332"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 5, 
                 "type": "OUT", 
@@ -2039,7 +2039,7 @@
                 "value": "87946"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 13, 
                 "type": "OUT", 
@@ -2074,14 +2074,14 @@
                 "value": "384560"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 4, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "7876"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 16, 
                 "type": "OUT", 
@@ -2095,14 +2095,14 @@
                 "value": "2510"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "3121"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 5, 
                 "type": "OUT", 
@@ -2144,7 +2144,7 @@
                 "value": "71583"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 5, 
                 "target": 4, 
                 "type": "OUT", 
@@ -2181,7 +2181,7 @@
                 "value": "3083"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 4, 
                 "target": 5, 
                 "type": "OUT", 
@@ -2223,7 +2223,7 @@
                 "value": "109"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 18, 
                 "type": "OUT", 
@@ -2251,21 +2251,21 @@
                 "value": "14877"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "20695"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "3933"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 18, 
                 "type": "OUT", 
@@ -2293,14 +2293,14 @@
                 "value": "27629"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 18, 
                 "type": "OUT", 
                 "value": "360"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 4, 
                 "type": "OUT", 
@@ -2328,7 +2328,7 @@
                 "value": "6982"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 5, 
                 "target": 18, 
                 "type": "OUT", 
@@ -2342,7 +2342,7 @@
                 "value": "36248"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 13, 
                 "target": 18, 
                 "type": "OUT", 
@@ -2391,7 +2391,7 @@
                 "value": "1397"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 18, 
                 "type": "OUT", 
@@ -2419,14 +2419,14 @@
                 "value": "32925"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 18, 
                 "type": "OUT", 
                 "value": "2855"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 18, 
                 "type": "OUT", 
@@ -2454,7 +2454,7 @@
                 "value": "119"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 5, 
                 "type": "OUT", 
@@ -2475,7 +2475,7 @@
                 "value": "79339"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 7, 
                 "target": 5, 
                 "type": "OUT", 
@@ -2517,7 +2517,7 @@
                 "value": "730382"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 18, 
                 "target": 5, 
                 "type": "OUT", 
@@ -2545,7 +2545,7 @@
                 "value": "415"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 18, 
                 "type": "OUT", 
@@ -2580,14 +2580,14 @@
                 "value": "710"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "138"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 16, 
                 "type": "OUT", 
@@ -2601,7 +2601,7 @@
                 "value": "162892"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 4, 
                 "target": 13, 
                 "type": "OUT", 
@@ -2622,7 +2622,7 @@
                 "value": "16023"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 13, 
                 "target": 16, 
                 "type": "OUT", 
@@ -2650,7 +2650,7 @@
                 "value": "3876"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 16, 
                 "target": 18, 
                 "type": "OUT", 
@@ -2664,14 +2664,14 @@
                 "value": "157880"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "18104"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 4, 
                 "type": "OUT", 
@@ -2685,7 +2685,7 @@
                 "value": "68494"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 4, 
                 "type": "OUT", 
@@ -2699,7 +2699,7 @@
                 "value": "493"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 5, 
                 "target": 16, 
                 "type": "OUT", 
@@ -2755,7 +2755,7 @@
                 "value": "40297"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 5, 
                 "type": "OUT", 
@@ -2881,14 +2881,14 @@
                 "value": "42863"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "182"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 18, 
                 "type": "OUT", 
@@ -2923,14 +2923,14 @@
                 "value": "1454"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "13822"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 18, 
                 "type": "OUT", 
@@ -2965,7 +2965,7 @@
                 "value": "27597"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 13, 
                 "target": 5, 
                 "type": "OUT", 
@@ -2979,14 +2979,14 @@
                 "value": "109838"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "7966"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 16, 
                 "type": "OUT", 
@@ -3014,7 +3014,7 @@
                 "value": "37200"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 5, 
                 "type": "OUT", 
@@ -3028,21 +3028,21 @@
                 "value": "1797"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "75234"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 18, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "459"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 13, 
                 "type": "OUT", 
@@ -3091,7 +3091,7 @@
                 "value": "140911"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 7, 
                 "target": 16, 
                 "type": "OUT", 
@@ -3105,7 +3105,7 @@
                 "value": "213713"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 4, 
                 "type": "OUT", 
@@ -3140,21 +3140,21 @@
                 "value": "21117"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "169"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 7, 
                 "target": 18, 
                 "type": "OUT", 
                 "value": "80"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 5, 
                 "type": "OUT", 
@@ -3175,21 +3175,21 @@
                 "value": "6549"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 7, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "10850"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "18361"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 5, 
                 "type": "OUT", 
@@ -3224,35 +3224,35 @@
                 "value": "4828"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "5521"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "258262"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "388"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "92320"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 4, 
                 "type": "OUT", 
@@ -3308,7 +3308,7 @@
                 "value": "125158"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 4, 
                 "type": "OUT", 
@@ -3336,7 +3336,7 @@
                 "value": "38831"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 18, 
                 "type": "OUT", 
@@ -3350,7 +3350,7 @@
                 "value": "108951"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 4, 
                 "type": "OUT", 
@@ -3364,7 +3364,7 @@
                 "value": "408"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 13, 
                 "type": "OUT", 
@@ -3378,7 +3378,7 @@
                 "value": "636"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 16, 
                 "type": "OUT", 
@@ -3420,14 +3420,14 @@
                 "value": "5042"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "192"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 4, 
                 "type": "OUT", 
@@ -3455,7 +3455,7 @@
                 "value": "2319"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 13, 
                 "type": "OUT", 
@@ -3469,7 +3469,7 @@
                 "value": "1160"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 4, 
                 "type": "OUT", 
@@ -3483,7 +3483,7 @@
                 "value": "5608"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 18, 
                 "target": 16, 
                 "type": "OUT", 
@@ -3497,7 +3497,7 @@
                 "value": "6712"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 16, 
                 "target": 4, 
                 "type": "OUT", 
@@ -3511,7 +3511,7 @@
                 "value": "66"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 5, 
                 "type": "OUT", 
@@ -3553,7 +3553,7 @@
                 "value": "1075"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 18, 
                 "type": "OUT", 
@@ -3574,7 +3574,7 @@
                 "value": "36645"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 4, 
                 "type": "OUT", 
@@ -3665,7 +3665,7 @@
                 "value": "123926"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 13, 
                 "type": "OUT", 
@@ -3679,7 +3679,7 @@
                 "value": "8724"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 18, 
                 "type": "OUT", 
@@ -3693,7 +3693,7 @@
                 "value": "6829"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 5, 
                 "type": "OUT", 
@@ -3770,14 +3770,14 @@
                 "value": "2230"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "612"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 16, 
                 "type": "OUT", 
@@ -3847,7 +3847,7 @@
                 "value": "88071"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 16, 
                 "target": 13, 
                 "type": "OUT", 
@@ -3861,7 +3861,7 @@
                 "value": "5060"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 18, 
                 "type": "OUT", 
@@ -3882,7 +3882,7 @@
                 "value": "8325"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 16, 
                 "type": "OUT", 
@@ -3910,7 +3910,7 @@
                 "value": "604"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 5, 
                 "target": 13, 
                 "type": "OUT", 
@@ -3924,7 +3924,7 @@
                 "value": "4732"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 16, 
                 "type": "OUT", 
@@ -3938,14 +3938,14 @@
                 "value": "102"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 16, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "118388"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 13, 
                 "target": 4, 
                 "type": "OUT", 
@@ -3959,14 +3959,14 @@
                 "value": "3227"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "141"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 18, 
                 "type": "OUT", 
@@ -3987,7 +3987,7 @@
                 "value": "2600"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 16, 
                 "type": "OUT", 
@@ -4008,14 +4008,14 @@
                 "value": "111510"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "556"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 4, 
                 "target": 18, 
                 "type": "OUT", 
@@ -4029,14 +4029,14 @@
                 "value": "6209"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "21660"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 13, 
                 "type": "OUT", 
@@ -4057,21 +4057,21 @@
                 "value": "126"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 18, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "207"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "45"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 4, 
                 "type": "OUT", 
@@ -4113,7 +4113,7 @@
                 "value": "3742"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 16, 
                 "type": "OUT", 
@@ -4134,7 +4134,7 @@
                 "value": "3040"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 5, 
                 "type": "OUT", 
@@ -4204,7 +4204,7 @@
                 "value": "89292"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 13, 
                 "type": "OUT", 
@@ -4239,14 +4239,14 @@
                 "value": "596835"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 4, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "9849"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 16, 
                 "type": "OUT", 
@@ -4260,14 +4260,14 @@
                 "value": "3397"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "10419"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 5, 
                 "type": "OUT", 
@@ -4309,7 +4309,7 @@
                 "value": "54176"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 5, 
                 "target": 4, 
                 "type": "OUT", 
@@ -4346,7 +4346,7 @@
                 "value": "3437"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 4, 
                 "target": 5, 
                 "type": "OUT", 
@@ -4388,7 +4388,7 @@
                 "value": "107"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 18, 
                 "type": "OUT", 
@@ -4416,21 +4416,21 @@
                 "value": "22431"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "174"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "6352"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 18, 
                 "type": "OUT", 
@@ -4458,14 +4458,14 @@
                 "value": "51006"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 18, 
                 "type": "OUT", 
                 "value": "943"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 4, 
                 "type": "OUT", 
@@ -4493,7 +4493,7 @@
                 "value": "14136"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 5, 
                 "target": 18, 
                 "type": "OUT", 
@@ -4507,7 +4507,7 @@
                 "value": "129140"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 13, 
                 "target": 18, 
                 "type": "OUT", 
@@ -4556,7 +4556,7 @@
                 "value": "1839"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 18, 
                 "type": "OUT", 
@@ -4584,14 +4584,14 @@
                 "value": "41330"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 18, 
                 "type": "OUT", 
                 "value": "3389"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 18, 
                 "type": "OUT", 
@@ -4619,7 +4619,7 @@
                 "value": "240"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 5, 
                 "type": "OUT", 
@@ -4640,7 +4640,7 @@
                 "value": "275399"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 7, 
                 "target": 5, 
                 "type": "OUT", 
@@ -4682,7 +4682,7 @@
                 "value": "732374"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 18, 
                 "target": 5, 
                 "type": "OUT", 
@@ -4710,7 +4710,7 @@
                 "value": "563"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 18, 
                 "type": "OUT", 
@@ -4745,14 +4745,14 @@
                 "value": "791"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "125"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 16, 
                 "type": "OUT", 
@@ -4766,7 +4766,7 @@
                 "value": "173251"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 4, 
                 "target": 13, 
                 "type": "OUT", 
@@ -4787,7 +4787,7 @@
                 "value": "25459"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 13, 
                 "target": 16, 
                 "type": "OUT", 
@@ -4815,7 +4815,7 @@
                 "value": "36259"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 16, 
                 "target": 18, 
                 "type": "OUT", 
@@ -4829,14 +4829,14 @@
                 "value": "196634"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "46525"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 4, 
                 "type": "OUT", 
@@ -4850,7 +4850,7 @@
                 "value": "98393"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 4, 
                 "type": "OUT", 
@@ -4864,7 +4864,7 @@
                 "value": "922"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 5, 
                 "target": 16, 
                 "type": "OUT", 
@@ -4899,7 +4899,7 @@
                 "value": "3211"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 16, 
                 "type": "OUT", 
@@ -4934,7 +4934,7 @@
                 "value": "508"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 5, 
                 "type": "OUT", 
@@ -5018,7 +5018,7 @@
                 "value": "7137"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 4, 
                 "type": "OUT", 
@@ -5067,14 +5067,14 @@
                 "value": "52364"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "166"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 18, 
                 "type": "OUT", 
@@ -5109,14 +5109,14 @@
                 "value": "1699"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "21770"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 18, 
                 "type": "OUT", 
@@ -5151,7 +5151,7 @@
                 "value": "29107"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 13, 
                 "target": 5, 
                 "type": "OUT", 
@@ -5165,14 +5165,14 @@
                 "value": "110117"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "13518"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 16, 
                 "type": "OUT", 
@@ -5200,7 +5200,7 @@
                 "value": "43511"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 5, 
                 "type": "OUT", 
@@ -5214,21 +5214,21 @@
                 "value": "1924"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "96904"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 18, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "417"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 13, 
                 "type": "OUT", 
@@ -5277,7 +5277,7 @@
                 "value": "232028"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 7, 
                 "target": 16, 
                 "type": "OUT", 
@@ -5291,7 +5291,7 @@
                 "value": "138166"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 4, 
                 "type": "OUT", 
@@ -5326,21 +5326,21 @@
                 "value": "43260"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "154"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 7, 
                 "target": 18, 
                 "type": "OUT", 
                 "value": "194"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 5, 
                 "type": "OUT", 
@@ -5361,21 +5361,21 @@
                 "value": "13764"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 7, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "10886"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "19675"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 5, 
                 "type": "OUT", 
@@ -5410,35 +5410,35 @@
                 "value": "4688"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "5024"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "304122"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "353"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "89619"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 4, 
                 "type": "OUT", 
@@ -5494,7 +5494,7 @@
                 "value": "87686"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 4, 
                 "type": "OUT", 
@@ -5522,7 +5522,7 @@
                 "value": "81603"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 18, 
                 "type": "OUT", 
@@ -5550,7 +5550,7 @@
                 "value": "429"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 13, 
                 "type": "OUT", 
@@ -5564,7 +5564,7 @@
                 "value": "707"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 16, 
                 "type": "OUT", 
@@ -5613,7 +5613,7 @@
                 "value": "1120"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 4, 
                 "type": "OUT", 
@@ -5641,7 +5641,7 @@
                 "value": "1556"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 13, 
                 "type": "OUT", 
@@ -5655,7 +5655,7 @@
                 "value": "1293"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 4, 
                 "type": "OUT", 
@@ -5669,7 +5669,7 @@
                 "value": "6188"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 18, 
                 "target": 16, 
                 "type": "OUT", 
@@ -5683,7 +5683,7 @@
                 "value": "11412"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 16, 
                 "target": 4, 
                 "type": "OUT", 
@@ -5697,7 +5697,7 @@
                 "value": "56"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 5, 
                 "type": "OUT", 
@@ -5739,7 +5739,7 @@
                 "value": "830"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 18, 
                 "type": "OUT", 
@@ -5760,7 +5760,7 @@
                 "value": "41473"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 4, 
                 "type": "OUT", 
@@ -5851,7 +5851,7 @@
                 "value": "263456"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 13, 
                 "type": "OUT", 
@@ -5865,7 +5865,7 @@
                 "value": "7862"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 18, 
                 "type": "OUT", 
@@ -5879,7 +5879,7 @@
                 "value": "15927"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 5, 
                 "type": "OUT", 
@@ -5956,14 +5956,14 @@
                 "value": "2204"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "556"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 16, 
                 "type": "OUT", 
@@ -6033,7 +6033,7 @@
                 "value": "148459"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 16, 
                 "target": 13, 
                 "type": "OUT", 
@@ -6047,7 +6047,7 @@
                 "value": "8157"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 18, 
                 "type": "OUT", 
@@ -6068,7 +6068,7 @@
                 "value": "16855"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 16, 
                 "type": "OUT", 
@@ -6096,7 +6096,7 @@
                 "value": "917"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 5, 
                 "target": 13, 
                 "type": "OUT", 
@@ -6110,7 +6110,7 @@
                 "value": "7137"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 16, 
                 "type": "OUT", 
@@ -6124,14 +6124,14 @@
                 "value": "313"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 16, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "123774"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 13, 
                 "target": 4, 
                 "type": "OUT", 
@@ -6145,14 +6145,14 @@
                 "value": "3597"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "264"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 18, 
                 "type": "OUT", 
@@ -6173,7 +6173,7 @@
                 "value": "1745"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 16, 
                 "type": "OUT", 
@@ -6194,14 +6194,14 @@
                 "value": "95843"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "1253"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 4, 
                 "target": 18, 
                 "type": "OUT", 
@@ -6215,14 +6215,14 @@
                 "value": "6921"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "23862"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 13, 
                 "type": "OUT", 
@@ -6243,21 +6243,21 @@
                 "value": "82"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 18, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "262"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "41"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 4, 
                 "type": "OUT", 
@@ -6299,7 +6299,7 @@
                 "value": "7865"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 16, 
                 "type": "OUT", 
@@ -6320,7 +6320,7 @@
                 "value": "2040"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 5, 
                 "type": "OUT", 
@@ -6390,7 +6390,7 @@
                 "value": "99463"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 13, 
                 "type": "OUT", 
@@ -6425,14 +6425,14 @@
                 "value": "738284"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 4, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "14777"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 16, 
                 "type": "OUT", 
@@ -6446,14 +6446,14 @@
                 "value": "4616"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "18560"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 5, 
                 "type": "OUT", 
@@ -6495,7 +6495,7 @@
                 "value": "44210"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 5, 
                 "target": 4, 
                 "type": "OUT", 
@@ -6532,7 +6532,7 @@
                 "value": "3490"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 4, 
                 "target": 5, 
                 "type": "OUT", 
@@ -6574,7 +6574,7 @@
                 "value": "112"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 18, 
                 "type": "OUT", 
@@ -6602,21 +6602,21 @@
                 "value": "22687"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "173"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "7002"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 18, 
                 "type": "OUT", 
@@ -6644,14 +6644,14 @@
                 "value": "52615"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 18, 
                 "type": "OUT", 
                 "value": "1081"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 4, 
                 "type": "OUT", 
@@ -6679,7 +6679,7 @@
                 "value": "16566"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 5, 
                 "target": 18, 
                 "type": "OUT", 
@@ -6693,7 +6693,7 @@
                 "value": "14291"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 13, 
                 "target": 18, 
                 "type": "OUT", 
@@ -6742,7 +6742,7 @@
                 "value": "1979"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 18, 
                 "type": "OUT", 
@@ -6770,14 +6770,14 @@
                 "value": "43510"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 18, 
                 "type": "OUT", 
                 "value": "3885"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 18, 
                 "type": "OUT", 
@@ -6805,7 +6805,7 @@
                 "value": "267"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 5, 
                 "type": "OUT", 
@@ -6826,7 +6826,7 @@
                 "value": "268129"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 7, 
                 "target": 5, 
                 "type": "OUT", 
@@ -6868,7 +6868,7 @@
                 "value": "758919"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 18, 
                 "target": 5, 
                 "type": "OUT", 
@@ -6896,7 +6896,7 @@
                 "value": "610"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 18, 
                 "type": "OUT", 
@@ -6931,14 +6931,14 @@
                 "value": "803"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "125"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 16, 
                 "type": "OUT", 
@@ -6952,7 +6952,7 @@
                 "value": "179531"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 4, 
                 "target": 13, 
                 "type": "OUT", 
@@ -6973,7 +6973,7 @@
                 "value": "26317"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 13, 
                 "target": 16, 
                 "type": "OUT", 
@@ -7001,7 +7001,7 @@
                 "value": "36885"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 16, 
                 "target": 18, 
                 "type": "OUT", 
@@ -7015,14 +7015,14 @@
                 "value": "222201"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "48441"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 4, 
                 "type": "OUT", 
@@ -7036,7 +7036,7 @@
                 "value": "101959"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 4, 
                 "type": "OUT", 
@@ -7050,7 +7050,7 @@
                 "value": "953"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 5, 
                 "target": 16, 
                 "type": "OUT", 
@@ -7085,7 +7085,7 @@
                 "value": "3248"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 16, 
                 "type": "OUT", 
@@ -7120,7 +7120,7 @@
                 "value": "514"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 5, 
                 "type": "OUT", 
@@ -7204,7 +7204,7 @@
                 "value": "7219"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 4, 
                 "type": "OUT", 
@@ -7253,14 +7253,14 @@
                 "value": "54129"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "165"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 18, 
                 "type": "OUT", 
@@ -7295,14 +7295,14 @@
                 "value": "1772"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "22667"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 18, 
                 "type": "OUT", 
@@ -7337,7 +7337,7 @@
                 "value": "29456"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 13, 
                 "target": 5, 
                 "type": "OUT", 
@@ -7351,14 +7351,14 @@
                 "value": "111375"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "15058"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 12, 
                 "target": 16, 
                 "type": "OUT", 
@@ -7386,7 +7386,7 @@
                 "value": "45402"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 5, 
                 "type": "OUT", 
@@ -7400,21 +7400,21 @@
                 "value": "2007"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "100896"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 18, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "416"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 13, 
                 "type": "OUT", 
@@ -7463,7 +7463,7 @@
                 "value": "214009"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 7, 
                 "target": 16, 
                 "type": "OUT", 
@@ -7477,7 +7477,7 @@
                 "value": "139825"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 4, 
                 "type": "OUT", 
@@ -7512,21 +7512,21 @@
                 "value": "53246"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "154"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 7, 
                 "target": 18, 
                 "type": "OUT", 
                 "value": "222"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 5, 
                 "type": "OUT", 
@@ -7547,21 +7547,21 @@
                 "value": "16055"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 7, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "11392"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "21887"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 5, 
                 "type": "OUT", 
@@ -7596,35 +7596,35 @@
                 "value": "4893"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "5008"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "316649"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "352"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "93781"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 4, 
                 "type": "OUT", 
@@ -7680,7 +7680,7 @@
                 "value": "88688"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 4, 
                 "type": "OUT", 
@@ -7708,7 +7708,7 @@
                 "value": "90314"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 18, 
                 "type": "OUT", 
@@ -7736,7 +7736,7 @@
                 "value": "434"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 13, 
                 "type": "OUT", 
@@ -7750,7 +7750,7 @@
                 "value": "828"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 2, 
                 "target": 16, 
                 "type": "OUT", 
@@ -7799,7 +7799,7 @@
                 "value": "1133"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 4, 
                 "type": "OUT", 
@@ -7827,7 +7827,7 @@
                 "value": "1473"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 13, 
                 "type": "OUT", 
@@ -7841,7 +7841,7 @@
                 "value": "1313"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 4, 
                 "type": "OUT", 
@@ -7855,7 +7855,7 @@
                 "value": "6455"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 18, 
                 "target": 16, 
                 "type": "OUT", 
@@ -7869,7 +7869,7 @@
                 "value": "11797"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 16, 
                 "target": 4, 
                 "type": "OUT", 
@@ -7883,7 +7883,7 @@
                 "value": "58"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 5, 
                 "type": "OUT", 
@@ -7925,7 +7925,7 @@
                 "value": "831"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 18, 
                 "type": "OUT", 
@@ -7946,7 +7946,7 @@
                 "value": "42871"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 4, 
                 "type": "OUT", 
@@ -8037,7 +8037,7 @@
                 "value": "305660"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 13, 
                 "type": "OUT", 
@@ -8051,7 +8051,7 @@
                 "value": "8107"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 18, 
                 "type": "OUT", 
@@ -8065,7 +8065,7 @@
                 "value": "18659"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 19, 
                 "target": 5, 
                 "type": "OUT", 
@@ -8142,14 +8142,14 @@
                 "value": "2299"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "554"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 16, 
                 "type": "OUT", 
@@ -8219,7 +8219,7 @@
                 "value": "184314"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 16, 
                 "target": 13, 
                 "type": "OUT", 
@@ -8233,7 +8233,7 @@
                 "value": "8250"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 11, 
                 "target": 18, 
                 "type": "OUT", 
@@ -8254,7 +8254,7 @@
                 "value": "19752"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 1, 
                 "target": 16, 
                 "type": "OUT", 
@@ -8282,7 +8282,7 @@
                 "value": "1074"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 5, 
                 "target": 13, 
                 "type": "OUT", 
@@ -8296,7 +8296,7 @@
                 "value": "7219"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 0, 
                 "target": 16, 
                 "type": "OUT", 
@@ -8310,14 +8310,14 @@
                 "value": "317"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 16, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "128873"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 13, 
                 "target": 4, 
                 "type": "OUT", 
@@ -8331,14 +8331,14 @@
                 "value": "3653"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "276"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 18, 
                 "type": "OUT", 
@@ -8359,7 +8359,7 @@
                 "value": "1652"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 16, 
                 "type": "OUT", 
@@ -8380,14 +8380,14 @@
                 "value": "96938"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 10, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "1417"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 4, 
                 "target": 18, 
                 "type": "OUT", 
@@ -8401,14 +8401,14 @@
                 "value": "7028"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "24970"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 3, 
                 "target": 13, 
                 "type": "OUT", 
@@ -8429,21 +8429,21 @@
                 "value": "79"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 18, 
                 "target": 4, 
                 "type": "OUT", 
                 "value": "274"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 13, 
                 "type": "OUT", 
                 "value": "41"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 8, 
                 "target": 4, 
                 "type": "OUT", 
@@ -8485,7 +8485,7 @@
                 "value": "8069"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 6, 
                 "target": 16, 
                 "type": "OUT", 
@@ -8506,7 +8506,7 @@
                 "value": "1931"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 15, 
                 "target": 5, 
                 "type": "OUT", 
@@ -8576,7 +8576,7 @@
                 "value": "103068"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 13, 
                 "type": "OUT", 
@@ -8611,14 +8611,14 @@
                 "value": "765043"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 4, 
                 "target": 16, 
                 "type": "OUT", 
                 "value": "15631"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 17, 
                 "target": 16, 
                 "type": "OUT", 
@@ -8632,14 +8632,14 @@
                 "value": "5005"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 9, 
                 "target": 5, 
                 "type": "OUT", 
                 "value": "19325"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 14, 
                 "target": 5, 
                 "type": "OUT", 
@@ -8681,7 +8681,7 @@
                 "value": "44775"
             }, 
             {
-                "remittance": "", 
+                "remittance": 0.0, 
                 "source": 5, 
                 "target": 4, 
                 "type": "OUT", 
