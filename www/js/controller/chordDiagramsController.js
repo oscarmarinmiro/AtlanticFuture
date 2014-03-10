@@ -52,7 +52,7 @@ outliers.controller.chordDiagramsController = function(options)
         var targetCountryAux = self.data.datalabel.countries_data[targetCountryISO.index];
 
         var movementAux = self.data.datalabel.movements_data[self.year][self.countries[sourceCountryISO.index]][self.countries[targetCountryISO.index]];
-        var html = 'From '+sourceCountryAux.longName+"(HDI: "+sourceCountryAux.HDI+") to "+targetCountryAux.longName+"(HDI: "+targetCountryAux.HDI+"): "+self.formatValue(self.data.data[self.year][sourceCountryISO.index][targetCountryISO.index])+" migrants <br>From "+targetCountryAux.longName+"(HDI: "+targetCountryAux.HDI+") to "+sourceCountryAux.longName+"(HDI: "+sourceCountryAux.HDI+"): "+self.formatValue(self.data.data[self.year][targetCountryISO.index][sourceCountryISO.index])g+" migrants<br>Same lang: "+movementAux.sameLanguage+'<br>Distance: '+parseFloat(movementAux.distance).toFixed(2)+'<br>Same currency: '+movementAux.sameCurrency;
+        var html = 'From '+sourceCountryAux.longName+"(HDI: "+sourceCountryAux.HDI+") to "+targetCountryAux.longName+"(HDI: "+targetCountryAux.HDI+"): "+self.formatValue(self.data.data[self.year][sourceCountryISO.index][targetCountryISO.index])+" migrants <br>From "+targetCountryAux.longName+"(HDI: "+targetCountryAux.HDI+") to "+sourceCountryAux.longName+"(HDI: "+sourceCountryAux.HDI+"): "+self.formatValue(self.data.data[self.year][targetCountryISO.index][sourceCountryISO.index])+" migrants<br>Same lang: "+movementAux.sameLanguage+'<br>Distance: '+parseFloat(movementAux.distance).toFixed(2)+'<br>Same currency: '+movementAux.sameCurrency;
 
         //d3.select("#zonaInfo").html(html);
         d3.select(".tooltip").style("opacity",1).html(html);
@@ -60,7 +60,7 @@ outliers.controller.chordDiagramsController = function(options)
 
     self.rellenaInfoGroup = function(countryISO){
         var countryAux = self.data.datalabel.countries_data[countryISO.index];
-        var html = countryAux.longName+'<br>HDI: '+parseFloat(countryAux.HDI).toFixed(2)+'<br>Pop: '+countryAux.Population;
+        var html = countryAux.longName+'<br>HDI: '+parseFloat(countryAux.HDI).toFixed(2)+'<br>Pop: '+self.formatValue(countryAux.Population);
         //d3.select("#zonaInfo").html(html);
         d3.select(".tooltip").style("opacity",1).html(html);
     };
