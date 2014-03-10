@@ -174,7 +174,7 @@ outliers.viz.arcDiagram = function (options) {
               self.plotArea.selectAll('.link').style('opacity', 0.1);
               self.plotArea.selectAll('.tooltiparc').style('opacity', 0.3);
               var connectedLinks = self.plotArea.selectAll('.link.DEF.' + self.nodeId(d));
-              connectedLinks.style('opacity', 0.7);
+              connectedLinks.style('opacity', 1.0);
               var currentNode = d3.select(this);
               connectedLinks[0].forEach(function (d, i) {
                   self.plotArea.selectAll('.node.' + self.nodeId(d.__data__.target)).style('opacity', 1.0);
@@ -186,7 +186,7 @@ outliers.viz.arcDiagram = function (options) {
               });
               if ( self.duplicateArcs ) {
                   var connectedLinks = self.plotArea.selectAll('.link.ALT.' + self.nodeId(d));
-                  connectedLinks.style('opacity', 0.7);
+                  connectedLinks.style('opacity', 1.0);
                   var currentNode = d3.select(this);
                   connectedLinks[0].forEach(function (d, i) {
                       self.plotArea.selectAll('.node.' + self.nodeId(d.__data__.target)).style('opacity', 1.0);
