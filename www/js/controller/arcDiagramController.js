@@ -15,6 +15,7 @@ outliers.controller.arcDiagramController = function (options) {
         var injectString =
             ['<div id="contenedorTodo" class="contenedorTodo">',
                 '<div id="zonaChart" class="zonaChart">',
+                    '<h1>Migration vs Remittances for Atlantic countries in year 2010</h1>',
                     '<div id="arcDiagramContent" class="chartContent"></div>',
                 '</div>',
             '</div>',
@@ -26,8 +27,8 @@ outliers.controller.arcDiagramController = function (options) {
             self.arcDiagram = new outliers.viz.arcDiagram({
                 parentId: 'arcDiagramContent',
                 data: data,
-                height: 850,
-                width: ($("body").innerWidth() / 5) * 3,
+                height: ($(self.parentSelect).innerWidth() * 0.7) * 1.01,
+                width: ($(self.parentSelect).innerWidth() * 0.7),
                 transTime: 2000,
                 nodeNameVar: 'name',
                 nodeSizeVar: 'pop2005',

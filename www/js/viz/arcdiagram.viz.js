@@ -150,6 +150,8 @@ outliers.viz.arcDiagram = function (options) {
               self.drawInfo( d3.select(this), false);
               return d.color;
           })
+          .attr('title', function (d, i) { return 'Population (year 2005): ' + d[self.nodeSizeVar]; })
+          .attr('original-title', function (d, i) { return 'Population (year 2005): ' + d[self.nodeSizeVar]; })
           .on('mouseover', function (d, i) {
               self.plotArea.selectAll('.node').style('opacity', 0.3);
               self.plotArea.selectAll('.link').style('opacity', 0.01);
@@ -181,7 +183,8 @@ outliers.viz.arcDiagram = function (options) {
                   d3.selectAll('.link.ALT').style('opacity', 0.5);
               }
           });
-
+        $('.node').tooltip({container: self.parentId});
+        $('.node').tooltip('fixTitle');
     };
     self.drawLinks = function () {
         var radians = {
@@ -201,7 +204,6 @@ outliers.viz.arcDiagram = function (options) {
                              var id_str = d.source.iso2 + '&&##&&' + d.target.iso2;
                              return id_str;
                          });
-
         self.links.transition().duration(self.transTime)
           .attr('transform', function (d, i) {
               var xshift = d.source.x + (d.target.x - d.source.x) / 2;
@@ -233,10 +235,10 @@ outliers.viz.arcDiagram = function (options) {
           })
           .style('stroke-width', function (d, i) {
               return self.linkStrokeWidthScale(d[self.linkWidthVar])+'px';
-          });
-          
+          })
+          .attr('title', function (d, i) { d[self.linkWidthVar]; })
+          .attr('original-title', function (d, i) { d[self.linkWidthVar]; });
         self.links.exit().remove();
-
         self.links.enter()
           .append('path')
           .attr('class', function (d, i) {
@@ -272,7 +274,9 @@ outliers.viz.arcDiagram = function (options) {
           })
           .style('stroke-width', function (d, i) {
               return (self.linkWidthVar == null ? self.linkStrokeWidthScale(Math.floor((Math.random()*10)+1)) : self.linkStrokeWidthScale(d[self.linkWidthVar])) + 'px';
-          });
+          })
+          .attr('title', function (d, i) { d[self.linkWidthVar]; })
+          .attr('original-title', function (d, i) { d[self.linkWidthVar]; });
         if ( self.duplicateArcs ) {
             self.linkStrokeWidthScale2 = d3.scale.sqrt()
                                                  .domain([0, 1500])
@@ -318,7 +322,9 @@ outliers.viz.arcDiagram = function (options) {
                         })
                         .style('stroke-width', function (d, i) {
                             return self.linkStrokeWidthScale2(d[self.linkWidthVar2])+'px';
-                        });  
+                        })
+                        .attr('title', function (d, i) { return d[self.linkWidthVar2]; })
+                        .attr('original-title', function (d, i) { return d[self.linkWidthVar2]; });
             self.links2.exit().remove();
             self.links2.enter()
                       .append('path')
@@ -355,8 +361,12 @@ outliers.viz.arcDiagram = function (options) {
                       })
                       .style('stroke-width', function (d, i) {
                           return (self.linkWidthVar2 == null ? self.linkStrokeWidthScale2(Math.floor((Math.random()*10)+1)) : self.linkStrokeWidthScale2(d[self.linkWidthVar2])) + 'px';
-                      });
+                      })
+                      .attr('title', function (d, i) { return d[self.linkWidthVar2]; })
+                      .attr('original-title', function (d, i) { return d[self.linkWidthVar2]; });
         }
+        $('.link').tooltip({container: self.parentId});
+        $('.link').tooltip('fixTitle');
     };
     self.render = function () {
     };

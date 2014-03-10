@@ -7,6 +7,11 @@ b {
     font-weight: 900;
 }
 
+h1 {
+    font-size:  20pt;
+    color: #687690;
+}
+
 .outline {
     fill: none;
     stroke: #888888;
@@ -60,7 +65,7 @@ b {
     stroke: #72ADE9;
 }
 .arctitle {
-    font-size: 20pt;
+    font-size: 15pt;
     font-weight: 700;
     fill:  #687690;
     stroke:  #72ADE9;
