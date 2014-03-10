@@ -42,21 +42,41 @@ outliers.viz.arcDiagram = function (options) {
                                       self.margin.left + ')');
     };
     self.prerender = function (year) {
-        console.log('prerender!!!!!');
         self.year = year;
         self.data.links[self.year].forEach(function (d, i) {
             d.source = isNaN(d.source) ? d.source : self.data.nodes[d.source];
             d.target = isNaN(d.target) ? d.target : self.data.nodes[d.target];
         });
-        console.log('prepare nodes');
         self.prepareNodes();
-        console.log('draw links');
         self.drawLinks();
         if(self.firstRender){
-            console.log('draw nodes');
             self.drawNodes();
         }
+        self.drawArcTitles();
         self.firstRender = false;
+    };
+    self.drawArcTitles = function () {
+        if ( self.arcPos === 'UP' ) {
+        } else if ( self.arcPos === 'DOWN' ) {
+        } else {
+            self.plotArea.append('text')
+                         .attr('class', 'arctitle')
+                         .text(self.linkWidthVar.toUpperCase())
+                         .attr('transform', 'translate(' + self.margin.left + ', ' + (self.yFixedNodes - (self.height / 10)) + ') rotate(270)');
+        }
+        if ( self.duplicateArcs ) {
+            if ( self.arcPos === 'UP' ) {
+            } else if ( self.arcPos === 'DOWN' ) {
+            } else {
+                self.plotArea.append('text')
+                             .attr('class', 'arctitle')
+                             .text(self.linkWidthVar2.toUpperCase())
+                             .attr('transform', function (d, i) {
+                                 var bbox = this.getBBox();
+                                 return 'translate(' + self.margin.left + ', ' + (self.yFixedNodes + bbox.width + (self.height / 10)) + ') rotate(270)';
+                             });
+            }
+        }
     };
     self.prepareNodes = function () {
         self.xScale = d3.scale.linear()

@@ -1,10 +1,6 @@
-$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
-
-@import 'sass-bootstrap/lib/bootstrap';
-
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
 }
 
 b {
@@ -19,7 +15,7 @@ b {
 
 .tooltiparctop {
     font-size: 10pt;
-    font-weight: 900;
+    font-weight: 100;
 
     fill: #000000;
     stroke: #ffffff;
@@ -27,7 +23,7 @@ b {
 }
 .tooltiparcbottom {
     font-size: 8pt;
-    font-weight: 400;
+    font-weight: 100;
 
     fill: #000000;
     stroke: #ffffff;
@@ -62,4 +58,11 @@ b {
 
 .DEF {
     stroke: #ff0000;
+}
+.arctitle {
+    font-size: 20pt;
+    font-weight: 700;
+    fill:  #000000;
+    stroke:  #ffffff;
+    stroke-width: 0.25px;
 }
