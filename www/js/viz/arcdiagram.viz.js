@@ -133,6 +133,19 @@ outliers.viz.arcDiagram = function (options) {
             tooltip.attr('dx', 0);
         }*/
     };
+    self.formatValue = function(value){
+        if(value=='-'){ return 0;}
+        value_parts = value.toString().split("").reverse();
+        var value_list = [];
+        for(var i=0;i<value_parts.length;i++){
+            if(i%3==0){
+                value_list.push('.')
+            }
+            value_list.push(value_parts[i]);
+        }
+        value_str = value_list.reverse().slice(0,value_list.length-1).join("");
+        return value_str;
+    };
     self.drawNodes = function () {
         self.plotArea
           .selectAll('.node')
@@ -153,8 +166,8 @@ outliers.viz.arcDiagram = function (options) {
               return d.color;
           })
           .attr('data-toggle','tooltip')
-          .attr('title', function (d, i) { return 'Population (year 2005): ' + d[self.nodeSizeVar]; })
-          .attr('data-original-title', function (d, i) { return 'Population (year 2005): ' + d[self.nodeSizeVar]; })
+          .attr('title', function (d, i) { return '<h4>' + d[self.nodeNameVar] + '</h4>Pop. (year 2005): ' + self.formatValue(d[self.nodeSizeVar]); })
+          .attr('data-original-title', function (d, i) { return '<h4>' + d[self.nodeNameVar] + '</h4>Pop. (year 2005): ' + self.formatValue(d[self.nodeSizeVar]); })
           .on('mouseover', function (d, i) {
               self.plotArea.selectAll('.node').style('opacity', 0.3);
               self.plotArea.selectAll('.link').style('opacity', 0.01);
@@ -186,8 +199,8 @@ outliers.viz.arcDiagram = function (options) {
                   d3.selectAll('.link.ALT').style('opacity', 0.5);
               }
           });
-        $('.node').tooltip({container: self.parentId});
-        $('.node').tooltip('fixTitle');
+          $('.node').tooltip({placement: 'top', container: self.parentSelect, html: true});
+          $('.node').tooltip('fixTitle');
     };
     self.drawLinks = function () {
         var radians = {
@@ -240,8 +253,12 @@ outliers.viz.arcDiagram = function (options) {
               return self.linkStrokeWidthScale(d[self.linkWidthVar])+'px';
           })
           .attr('data-toggle','tooltip')
-          .attr('title', function (d, i) { d[self.linkWidthVar]; })
-          .attr('data-original-title', function (d, i) { d[self.linkWidthVar]; });
+          .attr('title', function (d, i) {
+              return '<h4>' + d.source.name + '-' + d.target.name + '</h4>Migrations: ' + self.formatValue(d[self.linkWidthVar]);
+          })
+          .attr('data-original-title', function (d, i) {
+              return '<h4>' + d.source.name + '-' + d.target.name + '</h4>Migrations: ' + self.formatValue(d[self.linkWidthVar]);
+          });
         self.links.exit().remove();
         self.links.enter()
           .append('path')
@@ -280,8 +297,23 @@ outliers.viz.arcDiagram = function (options) {
               return (self.linkWidthVar == null ? self.linkStrokeWidthScale(Math.floor((Math.random()*10)+1)) : self.linkStrokeWidthScale(d[self.linkWidthVar])) + 'px';
           })
           .attr('data-toggle','tooltip')
-          .attr('title', function (d, i) { d[self.linkWidthVar]; })
-          .attr('data-original-title', function (d, i) { d[self.linkWidthVar]; });
+          .attr('title', function (d, i) {
+              return '<h4>' + d.source.name + '-' + d.target.name + '</h4>Migrations: ' + self.formatValue(d[self.linkWidthVar]);
+          })
+          .attr('data-original-title', function (d, i) {
+              return '<h4>' + d.source.name + '-' + d.target.name + '</h4>Migrations: ' + self.formatValue(d[self.linkWidthVar]);
+          })
+          .on('mouseover', function (d, i) {
+              self.plotArea.selectAll('.node').style('opacity', 0.3);
+              self.plotArea.selectAll('.link').style('opacity', 0.01);
+              self.plotArea.selectAll('.link.DEF.' + self.nodeId(d.source) + '.' + self.nodeId(d.target)).style('opacity', 1.0);
+              self.plotArea.selectAll('.node.' + self.nodeId(d.target)).style('opacity', 1.0);
+              self.plotArea.selectAll('.node.' + self.nodeId(d.source)).style('opacity', 1.0);
+          })
+          .on('mouseout', function (d, i) {
+              d3.selectAll('.node').style('opacity', 1.0);
+              d3.selectAll('.link').style('opacity', 0.5);
+          });
         if ( self.duplicateArcs ) {
             self.linkStrokeWidthScale2 = d3.scale.sqrt()
                                                  .domain([0, 1500])
@@ -329,8 +361,12 @@ outliers.viz.arcDiagram = function (options) {
                             return self.linkStrokeWidthScale2(d[self.linkWidthVar2])+'px';
                         })
                         .attr('data-toggle','tooltip')
-                        .attr('title', function (d, i) { return d[self.linkWidthVar2]; })
-                        .attr('data-original-title', function (d, i) { return d[self.linkWidthVar2]; });
+                        .attr('title', function (d, i) {
+                            return '<h4>' + d.source.name + '-' + d.target.name + '</h4>Remittance: ' + d[self.linkWidthVar2].toFixed(2).toLocaleString();
+                        })
+                        .attr('data-original-title', function (d, i) {
+                            return '<h4>' + d.source.name + '-' + d.target.name + '</h4>Remittance: ' + d[self.linkWidthVar2].toFixed(2).toLocaleString();
+                        });
             self.links2.exit().remove();
             self.links2.enter()
                       .append('path')
@@ -369,10 +405,25 @@ outliers.viz.arcDiagram = function (options) {
                           return (self.linkWidthVar2 == null ? self.linkStrokeWidthScale2(Math.floor((Math.random()*10)+1)) : self.linkStrokeWidthScale2(d[self.linkWidthVar2])) + 'px';
                       })
                       .attr('data-toggle','tooltip')
-                      .attr('title', function (d, i) { return d[self.linkWidthVar2]; })
-                      .attr('data-original-title', function (d, i) { return d[self.linkWidthVar2]; });
+                      .attr('title', function (d, i) {
+                          return '<h4>' + d.source.name + '-' + d.target.name + '</h4>Remittance: ' + d[self.linkWidthVar2].toFixed(2).toLocaleString();
+                      })
+                      .attr('data-original-title', function (d, i) {
+                          return '<h4>' + d.source.name + '-' + d.target.name + '</h4>Remittance: ' + d[self.linkWidthVar2].toFixed(2).toLocaleString();
+                      })
+                      .on('mouseover', function (d, i) {
+                          self.plotArea.selectAll('.node').style('opacity', 0.3);
+                          self.plotArea.selectAll('.link').style('opacity', 0.01);
+                          self.plotArea.selectAll('.link.ALT.' + self.nodeId(d.source) + '.' + self.nodeId(d.target)).style('opacity', 1.0);
+                          self.plotArea.selectAll('.node.' + self.nodeId(d.target)).style('opacity', 1.0);
+                          self.plotArea.selectAll('.node.' + self.nodeId(d.source)).style('opacity', 1.0);
+                      })
+                      .on('mouseout', function (d, i) {
+                          d3.selectAll('.node').style('opacity', 1.0);
+                          d3.selectAll('.link').style('opacity', 0.5);
+                      });
         }
-        $('.link').tooltip({container: self.parentId});
+        $('.link').tooltip({placement: 'top', container: self.parentSelect, html: true});
         $('.link').tooltip('fixTitle');
     };
     self.render = function () {
