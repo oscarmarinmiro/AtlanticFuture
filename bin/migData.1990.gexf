@@ -1,0 +1,3205 @@
+<?xml version="1.0" encoding="utf-8"?><gexf version="1.1" xmlns="http://www.gexf.net/1.1draft" xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="M49" type="string" />
+      <attribute id="1" title="name" type="string" />
+      <attribute id="2" title="outMig" type="string" />
+      <attribute id="3" title="pop2005" type="string" />
+      <attribute id="4" title="totalMig" type="string" />
+      <attribute id="5" title="lon" type="string" />
+      <attribute id="6" title="currencyNumeric" type="string" />
+      <attribute id="7" title="isIndependent" type="string" />
+      <attribute id="8" title="languages" type="string" />
+      <attribute id="9" title="ISO2" type="string" />
+      <attribute id="10" title="inPercent" type="string" />
+      <attribute id="11" title="lat" type="string" />
+      <attribute id="12" title="currencyName" type="string" />
+      <attribute id="13" title="HDI" type="string" />
+      <attribute id="14" title="inMig" type="string" />
+      <attribute id="15" title="iso2" type="string" />
+    </attributes>
+    <nodes>
+      <node id="BE" label="BE">
+        <attvalues>
+          <attvalue for="0" value="56" />
+          <attvalue for="1" value="Belgium" />
+          <attvalue for="2" value="386758" />
+          <attvalue for="3" value="10398049" />
+          <attvalue for="4" value="1030232" />
+          <attvalue for="5" value="4.664" />
+          <attvalue for="6" value="978" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="nl/fr" />
+          <attvalue for="9" value="BE" />
+          <attvalue for="10" value="62.46" />
+          <attvalue for="11" value="50.643" />
+          <attvalue for="12" value="Euro" />
+          <attvalue for="13" value="0.897" />
+          <attvalue for="14" value="643474" />
+        </attvalues>
+      </node>
+      <node id="FR" label="FR">
+        <attvalues>
+          <attvalue for="0" value="250" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="1185845" />
+          <attvalue for="3" value="60990544" />
+          <attvalue for="4" value="4466441" />
+          <attvalue for="5" value="2.55" />
+          <attvalue for="6" value="978" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="fr" />
+          <attvalue for="9" value="FR" />
+          <attvalue for="10" value="73.45" />
+          <attvalue for="11" value="46.565" />
+          <attvalue for="12" value="Euro" />
+          <attvalue for="13" value="0.893" />
+          <attvalue for="14" value="3280596" />
+        </attvalues>
+      </node>
+      <node id="DM" label="DM">
+        <attvalues>
+          <attvalue for="0" value="212" />
+          <attvalue for="1" value="Dominica" />
+          <attvalue for="2" value="54637" />
+          <attvalue for="3" value="67827" />
+          <attvalue for="4" value="57296" />
+          <attvalue for="5" value="-61.356" />
+          <attvalue for="6" value="951" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="DM" />
+          <attvalue for="10" value="4.64" />
+          <attvalue for="11" value="15.475" />
+          <attvalue for="12" value="East Caribbean Dollar" />
+          <attvalue for="13" value="0.745" />
+          <attvalue for="14" value="2659" />
+        </attvalues>
+      </node>
+      <node id="DK" label="DK">
+        <attvalues>
+          <attvalue for="0" value="208" />
+          <attvalue for="1" value="Denmark" />
+          <attvalue for="2" value="204105" />
+          <attvalue for="3" value="5416945" />
+          <attvalue for="4" value="376489" />
+          <attvalue for="5" value="9.264" />
+          <attvalue for="6" value="208" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="da" />
+          <attvalue for="9" value="DK" />
+          <attvalue for="10" value="45.79" />
+          <attvalue for="11" value="56.058" />
+          <attvalue for="12" value="Danish Krone" />
+          <attvalue for="13" value="0.901" />
+          <attvalue for="14" value="172384" />
+        </attvalues>
+      </node>
+      <node id="BB" label="BB">
+        <attvalues>
+          <attvalue for="0" value="52" />
+          <attvalue for="1" value="Barbados" />
+          <attvalue for="2" value="96947" />
+          <attvalue for="3" value="291933" />
+          <attvalue for="4" value="115114" />
+          <attvalue for="5" value="-59.559" />
+          <attvalue for="6" value="52" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="BB" />
+          <attvalue for="10" value="15.78" />
+          <attvalue for="11" value="13.153" />
+          <attvalue for="12" value="Barbados Dollar" />
+          <attvalue for="13" value="0.825" />
+          <attvalue for="14" value="18167" />
+        </attvalues>
+      </node>
+      <node id="DO" label="DO">
+        <attvalues>
+          <attvalue for="0" value="214" />
+          <attvalue for="1" value="Dominican Republic" />
+          <attvalue for="2" value="1042982" />
+          <attvalue for="3" value="9469601" />
+          <attvalue for="4" value="1398317" />
+          <attvalue for="5" value="-70.729" />
+          <attvalue for="6" value="214" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="es" />
+          <attvalue for="9" value="DO" />
+          <attvalue for="10" value="25.41" />
+          <attvalue for="11" value="19.015" />
+          <attvalue for="12" value="Dominican Peso" />
+          <attvalue for="13" value="0.702" />
+          <attvalue for="14" value="355335" />
+        </attvalues>
+      </node>
+      <node id="DE" label="DE">
+        <attvalues>
+          <attvalue for="0" value="276" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="2093235" />
+          <attvalue for="3" value="82652369" />
+          <attvalue for="4" value="3167252" />
+          <attvalue for="5" value="9.851" />
+          <attvalue for="6" value="978" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="de" />
+          <attvalue for="9" value="DE" />
+          <attvalue for="10" value="33.91" />
+          <attvalue for="11" value="51.11" />
+          <attvalue for="12" value="Euro" />
+          <attvalue for="13" value="0.92" />
+          <attvalue for="14" value="1074017" />
+        </attvalues>
+      </node>
+      <node id="BJ" label="BJ">
+        <attvalues>
+          <attvalue for="0" value="204" />
+          <attvalue for="1" value="Benin" />
+          <attvalue for="2" value="453473" />
+          <attvalue for="3" value="8490301" />
+          <attvalue for="4" value="568381" />
+          <attvalue for="5" value="2.469" />
+          <attvalue for="6" value="952" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="fr" />
+          <attvalue for="9" value="BJ" />
+          <attvalue for="10" value="20.22" />
+          <attvalue for="11" value="10.541" />
+          <attvalue for="12" value="CFA Franc BCEAO" />
+          <attvalue for="13" value="0.436" />
+          <attvalue for="14" value="114908" />
+        </attvalues>
+      </node>
+      <node id="JM" label="JM">
+        <attvalues>
+          <attvalue for="0" value="388" />
+          <attvalue for="1" value="Jamaica" />
+          <attvalue for="2" value="1068038" />
+          <attvalue for="3" value="2682469" />
+          <attvalue for="4" value="1096450" />
+          <attvalue for="5" value="-77.32" />
+          <attvalue for="6" value="388" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="JM" />
+          <attvalue for="10" value="2.59" />
+          <attvalue for="11" value="18.151" />
+          <attvalue for="12" value="Jamaican Dollar" />
+          <attvalue for="13" value="0.73" />
+          <attvalue for="14" value="28412" />
+        </attvalues>
+      </node>
+      <node id="HN" label="HN">
+        <attvalues>
+          <attvalue for="0" value="340" />
+          <attvalue for="1" value="Honduras" />
+          <attvalue for="2" value="640523" />
+          <attvalue for="3" value="683411" />
+          <attvalue for="4" value="659606" />
+          <attvalue for="5" value="-86.863" />
+          <attvalue for="6" value="340" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="es" />
+          <attvalue for="9" value="HN" />
+          <attvalue for="10" value="2.89" />
+          <attvalue for="11" value="14.819" />
+          <attvalue for="12" value="Lempira" />
+          <attvalue for="13" value="0.632" />
+          <attvalue for="14" value="19083" />
+        </attvalues>
+      </node>
+      <node id="BR" label="BR">
+        <attvalues>
+          <attvalue for="0" value="76" />
+          <attvalue for="1" value="Brazil" />
+          <attvalue for="2" value="946420" />
+          <attvalue for="3" value="186830759" />
+          <attvalue for="4" value="1283472" />
+          <attvalue for="5" value="-53.089" />
+          <attvalue for="6" value="986" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="pt" />
+          <attvalue for="9" value="BR" />
+          <attvalue for="10" value="26.26" />
+          <attvalue for="11" value="-10.772" />
+          <attvalue for="12" value="Brazilian Real" />
+          <attvalue for="13" value="0.73" />
+          <attvalue for="14" value="337052" />
+        </attvalues>
+      </node>
+      <node id="BS" label="BS">
+        <attvalues>
+          <attvalue for="0" value="44" />
+          <attvalue for="1" value="Bahamas" />
+          <attvalue for="2" value="44777" />
+          <attvalue for="3" value="323295" />
+          <attvalue for="4" value="101917" />
+          <attvalue for="5" value="-78.014" />
+          <attvalue for="6" value="44" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="BS" />
+          <attvalue for="10" value="56.07" />
+          <attvalue for="11" value="24.628" />
+          <attvalue for="12" value="Bahamian Dollar" />
+          <attvalue for="13" value="0.794" />
+          <attvalue for="14" value="57140" />
+        </attvalues>
+      </node>
+      <node id="MA" label="MA">
+        <attvalues>
+          <attvalue for="0" value="504" />
+          <attvalue for="1" value="Morocco" />
+          <attvalue for="2" value="2200430" />
+          <attvalue for="3" value="30494991" />
+          <attvalue for="4" value="2205391" />
+          <attvalue for="5" value="-5.758" />
+          <attvalue for="6" value="504" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="ar" />
+          <attvalue for="9" value="MA" />
+          <attvalue for="10" value="0.22" />
+          <attvalue for="11" value="32.706" />
+          <attvalue for="12" value="Moroccan Dirham" />
+          <attvalue for="13" value="0.591" />
+          <attvalue for="14" value="4961" />
+        </attvalues>
+      </node>
+      <node id="CR" label="CR">
+        <attvalues>
+          <attvalue for="0" value="188" />
+          <attvalue for="1" value="Costa Rica" />
+          <attvalue for="2" value="122887" />
+          <attvalue for="3" value="4327228" />
+          <attvalue for="4" value="502097" />
+          <attvalue for="5" value="-83.946" />
+          <attvalue for="6" value="188" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="es" />
+          <attvalue for="9" value="CR" />
+          <attvalue for="10" value="75.53" />
+          <attvalue for="11" value="9.971" />
+          <attvalue for="12" value="Costa Rican Colon" />
+          <attvalue for="13" value="0.773" />
+          <attvalue for="14" value="379210" />
+        </attvalues>
+      </node>
+      <node id="NI" label="NI">
+        <attvalues>
+          <attvalue for="0" value="558" />
+          <attvalue for="1" value="Nicaragua" />
+          <attvalue for="2" value="642585" />
+          <attvalue for="3" value="5462539" />
+          <attvalue for="4" value="677222" />
+          <attvalue for="5" value="-85.034" />
+          <attvalue for="6" value="558" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="es" />
+          <attvalue for="9" value="NI" />
+          <attvalue for="10" value="5.11" />
+          <attvalue for="11" value="12.84" />
+          <attvalue for="12" value="Cordoba Oro" />
+          <attvalue for="13" value="0.599" />
+          <attvalue for="14" value="34637" />
+        </attvalues>
+      </node>
+      <node id="NL" label="NL">
+        <attvalues>
+          <attvalue for="0" value="528" />
+          <attvalue for="1" value="Netherlands" />
+          <attvalue for="2" value="730347" />
+          <attvalue for="3" value="1632769" />
+          <attvalue for="4" value="1567184" />
+          <attvalue for="5" value="5.389" />
+          <attvalue for="6" value="978" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="nl" />
+          <attvalue for="9" value="NL" />
+          <attvalue for="10" value="53.40" />
+          <attvalue for="11" value="52.077" />
+          <attvalue for="12" value="Euro" />
+          <attvalue for="13" value="0.921" />
+          <attvalue for="14" value="836837" />
+        </attvalues>
+      </node>
+      <node id="LC" label="LC">
+        <attvalues>
+          <attvalue for="0" value="662" />
+          <attvalue for="1" value="Saint Lucia" />
+          <attvalue for="2" value="46481" />
+          <attvalue for="3" value="16124" />
+          <attvalue for="4" value="52523" />
+          <attvalue for="5" value="-60.969" />
+          <attvalue for="6" value="951" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="LC" />
+          <attvalue for="10" value="11.50" />
+          <attvalue for="11" value="13.898" />
+          <attvalue for="12" value="East Caribbean Dollar" />
+          <attvalue for="13" value="0.725" />
+          <attvalue for="14" value="6042" />
+        </attvalues>
+      </node>
+      <node id="PT" label="PT">
+        <attvalues>
+          <attvalue for="0" value="620" />
+          <attvalue for="1" value="Portugal" />
+          <attvalue for="2" value="1648989" />
+          <attvalue for="3" value="10528226" />
+          <attvalue for="4" value="2295015" />
+          <attvalue for="5" value="-8.058" />
+          <attvalue for="6" value="978" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="pt" />
+          <attvalue for="9" value="PT" />
+          <attvalue for="10" value="28.15" />
+          <attvalue for="11" value="40.309" />
+          <attvalue for="12" value="Euro" />
+          <attvalue for="13" value="0.816" />
+          <attvalue for="14" value="646026" />
+        </attvalues>
+      </node>
+      <node id="NO" label="NO">
+        <attvalues>
+          <attvalue for="0" value="578" />
+          <attvalue for="1" value="Norway" />
+          <attvalue for="2" value="156294" />
+          <attvalue for="3" value="4638836" />
+          <attvalue for="4" value="382855" />
+          <attvalue for="5" value="8.74" />
+          <attvalue for="6" value="578" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="nb/nn" />
+          <attvalue for="9" value="NO" />
+          <attvalue for="10" value="59.18" />
+          <attvalue for="11" value="61.152" />
+          <attvalue for="12" value="Norwegian Krone" />
+          <attvalue for="13" value="0.955" />
+          <attvalue for="14" value="226561" />
+        </attvalues>
+      </node>
+      <node id="NA" label="NA">
+        <attvalues>
+          <attvalue for="0" value="516" />
+          <attvalue for="1" value="Namibia" />
+          <attvalue for="2" value="132611" />
+          <attvalue for="3" value="2019677" />
+          <attvalue for="4" value="157307" />
+          <attvalue for="5" value="17.218" />
+          <attvalue for="6" value="710" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="NA" />
+          <attvalue for="10" value="15.70" />
+          <attvalue for="11" value="-22.133" />
+          <attvalue for="12" value="Rand" />
+          <attvalue for="13" value="0.608" />
+          <attvalue for="14" value="24696" />
+        </attvalues>
+      </node>
+      <node id="TT" label="TT">
+        <attvalues>
+          <attvalue for="0" value="780" />
+          <attvalue for="1" value="Trinidad and Tobago" />
+          <attvalue for="2" value="360663" />
+          <attvalue for="3" value="1323722" />
+          <attvalue for="4" value="374690" />
+          <attvalue for="5" value="-61.253" />
+          <attvalue for="6" value="780" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="TT" />
+          <attvalue for="10" value="3.74" />
+          <attvalue for="11" value="10.468" />
+          <attvalue for="12" value="Trinidad and Tobago Dollar" />
+          <attvalue for="13" value="0.76" />
+          <attvalue for="14" value="14027" />
+        </attvalues>
+      </node>
+      <node id="NG" label="NG">
+        <attvalues>
+          <attvalue for="0" value="566" />
+          <attvalue for="1" value="Nigeria" />
+          <attvalue for="2" value="859336" />
+          <attvalue for="3" value="141356083" />
+          <attvalue for="4" value="1514794" />
+          <attvalue for="5" value="8.105" />
+          <attvalue for="6" value="566" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="NG" />
+          <attvalue for="10" value="43.27" />
+          <attvalue for="11" value="9.594" />
+          <attvalue for="12" value="Naira" />
+          <attvalue for="13" value="0.471" />
+          <attvalue for="14" value="655458" />
+        </attvalues>
+      </node>
+      <node id="PA" label="PA">
+        <attvalues>
+          <attvalue for="0" value="591" />
+          <attvalue for="1" value="Panama" />
+          <attvalue for="2" value="143734" />
+          <attvalue for="3" value="3231502" />
+          <attvalue for="4" value="262819" />
+          <attvalue for="5" value="-80.92" />
+          <attvalue for="6" value="840" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="es" />
+          <attvalue for="9" value="PA" />
+          <attvalue for="10" value="45.31" />
+          <attvalue for="11" value="8.384" />
+          <attvalue for="12" value="US Dollar" />
+          <attvalue for="13" value="0.78" />
+          <attvalue for="14" value="119085" />
+        </attvalues>
+      </node>
+      <node id="Non_Atlantic" label="Non_Atlantic">
+        <attvalues>
+          <attvalue for="0" value="999999" />
+          <attvalue for="1" value="Non-atlantic" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="-1" />
+          <attvalue for="7" value="Unknown" />
+          <attvalue for="15" value="Non_Atlantic" />
+          <attvalue for="11" value="0.0" />
+          <attvalue for="12" value="Unknown" />
+          <attvalue for="13" value="0.64" />
+          <attvalue for="3" value="5217464911" />
+        </attvalues>
+      </node>
+      <node id="ES" label="ES">
+        <attvalues>
+          <attvalue for="0" value="724" />
+          <attvalue for="1" value="Spain" />
+          <attvalue for="2" value="982903" />
+          <attvalue for="3" value="43397491" />
+          <attvalue for="4" value="4425871" />
+          <attvalue for="5" value="-3.649" />
+          <attvalue for="6" value="978" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="es" />
+          <attvalue for="9" value="ES" />
+          <attvalue for="10" value="77.79" />
+          <attvalue for="11" value="40.227" />
+          <attvalue for="12" value="Euro" />
+          <attvalue for="13" value="0.885" />
+          <attvalue for="14" value="3442968" />
+        </attvalues>
+      </node>
+      <node id="LR" label="LR">
+        <attvalues>
+          <attvalue for="0" value="430" />
+          <attvalue for="1" value="Liberia" />
+          <attvalue for="2" value="344842" />
+          <attvalue for="3" value="3441796" />
+          <attvalue for="4" value="560479" />
+          <attvalue for="5" value="-9.657" />
+          <attvalue for="6" value="430" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="LR" />
+          <attvalue for="10" value="38.47" />
+          <attvalue for="11" value="6.682" />
+          <attvalue for="12" value="Liberian Dollar" />
+          <attvalue for="13" value="0.388" />
+          <attvalue for="14" value="215637" />
+        </attvalues>
+      </node>
+      <node id="GQ" label="GQ">
+        <attvalues>
+          <attvalue for="0" value="226" />
+          <attvalue for="1" value="Equatorial Guinea" />
+          <attvalue for="2" value="118557" />
+          <attvalue for="3" value="484098" />
+          <attvalue for="4" value="126751" />
+          <attvalue for="5" value="10.488" />
+          <attvalue for="6" value="950" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="fr/es/pt" />
+          <attvalue for="9" value="GQ" />
+          <attvalue for="10" value="6.46" />
+          <attvalue for="11" value="1.607" />
+          <attvalue for="12" value="CFA Franc BEAC" />
+          <attvalue for="13" value="0.554" />
+          <attvalue for="14" value="8194" />
+        </attvalues>
+      </node>
+      <node id="CA" label="CA">
+        <attvalues>
+          <attvalue for="0" value="124" />
+          <attvalue for="1" value="Canada" />
+          <attvalue for="2" value="1080495" />
+          <attvalue for="3" value="32270507" />
+          <attvalue for="4" value="3654187" />
+          <attvalue for="5" value="-109.433" />
+          <attvalue for="6" value="124" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en/fr" />
+          <attvalue for="9" value="CA" />
+          <attvalue for="10" value="70.43" />
+          <attvalue for="11" value="59.081" />
+          <attvalue for="12" value="Canadian Dollar" />
+          <attvalue for="13" value="0.911" />
+          <attvalue for="14" value="2573692" />
+        </attvalues>
+      </node>
+      <node id="GW" label="GW">
+        <attvalues>
+          <attvalue for="0" value="624" />
+          <attvalue for="1" value="Guinea-Bissau" />
+          <attvalue for="2" value="87627" />
+          <attvalue for="3" value="1596929" />
+          <attvalue for="4" value="105002" />
+          <attvalue for="5" value="-14.651" />
+          <attvalue for="6" value="952" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="pt" />
+          <attvalue for="9" value="GW" />
+          <attvalue for="10" value="16.55" />
+          <attvalue for="11" value="12.125" />
+          <attvalue for="12" value="CFA Franc BCEAO" />
+          <attvalue for="13" value="0.364" />
+          <attvalue for="14" value="17375" />
+        </attvalues>
+      </node>
+      <node id="CI" label="CI">
+        <attvalues>
+          <attvalue for="0" value="384" />
+          <attvalue for="1" value="Ivory Coast" />
+          <attvalue for="2" value="310796" />
+          <attvalue for="3" value="18584701" />
+          <attvalue for="4" value="751349" />
+          <attvalue for="5" value="-5.556" />
+          <attvalue for="6" value="952" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="fr" />
+          <attvalue for="9" value="CI" />
+          <attvalue for="10" value="58.63" />
+          <attvalue for="11" value="7.632" />
+          <attvalue for="12" value="CFA Franc BCEAO" />
+          <attvalue for="13" value="0.432" />
+          <attvalue for="14" value="440553" />
+        </attvalues>
+      </node>
+      <node id="GT" label="GT">
+        <attvalues>
+          <attvalue for="0" value="320" />
+          <attvalue for="1" value="Guatemala" />
+          <attvalue for="2" value="1035637" />
+          <attvalue for="3" value="12709564" />
+          <attvalue for="4" value="1085235" />
+          <attvalue for="5" value="-90.398" />
+          <attvalue for="6" value="320" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="es" />
+          <attvalue for="9" value="GT" />
+          <attvalue for="10" value="4.57" />
+          <attvalue for="11" value="15.256" />
+          <attvalue for="12" value="Quetzal" />
+          <attvalue for="13" value="0.581" />
+          <attvalue for="14" value="49598" />
+        </attvalues>
+      </node>
+      <node id="CO" label="CO">
+        <attvalues>
+          <attvalue for="0" value="170" />
+          <attvalue for="1" value="Colombia" />
+          <attvalue for="2" value="2167377" />
+          <attvalue for="3" value="4494579" />
+          <attvalue for="4" value="2263170" />
+          <attvalue for="5" value="-73.076" />
+          <attvalue for="6" value="170" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="es" />
+          <attvalue for="9" value="CO" />
+          <attvalue for="10" value="4.23" />
+          <attvalue for="11" value="3.9" />
+          <attvalue for="12" value="Colombian Peso" />
+          <attvalue for="13" value="0.719" />
+          <attvalue for="14" value="95793" />
+        </attvalues>
+      </node>
+      <node id="VE" label="VE">
+        <attvalues>
+          <attvalue for="0" value="862" />
+          <attvalue for="1" value="Venezuela" />
+          <attvalue for="2" value="542162" />
+          <attvalue for="3" value="26725573" />
+          <attvalue for="4" value="1557160" />
+          <attvalue for="5" value="-66.166" />
+          <attvalue for="6" value="937" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="es" />
+          <attvalue for="9" value="VE" />
+          <attvalue for="10" value="65.18" />
+          <attvalue for="11" value="7.125" />
+          <attvalue for="12" value="Bolivar" />
+          <attvalue for="13" value="0.748" />
+          <attvalue for="14" value="1014998" />
+        </attvalues>
+      </node>
+      <node id="CM" label="CM">
+        <attvalues>
+          <attvalue for="0" value="120" />
+          <attvalue for="1" value="Cameroon" />
+          <attvalue for="2" value="283487" />
+          <attvalue for="3" value="17795149" />
+          <attvalue for="4" value="412092" />
+          <attvalue for="5" value="12.277" />
+          <attvalue for="6" value="950" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="fr/en" />
+          <attvalue for="9" value="CM" />
+          <attvalue for="10" value="31.21" />
+          <attvalue for="11" value="5.133" />
+          <attvalue for="12" value="CFA Franc BEAC" />
+          <attvalue for="13" value="0.495" />
+          <attvalue for="14" value="128605" />
+        </attvalues>
+      </node>
+      <node id="CL" label="CL">
+        <attvalues>
+          <attvalue for="0" value="152" />
+          <attvalue for="1" value="Chile" />
+          <attvalue for="2" value="508092" />
+          <attvalue for="3" value="16295102" />
+          <attvalue for="4" value="680051" />
+          <attvalue for="5" value="-69.433" />
+          <attvalue for="6" value="152" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="es" />
+          <attvalue for="9" value="CL" />
+          <attvalue for="10" value="25.29" />
+          <attvalue for="11" value="-23.389" />
+          <attvalue for="12" value="Chilean Peso" />
+          <attvalue for="13" value="0.819" />
+          <attvalue for="14" value="171959" />
+        </attvalues>
+      </node>
+      <node id="IS" label="IS">
+        <attvalues>
+          <attvalue for="0" value="352" />
+          <attvalue for="1" value="Iceland" />
+          <attvalue for="2" value="31343" />
+          <attvalue for="3" value="295732" />
+          <attvalue for="4" value="45080" />
+          <attvalue for="5" value="-18.48" />
+          <attvalue for="6" value="352" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="is" />
+          <attvalue for="9" value="IS" />
+          <attvalue for="10" value="30.47" />
+          <attvalue for="11" value="64.764" />
+          <attvalue for="12" value="Iceland Krona" />
+          <attvalue for="13" value="0.906" />
+          <attvalue for="14" value="13737" />
+        </attvalues>
+      </node>
+      <node id="SL" label="SL">
+        <attvalues>
+          <attvalue for="0" value="694" />
+          <attvalue for="1" value="Sierra Leone" />
+          <attvalue for="2" value="324504" />
+          <attvalue for="3" value="5586403" />
+          <attvalue for="4" value="416326" />
+          <attvalue for="5" value="-11.792" />
+          <attvalue for="6" value="694" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="SL" />
+          <attvalue for="10" value="22.06" />
+          <attvalue for="11" value="8.56" />
+          <attvalue for="12" value="Leone" />
+          <attvalue for="13" value="0.359" />
+          <attvalue for="14" value="91822" />
+        </attvalues>
+      </node>
+      <node id="CG" label="CG">
+        <attvalues>
+          <attvalue for="0" value="178" />
+          <attvalue for="1" value="Republic of the Congo" />
+          <attvalue for="2" value="142914" />
+          <attvalue for="3" value="3609851" />
+          <attvalue for="4" value="486658" />
+          <attvalue for="5" value="15.986" />
+          <attvalue for="6" value="950" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="fr" />
+          <attvalue for="9" value="CG" />
+          <attvalue for="10" value="70.63" />
+          <attvalue for="11" value="-0.055" />
+          <attvalue for="12" value="CFA Franc BEAC" />
+          <attvalue for="13" value="0.534" />
+          <attvalue for="14" value="343744" />
+        </attvalues>
+      </node>
+      <node id="ZA" label="ZA">
+        <attvalues>
+          <attvalue for="0" value="710" />
+          <attvalue for="1" value="South Africa" />
+          <attvalue for="2" value="444540" />
+          <attvalue for="3" value="47938663" />
+          <attvalue for="4" value="1159232" />
+          <attvalue for="5" value="23.121" />
+          <attvalue for="6" value="710" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="af/en" />
+          <attvalue for="9" value="ZA" />
+          <attvalue for="10" value="61.65" />
+          <attvalue for="11" value="-30.558" />
+          <attvalue for="12" value="Rand" />
+          <attvalue for="13" value="0.629" />
+          <attvalue for="14" value="714692" />
+        </attvalues>
+      </node>
+      <node id="GY" label="GY">
+        <attvalues>
+          <attvalue for="0" value="328" />
+          <attvalue for="1" value="Guyana" />
+          <attvalue for="2" value="444963" />
+          <attvalue for="3" value="739472" />
+          <attvalue for="4" value="457943" />
+          <attvalue for="5" value="-58.974" />
+          <attvalue for="6" value="328" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="GY" />
+          <attvalue for="10" value="2.83" />
+          <attvalue for="11" value="4.792" />
+          <attvalue for="12" value="Guyana Dollar" />
+          <attvalue for="13" value="0.636" />
+          <attvalue for="14" value="12980" />
+        </attvalues>
+      </node>
+      <node id="CD" label="CD">
+        <attvalues>
+          <attvalue for="0" value="180" />
+          <attvalue for="1" value="Democratic Republic of the Congo" />
+          <attvalue for="2" value="486917" />
+          <attvalue for="3" value="58740547" />
+          <attvalue for="4" value="633871" />
+          <attvalue for="5" value="23.654" />
+          <attvalue for="6" value="976" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="fr" />
+          <attvalue for="9" value="CD" />
+          <attvalue for="10" value="23.18" />
+          <attvalue for="11" value="-2.876" />
+          <attvalue for="12" value="Congolese Franc" />
+          <attvalue for="13" value="0.304" />
+          <attvalue for="14" value="146954" />
+        </attvalues>
+      </node>
+      <node id="HT" label="HT">
+        <attvalues>
+          <attvalue for="0" value="332" />
+          <attvalue for="1" value="Haiti" />
+          <attvalue for="2" value="1122592" />
+          <attvalue for="3" value="9296291" />
+          <attvalue for="4" value="1149483" />
+          <attvalue for="5" value="-72.278" />
+          <attvalue for="6" value="840" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="fr" />
+          <attvalue for="9" value="HT" />
+          <attvalue for="10" value="2.34" />
+          <attvalue for="11" value="19.142" />
+          <attvalue for="12" value="US Dollar" />
+          <attvalue for="13" value="0.456" />
+          <attvalue for="14" value="26891" />
+        </attvalues>
+      </node>
+      <node id="AR" label="AR">
+        <attvalues>
+          <attvalue for="0" value="32" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="676486" />
+          <attvalue for="3" value="38747148" />
+          <attvalue for="4" value="1164133" />
+          <attvalue for="5" value="-65.167" />
+          <attvalue for="6" value="32" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="es" />
+          <attvalue for="9" value="AR" />
+          <attvalue for="10" value="41.89" />
+          <attvalue for="11" value="-35.377" />
+          <attvalue for="12" value="Argentine Peso" />
+          <attvalue for="13" value="0.811" />
+          <attvalue for="14" value="487647" />
+        </attvalues>
+      </node>
+      <node id="GB" label="GB">
+        <attvalues>
+          <attvalue for="0" value="826" />
+          <attvalue for="1" value="United Kingdom" />
+          <attvalue for="2" value="2677228" />
+          <attvalue for="3" value="60244834" />
+          <attvalue for="4" value="5131347" />
+          <attvalue for="5" value="-1.6" />
+          <attvalue for="6" value="826" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="GB" />
+          <attvalue for="10" value="47.83" />
+          <attvalue for="11" value="53" />
+          <attvalue for="12" value="Pound Sterling" />
+          <attvalue for="13" value="0.875" />
+          <attvalue for="14" value="2454119" />
+        </attvalues>
+      </node>
+      <node id="GA" label="GA">
+        <attvalues>
+          <attvalue for="0" value="266" />
+          <attvalue for="1" value="Gabon" />
+          <attvalue for="2" value="25349" />
+          <attvalue for="3" value="1290693" />
+          <attvalue for="4" value="342611" />
+          <attvalue for="5" value="11.797" />
+          <attvalue for="6" value="950" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="fr" />
+          <attvalue for="9" value="GA" />
+          <attvalue for="10" value="92.60" />
+          <attvalue for="11" value="-0.591" />
+          <attvalue for="12" value="CFA Franc BEAC" />
+          <attvalue for="13" value="0.683" />
+          <attvalue for="14" value="317262" />
+        </attvalues>
+      </node>
+      <node id="TG" label="TG">
+        <attvalues>
+          <attvalue for="0" value="768" />
+          <attvalue for="1" value="Togo" />
+          <attvalue for="2" value="422002" />
+          <attvalue for="3" value="6238572" />
+          <attvalue for="4" value="541954" />
+          <attvalue for="5" value="1.081" />
+          <attvalue for="6" value="952" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="fr" />
+          <attvalue for="9" value="TG" />
+          <attvalue for="10" value="22.13" />
+          <attvalue for="11" value="8.799" />
+          <attvalue for="12" value="CFA Franc BCEAO" />
+          <attvalue for="13" value="0.459" />
+          <attvalue for="14" value="119952" />
+        </attvalues>
+      </node>
+      <node id="GN" label="GN">
+        <attvalues>
+          <attvalue for="0" value="324" />
+          <attvalue for="1" value="Guinea" />
+          <attvalue for="2" value="371127" />
+          <attvalue for="3" value="9002656" />
+          <attvalue for="4" value="735996" />
+          <attvalue for="5" value="-10.942" />
+          <attvalue for="6" value="324" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="fr" />
+          <attvalue for="9" value="GN" />
+          <attvalue for="10" value="49.57" />
+          <attvalue for="11" value="10.439" />
+          <attvalue for="12" value="Guinea Franc" />
+          <attvalue for="13" value="0.355" />
+          <attvalue for="14" value="364869" />
+        </attvalues>
+      </node>
+      <node id="GM" label="GM">
+        <attvalues>
+          <attvalue for="0" value="270" />
+          <attvalue for="1" value="Gambia" />
+          <attvalue for="2" value="65331" />
+          <attvalue for="3" value="1617029" />
+          <attvalue for="4" value="215633" />
+          <attvalue for="5" value="-15.386" />
+          <attvalue for="6" value="270" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="GM" />
+          <attvalue for="10" value="69.70" />
+          <attvalue for="11" value="13.453" />
+          <attvalue for="12" value="Dalasi" />
+          <attvalue for="13" value="0.439" />
+          <attvalue for="14" value="150302" />
+        </attvalues>
+      </node>
+      <node id="IE" label="IE">
+        <attvalues>
+          <attvalue for="0" value="372" />
+          <attvalue for="1" value="Ireland" />
+          <attvalue for="2" value="650455" />
+          <attvalue for="3" value="4143294" />
+          <attvalue for="4" value="1025157" />
+          <attvalue for="5" value="-8.152" />
+          <attvalue for="6" value="978" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="IE" />
+          <attvalue for="10" value="36.55" />
+          <attvalue for="11" value="53.177" />
+          <attvalue for="12" value="Euro" />
+          <attvalue for="13" value="0.916" />
+          <attvalue for="14" value="374702" />
+        </attvalues>
+      </node>
+      <node id="CV" label="CV">
+        <attvalues>
+          <attvalue for="0" value="132" />
+          <attvalue for="1" value="Cape Verde" />
+          <attvalue for="2" value="154594" />
+          <attvalue for="3" value="506807" />
+          <attvalue for="4" value="166688" />
+          <attvalue for="5" value="-23.634" />
+          <attvalue for="6" value="132" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="pt" />
+          <attvalue for="9" value="CV" />
+          <attvalue for="10" value="7.26" />
+          <attvalue for="11" value="15.071" />
+          <attvalue for="12" value="Cape Verde Escudo" />
+          <attvalue for="13" value="0.586" />
+          <attvalue for="14" value="12094" />
+        </attvalues>
+      </node>
+      <node id="CU" label="CU">
+        <attvalues>
+          <attvalue for="0" value="192" />
+          <attvalue for="1" value="Cuba" />
+          <attvalue for="2" value="1408470" />
+          <attvalue for="3" value="11259905" />
+          <attvalue for="4" value="1418075" />
+          <attvalue for="5" value="-77.781" />
+          <attvalue for="6" value="192" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="es" />
+          <attvalue for="9" value="CU" />
+          <attvalue for="10" value="0.68" />
+          <attvalue for="11" value="21.297" />
+          <attvalue for="12" value="Cuban Peso" />
+          <attvalue for="13" value="0.78" />
+          <attvalue for="14" value="9605" />
+        </attvalues>
+      </node>
+      <node id="GH" label="GH">
+        <attvalues>
+          <attvalue for="0" value="288" />
+          <attvalue for="1" value="Ghana" />
+          <attvalue for="2" value="622012" />
+          <attvalue for="3" value="2253501" />
+          <attvalue for="4" value="834631" />
+          <attvalue for="5" value="-1.207" />
+          <attvalue for="6" value="936" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="GH" />
+          <attvalue for="10" value="25.47" />
+          <attvalue for="11" value="7.96" />
+          <attvalue for="12" value="Ghana Cedi" />
+          <attvalue for="13" value="0.558" />
+          <attvalue for="14" value="212619" />
+        </attvalues>
+      </node>
+      <node id="UY" label="UY">
+        <attvalues>
+          <attvalue for="0" value="858" />
+          <attvalue for="1" value="Uruguay" />
+          <attvalue for="2" value="301085" />
+          <attvalue for="3" value="3325727" />
+          <attvalue for="4" value="356048" />
+          <attvalue for="5" value="-56.012" />
+          <attvalue for="6" value="858" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="es" />
+          <attvalue for="9" value="UY" />
+          <attvalue for="10" value="15.44" />
+          <attvalue for="11" value="-32.8" />
+          <attvalue for="12" value="Peso Uruguayo" />
+          <attvalue for="13" value="0.792" />
+          <attvalue for="14" value="54963" />
+        </attvalues>
+      </node>
+      <node id="AO" label="AO">
+        <attvalues>
+          <attvalue for="0" value="24" />
+          <attvalue for="1" value="Angola" />
+          <attvalue for="2" value="451355" />
+          <attvalue for="3" value="16095214" />
+          <attvalue for="4" value="523442" />
+          <attvalue for="5" value="17.544" />
+          <attvalue for="6" value="973" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="pt" />
+          <attvalue for="9" value="AO" />
+          <attvalue for="10" value="13.77" />
+          <attvalue for="11" value="-12.296" />
+          <attvalue for="12" value="Kwanza" />
+          <attvalue for="13" value="0.508" />
+          <attvalue for="14" value="72087" />
+        </attvalues>
+      </node>
+      <node id="SR" label="SR">
+        <attvalues>
+          <attvalue for="0" value="740" />
+          <attvalue for="1" value="Suriname" />
+          <attvalue for="2" value="229045" />
+          <attvalue for="3" value="452468" />
+          <attvalue for="4" value="263059" />
+          <attvalue for="5" value="-55.912" />
+          <attvalue for="6" value="968" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="nl" />
+          <attvalue for="9" value="SR" />
+          <attvalue for="10" value="12.93" />
+          <attvalue for="11" value="4.127" />
+          <attvalue for="12" value="Surinam Dollar" />
+          <attvalue for="13" value="0.684" />
+          <attvalue for="14" value="34014" />
+        </attvalues>
+      </node>
+      <node id="KN" label="KN">
+        <attvalues>
+          <attvalue for="0" value="659" />
+          <attvalue for="1" value="Saint Kitts and Nevis" />
+          <attvalue for="2" value="15853" />
+          <attvalue for="3" value="49138" />
+          <attvalue for="4" value="19670" />
+          <attvalue for="5" value="-62.769" />
+          <attvalue for="6" value="951" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="KN" />
+          <attvalue for="10" value="19.41" />
+          <attvalue for="11" value="17.34" />
+          <attvalue for="12" value="East Caribbean Dollar" />
+          <attvalue for="13" value="0.745" />
+          <attvalue for="14" value="3817" />
+        </attvalues>
+      </node>
+      <node id="US" label="US">
+        <attvalues>
+          <attvalue for="0" value="840" />
+          <attvalue for="1" value="United States" />
+          <attvalue for="2" value="1888637" />
+          <attvalue for="3" value="299846449" />
+          <attvalue for="4" value="26771583" />
+          <attvalue for="5" value="-98.606" />
+          <attvalue for="6" value="840" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="US" />
+          <attvalue for="10" value="92.95" />
+          <attvalue for="11" value="39.622" />
+          <attvalue for="12" value="US Dollar" />
+          <attvalue for="13" value="0.937" />
+          <attvalue for="14" value="24882946" />
+        </attvalues>
+      </node>
+      <node id="ST" label="ST">
+        <attvalues>
+          <attvalue for="0" value="678" />
+          <attvalue for="1" value="S&#195;&#163;o Tom&#195;&#169; and Pr&#195;&#173;ncipe" />
+          <attvalue for="2" value="35908" />
+          <attvalue for="3" value="152622" />
+          <attvalue for="4" value="38593" />
+          <attvalue for="5" value="6.629" />
+          <attvalue for="6" value="678" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="pt" />
+          <attvalue for="9" value="ST" />
+          <attvalue for="10" value="6.96" />
+          <attvalue for="11" value="0.201" />
+          <attvalue for="12" value="Dobra" />
+          <attvalue for="13" value="0.525" />
+          <attvalue for="14" value="2685" />
+        </attvalues>
+      </node>
+      <node id="SN" label="SN">
+        <attvalues>
+          <attvalue for="0" value="686" />
+          <attvalue for="1" value="Senegal" />
+          <attvalue for="2" value="427053" />
+          <attvalue for="3" value="1177034" />
+          <attvalue for="4" value="570318" />
+          <attvalue for="5" value="-14.881" />
+          <attvalue for="6" value="952" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="fr" />
+          <attvalue for="9" value="SN" />
+          <attvalue for="10" value="25.12" />
+          <attvalue for="11" value="15.013" />
+          <attvalue for="12" value="CFA Franc BCEAO" />
+          <attvalue for="13" value="0.47" />
+          <attvalue for="14" value="143265" />
+        </attvalues>
+      </node>
+      <node id="MR" label="MR">
+        <attvalues>
+          <attvalue for="0" value="478" />
+          <attvalue for="1" value="Mauritania" />
+          <attvalue for="2" value="118859" />
+          <attvalue for="3" value="2963105" />
+          <attvalue for="4" value="182389" />
+          <attvalue for="5" value="-10.332" />
+          <attvalue for="6" value="478" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="ar" />
+          <attvalue for="9" value="MR" />
+          <attvalue for="10" value="34.83" />
+          <attvalue for="11" value="20.26" />
+          <attvalue for="12" value="Ouguiya" />
+          <attvalue for="13" value="0.467" />
+          <attvalue for="14" value="63530" />
+        </attvalues>
+      </node>
+      <node id="BZ" label="BZ">
+        <attvalues>
+          <attvalue for="0" value="84" />
+          <attvalue for="1" value="Belize" />
+          <attvalue for="2" value="59801" />
+          <attvalue for="3" value="275546" />
+          <attvalue for="4" value="96134" />
+          <attvalue for="5" value="-88.602" />
+          <attvalue for="6" value="84" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="en" />
+          <attvalue for="9" value="BZ" />
+          <attvalue for="10" value="37.79" />
+          <attvalue for="11" value="17.219" />
+          <attvalue for="12" value="Belize Dollar" />
+          <attvalue for="13" value="0.702" />
+          <attvalue for="14" value="36333" />
+        </attvalues>
+      </node>
+      <node id="MX" label="MX">
+        <attvalues>
+          <attvalue for="0" value="484" />
+          <attvalue for="1" value="Mexico" />
+          <attvalue for="2" value="13156366" />
+          <attvalue for="3" value="104266392" />
+          <attvalue for="4" value="14199328" />
+          <attvalue for="5" value="-102.535" />
+          <attvalue for="6" value="484" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="es" />
+          <attvalue for="9" value="MX" />
+          <attvalue for="10" value="7.35" />
+          <attvalue for="11" value="23.951" />
+          <attvalue for="12" value="Mexican Peso" />
+          <attvalue for="13" value="0.775" />
+          <attvalue for="14" value="1042962" />
+        </attvalues>
+      </node>
+      <node id="SE" label="SE">
+        <attvalues>
+          <attvalue for="0" value="752" />
+          <attvalue for="1" value="Sweden" />
+          <attvalue for="2" value="238270" />
+          <attvalue for="3" value="9038049" />
+          <attvalue for="4" value="554669" />
+          <attvalue for="5" value="15.27" />
+          <attvalue for="6" value="752" />
+          <attvalue for="7" value="Yes" />
+          <attvalue for="8" value="sv" />
+          <attvalue for="9" value="SE" />
+          <attvalue for="10" value="57.04" />
+          <attvalue for="11" value="62.011" />
+          <attvalue for="12" value="Swedish Krona" />
+          <attvalue for="13" value="0.916" />
+          <attvalue for="14" value="316399" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="BE" target="DO" weight="490" />
+      <edge id="1" source="BE" target="FR" weight="127976" />
+      <edge id="2" source="BE" target="DK" weight="727" />
+      <edge id="3" source="BE" target="DE" weight="21902" />
+      <edge id="4" source="BE" target="HN" weight="19" />
+      <edge id="5" source="BE" target="BR" weight="1887" />
+      <edge id="6" source="BE" target="BS" weight="8" />
+      <edge id="7" source="BE" target="CR" weight="200" />
+      <edge id="8" source="BE" target="NI" weight="40" />
+      <edge id="9" source="BE" target="NL" weight="42060" />
+      <edge id="10" source="BE" target="PT" weight="1464" />
+      <edge id="11" source="BE" target="NO" weight="791" />
+      <edge id="12" source="BE" target="PA" weight="25" />
+      <edge id="13" source="BE" target="Non_Atlantic" weight="142180" />
+      <edge id="14" source="BE" target="ES" weight="17048" />
+      <edge id="15" source="BE" target="CA" weight="22419" />
+      <edge id="16" source="BE" target="CO" weight="377" />
+      <edge id="17" source="BE" target="VE" weight="514" />
+      <edge id="18" source="BE" target="CL" weight="1013" />
+      <edge id="19" source="BE" target="IS" weight="34" />
+      <edge id="20" source="BE" target="ZA" weight="4332" />
+      <edge id="21" source="BE" target="AR" weight="1151" />
+      <edge id="22" source="BE" target="GB" weight="16530" />
+      <edge id="23" source="BE" target="GA" weight="154" />
+      <edge id="24" source="BE" target="GN" weight="197" />
+      <edge id="25" source="BE" target="IE" weight="471" />
+      <edge id="26" source="BE" target="CV" weight="14" />
+      <edge id="27" source="BE" target="CU" weight="29" />
+      <edge id="28" source="BE" target="KN" weight="2" />
+      <edge id="29" source="BE" target="US" weight="39552" />
+      <edge id="30" source="BE" target="MR" weight="64" />
+      <edge id="31" source="BE" target="MX" weight="736" />
+      <edge id="32" source="BE" target="SE" weight="943" />
+      <edge id="33" source="FR" target="DO" weight="2524" />
+      <edge id="34" source="FR" target="DM" weight="29" />
+      <edge id="35" source="FR" target="DK" weight="2451" />
+      <edge id="36" source="FR" target="BE" weight="90062" />
+      <edge id="37" source="FR" target="DE" weight="89386" />
+      <edge id="38" source="FR" target="BJ" weight="506" />
+      <edge id="39" source="FR" target="HN" weight="109" />
+      <edge id="40" source="FR" target="BR" weight="8096" />
+      <edge id="41" source="FR" target="BS" weight="38" />
+      <edge id="42" source="FR" target="MA" weight="5628" />
+      <edge id="43" source="FR" target="NI" weight="107" />
+      <edge id="44" source="FR" target="NL" weight="13168" />
+      <edge id="45" source="FR" target="LC" weight="31" />
+      <edge id="46" source="FR" target="PT" weight="58432" />
+      <edge id="47" source="FR" target="NO" weight="2461" />
+      <edge id="48" source="FR" target="PA" weight="256" />
+      <edge id="49" source="FR" target="Non_Atlantic" weight="1004596" />
+      <edge id="50" source="FR" target="ES" weight="101098" />
+      <edge id="51" source="FR" target="LR" weight="252" />
+      <edge id="52" source="FR" target="GQ" weight="1154" />
+      <edge id="53" source="FR" target="CA" weight="55003" />
+      <edge id="54" source="FR" target="GW" weight="71" />
+      <edge id="55" source="FR" target="GT" weight="294" />
+      <edge id="56" source="FR" target="CO" weight="1905" />
+      <edge id="57" source="FR" target="VE" weight="4664" />
+      <edge id="58" source="FR" target="CM" weight="11808" />
+      <edge id="59" source="FR" target="CL" weight="2147" />
+      <edge id="60" source="FR" target="IS" weight="135" />
+      <edge id="61" source="FR" target="CG" weight="8574" />
+      <edge id="62" source="FR" target="ZA" weight="2364" />
+      <edge id="63" source="FR" target="AR" weight="6463" />
+      <edge id="64" source="FR" target="HT" weight="445" />
+      <edge id="65" source="FR" target="GA" weight="4949" />
+      <edge id="66" source="FR" target="TG" weight="4262" />
+      <edge id="67" source="FR" target="CR" weight="539" />
+      <edge id="68" source="FR" target="IE" weight="1917" />
+      <edge id="69" source="FR" target="CV" weight="102" />
+      <edge id="70" source="FR" target="CU" weight="328" />
+      <edge id="71" source="FR" target="GH" weight="117" />
+      <edge id="72" source="FR" target="UY" weight="865" />
+      <edge id="73" source="FR" target="SR" weight="1436" />
+      <edge id="74" source="FR" target="KN" weight="3" />
+      <edge id="75" source="FR" target="US" weight="137225" />
+      <edge id="76" source="FR" target="ST" weight="113" />
+      <edge id="77" source="FR" target="SN" weight="11453" />
+      <edge id="78" source="FR" target="GN" weight="1561" />
+      <edge id="79" source="FR" target="MR" weight="1427" />
+      <edge id="80" source="FR" target="MX" weight="4897" />
+      <edge id="81" source="FR" target="SE" weight="4401" />
+      <edge id="82" source="FR" target="GB" weight="53814" />
+      <edge id="83" source="DM" target="DO" weight="24" />
+      <edge id="84" source="DM" target="FR" weight="744" />
+      <edge id="85" source="DM" target="DK" weight="4" />
+      <edge id="86" source="DM" target="BB" weight="402" />
+      <edge id="87" source="DM" target="JM" weight="107" />
+      <edge id="88" source="DM" target="BS" weight="35" />
+      <edge id="89" source="DM" target="NI" weight="2" />
+      <edge id="90" source="DM" target="NL" weight="34" />
+      <edge id="91" source="DM" target="LC" weight="96" />
+      <edge id="92" source="DM" target="PT" weight="1" />
+      <edge id="93" source="DM" target="NO" weight="5" />
+      <edge id="94" source="DM" target="PA" weight="12" />
+      <edge id="95" source="DM" target="Non_Atlantic" weight="35038" />
+      <edge id="96" source="DM" target="CU" weight="20" />
+      <edge id="97" source="DM" target="CO" weight="46" />
+      <edge id="98" source="DM" target="VE" weight="200" />
+      <edge id="99" source="DM" target="CL" weight="8" />
+      <edge id="100" source="DM" target="CA" weight="1506" />
+      <edge id="101" source="DM" target="GY" weight="14" />
+      <edge id="102" source="DM" target="AR" weight="9" />
+      <edge id="103" source="DM" target="GB" weight="1674" />
+      <edge id="104" source="DM" target="CR" weight="3" />
+      <edge id="105" source="DM" target="ES" weight="363" />
+      <edge id="106" source="DM" target="KN" weight="105" />
+      <edge id="107" source="DM" target="US" weight="22476" />
+      <edge id="108" source="DM" target="MX" weight="12" />
+      <edge id="109" source="DM" target="SE" weight="36" />
+      <edge id="110" source="DK" target="DO" weight="70" />
+      <edge id="111" source="DK" target="FR" weight="6772" />
+      <edge id="112" source="DK" target="BE" weight="2316" />
+      <edge id="113" source="DK" target="DE" weight="16667" />
+      <edge id="114" source="DK" target="HN" weight="14" />
+      <edge id="115" source="DK" target="BR" weight="525" />
+      <edge id="116" source="DK" target="BS" weight="8" />
+      <edge id="117" source="DK" target="NI" weight="42" />
+      <edge id="118" source="DK" target="NL" weight="2111" />
+      <edge id="119" source="DK" target="PT" weight="276" />
+      <edge id="120" source="DK" target="NO" weight="21404" />
+      <edge id="121" source="DK" target="PA" weight="19" />
+      <edge id="122" source="DK" target="Non_Atlantic" weight="86244" />
+      <edge id="123" source="DK" target="ES" weight="3766" />
+      <edge id="124" source="DK" target="CA" weight="21487" />
+      <edge id="125" source="DK" target="CO" weight="77" />
+      <edge id="126" source="DK" target="VE" weight="128" />
+      <edge id="127" source="DK" target="CL" weight="170" />
+      <edge id="128" source="DK" target="IS" weight="2048" />
+      <edge id="129" source="DK" target="ZA" weight="1378" />
+      <edge id="130" source="DK" target="AR" weight="540" />
+      <edge id="131" source="DK" target="GB" weight="14325" />
+      <edge id="132" source="DK" target="CR" weight="48" />
+      <edge id="133" source="DK" target="IE" weight="394" />
+      <edge id="134" source="DK" target="CU" weight="7" />
+      <edge id="135" source="DK" target="US" weight="40280" />
+      <edge id="136" source="DK" target="MX" weight="257" />
+      <edge id="137" source="DK" target="SE" weight="30009" />
+      <edge id="138" source="BB" target="DO" weight="27" />
+      <edge id="139" source="BB" target="FR" weight="42" />
+      <edge id="140" source="BB" target="DM" weight="61" />
+      <edge id="141" source="BB" target="DK" weight="17" />
+      <edge id="142" source="BB" target="JM" weight="418" />
+      <edge id="143" source="BB" target="HN" weight="1" />
+      <edge id="144" source="BB" target="BS" weight="233" />
+      <edge id="145" source="BB" target="NI" weight="1" />
+      <edge id="146" source="BB" target="NL" weight="38" />
+      <edge id="147" source="BB" target="LC" weight="324" />
+      <edge id="148" source="BB" target="PT" weight="6" />
+      <edge id="149" source="BB" target="NO" weight="9" />
+      <edge id="150" source="BB" target="TT" weight="2411" />
+      <edge id="151" source="BB" target="PA" weight="135" />
+      <edge id="152" source="BB" target="Non_Atlantic" weight="3462" />
+      <edge id="153" source="BB" target="GT" weight="1" />
+      <edge id="154" source="BB" target="CO" weight="92" />
+      <edge id="155" source="BB" target="VE" weight="241" />
+      <edge id="156" source="BB" target="CL" weight="23" />
+      <edge id="157" source="BB" target="CA" weight="14781" />
+      <edge id="158" source="BB" target="ZA" weight="17" />
+      <edge id="159" source="BB" target="GY" weight="173" />
+      <edge id="160" source="BB" target="AR" weight="16" />
+      <edge id="161" source="BB" target="GB" weight="22449" />
+      <edge id="162" source="BB" target="CR" weight="8" />
+      <edge id="163" source="BB" target="IE" weight="4" />
+      <edge id="164" source="BB" target="CU" weight="43" />
+      <edge id="165" source="BB" target="KN" weight="41" />
+      <edge id="166" source="BB" target="US" weight="49506" />
+      <edge id="167" source="BB" target="MX" weight="1" />
+      <edge id="168" source="BB" target="SE" weight="79" />
+      <edge id="169" source="DO" target="BE" weight="591" />
+      <edge id="170" source="DO" target="FR" weight="454" />
+      <edge id="171" source="DO" target="DK" weight="35" />
+      <edge id="172" source="DO" target="DE" weight="1012" />
+      <edge id="173" source="DO" target="HT" weight="2406" />
+      <edge id="174" source="DO" target="HN" weight="103" />
+      <edge id="175" source="DO" target="BR" weight="277" />
+      <edge id="176" source="DO" target="BS" weight="44" />
+      <edge id="177" source="DO" target="NI" weight="50" />
+      <edge id="178" source="DO" target="NL" weight="2422" />
+      <edge id="179" source="DO" target="LC" weight="20" />
+      <edge id="180" source="DO" target="PT" weight="11" />
+      <edge id="181" source="DO" target="NO" weight="54" />
+      <edge id="182" source="DO" target="PA" weight="1449" />
+      <edge id="183" source="DO" target="Non_Atlantic" weight="139264" />
+      <edge id="184" source="DO" target="CU" weight="267" />
+      <edge id="185" source="DO" target="CA" weight="2772" />
+      <edge id="186" source="DO" target="GT" weight="59" />
+      <edge id="187" source="DO" target="CO" weight="361" />
+      <edge id="188" source="DO" target="VE" weight="18280" />
+      <edge id="189" source="DO" target="CL" weight="124" />
+      <edge id="190" source="DO" target="IS" weight="2" />
+      <edge id="191" source="DO" target="AR" weight="265" />
+      <edge id="192" source="DO" target="CR" weight="553" />
+      <edge id="193" source="DO" target="IE" weight="2" />
+      <edge id="194" source="DO" target="ES" weight="15310" />
+      <edge id="195" source="DO" target="KN" weight="294" />
+      <edge id="196" source="DO" target="US" weight="400348" />
+      <edge id="197" source="DO" target="MX" weight="526" />
+      <edge id="198" source="DO" target="SE" weight="192" />
+      <edge id="199" source="DE" target="DO" weight="5084" />
+      <edge id="200" source="DE" target="FR" weight="171594" />
+      <edge id="201" source="DE" target="DM" weight="11" />
+      <edge id="202" source="DE" target="DK" weight="23456" />
+      <edge id="203" source="DE" target="BE" weight="26342" />
+      <edge id="204" source="DE" target="CR" weight="1268" />
+      <edge id="205" source="DE" target="HT" weight="896" />
+      <edge id="206" source="DE" target="HN" weight="223" />
+      <edge id="207" source="DE" target="BR" weight="25679" />
+      <edge id="208" source="DE" target="BS" weight="160" />
+      <edge id="209" source="DE" target="BZ" weight="45" />
+      <edge id="210" source="DE" target="NI" weight="285" />
+      <edge id="211" source="DE" target="NL" weight="128907" />
+      <edge id="212" source="DE" target="LC" weight="31" />
+      <edge id="213" source="DE" target="PT" weight="16069" />
+      <edge id="214" source="DE" target="NO" weight="8923" />
+      <edge id="215" source="DE" target="PA" weight="279" />
+      <edge id="216" source="DE" target="Non_Atlantic" weight="3354338" />
+      <edge id="217" source="DE" target="ES" weight="81569" />
+      <edge id="218" source="DE" target="LR" weight="790" />
+      <edge id="219" source="DE" target="CA" weight="179998" />
+      <edge id="220" source="DE" target="GT" weight="476" />
+      <edge id="221" source="DE" target="CO" weight="2679" />
+      <edge id="222" source="DE" target="VE" weight="4895" />
+      <edge id="223" source="DE" target="CL" weight="5379" />
+      <edge id="224" source="DE" target="IS" weight="803" />
+      <edge id="225" source="DE" target="MR" weight="32" />
+      <edge id="226" source="DE" target="CG" weight="178" />
+      <edge id="227" source="DE" target="ZA" weight="14308" />
+      <edge id="228" source="DE" target="AR" weight="15674" />
+      <edge id="229" source="DE" target="GB" weight="217030" />
+      <edge id="230" source="DE" target="GA" weight="27" />
+      <edge id="231" source="DE" target="TG" weight="517" />
+      <edge id="232" source="DE" target="GN" weight="807" />
+      <edge id="233" source="DE" target="IE" weight="3341" />
+      <edge id="234" source="DE" target="CV" weight="25" />
+      <edge id="235" source="DE" target="CU" weight="752" />
+      <edge id="236" source="DE" target="UY" weight="2573" />
+      <edge id="237" source="DE" target="KN" weight="13" />
+      <edge id="238" source="DE" target="US" weight="819357" />
+      <edge id="239" source="DE" target="SN" weight="721" />
+      <edge id="240" source="DE" target="SL" weight="153" />
+      <edge id="241" source="DE" target="MX" weight="5329" />
+      <edge id="242" source="DE" target="SE" weight="29981" />
+      <edge id="243" source="BJ" target="BE" weight="987" />
+      <edge id="244" source="BJ" target="FR" weight="11476" />
+      <edge id="245" source="BJ" target="DK" weight="14" />
+      <edge id="246" source="BJ" target="DO" weight="18" />
+      <edge id="247" source="BJ" target="DE" weight="610" />
+      <edge id="248" source="BJ" target="CR" weight="1" />
+      <edge id="249" source="BJ" target="NL" weight="54" />
+      <edge id="250" source="BJ" target="PT" weight="8" />
+      <edge id="251" source="BJ" target="NO" weight="11" />
+      <edge id="252" source="BJ" target="LR" weight="54" />
+      <edge id="253" source="BJ" target="NG" weight="100585" />
+      <edge id="254" source="BJ" target="Non_Atlantic" weight="24954" />
+      <edge id="255" source="BJ" target="ES" weight="31" />
+      <edge id="256" source="BJ" target="TG" weight="47644" />
+      <edge id="257" source="BJ" target="CI" weight="51216" />
+      <edge id="258" source="BJ" target="CA" weight="155" />
+      <edge id="259" source="BJ" target="SL" weight="297" />
+      <edge id="260" source="BJ" target="CG" weight="4357" />
+      <edge id="261" source="BJ" target="ZA" weight="106" />
+      <edge id="262" source="BJ" target="GA" weight="16075" />
+      <edge id="263" source="BJ" target="GN" weight="2234" />
+      <edge id="264" source="BJ" target="IE" weight="6" />
+      <edge id="265" source="BJ" target="CU" weight="13" />
+      <edge id="266" source="BJ" target="GH" weight="8959" />
+      <edge id="267" source="BJ" target="US" weight="387" />
+      <edge id="268" source="BJ" target="ST" weight="85" />
+      <edge id="269" source="BJ" target="SN" weight="2984" />
+      <edge id="270" source="BJ" target="MR" weight="561" />
+      <edge id="271" source="BJ" target="SE" weight="17" />
+      <edge id="272" source="JM" target="DO" weight="421" />
+      <edge id="273" source="JM" target="FR" weight="463" />
+      <edge id="274" source="JM" target="DM" weight="47" />
+      <edge id="275" source="JM" target="DK" weight="74" />
+      <edge id="276" source="JM" target="BB" weight="554" />
+      <edge id="277" source="JM" target="DE" weight="701" />
+      <edge id="278" source="JM" target="HN" weight="20" />
+      <edge id="279" source="JM" target="BR" weight="24" />
+      <edge id="280" source="JM" target="BS" weight="2776" />
+      <edge id="281" source="JM" target="BZ" weight="445" />
+      <edge id="282" source="JM" target="NI" weight="30" />
+      <edge id="283" source="JM" target="NL" weight="395" />
+      <edge id="284" source="JM" target="LC" weight="78" />
+      <edge id="285" source="JM" target="PT" weight="8" />
+      <edge id="286" source="JM" target="NO" weight="45" />
+      <edge id="287" source="JM" target="PA" weight="926" />
+      <edge id="288" source="JM" target="Non_Atlantic" weight="17760" />
+      <edge id="289" source="JM" target="CA" weight="102133" />
+      <edge id="290" source="JM" target="GT" weight="44" />
+      <edge id="291" source="JM" target="CO" weight="96" />
+      <edge id="292" source="JM" target="VE" weight="220" />
+      <edge id="293" source="JM" target="CL" weight="14" />
+      <edge id="294" source="JM" target="IS" weight="5" />
+      <edge id="295" source="JM" target="ZA" weight="106" />
+      <edge id="296" source="JM" target="GY" weight="92" />
+      <edge id="297" source="JM" target="AR" weight="27" />
+      <edge id="298" source="JM" target="GB" weight="143472" />
+      <edge id="299" source="JM" target="CR" weight="356" />
+      <edge id="300" source="JM" target="IE" weight="23" />
+      <edge id="301" source="JM" target="CU" weight="656" />
+      <edge id="302" source="JM" target="KN" weight="108" />
+      <edge id="303" source="JM" target="US" weight="384560" />
+      <edge id="304" source="JM" target="MX" weight="117" />
+      <edge id="305" source="JM" target="SE" weight="153" />
+      <edge id="306" source="HN" target="DO" weight="433" />
+      <edge id="307" source="HN" target="FR" weight="482" />
+      <edge id="308" source="HN" target="DM" weight="1" />
+      <edge id="309" source="HN" target="DK" weight="34" />
+      <edge id="310" source="HN" target="DE" weight="438" />
+      <edge id="311" source="HN" target="JM" weight="157" />
+      <edge id="312" source="HN" target="BR" weight="280" />
+      <edge id="313" source="HN" target="BS" weight="7" />
+      <edge id="314" source="HN" target="BZ" weight="2764" />
+      <edge id="315" source="HN" target="NI" weight="9106" />
+      <edge id="316" source="HN" target="NL" weight="126" />
+      <edge id="317" source="HN" target="PT" weight="5" />
+      <edge id="318" source="HN" target="NO" weight="58" />
+      <edge id="319" source="HN" target="PA" weight="627" />
+      <edge id="320" source="HN" target="Non_Atlantic" weight="36676" />
+      <edge id="321" source="HN" target="ES" weight="1181" />
+      <edge id="322" source="HN" target="IS" weight="7" />
+      <edge id="323" source="HN" target="GT" weight="4768" />
+      <edge id="324" source="HN" target="CO" weight="265" />
+      <edge id="325" source="HN" target="VE" weight="437" />
+      <edge id="326" source="HN" target="CL" weight="215" />
+      <edge id="327" source="HN" target="CA" weight="2288" />
+      <edge id="328" source="HN" target="AR" weight="141" />
+      <edge id="329" source="HN" target="CR" weight="2608" />
+      <edge id="330" source="HN" target="IE" weight="2" />
+      <edge id="331" source="HN" target="CU" weight="74" />
+      <edge id="332" source="HN" target="KN" weight="1" />
+      <edge id="333" source="HN" target="US" weight="125359" />
+      <edge id="334" source="HN" target="MX" weight="2326" />
+      <edge id="335" source="HN" target="SE" weight="165" />
+      <edge id="336" source="BR" target="DO" weight="950" />
+      <edge id="337" source="BR" target="FR" weight="20435" />
+      <edge id="338" source="BR" target="DK" weight="765" />
+      <edge id="339" source="BR" target="BE" weight="894" />
+      <edge id="340" source="BR" target="DE" weight="11446" />
+      <edge id="341" source="BR" target="HN" weight="179" />
+      <edge id="342" source="BR" target="BS" weight="36" />
+      <edge id="343" source="BR" target="NI" weight="106" />
+      <edge id="344" source="BR" target="NL" weight="3850" />
+      <edge id="345" source="BR" target="LC" weight="5" />
+      <edge id="346" source="BR" target="PT" weight="23721" />
+      <edge id="347" source="BR" target="NO" weight="583" />
+      <edge id="348" source="BR" target="PA" weight="622" />
+      <edge id="349" source="BR" target="Non_Atlantic" weight="482450" />
+      <edge id="350" source="BR" target="ES" weight="13587" />
+      <edge id="351" source="BR" target="CA" weight="7303" />
+      <edge id="352" source="BR" target="GT" weight="77" />
+      <edge id="353" source="BR" target="CO" weight="1728" />
+      <edge id="354" source="BR" target="VE" weight="4323" />
+      <edge id="355" source="BR" target="CL" weight="4332" />
+      <edge id="356" source="BR" target="IS" weight="11" />
+      <edge id="357" source="BR" target="ZA" weight="842" />
+      <edge id="358" source="BR" target="GY" weight="539" />
+      <edge id="359" source="BR" target="AR" weight="34359" />
+      <edge id="360" source="BR" target="GB" weight="1510" />
+      <edge id="361" source="BR" target="CR" weight="346" />
+      <edge id="362" source="BR" target="IE" weight="380" />
+      <edge id="363" source="BR" target="CV" weight="77" />
+      <edge id="364" source="BR" target="CU" weight="88" />
+      <edge id="365" source="BR" target="GH" weight="7" />
+      <edge id="366" source="BR" target="UY" weight="10581" />
+      <edge id="367" source="BR" target="SR" weight="3098" />
+      <edge id="368" source="BR" target="KN" weight="55" />
+      <edge id="369" source="BR" target="US" weight="94936" />
+      <edge id="370" source="BR" target="SN" weight="536" />
+      <edge id="371" source="BR" target="GN" weight="236" />
+      <edge id="372" source="BR" target="MR" weight="164" />
+      <edge id="373" source="BR" target="MX" weight="1695" />
+      <edge id="374" source="BR" target="SE" weight="2747" />
+      <edge id="375" source="BS" target="DO" weight="91" />
+      <edge id="376" source="BS" target="FR" weight="64" />
+      <edge id="377" source="BS" target="DM" weight="5" />
+      <edge id="378" source="BS" target="DK" weight="5" />
+      <edge id="379" source="BS" target="BB" weight="49" />
+      <edge id="380" source="BS" target="JM" weight="518" />
+      <edge id="381" source="BS" target="NI" weight="52" />
+      <edge id="382" source="BS" target="NL" weight="25" />
+      <edge id="383" source="BS" target="LC" weight="6" />
+      <edge id="384" source="BS" target="PT" weight="9" />
+      <edge id="385" source="BS" target="NO" weight="7" />
+      <edge id="386" source="BS" target="PA" weight="6" />
+      <edge id="387" source="BS" target="Non_Atlantic" weight="2844" />
+      <edge id="388" source="BS" target="CA" weight="1102" />
+      <edge id="389" source="BS" target="CO" weight="9" />
+      <edge id="390" source="BS" target="VE" weight="8" />
+      <edge id="391" source="BS" target="CL" weight="1" />
+      <edge id="392" source="BS" target="IS" weight="1" />
+      <edge id="393" source="BS" target="GY" weight="4" />
+      <edge id="394" source="BS" target="GB" weight="755" />
+      <edge id="395" source="BS" target="CR" weight="10" />
+      <edge id="396" source="BS" target="IE" weight="5" />
+      <edge id="397" source="BS" target="CU" weight="4" />
+      <edge id="398" source="BS" target="KN" weight="4" />
+      <edge id="399" source="BS" target="US" weight="24897" />
+      <edge id="400" source="BS" target="MX" weight="12" />
+      <edge id="401" source="BS" target="SE" weight="12" />
+      <edge id="402" source="MA" target="DO" weight="21" />
+      <edge id="403" source="MA" target="FR" weight="713987" />
+      <edge id="404" source="MA" target="DK" weight="3004" />
+      <edge id="405" source="MA" target="BE" weight="135196" />
+      <edge id="406" source="MA" target="DE" weight="72631" />
+      <edge id="407" source="MA" target="HN" weight="3" />
+      <edge id="408" source="MA" target="BS" weight="5" />
+      <edge id="409" source="MA" target="NL" weight="115755" />
+      <edge id="410" source="MA" target="PT" weight="395" />
+      <edge id="411" source="MA" target="NO" weight="2421" />
+      <edge id="412" source="MA" target="PA" weight="23" />
+      <edge id="413" source="MA" target="Non_Atlantic" weight="748748" />
+      <edge id="414" source="MA" target="ES" weight="134656" />
+      <edge id="415" source="MA" target="CA" weight="16746" />
+      <edge id="416" source="MA" target="CO" weight="73" />
+      <edge id="417" source="MA" target="VE" weight="1551" />
+      <edge id="418" source="MA" target="CL" weight="62" />
+      <edge id="419" source="MA" target="IS" weight="21" />
+      <edge id="420" source="MA" target="ZA" weight="592" />
+      <edge id="421" source="MA" target="AR" weight="466" />
+      <edge id="422" source="MA" target="GB" weight="9136" />
+      <edge id="423" source="MA" target="GA" weight="220" />
+      <edge id="424" source="MA" target="CR" weight="17" />
+      <edge id="425" source="MA" target="IE" weight="52" />
+      <edge id="426" source="MA" target="CU" weight="20" />
+      <edge id="427" source="MA" target="US" weight="17885" />
+      <edge id="428" source="MA" target="SN" weight="3405" />
+      <edge id="429" source="MA" target="MR" weight="350" />
+      <edge id="430" source="MA" target="MX" weight="187" />
+      <edge id="431" source="MA" target="SE" weight="3529" />
+      <edge id="432" source="CR" target="DO" weight="1552" />
+      <edge id="433" source="CR" target="FR" weight="421" />
+      <edge id="434" source="CR" target="DK" weight="42" />
+      <edge id="435" source="CR" target="DE" weight="516" />
+      <edge id="436" source="CR" target="HT" weight="274" />
+      <edge id="437" source="CR" target="JM" weight="96" />
+      <edge id="438" source="CR" target="HN" weight="594" />
+      <edge id="439" source="CR" target="BR" weight="388" />
+      <edge id="440" source="CR" target="BS" weight="10" />
+      <edge id="441" source="CR" target="NI" weight="4544" />
+      <edge id="442" source="CR" target="NL" weight="209" />
+      <edge id="443" source="CR" target="PT" weight="5" />
+      <edge id="444" source="CR" target="NO" weight="131" />
+      <edge id="445" source="CR" target="PA" weight="3853" />
+      <edge id="446" source="CR" target="Non_Atlantic" weight="7954" />
+      <edge id="447" source="CR" target="ES" weight="651" />
+      <edge id="448" source="CR" target="CA" weight="1296" />
+      <edge id="449" source="CR" target="GT" weight="758" />
+      <edge id="450" source="CR" target="CO" weight="691" />
+      <edge id="451" source="CR" target="VE" weight="1661" />
+      <edge id="452" source="CR" target="CL" weight="428" />
+      <edge id="453" source="CR" target="IS" weight="3" />
+      <edge id="454" source="CR" target="AR" weight="462" />
+      <edge id="455" source="CR" target="IE" weight="2" />
+      <edge id="456" source="CR" target="CU" weight="88" />
+      <edge id="457" source="CR" target="US" weight="50098" />
+      <edge id="458" source="CR" target="MX" weight="2104" />
+      <edge id="459" source="CR" target="SE" weight="162" />
+      <edge id="460" source="NI" target="DO" weight="415" />
+      <edge id="461" source="NI" target="FR" weight="489" />
+      <edge id="462" source="NI" target="DK" weight="36" />
+      <edge id="463" source="NI" target="DE" weight="653" />
+      <edge id="464" source="NI" target="JM" weight="121" />
+      <edge id="465" source="NI" target="HN" weight="142802" />
+      <edge id="466" source="NI" target="BR" weight="329" />
+      <edge id="467" source="NI" target="BS" weight="9" />
+      <edge id="468" source="NI" target="NL" weight="134" />
+      <edge id="469" source="NI" target="PT" weight="5" />
+      <edge id="470" source="NI" target="NO" weight="35" />
+      <edge id="471" source="NI" target="PA" weight="4476" />
+      <edge id="472" source="NI" target="Non_Atlantic" weight="12766" />
+      <edge id="473" source="NI" target="ES" weight="1012" />
+      <edge id="474" source="NI" target="IS" weight="1" />
+      <edge id="475" source="NI" target="GT" weight="3726" />
+      <edge id="476" source="NI" target="CO" weight="470" />
+      <edge id="477" source="NI" target="VE" weight="2376" />
+      <edge id="478" source="NI" target="CL" weight="168" />
+      <edge id="479" source="NI" target="CA" weight="6441" />
+      <edge id="480" source="NI" target="ZA" weight="60" />
+      <edge id="481" source="NI" target="AR" weight="145" />
+      <edge id="482" source="NI" target="CR" weight="99153" />
+      <edge id="483" source="NI" target="IE" weight="3" />
+      <edge id="484" source="NI" target="CU" weight="595" />
+      <edge id="485" source="NI" target="US" weight="194108" />
+      <edge id="486" source="NI" target="MX" weight="3120" />
+      <edge id="487" source="NI" target="SE" weight="317" />
+      <edge id="488" source="NL" target="DO" weight="578" />
+      <edge id="489" source="NL" target="FR" weight="34420" />
+      <edge id="490" source="NL" target="DM" weight="4" />
+      <edge id="491" source="NL" target="DK" weight="2389" />
+      <edge id="492" source="NL" target="BE" weight="60945" />
+      <edge id="493" source="NL" target="DE" weight="116092" />
+      <edge id="494" source="NL" target="HN" weight="69" />
+      <edge id="495" source="NL" target="BR" weight="3535" />
+      <edge id="496" source="NL" target="BS" weight="36" />
+      <edge id="497" source="NL" target="NI" weight="89" />
+      <edge id="498" source="NL" target="LC" weight="9" />
+      <edge id="499" source="NL" target="PT" weight="1823" />
+      <edge id="500" source="NL" target="NO" weight="3306" />
+      <edge id="501" source="NL" target="PA" weight="77" />
+      <edge id="502" source="NL" target="LR" weight="254" />
+      <edge id="503" source="NL" target="ES" weight="14050" />
+      <edge id="504" source="NL" target="Non_Atlantic" weight="436224" />
+      <edge id="505" source="NL" target="CA" weight="129238" />
+      <edge id="506" source="NL" target="GT" weight="83" />
+      <edge id="507" source="NL" target="CO" weight="425" />
+      <edge id="508" source="NL" target="VE" weight="649" />
+      <edge id="509" source="NL" target="CL" weight="462" />
+      <edge id="510" source="NL" target="IS" weight="112" />
+      <edge id="511" source="NL" target="ZA" weight="10959" />
+      <edge id="512" source="NL" target="AR" weight="943" />
+      <edge id="513" source="NL" target="GB" weight="29646" />
+      <edge id="514" source="NL" target="CR" weight="381" />
+      <edge id="515" source="NL" target="IE" weight="1642" />
+      <edge id="516" source="NL" target="CV" weight="62" />
+      <edge id="517" source="NL" target="CU" weight="47" />
+      <edge id="518" source="NL" target="GH" weight="131" />
+      <edge id="519" source="NL" target="SR" weight="4638" />
+      <edge id="520" source="NL" target="KN" weight="3" />
+      <edge id="521" source="NL" target="US" weight="110714" />
+      <edge id="522" source="NL" target="MR" weight="26" />
+      <edge id="523" source="NL" target="MX" weight="643" />
+      <edge id="524" source="NL" target="SE" weight="3561" />
+      <edge id="525" source="LC" target="DO" weight="278" />
+      <edge id="526" source="LC" target="FR" weight="155" />
+      <edge id="527" source="LC" target="DM" weight="102" />
+      <edge id="528" source="LC" target="DK" weight="3" />
+      <edge id="529" source="LC" target="BB" weight="2953" />
+      <edge id="530" source="LC" target="JM" weight="257" />
+      <edge id="531" source="LC" target="BS" weight="25" />
+      <edge id="532" source="LC" target="NL" weight="21" />
+      <edge id="533" source="LC" target="NO" weight="3" />
+      <edge id="534" source="LC" target="TT" weight="1306" />
+      <edge id="535" source="LC" target="PA" weight="2" />
+      <edge id="536" source="LC" target="Non_Atlantic" weight="9542" />
+      <edge id="537" source="LC" target="CO" weight="9" />
+      <edge id="538" source="LC" target="VE" weight="65" />
+      <edge id="539" source="LC" target="CL" weight="5" />
+      <edge id="540" source="LC" target="CA" weight="1780" />
+      <edge id="541" source="LC" target="GY" weight="318" />
+      <edge id="542" source="LC" target="GB" weight="2517" />
+      <edge id="543" source="LC" target="CR" weight="2" />
+      <edge id="544" source="LC" target="IE" weight="1" />
+      <edge id="545" source="LC" target="KN" weight="43" />
+      <edge id="546" source="LC" target="US" weight="8008" />
+      <edge id="547" source="LC" target="MX" weight="40" />
+      <edge id="548" source="LC" target="SE" weight="22" />
+      <edge id="549" source="PT" target="DO" weight="160" />
+      <edge id="550" source="PT" target="FR" weight="781382" />
+      <edge id="551" source="PT" target="DK" weight="441" />
+      <edge id="552" source="PT" target="BE" weight="14785" />
+      <edge id="553" source="PT" target="DE" weight="92782" />
+      <edge id="554" source="PT" target="HN" weight="7" />
+      <edge id="555" source="PT" target="BR" weight="274924" />
+      <edge id="556" source="PT" target="BS" weight="1" />
+      <edge id="557" source="PT" target="NI" weight="11" />
+      <edge id="558" source="PT" target="NL" weight="7876" />
+      <edge id="559" source="PT" target="NO" weight="607" />
+      <edge id="560" source="PT" target="PA" weight="174" />
+      <edge id="561" source="PT" target="Non_Atlantic" weight="339566" />
+      <edge id="562" source="PT" target="ES" weight="36264" />
+      <edge id="563" source="PT" target="IS" weight="45" />
+      <edge id="564" source="PT" target="GW" weight="528" />
+      <edge id="565" source="PT" target="GT" weight="14" />
+      <edge id="566" source="PT" target="CO" weight="133" />
+      <edge id="567" source="PT" target="VE" weight="71583" />
+      <edge id="568" source="PT" target="CL" weight="127" />
+      <edge id="569" source="PT" target="CA" weight="160705" />
+      <edge id="570" source="PT" target="CG" weight="442" />
+      <edge id="571" source="PT" target="ZA" weight="20495" />
+      <edge id="572" source="PT" target="AO" weight="5298" />
+      <edge id="573" source="PT" target="AR" weight="13551" />
+      <edge id="574" source="PT" target="GB" weight="19912" />
+      <edge id="575" source="PT" target="CR" weight="57" />
+      <edge id="576" source="PT" target="IE" weight="122" />
+      <edge id="577" source="PT" target="CV" weight="1132" />
+      <edge id="578" source="PT" target="CU" weight="34" />
+      <edge id="579" source="PT" target="UY" weight="1216" />
+      <edge id="580" source="PT" target="KN" weight="2" />
+      <edge id="581" source="PT" target="US" weight="241828" />
+      <edge id="582" source="PT" target="ST" weight="18" />
+      <edge id="583" source="PT" target="GN" weight="226" />
+      <edge id="584" source="PT" target="MX" weight="164" />
+      <edge id="585" source="PT" target="SE" weight="1975" />
+      <edge id="586" source="NO" target="DO" weight="67" />
+      <edge id="587" source="NO" target="FR" weight="3257" />
+      <edge id="588" source="NO" target="DK" weight="12613" />
+      <edge id="589" source="NO" target="BE" weight="760" />
+      <edge id="590" source="NO" target="DE" weight="6286" />
+      <edge id="591" source="NO" target="HN" weight="9" />
+      <edge id="592" source="NO" target="BR" weight="230" />
+      <edge id="593" source="NO" target="BS" weight="13" />
+      <edge id="594" source="NO" target="NI" weight="34" />
+      <edge id="595" source="NO" target="NL" weight="1747" />
+      <edge id="596" source="NO" target="PT" weight="83" />
+      <edge id="597" source="NO" target="PA" weight="7" />
+      <edge id="598" source="NO" target="Non_Atlantic" weight="37968" />
+      <edge id="599" source="NO" target="ES" weight="3177" />
+      <edge id="600" source="NO" target="CA" weight="8236" />
+      <edge id="601" source="NO" target="CO" weight="61" />
+      <edge id="602" source="NO" target="VE" weight="80" />
+      <edge id="603" source="NO" target="CL" weight="184" />
+      <edge id="604" source="NO" target="IS" weight="683" />
+      <edge id="605" source="NO" target="ZA" weight="225" />
+      <edge id="606" source="NO" target="AR" weight="129" />
+      <edge id="607" source="NO" target="GB" weight="8744" />
+      <edge id="608" source="NO" target="CR" weight="42" />
+      <edge id="609" source="NO" target="IE" weight="59" />
+      <edge id="610" source="NO" target="CU" weight="4" />
+      <edge id="611" source="NO" target="US" weight="48613" />
+      <edge id="612" source="NO" target="MX" weight="58" />
+      <edge id="613" source="NO" target="SE" weight="33367" />
+      <edge id="614" source="NA" target="FR" weight="104" />
+      <edge id="615" source="NA" target="NL" weight="69" />
+      <edge id="616" source="NA" target="DK" weight="10" />
+      <edge id="617" source="NA" target="PT" weight="39" />
+      <edge id="618" source="NA" target="CL" weight="2" />
+      <edge id="619" source="NA" target="IS" weight="10" />
+      <edge id="620" source="NA" target="NO" weight="19" />
+      <edge id="621" source="NA" target="ZA" weight="74622" />
+      <edge id="622" source="NA" target="AO" weight="345" />
+      <edge id="623" source="NA" target="MX" weight="2" />
+      <edge id="624" source="NA" target="AR" weight="4" />
+      <edge id="625" source="NA" target="Non_Atlantic" weight="8564" />
+      <edge id="626" source="NA" target="US" weight="516" />
+      <edge id="627" source="NA" target="CU" weight="7" />
+      <edge id="628" source="NA" target="IE" weight="7" />
+      <edge id="629" source="NA" target="CA" weight="174" />
+      <edge id="630" source="NA" target="SE" weight="37" />
+      <edge id="631" source="TT" target="DO" weight="100" />
+      <edge id="632" source="TT" target="FR" weight="269" />
+      <edge id="633" source="TT" target="DM" weight="111" />
+      <edge id="634" source="TT" target="DK" weight="100" />
+      <edge id="635" source="TT" target="BB" weight="1558" />
+      <edge id="636" source="TT" target="DE" weight="354" />
+      <edge id="637" source="TT" target="JM" weight="1800" />
+      <edge id="638" source="TT" target="HN" weight="4" />
+      <edge id="639" source="TT" target="BS" weight="276" />
+      <edge id="640" source="TT" target="NI" weight="23" />
+      <edge id="641" source="TT" target="NL" weight="227" />
+      <edge id="642" source="TT" target="LC" weight="325" />
+      <edge id="643" source="TT" target="PT" weight="5" />
+      <edge id="644" source="TT" target="NO" weight="224" />
+      <edge id="645" source="TT" target="PA" weight="63" />
+      <edge id="646" source="TT" target="Non_Atlantic" weight="15954" />
+      <edge id="647" source="TT" target="CA" weight="49240" />
+      <edge id="648" source="TT" target="GT" weight="1" />
+      <edge id="649" source="TT" target="CO" weight="52" />
+      <edge id="650" source="TT" target="VE" weight="3611" />
+      <edge id="651" source="TT" target="CL" weight="6" />
+      <edge id="652" source="TT" target="IS" weight="1" />
+      <edge id="653" source="TT" target="ZA" weight="14" />
+      <edge id="654" source="TT" target="GY" weight="210" />
+      <edge id="655" source="TT" target="AR" weight="75" />
+      <edge id="656" source="TT" target="GB" weight="17742" />
+      <edge id="657" source="TT" target="CR" weight="26" />
+      <edge id="658" source="TT" target="IE" weight="22" />
+      <edge id="659" source="TT" target="CU" weight="7" />
+      <edge id="660" source="TT" target="KN" weight="97" />
+      <edge id="661" source="TT" target="US" weight="133170" />
+      <edge id="662" source="TT" target="MX" weight="32" />
+      <edge id="663" source="TT" target="SE" weight="183" />
+      <edge id="664" source="NG" target="DO" weight="42" />
+      <edge id="665" source="NG" target="FR" weight="2710" />
+      <edge id="666" source="NG" target="DM" weight="18" />
+      <edge id="667" source="NG" target="DK" weight="219" />
+      <edge id="668" source="NG" target="BE" weight="940" />
+      <edge id="669" source="NG" target="DE" weight="13230" />
+      <edge id="670" source="NG" target="BJ" weight="19972" />
+      <edge id="671" source="NG" target="BS" weight="30" />
+      <edge id="672" source="NG" target="BZ" weight="30" />
+      <edge id="673" source="NG" target="NI" weight="9" />
+      <edge id="674" source="NG" target="NL" weight="1421" />
+      <edge id="675" source="NG" target="LC" weight="6" />
+      <edge id="676" source="NG" target="PT" weight="43" />
+      <edge id="677" source="NG" target="NO" weight="310" />
+      <edge id="678" source="NG" target="LR" weight="2037" />
+      <edge id="679" source="NG" target="PA" weight="7" />
+      <edge id="680" source="NG" target="Non_Atlantic" weight="246438" />
+      <edge id="681" source="NG" target="ES" weight="711" />
+      <edge id="682" source="NG" target="TG" weight="14041" />
+      <edge id="683" source="NG" target="CA" weight="3121" />
+      <edge id="684" source="NG" target="CI" weight="31352" />
+      <edge id="685" source="NG" target="CO" weight="42" />
+      <edge id="686" source="NG" target="VE" weight="89" />
+      <edge id="687" source="NG" target="GQ" weight="91" />
+      <edge id="688" source="NG" target="CL" weight="11" />
+      <edge id="689" source="NG" target="IS" weight="3" />
+      <edge id="690" source="NG" target="ZA" weight="8985" />
+      <edge id="691" source="NG" target="AR" weight="93" />
+      <edge id="692" source="NG" target="GB" weight="47412" />
+      <edge id="693" source="NG" target="GA" weight="7363" />
+      <edge id="694" source="NG" target="CR" weight="3" />
+      <edge id="695" source="NG" target="IE" weight="837" />
+      <edge id="696" source="NG" target="CV" weight="84" />
+      <edge id="697" source="NG" target="CU" weight="11" />
+      <edge id="698" source="NG" target="GH" weight="14876" />
+      <edge id="699" source="NG" target="CM" weight="105140" />
+      <edge id="700" source="NG" target="KN" weight="8" />
+      <edge id="701" source="NG" target="US" weight="63702" />
+      <edge id="702" source="NG" target="ST" weight="442" />
+      <edge id="703" source="NG" target="SN" weight="701" />
+      <edge id="704" source="NG" target="GN" weight="865" />
+      <edge id="705" source="NG" target="SL" weight="1086" />
+      <edge id="706" source="NG" target="MX" weight="70" />
+      <edge id="707" source="NG" target="SE" weight="550" />
+      <edge id="708" source="PA" target="DO" weight="699" />
+      <edge id="709" source="PA" target="FR" weight="358" />
+      <edge id="710" source="PA" target="DK" weight="25" />
+      <edge id="711" source="PA" target="DE" weight="207" />
+      <edge id="712" source="PA" target="JM" weight="73" />
+      <edge id="713" source="PA" target="HN" weight="190" />
+      <edge id="714" source="PA" target="BR" weight="974" />
+      <edge id="715" source="PA" target="BS" weight="17" />
+      <edge id="716" source="PA" target="NI" weight="337" />
+      <edge id="717" source="PA" target="NL" weight="102" />
+      <edge id="718" source="PA" target="LC" weight="12" />
+      <edge id="719" source="PA" target="PT" weight="35" />
+      <edge id="720" source="PA" target="NO" weight="12" />
+      <edge id="721" source="PA" target="Non_Atlantic" weight="8290" />
+      <edge id="722" source="PA" target="ES" weight="1249" />
+      <edge id="723" source="PA" target="CA" weight="1162" />
+      <edge id="724" source="PA" target="GT" weight="242" />
+      <edge id="725" source="PA" target="CO" weight="2073" />
+      <edge id="726" source="PA" target="VE" weight="1470" />
+      <edge id="727" source="PA" target="CL" weight="351" />
+      <edge id="728" source="PA" target="IS" weight="1" />
+      <edge id="729" source="PA" target="ZA" weight="32" />
+      <edge id="730" source="PA" target="AR" weight="376" />
+      <edge id="731" source="PA" target="CR" weight="8692" />
+      <edge id="732" source="PA" target="IE" weight="3" />
+      <edge id="733" source="PA" target="CU" weight="184" />
+      <edge id="734" source="PA" target="US" weight="98674" />
+      <edge id="735" source="PA" target="MX" weight="25841" />
+      <edge id="736" source="PA" target="SE" weight="157" />
+      <edge id="737" source="Non_Atlantic" target="BE" weight="863740" />
+      <edge id="738" source="Non_Atlantic" target="FR" weight="6014712" />
+      <edge id="739" source="Non_Atlantic" target="DM" weight="2470" />
+      <edge id="740" source="Non_Atlantic" target="DK" weight="289484" />
+      <edge id="741" source="Non_Atlantic" target="BB" weight="13747" />
+      <edge id="742" source="Non_Atlantic" target="DO" weight="68252" />
+      <edge id="743" source="Non_Atlantic" target="DE" weight="9748453" />
+      <edge id="744" source="Non_Atlantic" target="BJ" weight="36606" />
+      <edge id="745" source="Non_Atlantic" target="JM" weight="5005" />
+      <edge id="746" source="Non_Atlantic" target="HN" weight="233866" />
+      <edge id="747" source="Non_Atlantic" target="BR" weight="610260" />
+      <edge id="748" source="Non_Atlantic" target="BS" weight="7674" />
+      <edge id="749" source="Non_Atlantic" target="MA" weight="89095" />
+      <edge id="750" source="Non_Atlantic" target="BZ" weight="16232" />
+      <edge id="751" source="Non_Atlantic" target="NI" weight="29751" />
+      <edge id="752" source="Non_Atlantic" target="NL" weight="1180017" />
+      <edge id="753" source="Non_Atlantic" target="LC" weight="3261" />
+      <edge id="754" source="Non_Atlantic" target="PT" weight="191950" />
+      <edge id="755" source="Non_Atlantic" target="NO" weight="169581" />
+      <edge id="756" source="Non_Atlantic" target="NA" weight="76941" />
+      <edge id="757" source="Non_Atlantic" target="TT" weight="64867" />
+      <edge id="758" source="Non_Atlantic" target="NG" weight="289279" />
+      <edge id="759" source="Non_Atlantic" target="PA" weight="42578" />
+      <edge id="760" source="Non_Atlantic" target="LR" weight="32462" />
+      <edge id="761" source="Non_Atlantic" target="ES" weight="300763" />
+      <edge id="762" source="Non_Atlantic" target="TG" weight="89688" />
+      <edge id="763" source="Non_Atlantic" target="CA" weight="4987634" />
+      <edge id="764" source="Non_Atlantic" target="GW" weight="442" />
+      <edge id="765" source="Non_Atlantic" target="CI" weight="2833284" />
+      <edge id="766" source="Non_Atlantic" target="GT" weight="478004" />
+      <edge id="767" source="Non_Atlantic" target="CO" weight="60050" />
+      <edge id="768" source="Non_Atlantic" target="VE" weight="336754" />
+      <edge id="769" source="Non_Atlantic" target="GQ" weight="526" />
+      <edge id="770" source="Non_Atlantic" target="CL" weight="67688" />
+      <edge id="771" source="Non_Atlantic" target="IS" weight="4770" />
+      <edge id="772" source="Non_Atlantic" target="MR" weight="24235" />
+      <edge id="773" source="Non_Atlantic" target="CG" weight="48046" />
+      <edge id="774" source="Non_Atlantic" target="ZA" weight="1967020" />
+      <edge id="775" source="Non_Atlantic" target="GY" weight="966" />
+      <edge id="776" source="Non_Atlantic" target="CD" weight="472982" />
+      <edge id="777" source="Non_Atlantic" target="AR" weight="1839585" />
+      <edge id="778" source="Non_Atlantic" target="HT" weight="9839" />
+      <edge id="779" source="Non_Atlantic" target="GA" weight="46876" />
+      <edge id="780" source="Non_Atlantic" target="CR" weight="340553" />
+      <edge id="781" source="Non_Atlantic" target="GM" weight="14852" />
+      <edge id="782" source="Non_Atlantic" target="IE" weight="31262" />
+      <edge id="783" source="Non_Atlantic" target="CV" weight="2667" />
+      <edge id="784" source="Non_Atlantic" target="CU" weight="25180" />
+      <edge id="785" source="Non_Atlantic" target="GH" weight="119610" />
+      <edge id="786" source="Non_Atlantic" target="UY" weight="51158" />
+      <edge id="787" source="Non_Atlantic" target="CM" weight="243923" />
+      <edge id="788" source="Non_Atlantic" target="AO" weight="6306" />
+      <edge id="789" source="Non_Atlantic" target="SR" weight="5258" />
+      <edge id="790" source="Non_Atlantic" target="KN" weight="2001" />
+      <edge id="791" source="Non_Atlantic" target="US" weight="22003984" />
+      <edge id="792" source="Non_Atlantic" target="ST" weight="3680" />
+      <edge id="793" source="Non_Atlantic" target="SN" weight="106210" />
+      <edge id="794" source="Non_Atlantic" target="GN" weight="39364" />
+      <edge id="795" source="Non_Atlantic" target="SL" weight="28202" />
+      <edge id="796" source="Non_Atlantic" target="MX" weight="582930" />
+      <edge id="797" source="Non_Atlantic" target="SE" weight="1149568" />
+      <edge id="798" source="Non_Atlantic" target="GB" weight="4028986" />
+      <edge id="799" source="ES" target="DO" weight="7354" />
+      <edge id="800" source="ES" target="FR" weight="433748" />
+      <edge id="801" source="ES" target="DK" weight="1525" />
+      <edge id="802" source="ES" target="BE" weight="51180" />
+      <edge id="803" source="ES" target="DE" weight="142457" />
+      <edge id="804" source="ES" target="HT" weight="1297" />
+      <edge id="805" source="ES" target="HN" weight="371" />
+      <edge id="806" source="ES" target="BR" weight="59188" />
+      <edge id="807" source="ES" target="BS" weight="32" />
+      <edge id="808" source="ES" target="CR" weight="1829" />
+      <edge id="809" source="ES" target="NI" weight="425" />
+      <edge id="810" source="ES" target="NL" weight="17495" />
+      <edge id="811" source="ES" target="PT" weight="11027" />
+      <edge id="812" source="ES" target="NO" weight="1336" />
+      <edge id="813" source="ES" target="PA" weight="2464" />
+      <edge id="814" source="ES" target="Non_Atlantic" weight="320410" />
+      <edge id="815" source="ES" target="LR" weight="244" />
+      <edge id="816" source="ES" target="CA" weight="11132" />
+      <edge id="817" source="ES" target="GT" weight="944" />
+      <edge id="818" source="ES" target="CO" weight="5631" />
+      <edge id="819" source="ES" target="VE" weight="109074" />
+      <edge id="820" source="ES" target="GQ" weight="324" />
+      <edge id="821" source="ES" target="CL" weight="9710" />
+      <edge id="822" source="ES" target="IS" weight="105" />
+      <edge id="823" source="ES" target="ZA" weight="795" />
+      <edge id="824" source="ES" target="AR" weight="229535" />
+      <edge id="825" source="ES" target="GB" weight="38998" />
+      <edge id="826" source="ES" target="GN" weight="57" />
+      <edge id="827" source="ES" target="IE" weight="499" />
+      <edge id="828" source="ES" target="CV" weight="30" />
+      <edge id="829" source="ES" target="CU" weight="10703" />
+      <edge id="830" source="ES" target="UY" weight="34478" />
+      <edge id="831" source="ES" target="KN" weight="1" />
+      <edge id="832" source="ES" target="US" weight="87946" />
+      <edge id="833" source="ES" target="MR" weight="88" />
+      <edge id="834" source="ES" target="MX" weight="28775" />
+      <edge id="835" source="ES" target="SE" weight="3990" />
+      <edge id="836" source="LR" target="DO" weight="3" />
+      <edge id="837" source="LR" target="FR" weight="803" />
+      <edge id="838" source="LR" target="DK" weight="50" />
+      <edge id="839" source="LR" target="DE" weight="2666" />
+      <edge id="840" source="LR" target="NI" weight="1" />
+      <edge id="841" source="LR" target="NL" weight="988" />
+      <edge id="842" source="LR" target="PT" weight="9" />
+      <edge id="843" source="LR" target="NO" weight="67" />
+      <edge id="844" source="LR" target="NG" weight="8146" />
+      <edge id="845" source="LR" target="PA" weight="4" />
+      <edge id="846" source="LR" target="Non_Atlantic" weight="2784" />
+      <edge id="847" source="LR" target="TG" weight="103" />
+      <edge id="848" source="LR" target="GW" weight="2604" />
+      <edge id="849" source="LR" target="CI" weight="2793" />
+      <edge id="850" source="LR" target="CO" weight="14" />
+      <edge id="851" source="LR" target="CL" weight="8" />
+      <edge id="852" source="LR" target="CA" weight="130" />
+      <edge id="853" source="LR" target="ZA" weight="172" />
+      <edge id="854" source="LR" target="GN" weight="183207" />
+      <edge id="855" source="LR" target="IE" weight="21" />
+      <edge id="856" source="LR" target="ES" weight="627" />
+      <edge id="857" source="LR" target="GH" weight="1228" />
+      <edge id="858" source="LR" target="US" weight="13183" />
+      <edge id="859" source="LR" target="SL" weight="137849" />
+      <edge id="860" source="LR" target="MX" weight="12" />
+      <edge id="861" source="LR" target="SE" weight="438" />
+      <edge id="862" source="GQ" target="ES" weight="6100" />
+      <edge id="863" source="GQ" target="BE" weight="987" />
+      <edge id="864" source="GQ" target="FR" weight="144" />
+      <edge id="865" source="GQ" target="NL" weight="10" />
+      <edge id="866" source="GQ" target="VE" weight="7" />
+      <edge id="867" source="GQ" target="PT" weight="17" />
+      <edge id="868" source="GQ" target="NO" weight="3" />
+      <edge id="869" source="GQ" target="IS" weight="1" />
+      <edge id="870" source="GQ" target="CL" weight="3" />
+      <edge id="871" source="GQ" target="CG" weight="485" />
+      <edge id="872" source="GQ" target="US" weight="286" />
+      <edge id="873" source="GQ" target="NG" weight="2012" />
+      <edge id="874" source="GQ" target="MX" weight="1" />
+      <edge id="875" source="GQ" target="Non_Atlantic" weight="462" />
+      <edge id="876" source="GQ" target="CU" weight="13" />
+      <edge id="877" source="GQ" target="GA" weight="26773" />
+      <edge id="878" source="GQ" target="CO" weight="3" />
+      <edge id="879" source="GQ" target="ST" weight="114" />
+      <edge id="880" source="GQ" target="CA" weight="10" />
+      <edge id="881" source="GQ" target="SE" weight="8" />
+      <edge id="882" source="CA" target="BE" weight="1523" />
+      <edge id="883" source="CA" target="FR" weight="16520" />
+      <edge id="884" source="CA" target="DM" weight="67" />
+      <edge id="885" source="CA" target="DK" weight="2175" />
+      <edge id="886" source="CA" target="BB" weight="595" />
+      <edge id="887" source="CA" target="DO" weight="3562" />
+      <edge id="888" source="CA" target="DE" weight="9241" />
+      <edge id="889" source="CA" target="HT" weight="628" />
+      <edge id="890" source="CA" target="JM" weight="1140" />
+      <edge id="891" source="CA" target="HN" weight="264" />
+      <edge id="892" source="CA" target="BR" weight="970" />
+      <edge id="893" source="CA" target="BS" weight="726" />
+      <edge id="894" source="CA" target="BZ" weight="542" />
+      <edge id="895" source="CA" target="NI" weight="141" />
+      <edge id="896" source="CA" target="NL" weight="6537" />
+      <edge id="897" source="CA" target="LC" weight="107" />
+      <edge id="898" source="CA" target="PT" weight="4263" />
+      <edge id="899" source="CA" target="NO" weight="2151" />
+      <edge id="900" source="CA" target="PA" weight="138" />
+      <edge id="901" source="CA" target="Non_Atlantic" weight="224210" />
+      <edge id="902" source="CA" target="ES" weight="2259" />
+      <edge id="903" source="CA" target="LR" weight="211" />
+      <edge id="904" source="CA" target="GW" weight="37" />
+      <edge id="905" source="CA" target="GT" weight="272" />
+      <edge id="906" source="CA" target="CO" weight="682" />
+      <edge id="907" source="CA" target="VE" weight="981" />
+      <edge id="908" source="CA" target="CL" weight="1051" />
+      <edge id="909" source="CA" target="IS" weight="145" />
+      <edge id="910" source="CA" target="MR" weight="54" />
+      <edge id="911" source="CA" target="ZA" weight="2452" />
+      <edge id="912" source="CA" target="GY" weight="102" />
+      <edge id="913" source="CA" target="AR" weight="796" />
+      <edge id="914" source="CA" target="GB" weight="63591" />
+      <edge id="915" source="CA" target="GA" weight="90" />
+      <edge id="916" source="CA" target="CR" weight="810" />
+      <edge id="917" source="CA" target="IE" weight="371" />
+      <edge id="918" source="CA" target="CU" weight="135" />
+      <edge id="919" source="CA" target="GH" weight="147" />
+      <edge id="920" source="CA" target="UY" weight="427" />
+      <edge id="921" source="CA" target="KN" weight="48" />
+      <edge id="922" source="CA" target="US" weight="857223" />
+      <edge id="923" source="CA" target="GN" weight="283" />
+      <edge id="924" source="CA" target="SL" weight="44" />
+      <edge id="925" source="CA" target="MX" weight="3623" />
+      <edge id="926" source="CA" target="SE" weight="1791" />
+      <edge id="927" source="GW" target="FR" weight="8060" />
+      <edge id="928" source="GW" target="DK" weight="9" />
+      <edge id="929" source="GW" target="NL" weight="75" />
+      <edge id="930" source="GW" target="PT" weight="6588" />
+      <edge id="931" source="GW" target="NO" weight="9" />
+      <edge id="932" source="GW" target="NG" weight="2044" />
+      <edge id="933" source="GW" target="PA" weight="1" />
+      <edge id="934" source="GW" target="LR" weight="1927" />
+      <edge id="935" source="GW" target="CU" weight="13" />
+      <edge id="936" source="GW" target="Non_Atlantic" weight="2822" />
+      <edge id="937" source="GW" target="CI" weight="308" />
+      <edge id="938" source="GW" target="CO" weight="6" />
+      <edge id="939" source="GW" target="CL" weight="3" />
+      <edge id="940" source="GW" target="CA" weight="25" />
+      <edge id="941" source="GW" target="SL" weight="28" />
+      <edge id="942" source="GW" target="ZA" weight="17" />
+      <edge id="943" source="GW" target="GN" weight="2659" />
+      <edge id="944" source="GW" target="GM" weight="7601" />
+      <edge id="945" source="GW" target="CV" weight="539" />
+      <edge id="946" source="GW" target="ES" weight="545" />
+      <edge id="947" source="GW" target="US" weight="53" />
+      <edge id="948" source="GW" target="SN" weight="24373" />
+      <edge id="949" source="GW" target="MR" weight="1218" />
+      <edge id="950" source="GW" target="MX" weight="1" />
+      <edge id="951" source="GW" target="SE" weight="61" />
+      <edge id="952" source="CI" target="DO" weight="3" />
+      <edge id="953" source="CI" target="FR" weight="40942" />
+      <edge id="954" source="CI" target="DK" weight="70" />
+      <edge id="955" source="CI" target="BE" weight="329" />
+      <edge id="956" source="CI" target="DE" weight="737" />
+      <edge id="957" source="CI" target="BJ" weight="7735" />
+      <edge id="958" source="CI" target="CR" weight="2" />
+      <edge id="959" source="CI" target="NL" weight="178" />
+      <edge id="960" source="CI" target="PT" weight="27" />
+      <edge id="961" source="CI" target="NO" weight="72" />
+      <edge id="962" source="CI" target="LR" weight="1858" />
+      <edge id="963" source="CI" target="NG" weight="1839" />
+      <edge id="964" source="CI" target="PA" weight="1" />
+      <edge id="965" source="CI" target="Non_Atlantic" weight="601320" />
+      <edge id="966" source="CI" target="TG" weight="31" />
+      <edge id="967" source="CI" target="CO" weight="3" />
+      <edge id="968" source="CI" target="VE" weight="5" />
+      <edge id="969" source="CI" target="CL" weight="12" />
+      <edge id="970" source="CI" target="CA" weight="1735" />
+      <edge id="971" source="CI" target="MR" weight="200" />
+      <edge id="972" source="CI" target="ZA" weight="623" />
+      <edge id="973" source="CI" target="AO" weight="5" />
+      <edge id="974" source="CI" target="AR" weight="1" />
+      <edge id="975" source="CI" target="GA" weight="1045" />
+      <edge id="976" source="CI" target="GN" weight="2349" />
+      <edge id="977" source="CI" target="IE" weight="26" />
+      <edge id="978" source="CI" target="CV" weight="9" />
+      <edge id="979" source="CI" target="ES" weight="154" />
+      <edge id="980" source="CI" target="GH" weight="4902" />
+      <edge id="981" source="CI" target="US" weight="1597" />
+      <edge id="982" source="CI" target="SN" weight="2322" />
+      <edge id="983" source="CI" target="SL" weight="191" />
+      <edge id="984" source="CI" target="MX" weight="140" />
+      <edge id="985" source="CI" target="SE" weight="247" />
+      <edge id="986" source="GT" target="DO" weight="475" />
+      <edge id="987" source="GT" target="FR" weight="1614" />
+      <edge id="988" source="GT" target="DK" weight="22" />
+      <edge id="989" source="GT" target="DE" weight="583" />
+      <edge id="990" source="GT" target="JM" weight="295" />
+      <edge id="991" source="GT" target="HN" weight="3250" />
+      <edge id="992" source="GT" target="BR" weight="53" />
+      <edge id="993" source="GT" target="BS" weight="7" />
+      <edge id="994" source="GT" target="BZ" weight="12650" />
+      <edge id="995" source="GT" target="NI" weight="1078" />
+      <edge id="996" source="GT" target="NL" weight="166" />
+      <edge id="997" source="GT" target="LC" weight="2" />
+      <edge id="998" source="GT" target="PT" weight="8" />
+      <edge id="999" source="GT" target="NO" weight="210" />
+      <edge id="1000" source="GT" target="PA" weight="369" />
+      <edge id="1001" source="GT" target="Non_Atlantic" weight="20682" />
+      <edge id="1002" source="GT" target="CU" weight="153" />
+      <edge id="1003" source="GT" target="CA" weight="8894" />
+      <edge id="1004" source="GT" target="CO" weight="264" />
+      <edge id="1005" source="GT" target="VE" weight="579" />
+      <edge id="1006" source="GT" target="CL" weight="143" />
+      <edge id="1007" source="GT" target="IS" weight="14" />
+      <edge id="1008" source="GT" target="ZA" weight="50" />
+      <edge id="1009" source="GT" target="AR" weight="116" />
+      <edge id="1010" source="GT" target="CR" weight="1977" />
+      <edge id="1011" source="GT" target="IE" weight="24" />
+      <edge id="1012" source="GT" target="ES" weight="985" />
+      <edge id="1013" source="GT" target="US" weight="259802" />
+      <edge id="1014" source="GT" target="MX" weight="72906" />
+      <edge id="1015" source="GT" target="SE" weight="517" />
+      <edge id="1016" source="CO" target="DO" weight="4697" />
+      <edge id="1017" source="CO" target="FR" weight="15050" />
+      <edge id="1018" source="CO" target="DK" weight="807" />
+      <edge id="1019" source="CO" target="BE" weight="563" />
+      <edge id="1020" source="CO" target="DE" weight="4218" />
+      <edge id="1021" source="CO" target="HT" weight="828" />
+      <edge id="1022" source="CO" target="HN" weight="409" />
+      <edge id="1023" source="CO" target="BR" weight="2223" />
+      <edge id="1024" source="CO" target="BS" weight="28" />
+      <edge id="1025" source="CO" target="NI" weight="228" />
+      <edge id="1026" source="CO" target="NL" weight="4954" />
+      <edge id="1027" source="CO" target="PT" weight="107" />
+      <edge id="1028" source="CO" target="NO" weight="1637" />
+      <edge id="1029" source="CO" target="PA" weight="13732" />
+      <edge id="1030" source="CO" target="Non_Atlantic" weight="142058" />
+      <edge id="1031" source="CO" target="ES" weight="12672" />
+      <edge id="1032" source="CO" target="CA" weight="7842" />
+      <edge id="1033" source="CO" target="GT" weight="490" />
+      <edge id="1034" source="CO" target="VE" weight="555580" />
+      <edge id="1035" source="CO" target="CL" weight="1554" />
+      <edge id="1036" source="CO" target="IS" weight="21" />
+      <edge id="1037" source="CO" target="ZA" weight="323" />
+      <edge id="1038" source="CO" target="AR" weight="2702" />
+      <edge id="1039" source="CO" target="GB" weight="4531" />
+      <edge id="1040" source="CO" target="CR" weight="4372" />
+      <edge id="1041" source="CO" target="CU" weight="353" />
+      <edge id="1042" source="CO" target="US" weight="329299" />
+      <edge id="1043" source="CO" target="MX" weight="5446" />
+      <edge id="1044" source="CO" target="SE" weight="5749" />
+      <edge id="1045" source="VE" target="DO" weight="14235" />
+      <edge id="1046" source="VE" target="FR" weight="3253" />
+      <edge id="1047" source="VE" target="DM" weight="11" />
+      <edge id="1048" source="VE" target="DK" weight="188" />
+      <edge id="1049" source="VE" target="DE" weight="1662" />
+      <edge id="1050" source="VE" target="HT" weight="2510" />
+      <edge id="1051" source="VE" target="HN" weight="75" />
+      <edge id="1052" source="VE" target="BR" weight="1220" />
+      <edge id="1053" source="VE" target="BS" weight="16" />
+      <edge id="1054" source="VE" target="NI" weight="112" />
+      <edge id="1055" source="VE" target="NL" weight="1486" />
+      <edge id="1056" source="VE" target="LC" weight="27" />
+      <edge id="1057" source="VE" target="PT" weight="14959" />
+      <edge id="1058" source="VE" target="NO" weight="81" />
+      <edge id="1059" source="VE" target="TT" weight="1337" />
+      <edge id="1060" source="VE" target="PA" weight="479" />
+      <edge id="1061" source="VE" target="Non_Atlantic" weight="44820" />
+      <edge id="1062" source="VE" target="ES" weight="32790" />
+      <edge id="1063" source="VE" target="IS" weight="6" />
+      <edge id="1064" source="VE" target="GT" weight="113" />
+      <edge id="1065" source="VE" target="CO" weight="33123" />
+      <edge id="1066" source="VE" target="CL" weight="2347" />
+      <edge id="1067" source="VE" target="CA" weight="3470" />
+      <edge id="1068" source="VE" target="ZA" weight="164" />
+      <edge id="1069" source="VE" target="GY" weight="531" />
+      <edge id="1070" source="VE" target="AR" weight="1981" />
+      <edge id="1071" source="VE" target="GB" weight="2014" />
+      <edge id="1072" source="VE" target="CR" weight="1030" />
+      <edge id="1073" source="VE" target="IE" weight="24" />
+      <edge id="1074" source="VE" target="CU" weight="431" />
+      <edge id="1075" source="VE" target="UY" weight="773" />
+      <edge id="1076" source="VE" target="KN" weight="6" />
+      <edge id="1077" source="VE" target="US" weight="48475" />
+      <edge id="1078" source="VE" target="MX" weight="1706" />
+      <edge id="1079" source="VE" target="SE" weight="352" />
+      <edge id="1080" source="CM" target="DO" weight="3" />
+      <edge id="1081" source="CM" target="FR" weight="36846" />
+      <edge id="1082" source="CM" target="DK" weight="31" />
+      <edge id="1083" source="CM" target="BE" weight="1589" />
+      <edge id="1084" source="CM" target="DE" weight="2178" />
+      <edge id="1085" source="CM" target="NI" weight="1" />
+      <edge id="1086" source="CM" target="NL" weight="435" />
+      <edge id="1087" source="CM" target="PT" weight="17" />
+      <edge id="1088" source="CM" target="NO" weight="122" />
+      <edge id="1089" source="CM" target="NG" weight="10665" />
+      <edge id="1090" source="CM" target="Non_Atlantic" weight="82608" />
+      <edge id="1091" source="CM" target="ES" weight="433" />
+      <edge id="1092" source="CM" target="CA" weight="314" />
+      <edge id="1093" source="CM" target="CO" weight="10" />
+      <edge id="1094" source="CM" target="VE" weight="4" />
+      <edge id="1095" source="CM" target="GQ" weight="202" />
+      <edge id="1096" source="CM" target="CL" weight="18" />
+      <edge id="1097" source="CM" target="IS" weight="1" />
+      <edge id="1098" source="CM" target="CG" weight="3464" />
+      <edge id="1099" source="CM" target="ZA" weight="1287" />
+      <edge id="1100" source="CM" target="GB" weight="2870" />
+      <edge id="1101" source="CM" target="GA" weight="15598" />
+      <edge id="1102" source="CM" target="CR" weight="8" />
+      <edge id="1103" source="CM" target="IE" weight="67" />
+      <edge id="1104" source="CM" target="CU" weight="7" />
+      <edge id="1105" source="CM" target="GH" weight="61" />
+      <edge id="1106" source="CM" target="US" weight="3638" />
+      <edge id="1107" source="CM" target="ST" weight="214" />
+      <edge id="1108" source="CM" target="SN" weight="837" />
+      <edge id="1109" source="CM" target="MR" weight="400" />
+      <edge id="1110" source="CM" target="MX" weight="5" />
+      <edge id="1111" source="CM" target="SE" weight="84" />
+      <edge id="1112" source="CL" target="DO" weight="1891" />
+      <edge id="1113" source="CL" target="FR" weight="13207" />
+      <edge id="1114" source="CL" target="DK" weight="1070" />
+      <edge id="1115" source="CL" target="BE" weight="1176" />
+      <edge id="1116" source="CL" target="DE" weight="6888" />
+      <edge id="1117" source="CL" target="HT" weight="333" />
+      <edge id="1118" source="CL" target="HN" weight="273" />
+      <edge id="1119" source="CL" target="BR" weight="22243" />
+      <edge id="1120" source="CL" target="BS" weight="9" />
+      <edge id="1121" source="CL" target="NI" weight="111" />
+      <edge id="1122" source="CL" target="NL" weight="2676" />
+      <edge id="1123" source="CL" target="PT" weight="55" />
+      <edge id="1124" source="CL" target="NO" weight="5559" />
+      <edge id="1125" source="CL" target="PA" weight="981" />
+      <edge id="1126" source="CL" target="Non_Atlantic" weight="124108" />
+      <edge id="1127" source="CL" target="ES" weight="12005" />
+      <edge id="1128" source="CL" target="CA" weight="22803" />
+      <edge id="1129" source="CL" target="GT" weight="271" />
+      <edge id="1130" source="CL" target="CO" weight="1859" />
+      <edge id="1131" source="CL" target="VE" weight="21828" />
+      <edge id="1132" source="CL" target="IS" weight="15" />
+      <edge id="1133" source="CL" target="ZA" weight="364" />
+      <edge id="1134" source="CL" target="AR" weight="223528" />
+      <edge id="1135" source="CL" target="GB" weight="1850" />
+      <edge id="1136" source="CL" target="CR" weight="1490" />
+      <edge id="1137" source="CL" target="IE" weight="27" />
+      <edge id="1138" source="CL" target="CU" weight="393" />
+      <edge id="1139" source="CL" target="UY" weight="1161" />
+      <edge id="1140" source="CL" target="US" weight="64083" />
+      <edge id="1141" source="CL" target="MR" weight="29" />
+      <edge id="1142" source="CL" target="MX" weight="2805" />
+      <edge id="1143" source="CL" target="SE" weight="21091" />
+      <edge id="1144" source="IS" target="DO" weight="15" />
+      <edge id="1145" source="IS" target="FR" weight="396" />
+      <edge id="1146" source="IS" target="DK" weight="2986" />
+      <edge id="1147" source="IS" target="DE" weight="1239" />
+      <edge id="1148" source="IS" target="BS" weight="3" />
+      <edge id="1149" source="IS" target="NL" weight="190" />
+      <edge id="1150" source="IS" target="PT" weight="10" />
+      <edge id="1151" source="IS" target="NO" weight="2247" />
+      <edge id="1152" source="IS" target="PA" weight="7" />
+      <edge id="1153" source="IS" target="Non_Atlantic" weight="4206" />
+      <edge id="1154" source="IS" target="CO" weight="11" />
+      <edge id="1155" source="IS" target="VE" weight="3" />
+      <edge id="1156" source="IS" target="CL" weight="24" />
+      <edge id="1157" source="IS" target="CA" weight="553" />
+      <edge id="1158" source="IS" target="ZA" weight="7" />
+      <edge id="1159" source="IS" target="AR" weight="18" />
+      <edge id="1160" source="IS" target="CR" weight="2" />
+      <edge id="1161" source="IS" target="IE" weight="7" />
+      <edge id="1162" source="IS" target="ES" weight="140" />
+      <edge id="1163" source="IS" target="US" weight="5836" />
+      <edge id="1164" source="IS" target="MX" weight="19" />
+      <edge id="1165" source="IS" target="SE" weight="2773" />
+      <edge id="1166" source="SL" target="DO" weight="15" />
+      <edge id="1167" source="SL" target="FR" weight="713" />
+      <edge id="1168" source="SL" target="DK" weight="72" />
+      <edge id="1169" source="SL" target="BE" weight="987" />
+      <edge id="1170" source="SL" target="DE" weight="1002" />
+      <edge id="1171" source="SL" target="BS" weight="4" />
+      <edge id="1172" source="SL" target="NL" weight="639" />
+      <edge id="1173" source="SL" target="PT" weight="13" />
+      <edge id="1174" source="SL" target="NO" weight="145" />
+      <edge id="1175" source="SL" target="NG" weight="1617" />
+      <edge id="1176" source="SL" target="LR" weight="6761" />
+      <edge id="1177" source="SL" target="Non_Atlantic" weight="5282" />
+      <edge id="1178" source="SL" target="IS" weight="5" />
+      <edge id="1179" source="SL" target="GW" weight="87" />
+      <edge id="1180" source="SL" target="CI" weight="620" />
+      <edge id="1181" source="SL" target="CO" weight="1" />
+      <edge id="1182" source="SL" target="VE" weight="2" />
+      <edge id="1183" source="SL" target="CL" weight="1" />
+      <edge id="1184" source="SL" target="CA" weight="224" />
+      <edge id="1185" source="SL" target="ZA" weight="214" />
+      <edge id="1186" source="SL" target="GB" weight="6354" />
+      <edge id="1187" source="SL" target="GN" weight="15188" />
+      <edge id="1188" source="SL" target="GM" weight="1437" />
+      <edge id="1189" source="SL" target="IE" weight="38" />
+      <edge id="1190" source="SL" target="CV" weight="19" />
+      <edge id="1191" source="SL" target="ES" weight="215" />
+      <edge id="1192" source="SL" target="GH" weight="119" />
+      <edge id="1193" source="SL" target="KN" weight="2" />
+      <edge id="1194" source="SL" target="US" weight="8305" />
+      <edge id="1195" source="SL" target="SN" weight="12313" />
+      <edge id="1196" source="SL" target="MX" weight="1" />
+      <edge id="1197" source="SL" target="SE" weight="170" />
+      <edge id="1198" source="CG" target="BE" weight="987" />
+      <edge id="1199" source="CG" target="FR" weight="48395" />
+      <edge id="1200" source="CG" target="DK" weight="31" />
+      <edge id="1201" source="CG" target="DE" weight="351" />
+      <edge id="1202" source="CG" target="BJ" weight="537" />
+      <edge id="1203" source="CG" target="NI" weight="6" />
+      <edge id="1204" source="CG" target="NL" weight="297" />
+      <edge id="1205" source="CG" target="PT" weight="532" />
+      <edge id="1206" source="CG" target="NO" weight="32" />
+      <edge id="1207" source="CG" target="PA" weight="1" />
+      <edge id="1208" source="CG" target="Non_Atlantic" weight="52886" />
+      <edge id="1209" source="CG" target="ES" weight="94" />
+      <edge id="1210" source="CG" target="CO" weight="13" />
+      <edge id="1211" source="CG" target="VE" weight="3" />
+      <edge id="1212" source="CG" target="CL" weight="2" />
+      <edge id="1213" source="CG" target="CA" weight="90" />
+      <edge id="1214" source="CG" target="ZA" weight="9446" />
+      <edge id="1215" source="CG" target="AO" weight="410" />
+      <edge id="1216" source="CG" target="CD" weight="3647" />
+      <edge id="1217" source="CG" target="AR" weight="92" />
+      <edge id="1218" source="CG" target="GB" weight="3021" />
+      <edge id="1219" source="CG" target="GA" weight="5025" />
+      <edge id="1220" source="CG" target="CR" weight="7" />
+      <edge id="1221" source="CG" target="IE" weight="163" />
+      <edge id="1222" source="CG" target="CU" weight="49" />
+      <edge id="1223" source="CG" target="US" weight="532" />
+      <edge id="1224" source="CG" target="ST" weight="46" />
+      <edge id="1225" source="CG" target="MX" weight="21" />
+      <edge id="1226" source="CG" target="SE" weight="125" />
+      <edge id="1227" source="ZA" target="DO" weight="242" />
+      <edge id="1228" source="ZA" target="FR" weight="2397" />
+      <edge id="1229" source="ZA" target="DK" weight="604" />
+      <edge id="1230" source="ZA" target="BE" weight="651" />
+      <edge id="1231" source="ZA" target="DE" weight="4059" />
+      <edge id="1232" source="ZA" target="HN" weight="4" />
+      <edge id="1233" source="ZA" target="BS" weight="21" />
+      <edge id="1234" source="ZA" target="NI" weight="3" />
+      <edge id="1235" source="ZA" target="NL" weight="6620" />
+      <edge id="1236" source="ZA" target="LC" weight="4" />
+      <edge id="1237" source="ZA" target="PT" weight="6464" />
+      <edge id="1238" source="ZA" target="NO" weight="636" />
+      <edge id="1239" source="ZA" target="NA" weight="19287" />
+      <edge id="1240" source="ZA" target="PA" weight="12" />
+      <edge id="1241" source="ZA" target="Non_Atlantic" weight="312232" />
+      <edge id="1242" source="ZA" target="CA" weight="24657" />
+      <edge id="1243" source="ZA" target="CO" weight="49" />
+      <edge id="1244" source="ZA" target="VE" weight="70" />
+      <edge id="1245" source="ZA" target="CL" weight="134" />
+      <edge id="1246" source="ZA" target="IS" weight="65" />
+      <edge id="1247" source="ZA" target="AO" weight="2437" />
+      <edge id="1248" source="ZA" target="AR" weight="278" />
+      <edge id="1249" source="ZA" target="GB" weight="68531" />
+      <edge id="1250" source="ZA" target="GA" weight="4" />
+      <edge id="1251" source="ZA" target="CR" weight="47" />
+      <edge id="1252" source="ZA" target="IE" weight="621" />
+      <edge id="1253" source="ZA" target="ES" weight="748" />
+      <edge id="1254" source="ZA" target="KN" weight="3" />
+      <edge id="1255" source="ZA" target="US" weight="39944" />
+      <edge id="1256" source="ZA" target="MX" weight="88" />
+      <edge id="1257" source="ZA" target="SE" weight="798" />
+      <edge id="1258" source="GY" target="DO" weight="45" />
+      <edge id="1259" source="GY" target="FR" weight="30" />
+      <edge id="1260" source="GY" target="DM" weight="69" />
+      <edge id="1261" source="GY" target="DK" weight="73" />
+      <edge id="1262" source="GY" target="BB" weight="2277" />
+      <edge id="1263" source="GY" target="HN" weight="1" />
+      <edge id="1264" source="GY" target="BR" weight="1093" />
+      <edge id="1265" source="GY" target="BS" weight="417" />
+      <edge id="1266" source="GY" target="NI" weight="1" />
+      <edge id="1267" source="GY" target="NL" weight="1818" />
+      <edge id="1268" source="GY" target="LC" weight="821" />
+      <edge id="1269" source="GY" target="PT" weight="5" />
+      <edge id="1270" source="GY" target="NO" weight="68" />
+      <edge id="1271" source="GY" target="TT" weight="5140" />
+      <edge id="1272" source="GY" target="PA" weight="45" />
+      <edge id="1273" source="GY" target="Non_Atlantic" weight="11804" />
+      <edge id="1274" source="GY" target="CA" weight="65860" />
+      <edge id="1275" source="GY" target="GT" weight="9" />
+      <edge id="1276" source="GY" target="CO" weight="17" />
+      <edge id="1277" source="GY" target="VE" weight="4601" />
+      <edge id="1278" source="GY" target="CL" weight="7" />
+      <edge id="1279" source="GY" target="IS" weight="7" />
+      <edge id="1280" source="GY" target="ZA" weight="31" />
+      <edge id="1281" source="GY" target="GB" weight="20620" />
+      <edge id="1282" source="GY" target="CR" weight="20" />
+      <edge id="1283" source="GY" target="IE" weight="6" />
+      <edge id="1284" source="GY" target="CU" weight="20" />
+      <edge id="1285" source="GY" target="SR" weight="4989" />
+      <edge id="1286" source="GY" target="KN" weight="476" />
+      <edge id="1287" source="GY" target="US" weight="138910" />
+      <edge id="1288" source="GY" target="MX" weight="14" />
+      <edge id="1289" source="GY" target="SE" weight="83" />
+      <edge id="1290" source="CD" target="DO" weight="6" />
+      <edge id="1291" source="CD" target="FR" weight="32512" />
+      <edge id="1292" source="CD" target="DK" weight="70" />
+      <edge id="1293" source="CD" target="BE" weight="10926" />
+      <edge id="1294" source="CD" target="DE" weight="4459" />
+      <edge id="1295" source="CD" target="NI" weight="16" />
+      <edge id="1296" source="CD" target="NL" weight="2270" />
+      <edge id="1297" source="CD" target="PT" weight="472" />
+      <edge id="1298" source="CD" target="NO" weight="134" />
+      <edge id="1299" source="CD" target="PA" weight="2" />
+      <edge id="1300" source="CD" target="Non_Atlantic" weight="421304" />
+      <edge id="1301" source="CD" target="ES" weight="628" />
+      <edge id="1302" source="CD" target="TG" weight="38" />
+      <edge id="1303" source="CD" target="IS" weight="1" />
+      <edge id="1304" source="CD" target="CO" weight="13" />
+      <edge id="1305" source="CD" target="VE" weight="7" />
+      <edge id="1306" source="CD" target="CL" weight="13" />
+      <edge id="1307" source="CD" target="CA" weight="1650" />
+      <edge id="1308" source="CD" target="CG" weight="67316" />
+      <edge id="1309" source="CD" target="ZA" weight="4941" />
+      <edge id="1310" source="CD" target="AO" weight="12178" />
+      <edge id="1311" source="CD" target="GB" weight="503" />
+      <edge id="1312" source="CD" target="GA" weight="2743" />
+      <edge id="1313" source="CD" target="CR" weight="2" />
+      <edge id="1314" source="CD" target="IE" weight="10" />
+      <edge id="1315" source="CD" target="CU" weight="16" />
+      <edge id="1316" source="CD" target="GH" weight="16" />
+      <edge id="1317" source="CD" target="US" weight="3898" />
+      <edge id="1318" source="CD" target="ST" weight="429" />
+      <edge id="1319" source="CD" target="MR" weight="36" />
+      <edge id="1320" source="CD" target="MX" weight="12" />
+      <edge id="1321" source="CD" target="SE" weight="784" />
+      <edge id="1322" source="HT" target="DO" weight="187210" />
+      <edge id="1323" source="HT" target="FR" weight="26253" />
+      <edge id="1324" source="HT" target="DM" weight="14" />
+      <edge id="1325" source="HT" target="DK" weight="50" />
+      <edge id="1326" source="HT" target="BE" weight="242" />
+      <edge id="1327" source="HT" target="DE" weight="292" />
+      <edge id="1328" source="HT" target="HN" weight="34" />
+      <edge id="1329" source="HT" target="BR" weight="254" />
+      <edge id="1330" source="HT" target="BS" weight="10834" />
+      <edge id="1331" source="HT" target="BZ" weight="35" />
+      <edge id="1332" source="HT" target="NI" weight="19" />
+      <edge id="1333" source="HT" target="NL" weight="273" />
+      <edge id="1334" source="HT" target="PT" weight="2" />
+      <edge id="1335" source="HT" target="NO" weight="6" />
+      <edge id="1336" source="HT" target="PA" weight="120" />
+      <edge id="1337" source="HT" target="Non_Atlantic" weight="45628" />
+      <edge id="1338" source="HT" target="CA" weight="39768" />
+      <edge id="1339" source="HT" target="GT" weight="26" />
+      <edge id="1340" source="HT" target="CO" weight="100" />
+      <edge id="1341" source="HT" target="VE" weight="1883" />
+      <edge id="1342" source="HT" target="CL" weight="36" />
+      <edge id="1343" source="HT" target="IS" weight="1" />
+      <edge id="1344" source="HT" target="AR" weight="75" />
+      <edge id="1345" source="HT" target="CR" weight="48" />
+      <edge id="1346" source="HT" target="IE" weight="1" />
+      <edge id="1347" source="HT" target="CU" weight="2063" />
+      <edge id="1348" source="HT" target="SR" weight="397" />
+      <edge id="1349" source="HT" target="KN" weight="13" />
+      <edge id="1350" source="HT" target="US" weight="259404" />
+      <edge id="1351" source="HT" target="MR" weight="2" />
+      <edge id="1352" source="HT" target="MX" weight="479" />
+      <edge id="1353" source="HT" target="SE" weight="84" />
+      <edge id="1354" source="AR" target="DO" weight="2642" />
+      <edge id="1355" source="AR" target="FR" weight="10137" />
+      <edge id="1356" source="AR" target="DK" weight="833" />
+      <edge id="1357" source="AR" target="DE" weight="4499" />
+      <edge id="1358" source="AR" target="HT" weight="466" />
+      <edge id="1359" source="AR" target="HN" weight="145" />
+      <edge id="1360" source="AR" target="BR" weight="28350" />
+      <edge id="1361" source="AR" target="BS" weight="8" />
+      <edge id="1362" source="AR" target="NI" weight="141" />
+      <edge id="1363" source="AR" target="NL" weight="1627" />
+      <edge id="1364" source="AR" target="PT" weight="304" />
+      <edge id="1365" source="AR" target="NO" weight="450" />
+      <edge id="1366" source="AR" target="PA" weight="571" />
+      <edge id="1367" source="AR" target="Non_Atlantic" weight="300074" />
+      <edge id="1368" source="AR" target="ES" weight="43347" />
+      <edge id="1369" source="AR" target="CA" weight="11077" />
+      <edge id="1370" source="AR" target="GT" weight="285" />
+      <edge id="1371" source="AR" target="CO" weight="2359" />
+      <edge id="1372" source="AR" target="VE" weight="9483" />
+      <edge id="1373" source="AR" target="CL" weight="32696" />
+      <edge id="1374" source="AR" target="IS" weight="5" />
+      <edge id="1375" source="AR" target="ZA" weight="1619" />
+      <edge id="1376" source="AR" target="GB" weight="3524" />
+      <edge id="1377" source="AR" target="CR" weight="1041" />
+      <edge id="1378" source="AR" target="IE" weight="63" />
+      <edge id="1379" source="AR" target="CV" weight="5" />
+      <edge id="1380" source="AR" target="CU" weight="373" />
+      <edge id="1381" source="AR" target="UY" weight="14559" />
+      <edge id="1382" source="AR" target="US" weight="106530" />
+      <edge id="1383" source="AR" target="MR" weight="69" />
+      <edge id="1384" source="AR" target="MX" weight="5072" />
+      <edge id="1385" source="AR" target="SE" weight="1913" />
+      <edge id="1386" source="GB" target="DO" weight="581" />
+      <edge id="1387" source="GB" target="FR" weight="102335" />
+      <edge id="1388" source="GB" target="DM" weight="230" />
+      <edge id="1389" source="GB" target="DK" weight="9126" />
+      <edge id="1390" source="GB" target="BB" weight="2660" />
+      <edge id="1391" source="GB" target="BE" weight="21444" />
+      <edge id="1392" source="GB" target="DE" weight="103961" />
+      <edge id="1393" source="GB" target="JM" weight="5569" />
+      <edge id="1394" source="GB" target="HN" weight="78" />
+      <edge id="1395" source="GB" target="BR" weight="3849" />
+      <edge id="1396" source="GB" target="BS" weight="1953" />
+      <edge id="1397" source="GB" target="BZ" weight="306" />
+      <edge id="1398" source="GB" target="NI" weight="36" />
+      <edge id="1399" source="GB" target="NL" weight="36497" />
+      <edge id="1400" source="GB" target="LC" weight="405" />
+      <edge id="1401" source="GB" target="PT" weight="6866" />
+      <edge id="1402" source="GB" target="NO" weight="14754" />
+      <edge id="1403" source="GB" target="TT" weight="2157" />
+      <edge id="1404" source="GB" target="PA" weight="314" />
+      <edge id="1405" source="GB" target="Non_Atlantic" weight="3655108" />
+      <edge id="1406" source="GB" target="ES" weight="62069" />
+      <edge id="1407" source="GB" target="LR" weight="976" />
+      <edge id="1408" source="GB" target="CA" weight="691521" />
+      <edge id="1409" source="GB" target="GT" weight="125" />
+      <edge id="1410" source="GB" target="CO" weight="991" />
+      <edge id="1411" source="GB" target="VE" weight="1881" />
+      <edge id="1412" source="GB" target="CL" weight="1428" />
+      <edge id="1413" source="GB" target="IS" weight="647" />
+      <edge id="1414" source="GB" target="ZA" weight="223205" />
+      <edge id="1415" source="GB" target="GY" weight="146" />
+      <edge id="1416" source="GB" target="AR" weight="2391" />
+      <edge id="1417" source="GB" target="CR" weight="451" />
+      <edge id="1418" source="GB" target="IE" weight="184671" />
+      <edge id="1419" source="GB" target="CV" weight="14" />
+      <edge id="1420" source="GB" target="CU" weight="110" />
+      <edge id="1421" source="GB" target="GH" weight="972" />
+      <edge id="1422" source="GB" target="UY" weight="535" />
+      <edge id="1423" source="GB" target="KN" weight="179" />
+      <edge id="1424" source="GB" target="US" weight="736741" />
+      <edge id="1425" source="GB" target="SL" weight="179" />
+      <edge id="1426" source="GB" target="MX" weight="2291" />
+      <edge id="1427" source="GB" target="SE" weight="11473" />
+      <edge id="1428" source="GA" target="FR" weight="7939" />
+      <edge id="1429" source="GA" target="NL" weight="36" />
+      <edge id="1430" source="GA" target="VE" weight="2" />
+      <edge id="1431" source="GA" target="GQ" weight="65" />
+      <edge id="1432" source="GA" target="CL" weight="5" />
+      <edge id="1433" source="GA" target="CA" weight="40" />
+      <edge id="1434" source="GA" target="DE" weight="123" />
+      <edge id="1435" source="GA" target="CG" weight="970" />
+      <edge id="1436" source="GA" target="ZA" weight="171" />
+      <edge id="1437" source="GA" target="US" weight="232" />
+      <edge id="1438" source="GA" target="CV" weight="11" />
+      <edge id="1439" source="GA" target="NO" weight="3" />
+      <edge id="1440" source="GA" target="Non_Atlantic" weight="10446" />
+      <edge id="1441" source="GA" target="MR" weight="88" />
+      <edge id="1442" source="GA" target="DK" weight="5" />
+      <edge id="1443" source="GA" target="CR" weight="1" />
+      <edge id="1444" source="GA" target="IE" weight="1" />
+      <edge id="1445" source="GA" target="MX" weight="2" />
+      <edge id="1446" source="GA" target="SE" weight="3" />
+      <edge id="1447" source="GA" target="PT" weight="21" />
+      <edge id="1448" source="TG" target="DO" weight="12" />
+      <edge id="1449" source="TG" target="FR" weight="14522" />
+      <edge id="1450" source="TG" target="DK" weight="32" />
+      <edge id="1451" source="TG" target="BE" weight="987" />
+      <edge id="1452" source="TG" target="DE" weight="1693" />
+      <edge id="1453" source="TG" target="BJ" weight="17244" />
+      <edge id="1454" source="TG" target="NL" weight="307" />
+      <edge id="1455" source="TG" target="PT" weight="9" />
+      <edge id="1456" source="TG" target="NO" weight="54" />
+      <edge id="1457" source="TG" target="NG" weight="48821" />
+      <edge id="1458" source="TG" target="LR" weight="213" />
+      <edge id="1459" source="TG" target="Non_Atlantic" weight="27268" />
+      <edge id="1460" source="TG" target="CI" weight="25298" />
+      <edge id="1461" source="TG" target="CO" weight="6" />
+      <edge id="1462" source="TG" target="CL" weight="3" />
+      <edge id="1463" source="TG" target="CA" weight="125" />
+      <edge id="1464" source="TG" target="MR" weight="119" />
+      <edge id="1465" source="TG" target="CG" weight="747" />
+      <edge id="1466" source="TG" target="GA" weight="7088" />
+      <edge id="1467" source="TG" target="GN" weight="1395" />
+      <edge id="1468" source="TG" target="IE" weight="22" />
+      <edge id="1469" source="TG" target="ES" weight="42" />
+      <edge id="1470" source="TG" target="GH" weight="65553" />
+      <edge id="1471" source="TG" target="US" weight="788" />
+      <edge id="1472" source="TG" target="ST" weight="33" />
+      <edge id="1473" source="TG" target="SN" weight="1380" />
+      <edge id="1474" source="TG" target="SL" weight="20" />
+      <edge id="1475" source="TG" target="MX" weight="2" />
+      <edge id="1476" source="TG" target="SE" weight="182" />
+      <edge id="1477" source="GN" target="DO" weight="3" />
+      <edge id="1478" source="GN" target="FR" weight="7816" />
+      <edge id="1479" source="GN" target="DK" weight="21" />
+      <edge id="1480" source="GN" target="BE" weight="1006" />
+      <edge id="1481" source="GN" target="DE" weight="697" />
+      <edge id="1482" source="GN" target="NI" weight="7" />
+      <edge id="1483" source="GN" target="NL" weight="395" />
+      <edge id="1484" source="GN" target="PT" weight="87" />
+      <edge id="1485" source="GN" target="NO" weight="29" />
+      <edge id="1486" source="GN" target="NG" weight="2612" />
+      <edge id="1487" source="GN" target="PA" weight="2" />
+      <edge id="1488" source="GN" target="Non_Atlantic" weight="42284" />
+      <edge id="1489" source="GN" target="ES" weight="2339" />
+      <edge id="1490" source="GN" target="LR" weight="27651" />
+      <edge id="1491" source="GN" target="CA" weight="234" />
+      <edge id="1492" source="GN" target="GW" weight="3170" />
+      <edge id="1493" source="GN" target="CI" weight="133914" />
+      <edge id="1494" source="GN" target="CO" weight="5" />
+      <edge id="1495" source="GN" target="VE" weight="2" />
+      <edge id="1496" source="GN" target="IS" weight="3" />
+      <edge id="1497" source="GN" target="SL" weight="59787" />
+      <edge id="1498" source="GN" target="ZA" weight="43" />
+      <edge id="1499" source="GN" target="AO" weight="131" />
+      <edge id="1500" source="GN" target="AR" weight="1" />
+      <edge id="1501" source="GN" target="GA" weight="1533" />
+      <edge id="1502" source="GN" target="GM" weight="24891" />
+      <edge id="1503" source="GN" target="IE" weight="10" />
+      <edge id="1504" source="GN" target="CV" weight="60" />
+      <edge id="1505" source="GN" target="CU" weight="27" />
+      <edge id="1506" source="GN" target="GH" weight="74" />
+      <edge id="1507" source="GN" target="US" weight="1187" />
+      <edge id="1508" source="GN" target="SN" weight="42570" />
+      <edge id="1509" source="GN" target="MR" weight="3136" />
+      <edge id="1510" source="GN" target="MX" weight="12" />
+      <edge id="1511" source="GN" target="SE" weight="88" />
+      <edge id="1512" source="GM" target="FR" weight="1329" />
+      <edge id="1513" source="GM" target="DK" weight="236" />
+      <edge id="1514" source="GM" target="DE" weight="1908" />
+      <edge id="1515" source="GM" target="NL" weight="113" />
+      <edge id="1516" source="GM" target="PT" weight="8" />
+      <edge id="1517" source="GM" target="NO" weight="577" />
+      <edge id="1518" source="GM" target="NG" weight="2744" />
+      <edge id="1519" source="GM" target="LR" weight="559" />
+      <edge id="1520" source="GM" target="Non_Atlantic" weight="2798" />
+      <edge id="1521" source="GM" target="IS" weight="2" />
+      <edge id="1522" source="GM" target="GW" weight="960" />
+      <edge id="1523" source="GM" target="CI" weight="10359" />
+      <edge id="1524" source="GM" target="CO" weight="1" />
+      <edge id="1525" source="GM" target="CA" weight="15" />
+      <edge id="1526" source="GM" target="GB" weight="1398" />
+      <edge id="1527" source="GM" target="GN" weight="771" />
+      <edge id="1528" source="GM" target="IE" weight="11" />
+      <edge id="1529" source="GM" target="CV" weight="7" />
+      <edge id="1530" source="GM" target="ES" weight="2807" />
+      <edge id="1531" source="GM" target="GH" weight="19" />
+      <edge id="1532" source="GM" target="US" weight="1709" />
+      <edge id="1533" source="GM" target="SN" weight="4263" />
+      <edge id="1534" source="GM" target="SL" weight="1285" />
+      <edge id="1535" source="GM" target="MX" weight="23" />
+      <edge id="1536" source="GM" target="SE" weight="1965" />
+      <edge id="1537" source="IE" target="DO" weight="51" />
+      <edge id="1538" source="IE" target="FR" weight="6702" />
+      <edge id="1539" source="IE" target="DK" weight="895" />
+      <edge id="1540" source="IE" target="BE" weight="1969" />
+      <edge id="1541" source="IE" target="DE" weight="12186" />
+      <edge id="1542" source="IE" target="BR" weight="109" />
+      <edge id="1543" source="IE" target="BS" weight="55" />
+      <edge id="1544" source="IE" target="NI" weight="12" />
+      <edge id="1545" source="IE" target="NL" weight="3762" />
+      <edge id="1546" source="IE" target="PT" weight="200" />
+      <edge id="1547" source="IE" target="NO" weight="451" />
+      <edge id="1548" source="IE" target="PA" weight="9" />
+      <edge id="1549" source="IE" target="Non_Atlantic" weight="149678" />
+      <edge id="1550" source="IE" target="CA" weight="28321" />
+      <edge id="1551" source="IE" target="CO" weight="94" />
+      <edge id="1552" source="IE" target="VE" weight="55" />
+      <edge id="1553" source="IE" target="CL" weight="91" />
+      <edge id="1554" source="IE" target="IS" weight="81" />
+      <edge id="1555" source="IE" target="ZA" weight="2440" />
+      <edge id="1556" source="IE" target="AR" weight="143" />
+      <edge id="1557" source="IE" target="GB" weight="596129" />
+      <edge id="1558" source="IE" target="CR" weight="24" />
+      <edge id="1559" source="IE" target="ES" weight="2065" />
+      <edge id="1560" source="IE" target="KN" weight="4" />
+      <edge id="1561" source="IE" target="US" weight="195453" />
+      <edge id="1562" source="IE" target="MX" weight="187" />
+      <edge id="1563" source="IE" target="SE" weight="870" />
+      <edge id="1564" source="CV" target="DO" weight="3" />
+      <edge id="1565" source="CV" target="FR" weight="16358" />
+      <edge id="1566" source="CV" target="DK" weight="5" />
+      <edge id="1567" source="CV" target="NL" weight="7975" />
+      <edge id="1568" source="CV" target="PT" weight="30179" />
+      <edge id="1569" source="CV" target="NO" weight="165" />
+      <edge id="1570" source="CV" target="NG" weight="1796" />
+      <edge id="1571" source="CV" target="Non_Atlantic" weight="24752" />
+      <edge id="1572" source="CV" target="CA" weight="50" />
+      <edge id="1573" source="CV" target="GW" weight="355" />
+      <edge id="1574" source="CV" target="CI" weight="274" />
+      <edge id="1575" source="CV" target="CO" weight="8" />
+      <edge id="1576" source="CV" target="VE" weight="4" />
+      <edge id="1577" source="CV" target="CL" weight="5" />
+      <edge id="1578" source="CV" target="IS" weight="19" />
+      <edge id="1579" source="CV" target="AO" weight="3569" />
+      <edge id="1580" source="CV" target="AR" weight="51" />
+      <edge id="1581" source="CV" target="GN" weight="94" />
+      <edge id="1582" source="CV" target="IE" weight="1" />
+      <edge id="1583" source="CV" target="ES" weight="1287" />
+      <edge id="1584" source="CV" target="US" weight="16536" />
+      <edge id="1585" source="CV" target="ST" weight="14" />
+      <edge id="1586" source="CV" target="SL" weight="7" />
+      <edge id="1587" source="CV" target="MX" weight="1" />
+      <edge id="1588" source="CV" target="SE" weight="231" />
+      <edge id="1589" source="CU" target="DO" weight="6824" />
+      <edge id="1590" source="CU" target="FR" weight="2031" />
+      <edge id="1591" source="CU" target="DM" weight="5" />
+      <edge id="1592" source="CU" target="DK" weight="34" />
+      <edge id="1593" source="CU" target="BE" weight="144" />
+      <edge id="1594" source="CU" target="DE" weight="2734" />
+      <edge id="1595" source="CU" target="HT" weight="1203" />
+      <edge id="1596" source="CU" target="JM" weight="1746" />
+      <edge id="1597" source="CU" target="HN" weight="464" />
+      <edge id="1598" source="CU" target="BR" weight="442" />
+      <edge id="1599" source="CU" target="BS" weight="48" />
+      <edge id="1600" source="CU" target="CR" weight="4504" />
+      <edge id="1601" source="CU" target="NI" weight="683" />
+      <edge id="1602" source="CU" target="NL" weight="315" />
+      <edge id="1603" source="CU" target="LC" weight="10" />
+      <edge id="1604" source="CU" target="PT" weight="117" />
+      <edge id="1605" source="CU" target="NO" weight="45" />
+      <edge id="1606" source="CU" target="PA" weight="3212" />
+      <edge id="1607" source="CU" target="Non_Atlantic" weight="59408" />
+      <edge id="1608" source="CU" target="CA" weight="1805" />
+      <edge id="1609" source="CU" target="GT" weight="275" />
+      <edge id="1610" source="CU" target="CO" weight="1296" />
+      <edge id="1611" source="CU" target="VE" weight="10589" />
+      <edge id="1612" source="CU" target="CL" weight="518" />
+      <edge id="1613" source="CU" target="IS" weight="7" />
+      <edge id="1614" source="CU" target="CG" weight="164" />
+      <edge id="1615" source="CU" target="ZA" weight="835" />
+      <edge id="1616" source="CU" target="AR" weight="1427" />
+      <edge id="1617" source="CU" target="GN" weight="58" />
+      <edge id="1618" source="CU" target="IE" weight="16" />
+      <edge id="1619" source="CU" target="CV" weight="69" />
+      <edge id="1620" source="CU" target="ES" weight="22070" />
+      <edge id="1621" source="CU" target="KN" weight="14" />
+      <edge id="1622" source="CU" target="US" weight="848178" />
+      <edge id="1623" source="CU" target="MR" weight="4" />
+      <edge id="1624" source="CU" target="MX" weight="3109" />
+      <edge id="1625" source="CU" target="SE" weight="1170" />
+      <edge id="1626" source="GH" target="BE" weight="1455" />
+      <edge id="1627" source="GH" target="FR" weight="5576" />
+      <edge id="1628" source="GH" target="DM" weight="3" />
+      <edge id="1629" source="GH" target="DK" weight="391" />
+      <edge id="1630" source="GH" target="DE" weight="20822" />
+      <edge id="1631" source="GH" target="BJ" weight="5747" />
+      <edge id="1632" source="GH" target="BS" weight="23" />
+      <edge id="1633" source="GH" target="NL" weight="6068" />
+      <edge id="1634" source="GH" target="LC" weight="10" />
+      <edge id="1635" source="GH" target="PT" weight="16" />
+      <edge id="1636" source="GH" target="NO" weight="744" />
+      <edge id="1637" source="GH" target="NG" weight="78430" />
+      <edge id="1638" source="GH" target="PA" weight="5" />
+      <edge id="1639" source="GH" target="Non_Atlantic" weight="126316" />
+      <edge id="1640" source="GH" target="ES" weight="441" />
+      <edge id="1641" source="GH" target="LR" weight="8471" />
+      <edge id="1642" source="GH" target="CA" weight="6655" />
+      <edge id="1643" source="GH" target="CI" weight="99487" />
+      <edge id="1644" source="GH" target="CO" weight="9" />
+      <edge id="1645" source="GH" target="VE" weight="28" />
+      <edge id="1646" source="GH" target="CL" weight="5" />
+      <edge id="1647" source="GH" target="IS" weight="10" />
+      <edge id="1648" source="GH" target="SL" weight="697" />
+      <edge id="1649" source="GH" target="ZA" weight="3625" />
+      <edge id="1650" source="GH" target="GB" weight="32899" />
+      <edge id="1651" source="GH" target="GA" weight="1960" />
+      <edge id="1652" source="GH" target="TG" weight="24216" />
+      <edge id="1653" source="GH" target="CR" weight="1" />
+      <edge id="1654" source="GH" target="IE" weight="97" />
+      <edge id="1655" source="GH" target="CV" weight="55" />
+      <edge id="1656" source="GH" target="CU" weight="7" />
+      <edge id="1657" source="GH" target="KN" weight="4" />
+      <edge id="1658" source="GH" target="US" weight="24040" />
+      <edge id="1659" source="GH" target="ST" weight="2" />
+      <edge id="1660" source="GH" target="SN" weight="1476" />
+      <edge id="1661" source="GH" target="GN" weight="1271" />
+      <edge id="1662" source="GH" target="MR" weight="213" />
+      <edge id="1663" source="GH" target="MX" weight="23" />
+      <edge id="1664" source="GH" target="SE" weight="770" />
+      <edge id="1665" source="UY" target="DO" weight="1625" />
+      <edge id="1666" source="UY" target="FR" weight="2065" />
+      <edge id="1667" source="UY" target="DK" weight="164" />
+      <edge id="1668" source="UY" target="DE" weight="830" />
+      <edge id="1669" source="UY" target="HT" weight="286" />
+      <edge id="1670" source="UY" target="HN" weight="51" />
+      <edge id="1671" source="UY" target="BR" weight="23363" />
+      <edge id="1672" source="UY" target="BS" weight="2" />
+      <edge id="1673" source="UY" target="NI" weight="24" />
+      <edge id="1674" source="UY" target="NL" weight="286" />
+      <edge id="1675" source="UY" target="PT" weight="40" />
+      <edge id="1676" source="UY" target="NO" weight="147" />
+      <edge id="1677" source="UY" target="PA" weight="145" />
+      <edge id="1678" source="UY" target="Non_Atlantic" weight="42754" />
+      <edge id="1679" source="UY" target="ES" weight="11030" />
+      <edge id="1680" source="UY" target="IS" weight="3" />
+      <edge id="1681" source="UY" target="GT" weight="95" />
+      <edge id="1682" source="UY" target="CO" weight="360" />
+      <edge id="1683" source="UY" target="VE" weight="6076" />
+      <edge id="1684" source="UY" target="CL" weight="1393" />
+      <edge id="1685" source="UY" target="CA" weight="5230" />
+      <edge id="1686" source="UY" target="ZA" weight="63" />
+      <edge id="1687" source="UY" target="AR" weight="136906" />
+      <edge id="1688" source="UY" target="CR" weight="252" />
+      <edge id="1689" source="UY" target="IE" weight="11" />
+      <edge id="1690" source="UY" target="CU" weight="58" />
+      <edge id="1691" source="UY" target="US" weight="23899" />
+      <edge id="1692" source="UY" target="MX" weight="1122" />
+      <edge id="1693" source="UY" target="SE" weight="1749" />
+      <edge id="1694" source="AO" target="DO" weight="18" />
+      <edge id="1695" source="AO" target="FR" weight="11499" />
+      <edge id="1696" source="AO" target="DK" weight="48" />
+      <edge id="1697" source="AO" target="BE" weight="646" />
+      <edge id="1698" source="AO" target="BR" weight="4868" />
+      <edge id="1699" source="AO" target="NI" weight="7" />
+      <edge id="1700" source="AO" target="NL" weight="1741" />
+      <edge id="1701" source="AO" target="PT" weight="141570" />
+      <edge id="1702" source="AO" target="NO" weight="30" />
+      <edge id="1703" source="AO" target="NA" weight="36967" />
+      <edge id="1704" source="AO" target="PA" weight="6" />
+      <edge id="1705" source="AO" target="Non_Atlantic" weight="265296" />
+      <edge id="1706" source="AO" target="ES" weight="1213" />
+      <edge id="1707" source="AO" target="CA" weight="1316" />
+      <edge id="1708" source="AO" target="CO" weight="49" />
+      <edge id="1709" source="AO" target="VE" weight="167" />
+      <edge id="1710" source="AO" target="CL" weight="7" />
+      <edge id="1711" source="AO" target="IS" weight="10" />
+      <edge id="1712" source="AO" target="CG" weight="10334" />
+      <edge id="1713" source="AO" target="ZA" weight="7413" />
+      <edge id="1714" source="AO" target="CD" weight="468462" />
+      <edge id="1715" source="AO" target="AR" weight="20" />
+      <edge id="1716" source="AO" target="GB" weight="3172" />
+      <edge id="1717" source="AO" target="GA" weight="341" />
+      <edge id="1718" source="AO" target="CR" weight="4" />
+      <edge id="1719" source="AO" target="IE" weight="92" />
+      <edge id="1720" source="AO" target="CV" weight="1588" />
+      <edge id="1721" source="AO" target="CU" weight="218" />
+      <edge id="1722" source="AO" target="US" weight="2591" />
+      <edge id="1723" source="AO" target="ST" weight="2039" />
+      <edge id="1724" source="AO" target="MX" weight="39" />
+      <edge id="1725" source="AO" target="SE" weight="340" />
+      <edge id="1726" source="SR" target="DO" weight="103" />
+      <edge id="1727" source="SR" target="FR" weight="267" />
+      <edge id="1728" source="SR" target="DM" weight="7" />
+      <edge id="1729" source="SR" target="DK" weight="20" />
+      <edge id="1730" source="SR" target="HN" weight="1" />
+      <edge id="1731" source="SR" target="BR" weight="120" />
+      <edge id="1732" source="SR" target="NL" weight="157443" />
+      <edge id="1733" source="SR" target="LC" weight="18" />
+      <edge id="1734" source="SR" target="PT" weight="3" />
+      <edge id="1735" source="SR" target="NO" weight="10" />
+      <edge id="1736" source="SR" target="PA" weight="12" />
+      <edge id="1737" source="SR" target="Non_Atlantic" weight="6634" />
+      <edge id="1738" source="SR" target="CO" weight="6" />
+      <edge id="1739" source="SR" target="VE" weight="106" />
+      <edge id="1740" source="SR" target="CL" weight="8" />
+      <edge id="1741" source="SR" target="CA" weight="533" />
+      <edge id="1742" source="SR" target="GY" weight="1163" />
+      <edge id="1743" source="SR" target="AR" weight="11" />
+      <edge id="1744" source="SR" target="CR" weight="13" />
+      <edge id="1745" source="SR" target="IE" weight="2" />
+      <edge id="1746" source="SR" target="KN" weight="3" />
+      <edge id="1747" source="SR" target="US" weight="3291" />
+      <edge id="1748" source="SR" target="MX" weight="7" />
+      <edge id="1749" source="SR" target="SE" weight="16" />
+      <edge id="1750" source="KN" target="DO" weight="76" />
+      <edge id="1751" source="KN" target="FR" weight="5" />
+      <edge id="1752" source="KN" target="DM" weight="23" />
+      <edge id="1753" source="KN" target="NL" weight="22" />
+      <edge id="1754" source="KN" target="LC" weight="19" />
+      <edge id="1755" source="KN" target="CL" weight="13" />
+      <edge id="1756" source="KN" target="CA" weight="1521" />
+      <edge id="1757" source="KN" target="NO" weight="3" />
+      <edge id="1758" source="KN" target="ZA" weight="14" />
+      <edge id="1759" source="KN" target="GY" weight="3" />
+      <edge id="1760" source="KN" target="MX" weight="12" />
+      <edge id="1761" source="KN" target="JM" weight="75" />
+      <edge id="1762" source="KN" target="Non_Atlantic" weight="20816" />
+      <edge id="1763" source="KN" target="US" weight="8570" />
+      <edge id="1764" source="KN" target="SE" weight="1" />
+      <edge id="1765" source="KN" target="BS" weight="13" />
+      <edge id="1766" source="KN" target="CO" weight="13" />
+      <edge id="1767" source="KN" target="NI" weight="2" />
+      <edge id="1768" source="KN" target="CR" weight="1" />
+      <edge id="1769" source="KN" target="VE" weight="4" />
+      <edge id="1770" source="US" target="DO" weight="9115" />
+      <edge id="1771" source="US" target="FR" weight="40260" />
+      <edge id="1772" source="US" target="DM" weight="226" />
+      <edge id="1773" source="US" target="DK" weight="6411" />
+      <edge id="1774" source="US" target="BB" weight="990" />
+      <edge id="1775" source="US" target="BE" weight="11222" />
+      <edge id="1776" source="US" target="DE" weight="99835" />
+      <edge id="1777" source="US" target="HT" weight="1607" />
+      <edge id="1778" source="US" target="JM" weight="4675" />
+      <edge id="1779" source="US" target="HN" weight="2692" />
+      <edge id="1780" source="US" target="BR" weight="11806" />
+      <edge id="1781" source="US" target="BS" weight="4223" />
+      <edge id="1782" source="US" target="BZ" weight="1901" />
+      <edge id="1783" source="US" target="NI" weight="2837" />
+      <edge id="1784" source="US" target="NL" weight="13767" />
+      <edge id="1785" source="US" target="LC" weight="276" />
+      <edge id="1786" source="US" target="PT" weight="5467" />
+      <edge id="1787" source="US" target="NO" weight="16010" />
+      <edge id="1788" source="US" target="TT" weight="2430" />
+      <edge id="1789" source="US" target="PA" weight="3262" />
+      <edge id="1790" source="US" target="LR" weight="2519" />
+      <edge id="1791" source="US" target="CU" weight="1186" />
+      <edge id="1792" source="US" target="Non_Atlantic" weight="1605856" />
+      <edge id="1793" source="US" target="CA" weight="248347" />
+      <edge id="1794" source="US" target="GW" weight="200" />
+      <edge id="1795" source="US" target="GT" weight="5822" />
+      <edge id="1796" source="US" target="CO" weight="13478" />
+      <edge id="1797" source="US" target="VE" weight="11639" />
+      <edge id="1798" source="US" target="CL" weight="5650" />
+      <edge id="1799" source="US" target="IS" weight="1074" />
+      <edge id="1800" source="US" target="MR" weight="113" />
+      <edge id="1801" source="US" target="CG" weight="51" />
+      <edge id="1802" source="US" target="ZA" weight="3906" />
+      <edge id="1803" source="US" target="GY" weight="317" />
+      <edge id="1804" source="US" target="AR" weight="9992" />
+      <edge id="1805" source="US" target="GB" weight="144480" />
+      <edge id="1806" source="US" target="GA" weight="169" />
+      <edge id="1807" source="US" target="TG" weight="317" />
+      <edge id="1808" source="US" target="CR" weight="8586" />
+      <edge id="1809" source="US" target="IE" weight="15922" />
+      <edge id="1810" source="US" target="CV" weight="188" />
+      <edge id="1811" source="US" target="ES" weight="12308" />
+      <edge id="1812" source="US" target="GH" weight="437" />
+      <edge id="1813" source="US" target="UY" weight="1525" />
+      <edge id="1814" source="US" target="SR" weight="160" />
+      <edge id="1815" source="US" target="KN" weight="644" />
+      <edge id="1816" source="US" target="SN" weight="662" />
+      <edge id="1817" source="US" target="GN" weight="525" />
+      <edge id="1818" source="US" target="SL" weight="186" />
+      <edge id="1819" source="US" target="MX" weight="231679" />
+      <edge id="1820" source="US" target="SE" weight="11325" />
+      <edge id="1821" source="ST" target="DO" weight="6" />
+      <edge id="1822" source="ST" target="FR" weight="127" />
+      <edge id="1823" source="ST" target="NL" weight="58" />
+      <edge id="1824" source="ST" target="PT" weight="5581" />
+      <edge id="1825" source="ST" target="GQ" weight="378" />
+      <edge id="1826" source="ST" target="CL" weight="12" />
+      <edge id="1827" source="ST" target="CA" weight="20" />
+      <edge id="1828" source="ST" target="AO" weight="3112" />
+      <edge id="1829" source="ST" target="CV" weight="2475" />
+      <edge id="1830" source="ST" target="Non_Atlantic" weight="1366" />
+      <edge id="1831" source="ST" target="US" weight="73" />
+      <edge id="1832" source="ST" target="GA" weight="2004" />
+      <edge id="1833" source="ST" target="CO" weight="3" />
+      <edge id="1834" source="ST" target="MX" weight="2" />
+      <edge id="1835" source="ST" target="SE" weight="5" />
+      <edge id="1836" source="SN" target="DO" weight="3" />
+      <edge id="1837" source="SN" target="FR" weight="73801" />
+      <edge id="1838" source="SN" target="DK" weight="35" />
+      <edge id="1839" source="SN" target="BE" weight="716" />
+      <edge id="1840" source="SN" target="DE" weight="1771" />
+      <edge id="1841" source="SN" target="BS" weight="2" />
+      <edge id="1842" source="SN" target="NI" weight="63" />
+      <edge id="1843" source="SN" target="NL" weight="305" />
+      <edge id="1844" source="SN" target="PT" weight="184" />
+      <edge id="1845" source="SN" target="NO" weight="36" />
+      <edge id="1846" source="SN" target="NG" weight="2002" />
+      <edge id="1847" source="SN" target="Non_Atlantic" weight="132560" />
+      <edge id="1848" source="SN" target="LR" weight="207" />
+      <edge id="1849" source="SN" target="CA" weight="484" />
+      <edge id="1850" source="SN" target="GW" weight="5053" />
+      <edge id="1851" source="SN" target="CI" weight="23556" />
+      <edge id="1852" source="SN" target="CO" weight="13" />
+      <edge id="1853" source="SN" target="VE" weight="13" />
+      <edge id="1854" source="SN" target="CL" weight="20" />
+      <edge id="1855" source="SN" target="IS" weight="3" />
+      <edge id="1856" source="SN" target="MR" weight="72878" />
+      <edge id="1857" source="SN" target="CG" weight="3468" />
+      <edge id="1858" source="SN" target="ZA" weight="1500" />
+      <edge id="1859" source="SN" target="GA" weight="9393" />
+      <edge id="1860" source="SN" target="CR" weight="1" />
+      <edge id="1861" source="SN" target="GM" weight="73038" />
+      <edge id="1862" source="SN" target="IE" weight="4" />
+      <edge id="1863" source="SN" target="CV" weight="141" />
+      <edge id="1864" source="SN" target="ES" weight="3367" />
+      <edge id="1865" source="SN" target="GH" weight="53" />
+      <edge id="1866" source="SN" target="US" weight="2632" />
+      <edge id="1867" source="SN" target="ST" weight="25" />
+      <edge id="1868" source="SN" target="GN" weight="6433" />
+      <edge id="1869" source="SN" target="SL" weight="343" />
+      <edge id="1870" source="SN" target="MX" weight="23" />
+      <edge id="1871" source="SN" target="SE" weight="180" />
+      <edge id="1872" source="MR" target="BE" weight="554" />
+      <edge id="1873" source="MR" target="FR" weight="11287" />
+      <edge id="1874" source="MR" target="DK" weight="4" />
+      <edge id="1875" source="MR" target="NI" weight="7" />
+      <edge id="1876" source="MR" target="NL" weight="164" />
+      <edge id="1877" source="MR" target="PT" weight="9" />
+      <edge id="1878" source="MR" target="NO" weight="3" />
+      <edge id="1879" source="MR" target="NG" weight="7572" />
+      <edge id="1880" source="MR" target="Non_Atlantic" weight="37038" />
+      <edge id="1881" source="MR" target="GW" weight="359" />
+      <edge id="1882" source="MR" target="CI" weight="9873" />
+      <edge id="1883" source="MR" target="CO" weight="1" />
+      <edge id="1884" source="MR" target="CL" weight="10" />
+      <edge id="1885" source="MR" target="CA" weight="25" />
+      <edge id="1886" source="MR" target="CG" weight="965" />
+      <edge id="1887" source="MR" target="GN" weight="365" />
+      <edge id="1888" source="MR" target="GM" weight="2008" />
+      <edge id="1889" source="MR" target="IE" weight="2" />
+      <edge id="1890" source="MR" target="ES" weight="709" />
+      <edge id="1891" source="MR" target="GH" weight="9" />
+      <edge id="1892" source="MR" target="US" weight="90" />
+      <edge id="1893" source="MR" target="SN" weight="89862" />
+      <edge id="1894" source="MR" target="SL" weight="160" />
+      <edge id="1895" source="MR" target="MX" weight="6" />
+      <edge id="1896" source="MR" target="SE" weight="15" />
+      <edge id="1897" source="BZ" target="DO" weight="57" />
+      <edge id="1898" source="BZ" target="FR" weight="7" />
+      <edge id="1899" source="BZ" target="DK" weight="5" />
+      <edge id="1900" source="BZ" target="JM" weight="6" />
+      <edge id="1901" source="BZ" target="HN" weight="213" />
+      <edge id="1902" source="BZ" target="BS" weight="31" />
+      <edge id="1903" source="BZ" target="NI" weight="46" />
+      <edge id="1904" source="BZ" target="NL" weight="5" />
+      <edge id="1905" source="BZ" target="LC" weight="1" />
+      <edge id="1906" source="BZ" target="PT" weight="1" />
+      <edge id="1907" source="BZ" target="NO" weight="3" />
+      <edge id="1908" source="BZ" target="PA" weight="63" />
+      <edge id="1909" source="BZ" target="Non_Atlantic" weight="2482" />
+      <edge id="1910" source="BZ" target="GT" weight="543" />
+      <edge id="1911" source="BZ" target="CO" weight="7" />
+      <edge id="1912" source="BZ" target="VE" weight="18" />
+      <edge id="1913" source="BZ" target="CL" weight="16" />
+      <edge id="1914" source="BZ" target="CA" weight="972" />
+      <edge id="1915" source="BZ" target="AR" weight="12" />
+      <edge id="1916" source="BZ" target="CR" weight="202" />
+      <edge id="1917" source="BZ" target="IE" weight="1" />
+      <edge id="1918" source="BZ" target="CU" weight="9" />
+      <edge id="1919" source="BZ" target="US" weight="34477" />
+      <edge id="1920" source="BZ" target="MX" weight="1426" />
+      <edge id="1921" source="BZ" target="SE" weight="3" />
+      <edge id="1922" source="MX" target="BE" weight="827" />
+      <edge id="1923" source="MX" target="FR" weight="6305" />
+      <edge id="1924" source="MX" target="DK" weight="239" />
+      <edge id="1925" source="MX" target="DO" weight="1737" />
+      <edge id="1926" source="MX" target="DE" weight="3437" />
+      <edge id="1927" source="MX" target="HT" weight="306" />
+      <edge id="1928" source="MX" target="HN" weight="795" />
+      <edge id="1929" source="MX" target="BR" weight="792" />
+      <edge id="1930" source="MX" target="BS" weight="21" />
+      <edge id="1931" source="MX" target="BZ" weight="3025" />
+      <edge id="1932" source="MX" target="NI" weight="706" />
+      <edge id="1933" source="MX" target="NL" weight="663" />
+      <edge id="1934" source="MX" target="LC" weight="4" />
+      <edge id="1935" source="MX" target="PT" weight="62" />
+      <edge id="1936" source="MX" target="NO" weight="210" />
+      <edge id="1937" source="MX" target="PA" weight="1370" />
+      <edge id="1938" source="MX" target="Non_Atlantic" weight="53190" />
+      <edge id="1939" source="MX" target="CU" weight="889" />
+      <edge id="1940" source="MX" target="CA" weight="19338" />
+      <edge id="1941" source="MX" target="GT" weight="5402" />
+      <edge id="1942" source="MX" target="CO" weight="1908" />
+      <edge id="1943" source="MX" target="VE" weight="2886" />
+      <edge id="1944" source="MX" target="CL" weight="746" />
+      <edge id="1945" source="MX" target="IS" weight="10" />
+      <edge id="1946" source="MX" target="ZA" weight="156" />
+      <edge id="1947" source="MX" target="AR" weight="2332" />
+      <edge id="1948" source="MX" target="GB" weight="2266" />
+      <edge id="1949" source="MX" target="CR" weight="2081" />
+      <edge id="1950" source="MX" target="IE" weight="59" />
+      <edge id="1951" source="MX" target="CV" weight="4" />
+      <edge id="1952" source="MX" target="ES" weight="9745" />
+      <edge id="1953" source="MX" target="UY" weight="719" />
+      <edge id="1954" source="MX" target="KN" weight="2" />
+      <edge id="1955" source="MX" target="US" weight="4946785" />
+      <edge id="1956" source="MX" target="SE" weight="847" />
+      <edge id="1957" source="SE" target="DO" weight="369" />
+      <edge id="1958" source="SE" target="FR" weight="10606" />
+      <edge id="1959" source="SE" target="DK" weight="15641" />
+      <edge id="1960" source="SE" target="BE" weight="1809" />
+      <edge id="1961" source="SE" target="DE" weight="13195" />
+      <edge id="1962" source="SE" target="HN" weight="23" />
+      <edge id="1963" source="SE" target="BR" weight="457" />
+      <edge id="1964" source="SE" target="BS" weight="11" />
+      <edge id="1965" source="SE" target="NI" weight="42" />
+      <edge id="1966" source="SE" target="NL" weight="2162" />
+      <edge id="1967" source="SE" target="PT" weight="216" />
+      <edge id="1968" source="SE" target="NO" weight="20665" />
+      <edge id="1969" source="SE" target="PA" weight="26" />
+      <edge id="1970" source="SE" target="Non_Atlantic" weight="127464" />
+      <edge id="1971" source="SE" target="ES" weight="5812" />
+      <edge id="1972" source="SE" target="LR" weight="954" />
+      <edge id="1973" source="SE" target="CA" weight="7782" />
+      <edge id="1974" source="SE" target="GT" weight="27" />
+      <edge id="1975" source="SE" target="CO" weight="175" />
+      <edge id="1976" source="SE" target="VE" weight="231" />
+      <edge id="1977" source="SE" target="CL" weight="731" />
+      <edge id="1978" source="SE" target="IS" weight="1012" />
+      <edge id="1979" source="SE" target="ZA" weight="49" />
+      <edge id="1980" source="SE" target="AR" weight="566" />
+      <edge id="1981" source="SE" target="GB" weight="11131" />
+      <edge id="1982" source="SE" target="CR" weight="97" />
+      <edge id="1983" source="SE" target="IE" weight="145" />
+      <edge id="1984" source="SE" target="CU" weight="27" />
+      <edge id="1985" source="SE" target="US" weight="66541" />
+      <edge id="1986" source="SE" target="MX" weight="327" />
+    </edges>
+  </graph>
+</gexf>

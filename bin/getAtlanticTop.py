@@ -4,9 +4,9 @@ import json
 
 
 
-TOP_N = 20
+TOP_N = 63
 
-TOP_N_MOVEMENTS = 20
+TOP_N_MOVEMENTS = 63
 
 COUNTRY_CODE_FILE = "../assets/country_codes_and_facts.csv"
 
@@ -232,11 +232,25 @@ for row in reader:
 
     # Take 2012 data
 
-    if row[12]!="..":
-        avgHDI = float(row[12])
+    if row[3]!="..":
+        # 2012
+        #avgHDI = float(row[12])
+        # 1990
+        avgHDI = float(row[3])
+        # 2000
+        #avgHDI = float(row[4])
+        # 2010
+        #avgHDI = float(row[10])
+
     else:
         # Average for 2012
-        avgHDI = 0.64
+        #avgHDI = 0.64
+        # Average for 1990
+        avgHDI = 0.481
+        # Average for 2000
+        #avgHDI = 0.549
+        # Average for 2010
+        #avgHDI = 0.631
 
 
     HDICountries[name] = True

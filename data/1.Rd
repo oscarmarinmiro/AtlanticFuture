@@ -14,7 +14,15 @@ highHDI = 0.708
 veryHighHDI = 0.905
 
 
-movementData <- read.delim("atlantic_top_movements.tsv")
+#year = "1990"
+#lowHDI = 0.315
+#mediumHDI = 0.419
+#highHDI = 0.605
+#veryHighHDI = 0.773	
+
+
+
+movementData <- read.delim("atlantic_movements.tsv")
 
 movementData <- movementData[movementData$year==year,]
 

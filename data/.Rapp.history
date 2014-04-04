@@ -1,0 +1,4039 @@
+dev.off()
+pdf(file="boxPlotAlpha", width=10, height=10)
+boxplot(fitData$Fit.a)
+dev.off()
+summary(fitData$Fit.a)
+rescale(x, to=c(0,1), from=range(x, na.rm=TRUE), clip = TRUE)
+library(ggplot2)
+rescale(x, to=c(0,1), from=range(x, na.rm=TRUE), clip = TRUE)
+help(rescale)
+help(scale)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b)
+fitData
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = avg(myData[myData$Company==company,c("ImpactPatter")], na.rm=TRUE)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = mean(myData[myData$Company==company,c("ImpactPatter")], na.rm=TRUE)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		pattern.mean = append(avg.impact.pattern)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(avg.impact.pattern)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean)
+fitData
+attach(fitData)
+plot(Fit.a,Pattern.mean)
+cor(Fit.a,Pattern.mean)
+plot(Fit.a,Pattern.mean)
+plot(Fit.a,Pattern.mean/2)
+plot(Fit.a/2,Pattern.mean)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = max(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean)
+fitData
+plot(Fit.a,Pattern.mean)
+cor(Fit.a,Pattern.mean)
+summary(Fit.a)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = max(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean)
+myData
+myFit
+fitData
+summary(Fit.a)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = max(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(Fit.a,0.078,0.30450,0.53150,1.23300,4.16100)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = max(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(alpha,0.078,0.30450,0.53150,1.23300,4.16100)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+Fit.factor <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = max(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(alpha,0.078,0.30450,0.53150,1.23300,4.16100)#
+		Fit.factor = append(Fit.factor,correctFit)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean, Fit.factor)
+fitData
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+Fit.factor <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(alpha,0.078,0.30450,0.53150,1.23300,4.16100)#
+		Fit.factor = append(Fit.factor,correctFit)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean, Fit.factor)
+fitData
+plot(Pattern.mean,Fit.factor)
+corr(Pattern.mean,Fit.factor)
+cor(Pattern.mean,Fit.factor)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+Fit.factor <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = max(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(alpha,0.078,0.30450,0.53150,1.23300,4.16100)#
+		Fit.factor = append(Fit.factor,correctFit)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean, Fit.factor)
+cor(Pattern.mean,Fit.factor)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+Fit.factor <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = round(mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE))#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(alpha,0.078,0.30450,0.53150,1.23300,4.16100)#
+		Fit.factor = append(Fit.factor,correctFit)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean, Fit.factor)
+cor(Pattern.mean,Fit.factor)
+fitData
+plot(Pattern.mean,Fit.factor)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+Fit.factor <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = floor(mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE))#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(alpha,0.078,0.30450,0.53150,1.23300,4.16100)#
+		Fit.factor = append(Fit.factor,correctFit)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean, Fit.factor)
+cor(Pattern.mean,Fit.factor)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+Fit.factor <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = ceiling(mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE))#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(alpha,0.078,0.30450,0.53150,1.23300,4.16100)#
+		Fit.factor = append(Fit.factor,correctFit)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean, Fit.factor)
+cor(Pattern.mean,Fit.factor)
+cor.test(Pattern.mean,Fit.factor)
+plot(Pattern.mean,Fit.factor)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+Fit.factor <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(alpha,0.078,0.30450,0.53150,1.23300,4.16100)#
+		Fit.factor = append(Fit.factor,correctFit)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean, Fit.factor)
+plot(Pattern.mean,Fit.factor)
+cor.test(Pattern.mean,Fit.factor)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+Fit.factor <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(alpha,0.078,0.30450,0.53150,1.23300,4.16100)#
+		Fit.factor = append(Fit.factor,correctFit)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean, Fit.factor)#
+#
+cor.test(fitData$Pattern.mean,fitData$Fit.factor)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+Fit.factor <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(alpha,0.078,0.30450,0.53150,1.23300,4.16100)#
+		Fit.factor = append(Fit.factor,correctFit)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean, Fit.factor)#
+#
+cor.test(fitData$Pattern.mean,fitData$Fit.factor)#
+#
+plot(fitData$Pattern.mean,fitData$Fit.factor)
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+Fit.factor <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(alpha,0.078,0.30450,0.53150,1.23300,4.16100)#
+		Fit.factor = append(Fit.factor,correctFit)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean, Fit.factor)#
+#
+cor.test(fitData$Pattern.mean,fitData$Fit.factor)#
+#
+plot(fitData$Pattern.mean,fitData$Fit.factor)#
+#
+finalFitData = fitData(,c(Company,Fit.factor))
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+Fit.factor <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(alpha,0.078,0.30450,0.53150,1.23300,4.16100)#
+		Fit.factor = append(Fit.factor,correctFit)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean, Fit.factor)#
+#
+cor.test(fitData$Pattern.mean,fitData$Fit.factor)#
+#
+plot(fitData$Pattern.mean,fitData$Fit.factor)#
+#
+finalFitData = fitData[,c(Company,Fit.factor)]
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+Fit.factor <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(alpha,0.078,0.30450,0.53150,1.23300,4.16100)#
+		Fit.factor = append(Fit.factor,correctFit)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean, Fit.factor)#
+#
+cor.test(fitData$Pattern.mean,fitData$Fit.factor)#
+#
+plot(fitData$Pattern.mean,fitData$Fit.factor)#
+#
+finalFitData = fitData[,c(fitData$Company,fitData$Fit.factor)]
+fitData
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+Fit.factor <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(alpha,0.078,0.30450,0.53150,1.23300,4.16100)#
+		Fit.factor = append(Fit.factor,correctFit)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean, Fit.factor)#
+#
+cor.test(fitData$Pattern.mean,fitData$Fit.factor)#
+#
+plot(fitData$Pattern.mean,fitData$Fit.factor)#
+#
+finalFitData = data.frame(Company,Fit.factor)
+finalFitData
+load("onlyTags.RData")
+onlyTags
+read.csv("FinalTagsv3.csv")
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+Fit.factor <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(alpha,0.078,0.30450,0.53150,1.23300,4.16100)#
+		Fit.factor = append(Fit.factor,correctFit)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean, Fit.factor)#
+#
+cor.test(fitData$Pattern.mean,fitData$Fit.factor)#
+#
+plot(fitData$Pattern.mean,fitData$Fit.factor)#
+#
+finalFitData = data.frame(Company,Fit.factor)#
+#
+# Load final tags#
+#
+tags = read.csv("FinalTagsv3.csv")#
+#
+# Merge#
+#
+components = merge(finalFitData,tags)
+components
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+Fit.factor <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(alpha,0.078,0.30450,0.53150,1.23300,4.16100)#
+		Fit.factor = append(Fit.factor,correctFit)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean, Fit.factor)#
+#
+cor.test(fitData$Pattern.mean,fitData$Fit.factor)#
+#
+plot(fitData$Pattern.mean,fitData$Fit.factor)#
+#
+finalFitData = data.frame(Company,Fit.factor)#
+#
+# Load final tags#
+#
+tags = read.csv("FinalTagsv3.csv")#
+#
+# Merge#
+#
+components = merge(finalFitData,tags)#
+#
+# And save#
+#
+save(components, file="componentsPlusFit.RData")
+components
+load("ComponentsPlusFit.RData")
+ComponentsPlusFit
+del
+rm
+rm(components)
+components
+load("ComponentsPlusFit.RData")
+components
+components[2]
+components[1]
+components[7:20]
+components[7:21]
+components[7:22]
+components[7:21]
+load nice data and just take company,year,impactpattern, and tags (excluding CrowdSourced)#
+#
+load("componentsPlusFit.RData")#
+factorData = components[c(1:2,7:21)]#
+#
+# principal components analysis w/o impactPattern#
+#
+#compData <- factorData[,]#
+#
+# # principal components analysis w impactPattern#
+#
+# compData <- factorData[,]#
+#
+# fit = princomp(formula = ~., data = compData[,c(4:18)], cor = TRUE, na.action=na.exclude)#
+#
+# summary(fit)#
+# loadings(fit)#
+# biplot(fit, choices=1:2, xlabs = compData$Company, main="Component graph for all kinds of growth", cex=c(0.5,0.7))#
+#
+# # Comp1 ==> Centralizado (Service, Breakthrough) vs Distribuido (Platform, Producer,Knowledge)#
+# # Comp2 ==> Tangible (Market,Money,Property,Redistribution) vs Intangible (Media,Knowledge, Platform, Relationships, Commons,BreakThrough)#
+# # Comp3 ==> ???
+factorData
+Read All Metrics in One#
+#
+myData <- read.csv("All_In_One.csv")#
+#
+Company <- c()#
+Fit.p <- c()#
+Fit.a <- c()#
+Fit.b <- c()#
+Pattern.mean <-c()#
+Fit.factor <-c()#
+minP = 0.05#
+#
+pdf(file="companiesFit.pdf", width=10, height=10)#
+#
+par(mfcol=c(6,6))#
+par(omi=c(0,0,0.7,0))#
+par(mai=c(0.5,0.3,0.3,0.3))#
+# par(mgp=c(1,0.1,0.1))#
+par(cex=0.5)#
+#
+normalize.me <- function(x,min,first,median,third,max)#
+{#
+	if(x>third)#
+	{#
+		return(4)#
+	}#
+	else#
+	{#
+		if (x>median)#
+		{#
+			return(3)#
+		}#
+		else#
+		{#
+			if(x>first)#
+			{#
+				return(2)#
+			}#
+			else#
+			{#
+				return(1)#
+			}#
+		}#
+	}#
+}#
+#
+for(company in levels(myData$Company))#
+{#
+	print(company)#
+	series <- myData[myData$Company==company,c("Year","ImpactAbsolute")]#
+	try({#
+	lm.out <- lm(log(series$ImpactAbsolute) ~ series$Year)#
+	# print(company)#
+	print(summary(lm.out))#
+	# par(mfrow=c(2,2))#
+	# plot(lm.out)#
+	coefs <- summary(lm.out)$coefficients#
+	# p-value approximated by mean of fourth column#
+	ro <- mean(coefs[,4])	#
+	beta <- coefs[1,1]#
+	alpha <- coefs[2,1]#
+	print(ro)#
+	print(beta)#
+	print(alpha)#
+	if(ro<=minP)#
+	{#
+		Company = append(Company,company)#
+		Fit.p = append(Fit.p,ro)#
+		Fit.a = append(Fit.a,alpha)#
+		Fit.b = append(Fit.b,beta)#
+		avg.impact.pattern = mean(myData[myData$Company==company,c("ImpactPattern")], na.rm=TRUE)#
+		Pattern.mean = append(Pattern.mean,avg.impact.pattern)#
+		correctFit = normalize.me(alpha,0.078,0.30450,0.53150,1.23300,4.16100)#
+		Fit.factor = append(Fit.factor,correctFit)#
+		print(avg.impact.pattern)#
+		plot(series$ImpactAbsolute~series$Year,type="l",col="red",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+		lines(exp((series$Year*alpha)+beta)~series$Year,type="l",col="blue",xlab=sprintf("%s %f   %s %f","Alpha:",alpha,"P:",ro),ylab="Units",main = company)#
+#
+	}#
+  })#
+}#
+mtext("Fitted curves for growth (red=actual,blue=fitted)", outer = TRUE, cex = 1.5)#
+#
+dev.off()#
+fitData = data.frame(Company,Fit.p,Fit.a,Fit.b, Pattern.mean, Fit.factor)#
+#
+cor.test(fitData$Pattern.mean,fitData$Fit.factor)#
+#
+plot(fitData$Pattern.mean,fitData$Fit.factor)#
+#
+finalFitData = data.frame(Company,Fit.factor)#
+#
+# Load final tags#
+#
+tags = read.csv("FinalTagsv3.csv")#
+#
+# Merge#
+#
+components = merge(finalFitData,tags)#
+#
+# Clip rubbish#
+#
+components = components[c(1:2,7:21)]#
+#
+# And save#
+#
+save(components, file="componentsPlusFit.RData")
+components
+class(components$Fit.factor)
+class(components$Centralized)
+load nice data and just take company,year,impactpattern, and tags (excluding CrowdSourced)#
+#
+load("componentsPlusFit.RData")#
+factorData = components#
+#
+# principal components analysis w/o impactPattern#
+#
+#compData <- factorData[,]#
+#
+# # principal components analysis w impactPattern#
+#
+# compData <- factorData[,]#
+#
+# fit = princomp(formula = ~., data = compData[,c(4:18)], cor = TRUE, na.action=na.exclude)#
+#
+# summary(fit)#
+# loadings(fit)#
+# biplot(fit, choices=1:2, xlabs = compData$Company, main="Component graph for all kinds of growth", cex=c(0.5,0.7))#
+#
+# # Comp1 ==> Centralizado (Service, Breakthrough) vs Distribuido (Platform, Producer,Knowledge)#
+# # Comp2 ==> Tangible (Market,Money,Property,Redistribution) vs Intangible (Media,Knowledge, Platform, Relationships, Commons,BreakThrough)#
+# # Comp3 ==> ???
+factorData
+str(factorData)
+load nice data and just take company,year,impactpattern, and tags (excluding CrowdSourced)#
+#
+load("componentsPlusFit.RData")#
+factorData = components#
+#
+# principal components analysis w/o impactPattern#
+#
+# compData <- factorData[,]#
+#
+# principal components analysis w impactPattern#
+#
+compData <- factorData[,]#
+#
+fit = princomp(formula = ~., data = compData[,c(2:17)], cor = TRUE, na.action=na.exclude)#
+#
+summary(fit)#
+loadings(fit)#
+biplot(fit, choices=1:2, xlabs = compData$Company, main="Component graph for all kinds of growth", cex=c(0.5,0.7))#
+#
+# Comp1 ==> Centralizado (Service, Breakthrough) vs Distribuido (Platform, Producer,Knowledge)#
+# Comp2 ==> Tangible (Market,Money,Property,Redistribution) vs Intangible (Media,Knowledge, Platform, Relationships, Commons,BreakThrough)#
+# Comp3 ==> ???
+load nice data and just take company,year,impactpattern, and tags (excluding CrowdSourced)#
+#
+load("componentsPlusFit.RData")#
+factorData = components#
+#
+# principal components analysis w/o impactPattern#
+#
+# compData <- factorData[,]#
+#
+# principal components analysis w impactPattern#
+#
+compData <- factorData[,]#
+#
+fit = princomp(formula = ~., data = compData[,c(2:17)], cor = TRUE, na.action=na.exclude)#
+#
+summary(fit)#
+loadings(fit)#
+pdf(file="biplot.factor.pdf", width=10, height=10)#
+#
+biplot(fit, choices=1:2, xlabs = compData$Company, main="Component graph for all kinds of growth", cex=c(0.5,0.7))#
+#
+dev.off()#
+#
+# Comp1 ==> Centralizado (Service, Breakthrough) vs Distribuido (Platform, Producer,Knowledge)#
+# Comp2 ==> Tangible (Market,Money,Property,Redistribution) vs Intangible (Media,Knowledge, Platform, Relationships, Commons,BreakThrough)#
+# Comp3 ==> ???
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+corrData = myData[,c(2:17)]#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=4",na.rm= TRUE)
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+corrData = myData[,c(2:17)]#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+pdf(file="corr.factor.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for all growths",na.rm= TRUE)#
+#
+dev.off()
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+corrData = myData[,c(2:17)]#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+pdf(file="corr.factor.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for all growths w/ alpha model",na.rm= TRUE)#
+#
+dev.off()
+load nice data and impactpattern, and tags (excluding CrowdSourced)#
+# see http://stat.ethz.ch/R-manual/R-patched/library/stats/html/hclust.html#
+# method#
+#the agglomeration method to be used. This should be (an unambiguous abbreviation of) one of "ward", "single", #"complete", "average", "mcquitty", "median" or "centroid".#
+#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+#
+rownames(myData)<-myData$Company#
+#clustData = myData[myData$Year == 2012 & !(is.na(myData$ImpactPattern))]#
+#clustData = myData[myData$Year == 2011,]#
+clustData = myData[,]#
+rownames(clustData) = paste(as.character(clustData$Company),as.character(clustData$Fit.factor), sep = "-")#
+#clustData = myData#
+finalData = clustData[2:17]#
+#pdf(file="scatter.pdf", width=10, height=10)#
+plot(hclust(dist(finalData),method="complete"),cex=0.5, main="Clustering year 2012")#
+#dev.off()#
+#hclust(clustData,na.rm=TRUE)
+load nice data and impactpattern, and tags (excluding CrowdSourced)#
+# see http://stat.ethz.ch/R-manual/R-patched/library/stats/html/hclust.html#
+# method#
+#the agglomeration method to be used. This should be (an unambiguous abbreviation of) one of "ward", "single", #"complete", "average", "mcquitty", "median" or "centroid".#
+#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+#
+rownames(myData)<-myData$Company#
+#clustData = myData[myData$Year == 2012 & !(is.na(myData$ImpactPattern))]#
+#clustData = myData[myData$Year == 2011,]#
+clustData = myData[,]#
+rownames(clustData) = paste(as.character(clustData$Company),as.character(clustData$Fit.factor), sep = "-")#
+#clustData = myData#
+finalData = clustData[2:17]#
+pdf(file="clust.factor.pdf", width=10, height=10)#
+plot(hclust(dist(finalData),method="complete"),cex=0.5, main="Clustering all Companies")#
+dev.off()#
+#hclust(clustData,na.rm=TRUE)
+load nice data and impactpattern, and tags (excluding CrowdSourced)#
+# see http://stat.ethz.ch/R-manual/R-patched/library/stats/html/hclust.html#
+# method#
+#the agglomeration method to be used. This should be (an unambiguous abbreviation of) one of "ward", "single", #"complete", "average", "mcquitty", "median" or "centroid".#
+#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+#
+rownames(myData)<-myData$Company#
+#clustData = myData[myData$Year == 2012 & !(is.na(myData$ImpactPattern))]#
+#clustData = myData[myData$Year == 2011,]#
+clustData = myData[,]#
+rownames(clustData) = paste(as.character(clustData$Company),as.character(clustData$Fit.factor), sep = "-")#
+#clustData = myData#
+finalData = clustData[2:17]#
+pdf(file="clust.factor.pdf", width=10, height=10)#
+plot(hclust(dist(finalData),method="complete"),cex=0.5, main="Clustering all Companies. Number is alpha growth factor")#
+dev.off()#
+#hclust(clustData,na.rm=TRUE)
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+corrData = myData[myData$Fit.factor=4,c(2:17)]#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+pdf(file="corr.factor.maximum.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for maximum growth w/ alpha model",na.rm= TRUE)#
+#
+dev.off()
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+corrData = myData[myData$Fit.factor==4,c(2:17)]#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+pdf(file="corr.factor.maximum.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for maximum growth w/ alpha model",na.rm= TRUE)#
+#
+dev.off()
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+corrData = myData[myData$Fit.factor==4,c(2:17)]#
+corrData#
+# corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+# corrMatrix#
+# # .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+# #corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+# pdf(file="corr.factor.maximum.pdf", width=10, height=10)#
+#
+# corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for maximum growth w/ alpha model",na.rm= TRUE)#
+#
+# dev.off()
+components
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[myData$Fit.factor==4,c(3:17)]#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+pdf(file="corr.factor.maximum.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for maximum w/ alpha model",na.rm= TRUE)#
+#
+dev.off()
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[myData$Fit.factor==4,c(3:17)]#
+corrData#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+pdf(file="corr.factor.maximum.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for maximum w/ alpha model",na.rm= TRUE)#
+#
+dev.off()
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[myData$Fit.factor==4,c(3:17)]#
+corrData#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+pdf(file="corr.factor.4.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=4 model",na.rm= TRUE)#
+#
+dev.off()
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[myData$Fit.factor==3,c(3:17)]#
+corrData#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+pdf(file="corr.factor.3.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=3 model",na.rm= TRUE)#
+#
+dev.off()
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[myData$Fit.factor==2,c(3:17)]#
+corrData#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+pdf(file="corr.factor.2.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=2 model",na.rm= TRUE)#
+#
+dev.off()
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[myData$Fit.factor==1,c(3:17)]#
+corrData#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+pdf(file="corr.factor.1.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=1 model",na.rm= TRUE)#
+#
+dev.off()
+load nice data and just take company,year,impactpattern, and tags (excluding CrowdSourced)#
+#
+load("componentsPlusFit.RData")#
+factorData = components#
+#
+# principal components analysis w/o impactPattern#
+#
+# compData <- factorData[,]#
+#
+# principal components analysis w impactPattern#
+#
+compData <- factorData[factorData$Fit.factor==1,]#
+#
+fit = princomp(formula = ~., data = compData[,c(2:17)], cor = TRUE, na.action=na.exclude)#
+#
+summary(fit)#
+loadings(fit)#
+pdf(file="biplot.factor.1.pdf", width=10, height=10)#
+#
+biplot(fit, choices=1:2, xlabs = compData$Company, main="Component graph for alpha=1", cex=c(0.5,0.7))#
+#
+dev.off()#
+#
+# Comp1 ==> Centralizado (Service, Breakthrough) vs Distribuido (Platform, Producer,Knowledge)#
+# Comp2 ==> Tangible (Market,Money,Property,Redistribution) vs Intangible (Media,Knowledge, Platform, Relationships, Commons,BreakThrough)#
+# Comp3 ==> ???
+load nice data and just take company,year,impactpattern, and tags (excluding CrowdSourced)#
+#
+load("componentsPlusFit.RData")#
+factorData = components#
+#
+# principal components analysis w/o impactPattern#
+#
+# compData <- factorData[,]#
+#
+# principal components analysis w impactPattern#
+#
+compData <- factorData[factorData$Fit.factor==1,]#
+#
+# was 2:17#
+#
+fit = princomp(formula = ~., data = compData[,c(3:17)], cor = TRUE, na.action=na.exclude)#
+#
+summary(fit)#
+loadings(fit)#
+pdf(file="biplot.factor.1.pdf", width=10, height=10)#
+#
+biplot(fit, choices=1:2, xlabs = compData$Company, main="Component graph for alpha=1", cex=c(0.5,0.7))#
+#
+dev.off()#
+#
+# Comp1 ==> Centralizado (Service, Breakthrough) vs Distribuido (Platform, Producer,Knowledge)#
+# Comp2 ==> Tangible (Market,Money,Property,Redistribution) vs Intangible (Media,Knowledge, Platform, Relationships, Commons,BreakThrough)#
+# Comp3 ==> ???
+load nice data and just take company,year,impactpattern, and tags (excluding CrowdSourced)#
+#
+load("componentsPlusFit.RData")#
+factorData = components#
+#
+# principal components analysis w/o impactPattern#
+#
+# compData <- factorData[,]#
+#
+# principal components analysis w impactPattern#
+#
+compData <- factorData[factorData$Fit.factor==1,]#
+compData#
+#
+# was 2:17#
+#
+# fit = princomp(formula = ~., data = compData[,c(3:17)], cor = TRUE, na.action=na.exclude)#
+#
+# summary(fit)#
+# loadings(fit)#
+# pdf(file="biplot.factor.1.pdf", width=10, height=10)#
+#
+# biplot(fit, choices=1:2, xlabs = compData$Company, main="Component graph for alpha=1", cex=c(0.5,0.7))#
+#
+# dev.off()#
+#
+# Comp1 ==> Centralizado (Service, Breakthrough) vs Distribuido (Platform, Producer,Knowledge)#
+# Comp2 ==> Tangible (Market,Money,Property,Redistribution) vs Intangible (Media,Knowledge, Platform, Relationships, Commons,BreakThrough)#
+# Comp3 ==> ???
+load nice data and just take company,year,impactpattern, and tags (excluding CrowdSourced)#
+#
+load("componentsPlusFit.RData")#
+factorData = components#
+#
+# principal components analysis w/o impactPattern#
+#
+# compData <- factorData[,]#
+#
+# principal components analysis w impactPattern#
+#
+compData <- factorData[factorData$Fit.factor==3 |factorData$Fit.factor==4 ,]#
+compData#
+#
+# was 2:17#
+#
+# fit = princomp(formula = ~., data = compData[,c(3:17)], cor = TRUE, na.action=na.exclude)#
+#
+# summary(fit)#
+# loadings(fit)#
+# pdf(file="biplot.factor.1.pdf", width=10, height=10)#
+#
+# biplot(fit, choices=1:2, xlabs = compData$Company, main="Component graph for alpha=1", cex=c(0.5,0.7))#
+#
+# dev.off()#
+#
+# Comp1 ==> Centralizado (Service, Breakthrough) vs Distribuido (Platform, Producer,Knowledge)#
+# Comp2 ==> Tangible (Market,Money,Property,Redistribution) vs Intangible (Media,Knowledge, Platform, Relationships, Commons,BreakThrough)#
+# Comp3 ==> ???
+load nice data and impactpattern, and tags (excluding CrowdSourced)#
+# see http://stat.ethz.ch/R-manual/R-patched/library/stats/html/hclust.html#
+# method#
+#the agglomeration method to be used. This should be (an unambiguous abbreviation of) one of "ward", "single", #"complete", "average", "mcquitty", "median" or "centroid".#
+#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+#
+rownames(myData)<-myData$Company#
+#clustData = myData[myData$Year == 2012 & !(is.na(myData$ImpactPattern))]#
+#clustData = myData[myData$Year == 2011,]#
+clustData = myData[myData$Fit.factor==1,]#
+rownames(clustData) = paste(as.character(clustData$Company),as.character(clustData$Fit.factor), sep = "-")#
+#clustData = myData#
+finalData = clustData[3:17]#
+pdf(file="clust.factor.1.pdf", width=10, height=10)#
+plot(hclust(dist(finalData),method="complete"),cex=0.5, main="Clustering alpha=1. Number is alpha growth factor")#
+dev.off()#
+#hclust(clustData,na.rm=TRUE)
+load nice data and impactpattern, and tags (excluding CrowdSourced)#
+# see http://stat.ethz.ch/R-manual/R-patched/library/stats/html/hclust.html#
+# method#
+#the agglomeration method to be used. This should be (an unambiguous abbreviation of) one of "ward", "single", #"complete", "average", "mcquitty", "median" or "centroid".#
+#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+#
+rownames(myData)<-myData$Company#
+#clustData = myData[myData$Year == 2012 & !(is.na(myData$ImpactPattern))]#
+#clustData = myData[myData$Year == 2011,]#
+clustData = myData[myData$Fit.factor==2,]#
+rownames(clustData) = paste(as.character(clustData$Company),as.character(clustData$Fit.factor), sep = "-")#
+#clustData = myData#
+finalData = clustData[3:17]#
+pdf(file="clust.factor.2.pdf", width=10, height=10)#
+plot(hclust(dist(finalData),method="complete"),cex=0.5, main="Clustering alpha=2. Number is alpha growth factor")#
+dev.off()#
+#hclust(clustData,na.rm=TRUE)
+load nice data and impactpattern, and tags (excluding CrowdSourced)#
+# see http://stat.ethz.ch/R-manual/R-patched/library/stats/html/hclust.html#
+# method#
+#the agglomeration method to be used. This should be (an unambiguous abbreviation of) one of "ward", "single", #"complete", "average", "mcquitty", "median" or "centroid".#
+#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+#
+rownames(myData)<-myData$Company#
+#clustData = myData[myData$Year == 2012 & !(is.na(myData$ImpactPattern))]#
+#clustData = myData[myData$Year == 2011,]#
+clustData = myData[myData$Fit.factor==3,]#
+rownames(clustData) = paste(as.character(clustData$Company),as.character(clustData$Fit.factor), sep = "-")#
+#clustData = myData#
+finalData = clustData[3:17]#
+pdf(file="clust.factor.3.pdf", width=10, height=10)#
+plot(hclust(dist(finalData),method="complete"),cex=0.5, main="Clustering alpha=3. Number is alpha growth factor")#
+dev.off()#
+#hclust(clustData,na.rm=TRUE)
+load nice data and impactpattern, and tags (excluding CrowdSourced)#
+# see http://stat.ethz.ch/R-manual/R-patched/library/stats/html/hclust.html#
+# method#
+#the agglomeration method to be used. This should be (an unambiguous abbreviation of) one of "ward", "single", #"complete", "average", "mcquitty", "median" or "centroid".#
+#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+#
+rownames(myData)<-myData$Company#
+#clustData = myData[myData$Year == 2012 & !(is.na(myData$ImpactPattern))]#
+#clustData = myData[myData$Year == 2011,]#
+clustData = myData[myData$Fit.factor==4,]#
+rownames(clustData) = paste(as.character(clustData$Company),as.character(clustData$Fit.factor), sep = "-")#
+#clustData = myData#
+finalData = clustData[3:17]#
+pdf(file="clust.factor.4.pdf", width=10, height=10)#
+plot(hclust(dist(finalData),method="complete"),cex=0.5, main="Clustering alpha=4. Number is alpha growth factor")#
+dev.off()#
+#hclust(clustData,na.rm=TRUE)
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[myData$Fit.factor==1,c(3:17)]#
+corrData#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+pdf(file="corr.factor.1.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=1 model",na.rm= TRUE)#
+#
+dev.off()
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[myData$Fit.factor==2,c(3:17)]#
+corrData#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+pdf(file="corr.factor.2.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=2 model",na.rm= TRUE)#
+#
+dev.off()
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[myData$Fit.factor==1,c(3:17)]#
+corrData#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+pdf(file="corr.factor.2.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=2 model",na.rm= TRUE)#
+#
+dev.off()
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[myData$Fit.factor==1,c(3:17)]#
+corrData#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+pdf(file="corr.factor.1.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=1 model",na.rm= TRUE)#
+#
+dev.off()
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[myData$Fit.factor==2,c(3:17)]#
+corrData#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+pdf(file="corr.factor.2.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=2 model",na.rm= TRUE)#
+#
+dev.off()
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[myData$Fit.factor==3,c(3:17)]#
+corrData#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+pdf(file="corr.factor.3.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=3 model",na.rm= TRUE)#
+#
+dev.off()
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("componentsPlusFit.RData")#
+#
+myData = components#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[myData$Fit.factor==4,c(3:17)]#
+corrData#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+#corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+pdf(file="corr.factor.4.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=4 model",na.rm= TRUE)#
+#
+dev.off()
+components
+components[componets$Fit.factor==1,]
+components[components$Fit.factor==1,]
+components[components$Fit.factor==1,Company]
+components[components$Fit.factor==1,c(Company)]
+components[components$Fit.factor==1,c(components$Company)]
+components[components$Fit.factor==1,]$Company
+components[components$Fit.factor==2,]$Company
+paste(components[components$Fit.factor==2,]$Company,sep=",")
+reult = paste(components[components$Fit.factor==2,]$Company,sep=",")
+reult
+components[components$Fit.factor==3,]$Company
+components[components$Fit.factor==4,]$Company
+data = read.csv('TagsV4.csv')
+data
+data[is.na(data)]<- 0
+data
+colnames(data)
+colnames(data[0])
+colnames(data$Company)
+colnames(data)
+colnames(data)[0]
+colnames(data)[1]
+colnames(data)[2]
+write.csv(data,'TagsV5.csv')
+data = read.csv('TagsV5.csv')
+data
+colnames(data)
+save(data, file="plainTagData.RData")
+data
+corrData = myData[,c(3:17)]
+corData
+corrData
+corrData = myData[,c(3:17)]
+data
+onlyTags = read.csv('TagsV5.csv')
+onlyTags
+save(onlyTags, file='plainTagData.RData')
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("plainTagData.RData")#
+#
+onlyTags
+load("plainTagData.RData")
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("plainTagData.RData")#
+#
+onlyTags#
+#
+#myData = data#
+#
+# was corrData = myData[,c(2:17)]#
+#
+#corrData = myData[,c(3:17)]#
+# corrData#
+# corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+# corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+# corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+# pdf(file="corr.factor.4.pdf", width=10, height=10)#
+#
+# corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=4 model",na.rm= TRUE)#
+#
+# dev.off()
+kk
+source("/Users/oscarmarinmiro/Desktop/LQC_R/20131129.corrTags.R")
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("plainTagData.RData")#
+#
+onlyTags#
+#
+#myData = data#
+#
+# was corrData = myData[,c(2:17)]#
+#
+#corrData = myData[,c(3:17)]#
+# corrData#
+# corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+# corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+# corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+# pdf(file="corr.factor.4.pdf", width=10, height=10)#
+#
+# corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=4 model",na.rm= TRUE)#
+#
+# dev.off()
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("plainTagData.RData")#
+#
+myData = onlyTags#
+#
+# was corrData = myData[,c(2:17)]#
+#
+#corrData = myData[,c(3:17)]#
+# corrData#
+# corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+# corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+# corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+# pdf(file="corr.factor.4.pdf", width=10, height=10)#
+#
+# corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=4 model",na.rm= TRUE)#
+#
+# dev.off()
+myData
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("plainTagData.RData")#
+#
+myData = onlyTags#
+#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[,c(3:17)]#
+# corrData#
+# corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+# corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+# corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+# pdf(file="corr.factor.4.pdf", width=10, height=10)#
+#
+# corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=4 model",na.rm= TRUE)#
+#
+# dev.off()
+corrData
+myData
+colnames(myData)
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("plainTagData.RData")#
+#
+myData = onlyTags#
+#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[,c(2:16)]#
+# corrData#
+# corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+# corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+# corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+# pdf(file="corr.factor.4.pdf", width=10, height=10)#
+#
+# corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=4 model",na.rm= TRUE)#
+#
+# dev.off()
+corrData
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("plainTagData.RData")#
+#
+myData = onlyTags#
+#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[,c(3:16)]#
+# corrData#
+# corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+# corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+# corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+# pdf(file="corr.factor.4.pdf", width=10, height=10)#
+#
+# corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=4 model",na.rm= TRUE)#
+#
+# dev.off()
+corrData
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("plainTagData.RData")#
+#
+myData = onlyTags#
+#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[,c(3:16)]#
+# corrData#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+# corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+# pdf(file="corr.factor.4.pdf", width=10, height=10)#
+#
+# corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for alpha=4 model",na.rm= TRUE)#
+#
+# dev.off()
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("plainTagData.RData")#
+#
+myData = onlyTags#
+#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[,c(3:16)]#
+# corrData#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+# corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+#
+pdf(file="corr.justTags.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="correlogram for new tags (29Nov2013)",na.rm= TRUE)#
+#
+dev.off()
+load nice data and just take company,year,impactpattern, and tags (excluding CrowdSourced)#
+#
+load("plainTagData.RData")#
+factorData = onlyTags#
+#
+# principal components analysis w/o impactPattern#
+#
+# compData <- factorData[,]#
+#
+# principal components analysis w impactPattern#
+#
+compData <- factorData[,]#
+#
+fit = princomp(formula = ~., data = compData[,c(3:16)], cor = TRUE, na.action=na.exclude)#
+#
+summary(fit)#
+loadings(fit)#
+pdf(file="biplot.onlyTags.pdf", width=10, height=10)#
+#
+biplot(fit, choices=1:2, xlabs = compData$Company, main="Component graph with new Tags (29Nov2013)", cex=c(0.5,0.7))#
+#
+dev.off()#
+#
+# Comp1 ==> Centralizado (Service, Breakthrough) vs Distribuido (Platform, Producer,Knowledge)#
+# Comp2 ==> Tangible (Market,Money,Property,Redistribution) vs Intangible (Media,Knowledge, Platform, Relationships, Commons,BreakThrough)#
+# Comp3 ==> ???
+warnings()
+corrData
+onlyTags = read.csv('TagsV5.csv')
+save(onlyTags, file='plainTagData.RData')
+library(corrgram)#
+#
+# load nice data and impactpattern, and tags (excluding CrowdSourced)#
+#
+# ver http://www.statmethods.net/advgraphs/correlograms.html#
+load("plainTagData.RData")#
+#
+myData = onlyTags#
+#
+# was corrData = myData[,c(2:17)]#
+#
+corrData = myData[,c(3:16)]#
+# corrData#
+corrMatrix = cor(corrData, use="complete.obs", method="kendall")#
+corrMatrix#
+# .conf .shade .pie .pts .density (?) .ellipse .txt ... diag.panel=panel.density ==> Distribucion de la variable#
+# corrgram(onlyTags,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="tag Correlation for impact=1", col.regions=colorRampPalette(c("red","salmon","white","royalblue","yellow")))#
+#
+pdf(file="corr.justTags.pdf", width=10, height=10)#
+#
+corrgram(corrData,lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density,cex=0.7, main="correlogram for new tags (29Nov2013)",na.rm= TRUE)#
+#
+dev.off()
+myData
+load nice data and just take company,year,impactpattern, and tags (excluding CrowdSourced)#
+#
+load("plainTagData.RData")#
+factorData = onlyTags#
+#
+# principal components analysis w/o impactPattern#
+#
+# compData <- factorData[,]#
+#
+# principal components analysis w impactPattern#
+#
+compData <- factorData[,]#
+#
+fit = princomp(formula = ~., data = compData[,c(3:16)], cor = TRUE, na.action=na.exclude)#
+#
+summary(fit)#
+loadings(fit)#
+pdf(file="biplot.onlyTags.pdf", width=10, height=10)#
+#
+biplot(fit, choices=1:2, xlabs = compData$Company, main="Component graph with new Tags (29Nov2013)", cex=c(0.5,0.7))#
+#
+dev.off()#
+#
+# Comp1 ==> Centralizado (Service, Breakthrough) vs Distribuido (Platform, Producer,Knowledge)#
+# Comp2 ==> Tangible (Market,Money,Property,Redistribution) vs Intangible (Media,Knowledge, Platform, Relationships, Commons,BreakThrough)#
+# Comp3 ==> ???
+dkjdj
+load nice data and just take company,year,impactpattern, and tags (excluding CrowdSourced)#
+#
+load("plainTagData.RData")#
+factorData = onlyTags#
+#
+# principal components analysis w/o impactPattern#
+#
+# compData <- factorData[,]#
+#
+# principal components analysis w impactPattern#
+#
+compData <- factorData[,]#
+#
+fit = princomp(formula = ~., data = compData[,c(3:16)], cor = TRUE, na.action=na.exclude)#
+#
+summary(fit)#
+loadings(fit)#
+pdf(file="biplot.onlyTags.pdf", width=10, height=10)#
+#
+biplot(fit, choices=1:2, xlabs = compData$Company, main="Component graph with new Tags (29Nov2013)", cex=c(0.5,0.7))#
+#
+dev.off()#
+#
+# Comp1 ==> Centralizado (Service, Breakthrough) vs Distribuido (Platform, Producer,Knowledge)#
+# Comp2 ==> Tangible (Market,Money,Property,Redistribution) vs Intangible (Media,Knowledge, Platform, Relationships, Commons,BreakThrough)#
+# Comp3 ==> ???
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("inPercent","HDI")]#
+#
+countryData <- head(countryData,10)#
+#
+cor.test(countryData$HDI,countryData$inPercent)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("inPercent","HDI")]#
+#
+countryData <- head(countryData,20)#
+#
+cor.test(countryData$HDI,countryData$inPercent)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("inPercent","HDI")]#
+#
+countryData <- head(countryData,10)#
+#
+cor.test(countryData$HDI,countryData$inPercent)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+countryData = countryData[countryData$currencyName!="Euro",]#
+#
+countryData <- countryData[c("inPercent","HDI")]#
+#
+countryData <- head(countryData,10)#
+#
+cor.test(countryData$HDI,countryData$inPercent)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("inPercent","HDI")]#
+#
+countryData <- head(countryData,10)#
+#
+cor.test(countryData$HDI,countryData$inPercent)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("inPercent","HDI")]#
+#
+countryData <- head(countryData,10)#
+#
+cor.test(countryData$HDI,countryData$inPercent)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("inPercent","HDI")]#
+#
+countryData <- head(countryData,10)#
+#
+cor.test(countryData$HDI,countryData$inPercent)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("lat","HDI")]#
+#
+countryData <- head(countryData,10)#
+#
+cor.test(countryData$HDI,countryData$lat)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("lat","HDI")]#
+#
+countryData <- head(countryData,10)#
+#
+cor.test(countryData$HDI,countryData$lat)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("lat","HDI")]#
+#
+countryData <- head(countryData,10)#
+#
+cor.test(countryData$HDI,countryData$lat)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("Population","inMig")]#
+#
+countryData <- head(countryData,10)#
+#
+cor.test(countryData$Population,countryData$inMig)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("pop2004","inMig")]#
+#
+countryData <- head(countryData,10)#
+#
+cor.test(countryData$pop2005,countryData$inMig)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("pop2004","inMig")]#
+#
+#countryData <- head(countryData,10)#
+#
+cor.test(countryData$pop2005,countryData$inMig)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("pop2005","inMig")]#
+#
+#countryData <- head(countryData,10)#
+#
+cor.test(countryData$pop2005,countryData$inMig)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("pop2005","outMig")]#
+#
+#countryData <- head(countryData,10)#
+#
+cor.test(countryData$pop2005,countryData$outMig)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("pop2005","inMig")]#
+#
+#countryData <- head(countryData,10)#
+#
+cor.test(countryData$pop2005,countryData$inMig)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("pop2005","inMig")]#
+#
+#countryData <- head(countryData,10)#
+#
+cor.test(countryData$pop2005,countryData$inMig)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("pop2005","outMig")]#
+#
+#countryData <- head(countryData,10)#
+#
+cor.test(countryData$pop2005,countryData$outMig)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("pop2005","outMig")]#
+#
+countryData <- head(countryData,10)#
+#
+cor.test(countryData$pop2005,countryData$outMig)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("pop2005","outMig")]#
+#
+countryData <- head(countryData,10)#
+#
+cor.test(countryData$pop2005,countryData$outMig)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- countryData[c("lat","HDI")]#
+#
+countryData <- head(countryData,10)#
+#
+cor.test(countryData$lat,countryData$HDI)#
+#
+corrgram(countryData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- head(countryData,20)#
+plotData = countryData#
+#
+ggplot(plotData,aes(x=HDI, y=inPercent)) + geom_point() + stat_smooth(method=lm) + geom_text(aes(label=name),size=2)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- head(countryData,20)#
+plotData = countryData#
+#
+ggplot(plotData,aes(x=HDI, y=inPercent)) + geom_point() + stat_smooth(method=lm) + geom_text(aes(label=name),size=2)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- head(countryData,20)#
+plotData = countryData#
+#
+ggplot(plotData,aes(x=HDI, y=inPercent)) + geom_point() + stat_smooth(method=lm) + geom_text(aes(label=name),size=2)#
+#
+ggsave(file="9.HDI_inPercent_correlation.pdf")
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- head(countryData,20)#
+plotData = countryData#
+#
+ggplot(plotData,aes(x=HDI, y=inPercent)) + geom_point() + stat_smooth(method=lm) + geom_text(aes(label=name),size=2)#
+#
+ggsave(file="9.HDI_inPercent_correlation.pdf")
+library(corrgram)#
+library(ggplot2)#
+#
+movementData <- read.delim("atlantic_top_movements.tsv")#
+#
+movementData <- movementData[movementData$year=="2013",]#
+#
+movementData <- movementData[with(movementData,order(-value)),]#
+#
+movementData <- head(movementData,100)#
+#cor.test(~valueSource+sameLanguage, data = movementData)#
+#
+cor.test(movementData$targetHDI-movementData$sourceHDI,movementData$value)#
+#
+#movementData <- movementData[c("value","sourceHDI","targetHDI","valueSource","valueTarget","distance","sameCurrency","sameLanguage","sourcePopulation","targetPopulation")]#
+#corrgram(movementData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+movementData <- read.delim("atlantic_top_movements.tsv")#
+#
+movementData <- movementData[movementData$year=="2013",]#
+#
+movementData <- movementData[with(movementData,order(-value)),]#
+#
+movementData <- head(movementData,100)#
+#cor.test(~valueSource+sameLanguage, data = movementData)#
+#
+cor.test(movementData$targetHDI-movementData$sourceHDI,movementData$valueSource)#
+#
+#movementData <- movementData[c("value","sourceHDI","targetHDI","valueSource","valueTarget","distance","sameCurrency","sameLanguage","sourcePopulation","targetPopulation")]#
+#corrgram(movementData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+library(corrgram)#
+library(ggplot2)#
+#
+movementData <- read.delim("atlantic_top_movements.tsv")#
+#
+movementData <- movementData[movementData$year=="2013",]#
+#
+movementData <- movementData[with(movementData,order(-value)),]#
+#
+movementData <- head(movementData,100)#
+#cor.test(~valueSource+sameLanguage, data = movementData)#
+#
+cor.test(movementData$targetHDI-movementData$sourceHDI,movementData$valueTarget)#
+#
+#movementData <- movementData[c("value","sourceHDI","targetHDI","valueSource","valueTarget","distance","sameCurrency","sameLanguage","sourcePopulation","targetPopulation")]#
+#corrgram(movementData, order = TRUE, lower.panel=panel.shade,upper.panel=panel.conf, diag.panel=panel.density)
+source("1.Rd")
+library(corrgram)#
+library(ggplot2)#
+#
+#[-] datos del 1990 y 2013 para la zona Atlántica de:#
+#- porcentaje de gente migrante (source) de low HDI, medium, high y very high#
+#- porcentaje de gente inmigrante (target) de low HDI, medium, high, very high#
+##
+##
+#
+#year = "2013"#
+#lowHDI = 0.466#
+#mediumHDI = 0.64#
+#highHDI = 0.708#
+#veryHighHDI = 0.905#
+year = "1990"#
+lowHDI = 0.315#
+mediumHDI = 0.419#
+highHDI = 0.605#
+veryHighHDI = 0.773	#
+movementData <- read.delim("atlantic_movements.tsv")#
+#
+movementData <- movementData[movementData$year==year,]#
+#
+total = sum(movementData$value)#
+#
+print(paste("Sum of people migrated in Atlantic Zone",year))#
+print(total)#
+print("Split of sourceHDI")#
+print("================")#
+#
+lowSource = (sum(movementData[movementData$sourceHDI < mediumHDI,]$value)/total)*100#
+mediumSource = (sum(movementData[movementData$sourceHDI > mediumHDI & movementData$sourceHDI < highHDI,]$value)/total)*100#
+highSource = (sum(movementData[movementData$sourceHDI > highHDI & movementData$sourceHDI < veryHighHDI,]$value)/total)*100#
+veryHighSource = (sum(movementData[movementData$sourceHDI > veryHighHDI,]$value)/total)*100#
+totalSource = lowSource + mediumSource + highSource + veryHighSource#
+#
+print("lowSource")#
+print(lowSource)#
+print("mediumSource")#
+print(mediumSource)#
+print("highSource")#
+print(highSource)#
+print("veryHighSource")#
+print(veryHighSource)#
+print("Split of targetHDI")#
+print("================")#
+lowTarget = (sum(movementData[movementData$targetHDI < mediumHDI,]$value)/total)*100#
+mediumTarget = (sum(movementData[movementData$targetHDI > mediumHDI & movementData$targetHDI < highHDI,]$value)/total)*100#
+highTarget = (sum(movementData[movementData$targetHDI > highHDI & movementData$targetHDI < veryHighHDI,]$value)/total)*100#
+veryHighTarget = (sum(movementData[movementData$targetHDI > veryHighHDI,]$value)/total)*100#
+#
+totalTarget = lowTarget + mediumTarget + highTarget + veryHighTarget#
+print("lowTarget")#
+print(lowTarget)#
+print("mediumTarget")#
+print(mediumTarget)#
+print("highTarget")#
+print(highTarget)#
+print("veryHighTarget")#
+print(veryHighTarget)
+source("1.Rd")
+library(corrgram)#
+library(ggplot2)#
+#
+#[-] datos del 1990 y 2013 para la zona Atlántica de:#
+#- porcentaje de gente migrante (source) de low HDI, medium, high y very high#
+#- porcentaje de gente inmigrante (target) de low HDI, medium, high, very high#
+##
+##
+#
+year = "2013"#
+lowHDI = 0.466#
+mediumHDI = 0.64#
+highHDI = 0.708#
+veryHighHDI = 0.905#
+#year = "1990"#
+#lowHDI = 0.315#
+#mediumHDI = 0.419#
+#highHDI = 0.605#
+#veryHighHDI = 0.773	#
+movementData <- read.delim("atlantic_movements.tsv")#
+#
+movementData <- movementData[movementData$year==year,]#
+#
+total = sum(movementData$value)#
+#
+print(paste("Sum of people migrated in Atlantic Zone",year))#
+print(total)#
+print("Split of sourceHDI")#
+print("================")#
+#
+lowSource = (sum(movementData[movementData$sourceHDI < mediumHDI,]$value)/total)*100#
+mediumSource = (sum(movementData[movementData$sourceHDI > mediumHDI & movementData$sourceHDI < highHDI,]$value)/total)*100#
+highSource = (sum(movementData[movementData$sourceHDI > highHDI & movementData$sourceHDI < veryHighHDI,]$value)/total)*100#
+veryHighSource = (sum(movementData[movementData$sourceHDI > veryHighHDI,]$value)/total)*100#
+totalSource = lowSource + mediumSource + highSource + veryHighSource#
+#
+print("lowSource")#
+print(lowSource)#
+print("mediumSource")#
+print(mediumSource)#
+print("highSource")#
+print(highSource)#
+print("veryHighSource")#
+print(veryHighSource)#
+print("Split of targetHDI")#
+print("================")#
+lowTarget = (sum(movementData[movementData$targetHDI < mediumHDI,]$value)/total)*100#
+mediumTarget = (sum(movementData[movementData$targetHDI > mediumHDI & movementData$targetHDI < highHDI,]$value)/total)*100#
+highTarget = (sum(movementData[movementData$targetHDI > highHDI & movementData$targetHDI < veryHighHDI,]$value)/total)*100#
+veryHighTarget = (sum(movementData[movementData$targetHDI > veryHighHDI,]$value)/total)*100#
+#
+totalTarget = lowTarget + mediumTarget + highTarget + veryHighTarget#
+print("lowTarget")#
+print(lowTarget)#
+print("mediumTarget")#
+print(mediumTarget)#
+print("highTarget")#
+print(highTarget)#
+print("veryHighTarget")#
+print(veryHighTarget)
+source("1.Rd")
+source("1.Rd")
+library(corrgram)#
+library(ggplot2)#
+#
+year = "1990"#
+#
+movementData <- read.delim("atlantic_movements.tsv")#
+#
+movementData <- movementData[movementData$year==year,]#
+#
+movementData <- movementData[with(movementData,order(-value)),]#
+#
+cat("==============================","\n")#
+cat("Typical migrant for year",year,"\n")#
+#
+cat("Average distance weighted by movement mass",weighted.mean(movementData$distance, movementData$value)," kilometers\n")#
+cat("Average source HDI weighted by movement mass",weighted.mean(movementData$sourceHDI, movementData$value),"\n")#
+cat("Average target HDI weighted by movement mass",weighted.mean(movementData$targetHDI, movementData$value),"\n")#
+cat("Average source Population weighted by movement mass",weighted.mean(movementData$sourcePopulation, movementData$value)," habitants\n")#
+cat("Average target Population weighted by movement mass",weighted.mean(movementData$targetPopulation, movementData$value)," habitants\n")#
+#
+cat("==============================","\n")#
+#
+#summary(movementData$sourceHDI)#
+#summary(movementData$targetHDI)#
+#
+#summary(movementData$distance)#
+#
+#summary(movementData$sourcePopulation)#
+#summary(movementData$targetPopulation)
+source("4.Rd")
+source("4.Rd")
+source("4.Rd")
+source("4.Rd")
+source("4.Rd")
+source("4.Rd")
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- head(countryData,20)#
+plotData = countryData#
+#
+ggplot(plotData,aes(x=HDI, y=lat)) + geom_point() + stat_smooth(method=lm) + geom_text(aes(label=name),size=2)#
+#
+ggsave(file="9.HDI_Lat_graph.pdf")
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+countryData = countryData[countryData$currencyName=="Euro",]#
+#
+#countryData <- head(countryData,20)#
+plotData = countryData#
+#
+ggplot(plotData,aes(x=HDI, y=lat)) + geom_point() + stat_smooth(method=lm) + geom_text(aes(label=name),size=2)#
+#
+ggsave(file="9.HDI_Lat_graph.pdf")
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+#countryData <- head(countryData,20)#
+plotData = countryData#
+#
+ggplot(plotData,aes(x=HDI, y=lat)) + geom_point() + stat_smooth(method=lm) + geom_text(aes(label=name),size=2)#
+#
+ggsave(file="9.HDI_Lat_graph.pdf")
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+#countryData <- head(countryData,20)#
+plotData = countryData#
+#
+ggplot(plotData,aes(x=HDI, y=lat)) + geom_point() + stat_smooth(method=lm) + geom_text(aes(label=name,color="red"),size=2)#
+#
+ggsave(file="9.HDI_Lat_graph.pdf")
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+#countryData <- head(countryData,20)#
+plotData = countryData#
+#
+ggplot(plotData,aes(x=HDI, y=lat)) + geom_point() + stat_smooth(method=lm) + geom_text(aes(label=name),color="red",size=2)#
+#
+ggsave(file="9.HDI_Lat_graph.pdf")
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+#countryData <- head(countryData,20)#
+plotData = countryData#
+#
+ggplot(plotData,aes(x=HDI, y=abs(lat))) + geom_point() + stat_smooth(method=lm) + geom_text(aes(label=name),color="red",size=2)#
+#
+ggsave(file="9.HDI_Lat_graph_abs.pdf")
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+#countryData <- head(countryData,20)#
+plotData = countryData#
+#
+ggplot(plotData,aes(x=HDI, y=abs(lat))) + geom_point() + stat_smooth(method=lm) + geom_text(aes(label=name),color="red",size=2)#
+#
+ggsave(file="9.HDI_Lat_graph_abs.pdf")#
+#
+print(corr.test(plotData$HDI,abs(plotData$lat)))
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+#countryData <- head(countryData,20)#
+plotData = countryData#
+#
+ggplot(plotData,aes(x=HDI, y=abs(lat))) + geom_point() + stat_smooth(method=lm) + geom_text(aes(label=name),color="red",size=2)#
+#
+ggsave(file="9.HDI_Lat_graph_abs.pdf")#
+#
+print(cor.test(plotData$HDI,abs(plotData$lat)))
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName=="Euro",]#
+#
+countryData <- head(countryData,20)#
+plotData = countryData#
+#
+ggplot(plotData,aes(x=HDI, y=abs(lat))) + geom_point() + stat_smooth(method=lm) + geom_text(aes(label=name),color="red",size=2)#
+#
+ggsave(file="9.HDI_Lat_graph_abs.pdf")#
+#
+print(cor.test(plotData$HDI,abs(plotData$lat)))
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_top_countries.tsv")#
+#
+countryData = countryData[countryData$currencyName!="Euro",]#
+#
+#countryData <- head(countryData,20)#
+plotData = countryData#
+#
+ggplot(plotData,aes(x=HDI, y=abs(lat))) + geom_point() + stat_smooth(method=lm) + geom_text(aes(label=name),color="red",size=2)#
+#
+ggsave(file="9.HDI_Lat_graph_abs.pdf")#
+#
+print(cor.test(plotData$HDI,abs(plotData$lat)))
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName!="Euro",]#
+#
+#countryData <- head(countryData,20)#
+plotData = countryData#
+#
+ggplot(plotData,aes(x=HDI, y=abs(lat))) + geom_point() + stat_smooth(method=lm) + geom_text(aes(label=name),color="red",size=2)#
+#
+ggsave(file="9.HDI_Lat_graph_abs.pdf")#
+#
+print(cor.test(plotData$HDI,abs(plotData$lat)))#
+#
+total = sum(countryDataRed$pop2005)#
+#
+print(total)
+library(corrgram)#
+library(ggplot2)#
+#
+countryData <- read.delim("atlantic_countries.tsv")#
+#
+#countryData = countryData[countryData$currencyName!="Euro",]#
+#
+#countryData <- head(countryData,20)#
+plotData = countryData#
+#
+ggplot(plotData,aes(x=HDI, y=abs(lat))) + geom_point() + stat_smooth(method=lm) + geom_text(aes(label=name),color="red",size=2)#
+#
+ggsave(file="9.HDI_Lat_graph_abs.pdf")#
+#
+print(cor.test(plotData$HDI,abs(plotData$lat)))#
+#
+total = sum(countryData$pop2005)#
+#
+print(total)
