@@ -196,3 +196,23 @@
 #arcDiagramContent{
     float: left;
 }
+.tooltip{
+    position: absolute;
+    //width: 270px;
+    //height: 65px;
+    padding: 8px;
+    font-family: Advent Pro, semi-bold;
+    font-weight: 400;
+    font: 10px sans-serif;
+    background: #FFF;
+    border: solid 1px #aaa;
+    border-radius: 8px;
+    pointer-events: none;
+    z-order:1000;
+  }
+.tooltip .big{
+    font-size: 10px;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+}

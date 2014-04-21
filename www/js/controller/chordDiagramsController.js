@@ -32,29 +32,49 @@ outliers.controller.chordDiagramsController = function(options)
         }
     }
 
+    
+    self.formatValue = function(value){
+        if(value=='-'){ return 0;}
+        value_parts = value.toString().split("").reverse();
+        var value_list = [];
+        for(var i=0;i<value_parts.length;i++){
+            if(i%3==0){
+                value_list.push('.')
+            }
+            value_list.push(value_parts[i]);
+        }
+        value_str = value_list.reverse().slice(0,value_list.length-1).join("");
+        return value_str;
+    };
+
     self.rellenaInfoChord = function(sourceCountryISO,targetCountryISO){
-        console.log(self.data.datalabel.movements_data);
-        console.log(self.countries[sourceCountryISO.index]);
+        var sourceCountryAux = self.data.datalabel.countries_data[sourceCountryISO.index];
+        var targetCountryAux = self.data.datalabel.countries_data[targetCountryISO.index];
+
         var movementAux = self.data.datalabel.movements_data[self.year][self.countries[sourceCountryISO.index]][self.countries[targetCountryISO.index]];
-        console.log(movementAux);
-        var html = self.countries[sourceCountryISO.index]+" -> "+self.countries[targetCountryISO.index]+"<br>Value: "+movementAux.value+"<br>Same lang: "+movementAux.sameLanguage+'<br>Distance: '+movementAux.distance+'<br>Same currency: '+movementAux.sameCurrency;
-        d3.select("#zonaInfo").html(html);
+        var html = 'From '+sourceCountryAux.longName+"(HDI: "+sourceCountryAux.HDI+") to "+targetCountryAux.longName+"(HDI: "+targetCountryAux.HDI+"): "+self.formatValue(self.data.data[self.year][sourceCountryISO.index][targetCountryISO.index])+" migrants <br>From "+targetCountryAux.longName+"(HDI: "+targetCountryAux.HDI+") to "+sourceCountryAux.longName+"(HDI: "+sourceCountryAux.HDI+"): "+self.formatValue(self.data.data[self.year][targetCountryISO.index][sourceCountryISO.index])+" migrants<br>Same lang: "+movementAux.sameLanguage+'<br>Distance: '+parseFloat(movementAux.distance).toFixed(2)+'<br>Same currency: '+movementAux.sameCurrency;
+
+        //d3.select("#zonaInfo").html(html);
+        d3.select(".tooltip").style("opacity",1).html(html);
     };
 
     self.rellenaInfoGroup = function(countryISO){
         var countryAux = self.data.datalabel.countries_data[countryISO.index];
-        var html = countryAux.name+'<br>Value: '+countryAux.valueCountry+'<br>HDI: '+countryAux.HDI+'<br>Pop: '+countryAux.Population;
-        d3.select("#zonaInfo").html(html);
+        var html = countryAux.longName+'<br>HDI: '+parseFloat(countryAux.HDI).toFixed(2)+'<br>Pop: '+self.formatValue(countryAux.Population);
+        //d3.select("#zonaInfo").html(html);
+        d3.select(".tooltip").style("opacity",1).html(html);
     };
 
     self.clearInfoGroup = function(){
         //console.log("BORRO GROUP");
-        d3.select("#zonaInfo").html('');
+        //d3.select("#zonaInfo").html('');
+        d3.select(".tooltip").style("opacity",0).html("");
     };
 
     self.clearInfoChord = function(){
         //console.log("BORRO Chord");
-        d3.select("#zonaInfo").html('');
+        //d3.select("#zonaInfo").html('');
+        d3.select(".tooltip").style("opacity",0).html("");
     };
 
 
@@ -87,10 +107,26 @@ outliers.controller.chordDiagramsController = function(options)
 
         self.colorScale = d3.scale.category20();
 
+        console.log("CHART");
+        console.log(d3.select("#zonaChart"));
+        self.tooltip = d3.select("#zonaChart").append("div")
+            .attr("id","tooltip")
+            .html("")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        self.mousemove = function()
+        {
+              console.log(d3.event);
+              self.tooltip
+                .style("left", (d3.event.pageX +20) + "px")
+                .style("top", (d3.event.pageY - 12) + "px");
+        }
+
         self.chordDiagram = outliers.viz.chordDiagram({
             'parentId':"chordDiagramContent",
             //'width':self.width,
-            'width': $("body").innerWidth()/3,
+            'width': 2*$("body").innerWidth()/3,
             'height':self.height,
             'chartWidth':self.chartWidth,
             'chartHeight':self.chartHeight,
@@ -101,9 +137,10 @@ outliers.controller.chordDiagramsController = function(options)
             'clearInfoGroup': self.clearInfoGroup,
             'chordPadding': 0.1,
             'colorScale': self.colorScale,
+            'mousemove': self.mousemove,
             'myLog':myLog
         });
-
+        self.colors = {"es":"red","en":"yellow","ca":"blue","fr":"green"}
 
 
         self.beginDate = moment("1990","YYYY");
@@ -117,7 +154,7 @@ outliers.controller.chordDiagramsController = function(options)
             console.log("CALLBAKC");
             console.log(self.year);
             self.chordDiagram.render(self.data.datalabel,self.data.data[self.year]);
-            self.arcDiagram.prerender(self.year);
+            //self.arcDiagram.prerender(self.year);
         };
 
         self.slider = outliers.extras.yearSlider(
@@ -142,18 +179,19 @@ outliers.controller.chordDiagramsController = function(options)
             self.countries = self.data.datalabel.countries;
             self.chordDiagram.render(data.datalabel,data.data[2013]);
         });
-        d3.json(self.ARC_DATA_FILE, function (data) {
+        /*d3.json(self.ARC_DATA_FILE, function (data) {
             self.arcData = data;
             self.arcDiagram = new outliers.viz.arcDiagram({
                 parentId: 'arcDiagramContent',
                 data: data,
                 height: 1000,
-                width: ($("body").innerWidth()/5)*2,
+                width: ($("body").innerWidth()/5)*3,
+                transTime: 2000,
                 nodeNameVar: 'name',
                 nodeSizeVar: 'pop2005',
                 colors: d3.scale.linear().range(['#B5E3E3','#004556'])
             });
-        });
+        });*/
 
     });
 

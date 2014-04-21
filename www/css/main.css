@@ -1,14 +1,15 @@
-$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
-
-@import 'sass-bootstrap/lib/bootstrap';
-
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
 }
 
 b {
     font-weight: 900;
+}
+
+h1 {
+    font-size:  20pt;
+    color: #687690;
 }
 
 .outline {
@@ -19,24 +20,24 @@ b {
 
 .tooltiparctop {
     font-size: 10pt;
-    font-weight: 900;
+    font-weight: 400;
 
-    fill: #000000;
-    stroke: #ffffff;
-    stroke-width: 0.25px;
+    fill: #687690;
+    stroke: #72ADE9;
+    stroke-width: 0.1px;
 }
 .tooltiparcbottom {
     font-size: 8pt;
     font-weight: 400;
 
-    fill: #000000;
-    stroke: #ffffff;
-    stroke-width: 0.25px;
+    fill: #687690;
+    stroke: #72ADE9;
+    stroke-width: 0.1px;
 }
 
 .node {
-    stroke: #ffffff;
-    stroke-width: 1px;
+    stroke: #72ADE9;
+    stroke-width: 0.25px;
 }
 
 .link {
@@ -56,10 +57,26 @@ b {
     height: 700px;
 }
 
-.IN {
-    stroke: #00ff00;
+.ALT {
+    stroke: #ED886C;
 }
 
-.OUT {
-    stroke: #ff0000;
+.DEF {
+    stroke: #72ADE9;
+}
+.arctitle {
+    font-size: 15pt;
+    font-weight: 700;
+    fill:  #687690;
+    stroke:  #72ADE9;
+    stroke-width: 0.1px;
+}
+.tooltip-inner {
+    background-color: #687690;
+}
+.tooltip.top .tooltip-arrow {
+    border-top-color: #687690;
+}
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #687690;
 }

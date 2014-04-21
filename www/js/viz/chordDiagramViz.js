@@ -49,8 +49,10 @@ outliers.viz.chordDiagram = function (options)
         self.svg = d3.select(self.parentSelect).append("svg")
             .attr("width",self.width)
             .attr("height",self.height)
+            .on("mousemove", self.mousemove)
             .append("g")
             .attr("transform", "translate("+(self.width/2)+","+(self.height/2)+")");
+
 
         // warning message
 
@@ -89,7 +91,7 @@ outliers.viz.chordDiagram = function (options)
 
 
     }
-
+    
     //self.render = function(data,data_label,color_rule,datum_label,legendDict)
     self.render = function(data_label,data)
     {
@@ -195,7 +197,7 @@ outliers.viz.chordDiagram = function (options)
 
         chordsBind.transition()
             .duration(self.transTime)
-            .style("fill", function(d,i) {return self.colorScale(i);})//chooseNodeRule(d,color_rule)); })
+            .style("fill", function(d,i) {return self.colorScale(d.target.index);})//chooseNodeRule(d,color_rule)); })
             .style("opacity",1)
             .attrTween("d", chordTween(self.chord_svg, self.old));
 

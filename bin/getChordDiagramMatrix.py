@@ -3,6 +3,15 @@ import json
 
 
 
+countriesNames = dict()
+
+with open(sys.argv[2],'r') as countries_file:
+    lines = countries_file.readlines()
+    for line in lines[1:]:
+        print line
+        line = line.strip()
+        line_parts = line.split('\t')
+        countriesNames[line_parts[0]] = line_parts[2]
 
 countries = list()
 countries_values = list()
@@ -40,14 +49,14 @@ with open(sys.argv[1],'r') as source_file:
         if not source in countries:
             aux_country = source
             countries.append(aux_country)
-            country_values = {'name':source,'valueCountry':valueSource,'geo':sourceGeo,'HDI':sourceHDI,'Population':sourcePopulation}
+            country_values = {'longName':countriesNames[source],'name':source,'valueCountry':valueSource,'geo':sourceGeo,'HDI':sourceHDI,'Population':sourcePopulation}
             countries_values.append(country_values)
 
 
         if not target in countries:
             aux_country = target
             countries.append(aux_country)
-            country_values = {'name':target,'valueCountry':valueTarget,'geo':targetGeo,'HDI':targetHDI,'Population':targetPopulation}
+            country_values = {'longName':countriesNames[target],'name':target,'valueCountry':valueTarget,'geo':targetGeo,'HDI':targetHDI,'Population':targetPopulation}
             countries_values.append(country_values)
 
         if not source in results[year]:
@@ -83,4 +92,4 @@ for year in results.keys():
     salida['data'][year] = matrix
 
 
-json.dump(salida,open(sys.argv[2],'w'),indent=4)
+json.dump(salida,open(sys.argv[3],'w'),indent=4)
